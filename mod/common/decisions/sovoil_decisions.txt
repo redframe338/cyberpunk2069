@@ -1,0 +1,333 @@
+sovoil_development_program = {
+	SVO_expand_arctic_extraction = {
+		icon = generic_construction
+		allowed = { tag = SVO }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 120
+		days_re_enable = 365
+		complete_effect = {
+			824 = { add_resource = { type = oil amount = 10 } }
+			add_to_variable = { sovoil_state_influence = 5 }
+		}
+		ai_will_do = { factor = 15 }
+	}
+
+	SVO_construct_pipeline_network = {
+		icon = generic_construction
+		allowed = { tag = SVO }
+		available = { has_political_power > 60 }
+		cost = 60
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			239 = {
+				add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+			}
+			add_to_variable = { sovoil_state_influence = 4 }
+		}
+		ai_will_do = { factor = 18 }
+	}
+
+	SVO_modernize_petrochemical_facilities = {
+		icon = generic_construction
+		allowed = { tag = SVO }
+		available = { has_political_power > 80 }
+		cost = 80
+		days_remove = 120
+		days_re_enable = 365
+		complete_effect = {
+			829 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			add_to_variable = { sovoil_state_influence = 5 }
+		}
+		ai_will_do = { factor = 14 }
+	}
+
+	SVO_increase_strategic_reserves = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = SVO }
+		available = { has_political_power > 50 }
+		cost = 50
+		days_remove = 60
+		days_re_enable = 180
+		complete_effect = {
+			403 = { add_building_construction = { type = fuel_silo level = 1 instant_build = yes } }
+			USR = { add_war_support = 0.02 }
+		}
+		ai_will_do = {
+			factor = 12
+			modifier = { factor = 2 USR = { has_war = yes } }
+		}
+	}
+
+	SVO_open_siberian_fields = {
+		icon = generic_construction
+		allowed = { tag = SVO }
+		available = { has_political_power > 90 }
+		cost = 90
+		days_remove = 150
+		fire_only_once = yes
+		complete_effect = {
+			571 = { add_resource = { type = oil amount = 15 } }
+			add_to_variable = { sovoil_state_influence = 7 }
+		}
+		ai_will_do = { factor = 20 }
+	}
+
+	SVO_expand_lng_infrastructure = {
+		icon = generic_construction
+		allowed = { tag = SVO }
+		available = { has_political_power > 70 }
+		cost = 70
+		days_remove = 100
+		days_re_enable = 300
+		complete_effect = {
+			825 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_to_variable = { sovoil_state_influence = 4 }
+		}
+		ai_will_do = { factor = 13 }
+	}
+
+	SVO_upgrade_export_terminals = {
+		icon = generic_naval
+		allowed = { tag = SVO }
+		available = { has_political_power > 65 }
+		cost = 65
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			825 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			add_political_power = 25
+			add_to_variable = { sovoil_state_influence = 3 }
+		}
+		ai_will_do = { factor = 10 }
+	}
+
+	SVO_develop_offshore_platforms = {
+		icon = generic_construction
+		allowed = { tag = SVO }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			825 = { add_resource = { type = oil amount = 20 } }
+			add_to_variable = { sovoil_state_influence = 8 }
+		}
+		ai_will_do = { factor = 16 }
+	}
+
+	SVO_increase_domestic_refining = {
+		icon = generic_construction
+		allowed = { tag = SVO }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 120
+		days_re_enable = 365
+		complete_effect = {
+			251 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = synthetic_refinery level = 1 instant_build = yes }
+			}
+			USR = { add_stability = 0.01 }
+		}
+		ai_will_do = { factor = 15 }
+	}
+
+	SVO_automate_extraction = {
+		icon = generic_research
+		allowed = { tag = SVO }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			add_research_slot = 1
+			add_to_variable = { sovoil_state_influence = 6 }
+			add_stability = 0.03
+		}
+		ai_will_do = { factor = 18 }
+	}
+}
+
+soviet_state_energy_policy = {
+	USR_increase_state_oversight = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = USR }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			SVO = {
+				add_to_variable = { sovoil_state_influence = -8 }
+				add_autonomy_ratio = { value = -0.05 }
+			}
+			add_stability = -0.01
+		}
+		ai_will_do = {
+			factor = 8
+			modifier = { factor = 3 SVO = { check_variable = { sovoil_state_influence > 70 } } }
+		}
+	}
+
+	USR_grant_corporate_authority = {
+		icon = generic_construction
+		allowed = { tag = USR }
+		available = { has_political_power > 50 }
+		cost = 50
+		days_remove = 60
+		days_re_enable = 240
+		complete_effect = {
+			SVO = {
+				add_to_variable = { sovoil_state_influence = 8 }
+				add_political_power = 25
+			}
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 8
+			modifier = { factor = 2 has_war = yes }
+		}
+	}
+
+	USR_launch_national_energy_initiative = {
+		icon = generic_construction
+		allowed = { tag = USR }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			SVO = {
+				add_to_variable = { sovoil_state_influence = 6 }
+				add_political_power = 75
+			}
+			add_stability = 0.03
+		}
+		ai_will_do = { factor = 15 }
+	}
+
+	USR_combat_sovoil_corruption = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = USR }
+		available = { has_political_power > 80 }
+		cost = 80
+		days_remove = 120
+		days_re_enable = 365
+		complete_effect = {
+			SVO = {
+				add_to_variable = { sovoil_state_influence = -10 }
+				add_stability = -0.03
+				country_event = { id = sovoil.6 days = 2 }
+			}
+			add_stability = 0.02
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = { factor = 2 SVO = { check_variable = { sovoil_state_influence > 60 } } }
+		}
+	}
+
+	USR_redirect_energy_revenues = {
+		icon = generic_construction
+		allowed = { tag = USR }
+		available = { has_political_power > 60 }
+		cost = 60
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			add_political_power = 75
+			SVO = {
+				add_political_power = -50
+				add_to_variable = { sovoil_state_influence = -4 }
+			}
+		}
+		ai_will_do = { factor = 9 }
+	}
+
+	USR_expand_civilian_infrastructure = {
+		icon = generic_construction
+		allowed = { tag = USR }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 120
+		days_re_enable = 300
+		complete_effect = {
+			403 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			239 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_stability = 0.02
+		}
+		ai_will_do = { factor = 14 }
+	}
+
+	USR_increase_military_fuel_stockpiles = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = USR }
+		available = { has_political_power > 60 }
+		cost = 60
+		days_remove = 75
+		days_re_enable = 180
+		complete_effect = {
+			SVO = {
+				SVO_begin_wartime_mobilization = yes
+				add_to_variable = { sovoil_state_influence = 5 }
+			}
+			add_war_support = 0.04
+		}
+		ai_will_do = {
+			factor = 12
+			modifier = { factor = 3 has_war = yes }
+		}
+	}
+
+	USR_national_industrial_expansion = {
+		icon = generic_construction
+		allowed = { tag = USR }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			829 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			251 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			SVO = { add_to_variable = { sovoil_state_influence = 4 } }
+		}
+		ai_will_do = { factor = 16 }
+	}
+
+	USR_full_state_integration = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = USR }
+		visible = {
+			SVO = { check_variable = { sovoil_state_influence < 20 } }
+		}
+		available = {
+			has_political_power > 150
+			has_stability > 0.60
+			SVO = { check_variable = { sovoil_state_influence < 20 } }
+		}
+		cost = 150
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			SVO = { country_event = { id = sovoil.11 days = 2 } }
+		}
+		ai_will_do = {
+			factor = 5
+			modifier = { factor = 2 has_war = no }
+		}
+	}
+}

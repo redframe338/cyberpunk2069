@@ -1,0 +1,20 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			CHI = {
+				set_country_flag = CHI_USR_strategic_rival
+				add_opinion_modifier = {
+					target = USR
+					modifier = CHI_USR_strategic_rivalry
+				}
+			}
+			USR = {
+				set_country_flag = USR_CHI_strategic_rival
+				add_opinion_modifier = {
+					target = CHI
+					modifier = CHI_USR_strategic_rivalry
+				}
+			}
+		}
+	}
+}

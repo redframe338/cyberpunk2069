@@ -1,0 +1,59 @@
+# Militech prefers federal contracts and territorial defense over opportunistic conquest.
+MLT_strategic_defense_plan = {
+	name = "Militech strategic defense plan"
+	desc = "Protect the NUSA defense relationship and avoid conventional expansion."
+
+	allowed = { original_tag = MLT }
+	enable = { always = yes }
+	abort = { always = no }
+
+	ai_national_focuses = { }
+	research = { }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = {
+		type = support
+		id = "NUS"
+		value = 200
+	}
+	ai_strategy = {
+		type = protect
+		id = "NUS"
+		value = 100
+	}
+
+	weight = { factor = 1.0 }
+}
+
+# Washington treats Militech as a protected strategic asset while the charter survives.
+NUS_militech_partnership_plan = {
+	name = "NUSA-Militech partnership plan"
+	desc = "Preserve the defense combine while retaining federal authority."
+
+	allowed = { original_tag = NUS }
+	enable = {
+		MLT = { is_subject_of = NUS }
+	}
+	abort = {
+		NOT = { MLT = { is_subject_of = NUS } }
+	}
+
+	ai_national_focuses = { }
+	research = { }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = {
+		type = support
+		id = "MLT"
+		value = 150
+	}
+	ai_strategy = {
+		type = protect
+		id = "MLT"
+		value = 100
+	}
+
+	weight = { factor = 1.0 }
+}

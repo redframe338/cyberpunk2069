@@ -1,0 +1,234 @@
+add_namespace = unification_war
+
+# January 2069: the Metal Wars begin.
+country_event = {
+	id = unification_war.1
+	title = unification_war.1.t
+	desc = unification_war.1.d
+	picture = GFX_report_event_generic_panzer_attack
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unification_war.1.a
+
+		set_global_flag = unification_war_begun
+		add_war_support = 0.08
+		add_ideas = metal_wars_stalemate_safeguard
+
+		FSA = {
+			add_ideas = FSA_metal_wars_emergency_mobilization
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 60000
+				producer = FSA
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 7000
+				producer = FSA
+			}
+			load_oob = "FSA_unification_mobilization"
+			set_country_flag = FSA_metal_wars_mobilized
+		}
+
+		declare_war_on = {
+			target = FSA
+			type = annex_everything
+		}
+
+		MLT = {
+			add_ideas = metal_wars_stalemate_safeguard
+			add_to_war = {
+				targeted_alliance = NUS
+				enemy = FSA
+				hostility_reason = asked_to_join
+				single_target_only = yes
+			}
+		}
+
+		WCS = {
+			country_event = { id = unification_war.2 hours = 6 }
+		}
+
+		FSA = {
+			country_event = { id = unification_war.3 days = 10 }
+		}
+
+		country_event = { id = unification_war.4 days = 521 }
+	}
+}
+
+# Washington, Oregon, and Idaho receive the canon federal ultimatum.
+country_event = {
+	id = unification_war.2
+	title = unification_war.2.t
+	desc = unification_war.2.d
+	picture = GFX_report_event_generic_peaceful_annexation
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unification_war.2.a
+		ai_chance = { factor = 0 }
+		add_stability = -0.02
+		add_war_support = 0.05
+	}
+
+	option = {
+		name = unification_war.2.b
+		ai_chance = { factor = 100 }
+
+		add_war_support = 0.12
+		add_ideas = metal_wars_stalemate_safeguard
+		NUS = {
+			declare_war_on = {
+				target = WCS
+				type = annex_everything
+			}
+		}
+		MLT = {
+			add_to_war = {
+				targeted_alliance = NUS
+				enemy = WCS
+				hostility_reason = asked_to_join
+				single_target_only = yes
+			}
+		}
+	}
+}
+
+# Arasaka supplies the Free States without openly entering the conflict.
+country_event = {
+	id = unification_war.3
+	title = unification_war.3.t
+	desc = unification_war.3.d
+	picture = GFX_report_event_generic_lend_lease
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = yes
+		has_war_with = NUS
+	}
+
+	option = {
+		name = unification_war.3.a
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 6000
+			producer = ARK
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 750
+			producer = ARK
+		}
+		army_experience = 15
+		add_war_support = 0.05
+
+		ARK = {
+			army_experience = 5
+		}
+	}
+}
+
+# June 2070: exhaustion forces the Treaty of Unification stalemate.
+country_event = {
+	id = unification_war.4
+	title = unification_war.4.t
+	desc = unification_war.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unification_war.4.a
+
+		set_global_flag = treaty_of_unification_signed
+
+		if = {
+			limit = {
+				FSA = {
+					exists = yes
+					has_war_with = NUS
+				}
+			}
+			if = {
+				limit = { MLT = { has_war_with = FSA } }
+				MLT = { white_peace = FSA }
+			}
+			white_peace = FSA
+		}
+
+		if = {
+			limit = {
+				WCS = {
+					exists = yes
+					has_war_with = NUS
+				}
+			}
+			if = {
+				limit = { MLT = { has_war_with = WCS } }
+				MLT = { white_peace = WCS }
+			}
+			white_peace = WCS
+		}
+
+		# Restore every prewar western border. Occupation during the fighting
+		# cannot become permanent ownership in the scripted stalemate.
+		376 = { transfer_state_to = FSA }
+		377 = { transfer_state_to = FSA }
+		379 = { transfer_state_to = FSA }
+		381 = { transfer_state_to = FSA }
+		382 = { transfer_state_to = FSA }
+		388 = { transfer_state_to = FSA }
+
+		385 = { transfer_state_to = WCS }
+		386 = { transfer_state_to = WCS }
+		387 = { transfer_state_to = WCS }
+
+		remove_ideas = metal_wars_stalemate_safeguard
+		MLT = { remove_ideas = metal_wars_stalemate_safeguard }
+		WCS = { remove_ideas = metal_wars_stalemate_safeguard }
+
+		add_stability = 0.05
+		add_war_support = -0.05
+
+		if = {
+			limit = { FSA = { exists = yes } }
+			FSA = { country_event = { id = unification_war.5 hours = 8 } }
+		}
+	}
+}
+
+country_event = {
+	id = unification_war.5
+	title = unification_war.5.t
+	desc = unification_war.5.d
+	picture = GFX_report_event_generic_sign_treaty2
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = unification_war.5.a
+		remove_ideas = FSA_metal_wars_emergency_mobilization
+
+		# Delete both the original 20 formations and all surviving emergency
+		# formations, then rebuild an exact 20-division peacetime defense force.
+		delete_unit_template_and_units = {
+			division_template = "Free States Emergency Mobilization Division"
+			disband = yes
+		}
+		delete_unit_template_and_units = {
+			division_template = "Free States Territorial Division"
+			disband = yes
+		}
+		load_oob = "FSA_postwar_2069"
+		set_country_flag = FSA_postwar_demobilization_complete
+
+		add_stability = -0.05
+		add_war_support = 0.05
+	}
+}

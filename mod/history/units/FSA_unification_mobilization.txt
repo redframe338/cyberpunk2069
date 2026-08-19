@@ -1,0 +1,438 @@
+division_template = {
+	name = "Free States Emergency Mobilization Division"
+	priority = 1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = {
+		name = "01 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "02 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "03 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "04 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "05 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "06 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "07 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "08 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "09 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "10 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "11 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "12 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "13 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "14 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "15 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "16 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "17 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "18 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "19 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "20 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "21 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "22 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "23 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "24 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "25 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "26 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "27 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "28 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "29 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "30 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "31 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "32 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "33 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "34 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "35 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "36 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "37 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "38 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "39 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "40 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "41 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "42 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "43 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "44 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "45 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "46 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "47 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "48 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "49 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "50 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "51 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "52 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "53 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "54 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "55 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "56 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "57 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "58 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "59 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "60 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "61 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "62 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "63 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "64 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "65 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "66 Emergency Mobilization Division"
+		location = 1827
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "67 Emergency Mobilization Division"
+		location = 4799
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "68 Emergency Mobilization Division"
+		location = 853
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "69 Emergency Mobilization Division"
+		location = 4860
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+	division = {
+		name = "70 Emergency Mobilization Division"
+		location = 4975
+		division_template = "Free States Emergency Mobilization Division"
+		start_experience_factor = 0.20
+	}
+}

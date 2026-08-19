@@ -1,0 +1,11 @@
+biotechnica_scientific_programs = {
+	icon = generic_research
+	allowed = { tag = BIO }
+	visible = { tag = BIO }
+}
+
+european_biotechnology_policy = {
+	icon = generic_economy
+	allowed = { tag = EEC }
+	visible = { tag = EEC }
+}

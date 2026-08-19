@@ -1,0 +1,30 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			SVO = {
+				set_variable = { sovoil_state_influence = 45 }
+				SVO_update_influence_spirit = yes
+				country_event = { id = sovoil.1 days = 20 }
+				country_event = { id = sovoil.2 days = 75 }
+			}
+			USR = {
+				set_variable = { sovoil_state_influence = 45 }
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			SVO = {
+				SVO_update_influence_spirit = yes
+				if = {
+					limit = {
+						USR = { has_war = yes }
+						NOT = { has_country_flag = SVO_wartime_mobilized }
+					}
+					country_event = { id = sovoil.10 days = 3 }
+				}
+			}
+		}
+	}
+}

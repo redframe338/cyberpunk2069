@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		ENG_the_failing_realm = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.25
+				production_speed_buildings_factor = -0.30
+				industrial_capacity_factory = -0.30
+				industrial_capacity_dockyard = -0.40
+				production_factory_efficiency_gain_factor = -0.30
+				research_speed_factor = -0.15
+				recruitable_population_factor = -0.40
+				army_org_factor = -0.15
+				army_morale_factor = -0.15
+				air_mission_efficiency = -0.20
+				political_power_gain = -0.20
+				stability_factor = -0.10
+			}
+		}
+
+		ENG_national_collapse = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.50
+				production_speed_buildings_factor = -0.60
+				industrial_capacity_factory = -0.60
+				industrial_capacity_dockyard = -0.60
+				production_factory_efficiency_gain_factor = -0.60
+				recruitable_population_factor = -0.60
+				army_org_factor = -0.30
+				army_morale_factor = -0.30
+				political_power_gain = -0.50
+				stability_factor = -0.30
+			}
+		}
+
+		ENG_realm_preserved = {
+			allowed = { original_tag = ENG }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.08
+				production_speed_buildings_factor = -0.08
+				industrial_capacity_factory = -0.05
+				research_speed_factor = -0.05
+				recruitable_population_factor = -0.10
+				stability_factor = 0.12
+				political_power_gain = 0.10
+			}
+		}
+	}
+}

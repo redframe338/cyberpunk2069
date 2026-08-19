@@ -1,0 +1,11 @@
+petrochem_industrial_expansion = {
+	icon = petrochem
+	allowed = { tag = NUS }
+	visible = { tag = NUS }
+}
+
+petrochem_corporate_budget = {
+	icon = generic_economy
+	allowed = { tag = NUS }
+	visible = { tag = NUS }
+}

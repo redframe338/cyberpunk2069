@@ -1,0 +1,245 @@
+add_namespace = petrochem
+
+country_event = {
+	id = petrochem.1
+	title = petrochem.1.t
+	desc = petrochem.1.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = petrochem.1.a
+		add_to_variable = { petrochem_industrial_capacity = 3 }
+		add_to_variable = { petrochem_energy_investment = 3 }
+		petrochem_update_development_spirit = yes
+	}
+	option = {
+		name = petrochem.1.b
+		add_to_variable = { petrochem_corporate_investment_points = 2 }
+	}
+}
+
+country_event = {
+	id = petrochem.2
+	title = petrochem.2.t
+	desc = petrochem.2.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = NUS check_variable = { petrochem_industrial_capacity > 24 } }
+	mean_time_to_happen = { months = 22 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.2.a
+		add_political_power = -40
+		add_to_variable = { petrochem_energy_investment = 6 }
+		698 = { add_resource = { type = oil amount = 8 } }
+	}
+	option = { name = petrochem.2.b add_to_variable = { petrochem_corporate_investment_points = 1 } }
+}
+
+country_event = {
+	id = petrochem.3
+	title = petrochem.3.t
+	desc = petrochem.3.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = NUS check_variable = { petrochem_industrial_capacity > 29 } }
+	mean_time_to_happen = { months = 30 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.3.a
+		add_political_power = -60
+		add_stability = -0.01
+		add_to_variable = { petrochem_industrial_capacity = -2 }
+	}
+	option = {
+		name = petrochem.3.b
+		add_stability = -0.04
+		add_ideas = petrochem_pollution_penalties
+		add_to_variable = { petrochem_industrial_capacity = -5 }
+	}
+}
+
+country_event = {
+	id = petrochem.4
+	title = petrochem.4.t
+	desc = petrochem.4.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = NUS check_variable = { petrochem_energy_investment > 14 } }
+	mean_time_to_happen = { months = 28 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.4.a
+		add_political_power = -50
+		add_to_variable = { petrochem_industrial_capacity = -2 }
+		72 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+	}
+	option = {
+		name = petrochem.4.b
+		add_stability = -0.03
+		add_to_variable = { petrochem_industrial_capacity = -5 }
+	}
+}
+
+country_event = {
+	id = petrochem.5
+	title = petrochem.5.t
+	desc = petrochem.5.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = {
+		tag = NUS
+		check_variable = { petrochem_hydrogen_investment > 14 }
+		check_variable = { petrochem_industrial_capacity > 59 }
+	}
+	mean_time_to_happen = { months = 18 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.5.a
+		add_ideas = petrochem_hydrogen_breakthrough_spirit
+		add_to_variable = { petrochem_industrial_capacity = 8 }
+		add_tech_bonus = { bonus = 0.50 uses = 1 category = electronics }
+	}
+	option = {
+		name = petrochem.5.b
+		add_to_variable = { petrochem_corporate_investment_points = 3 }
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = petrochem.6
+	title = petrochem.6.t
+	desc = petrochem.6.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = NUS check_variable = { petrochem_chemical_investment > 14 } }
+	mean_time_to_happen = { months = 32 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.6.a
+		add_political_power = -50
+		add_stability = -0.01
+		add_tech_bonus = { bonus = 0.20 uses = 1 category = industry }
+	}
+	option = {
+		name = petrochem.6.b
+		add_ideas = petrochem_pollution_penalties
+		add_stability = -0.05
+	}
+}
+
+country_event = {
+	id = petrochem.7
+	title = petrochem.7.t
+	desc = petrochem.7.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = { tag = NUS check_variable = { petrochem_industrial_capacity > 39 } }
+	mean_time_to_happen = { months = 26 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.7.a
+		add_political_power = -40
+		add_to_variable = { petrochem_industrial_capacity = 5 }
+		add_to_variable = { petrochem_chemical_investment = 4 }
+	}
+	option = {
+		name = petrochem.7.b
+		add_political_power = 65
+		add_to_variable = { petrochem_industrial_capacity = -3 }
+	}
+}
+
+country_event = {
+	id = petrochem.8
+	title = petrochem.8.t
+	desc = petrochem.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+	trigger = { tag = NUS check_variable = { petrochem_industrial_capacity > 49 } }
+	mean_time_to_happen = { months = 24 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.8.a
+		add_political_power = 100
+		add_to_variable = { petrochem_corporate_investment_points = 2 }
+		add_to_variable = { petrochem_industrial_capacity = 4 }
+	}
+	option = {
+		name = petrochem.8.b
+		add_stability = 0.03
+		add_to_variable = { petrochem_energy_investment = 4 }
+	}
+}
+
+country_event = {
+	id = petrochem.9
+	title = petrochem.9.t
+	desc = petrochem.9.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = NUS has_war = yes }
+	mean_time_to_happen = { months = 20 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.9.a
+		add_to_variable = { petrochem_synthetic_investment = 8 }
+		add_to_variable = { petrochem_industrial_capacity = 4 }
+		add_stability = -0.01
+	}
+	option = {
+		name = petrochem.9.b
+		add_to_variable = { petrochem_corporate_investment_points = -1 }
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = petrochem.10
+	title = petrochem.10.t
+	desc = petrochem.10.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = { tag = NUS check_variable = { petrochem_chemical_investment > 19 } }
+	mean_time_to_happen = { months = 25 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.10.a
+		add_to_variable = { petrochem_industrial_capacity = 6 }
+		add_tech_bonus = { bonus = 0.35 uses = 1 category = industry }
+	}
+	option = { name = petrochem.10.b add_political_power = 75 }
+}
+
+country_event = {
+	id = petrochem.11
+	title = petrochem.11.t
+	desc = petrochem.11.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = NUS check_variable = { petrochem_industrial_capacity > 69 } }
+	mean_time_to_happen = { months = 24 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.11.a
+		add_to_variable = { petrochem_industrial_capacity = 6 }
+		add_to_variable = { petrochem_corporate_investment_points = 1 }
+	}
+	option = {
+		name = petrochem.11.b
+		add_political_power = 60
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = petrochem.12
+	title = petrochem.12.t
+	desc = petrochem.12.d
+	picture = GFX_report_event_generic_sign_treaty1
+	trigger = { tag = NUS check_variable = { petrochem_industrial_capacity > 59 } }
+	mean_time_to_happen = { months = 30 }
+	fire_only_once = yes
+	option = {
+		name = petrochem.12.a
+		add_political_power = -50
+		add_stability = 0.03
+		if = { limit = { has_idea = petrochem_pollution_penalties } remove_ideas = petrochem_pollution_penalties }
+	}
+	option = {
+		name = petrochem.12.b
+		add_stability = -0.03
+		add_to_variable = { petrochem_industrial_capacity = 5 }
+	}
+}

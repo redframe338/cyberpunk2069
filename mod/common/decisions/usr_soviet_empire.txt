@@ -1,0 +1,239 @@
+USR_soviet_imperial_influence_decisions = {
+
+	# ---- Influence Decisions (cost PP, gain influence, risk suspicion) ----
+
+	USR_appoint_loyal_secretary = {
+		icon = generic_political_discourse
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 25
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 25
+
+		complete_effect = {
+			add_to_variable = { soviet_imperial_influence = 2 }
+			add_to_variable = { federalist_suspicion = 1 }
+			custom_effect_tooltip = USR_influence_gain_2_tt
+		}
+	}
+
+	USR_promote_imperial_officer_dec = {
+		icon = generic_prepare_civil_war
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 30
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 30
+
+		complete_effect = {
+			add_to_variable = { soviet_imperial_influence = 2 }
+			add_to_variable = { federalist_suspicion = 2 }
+			army_experience = 5
+			custom_effect_tooltip = USR_influence_gain_2_tt
+		}
+	}
+
+	USR_compromise_delegate = {
+		icon = generic_political_discourse
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 40
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 45
+		cost = 40
+
+		complete_effect = {
+			add_to_variable = { soviet_imperial_influence = 3 }
+			add_to_variable = { federalist_suspicion = 3 }
+			custom_effect_tooltip = USR_influence_gain_3_tt
+		}
+	}
+
+	USR_expose_federalist_corruption = {
+		icon = generic_political_discourse
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 35
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 35
+
+		complete_effect = {
+			add_stability = -0.02
+			add_to_variable = { soviet_imperial_influence = 2 }
+			add_to_variable = { federalist_suspicion = 2 }
+			custom_effect_tooltip = USR_influence_gain_2_tt
+		}
+	}
+
+	USR_fund_veterans_organizations = {
+		icon = generic_prepare_civil_war
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 20
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 20
+
+		complete_effect = {
+			add_manpower = 5000
+			add_to_variable = { soviet_imperial_influence = 1 }
+			add_to_variable = { federalist_suspicion = 1 }
+			custom_effect_tooltip = USR_influence_gain_1_tt
+		}
+	}
+
+	USR_place_commissars_general_staff = {
+		icon = generic_prepare_civil_war
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 35
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 45
+		cost = 35
+
+		complete_effect = {
+			add_to_variable = { soviet_imperial_influence = 3 }
+			add_to_variable = { federalist_suspicion = 3 }
+			army_experience = 5
+			custom_effect_tooltip = USR_influence_gain_3_tt
+		}
+	}
+
+	USR_secure_broadcast_network = {
+		icon = generic_political_discourse
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 30
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = yes
+		days_remove = 30
+		cost = 30
+
+		complete_effect = {
+			add_to_variable = { soviet_imperial_influence = 3 }
+			add_to_variable = { federalist_suspicion = 2 }
+			custom_effect_tooltip = USR_influence_gain_3_tt
+		}
+	}
+
+	USR_replace_republican_minister = {
+		icon = generic_political_discourse
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 30
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 30
+
+		complete_effect = {
+			add_to_variable = { soviet_imperial_influence = 2 }
+			add_to_variable = { federalist_suspicion = 2 }
+			custom_effect_tooltip = USR_influence_gain_2_tt
+		}
+	}
+
+	USR_strategic_readiness_exercise = {
+		icon = generic_prepare_civil_war
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 25
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 25
+
+		complete_effect = {
+			add_war_support = 0.02
+			add_to_variable = { soviet_imperial_influence = 2 }
+			add_to_variable = { federalist_suspicion = 1 }
+			custom_effect_tooltip = USR_influence_gain_2_tt
+		}
+	}
+
+	USR_demand_corporate_records = {
+		icon = generic_political_discourse
+
+		allowed = { original_tag = USR }
+		available = {
+			has_idea = USR_committee_restoration_spirit
+			has_political_power > 35
+		}
+		visible = {
+			has_idea = USR_committee_restoration_spirit
+		}
+
+		fire_only_once = no
+		days_remove = 30
+		cost = 35
+
+		complete_effect = {
+			add_to_variable = { soviet_imperial_influence = 2 }
+			add_to_variable = { federalist_suspicion = 3 }
+			custom_effect_tooltip = USR_influence_gain_2_tt
+		}
+	}
+}

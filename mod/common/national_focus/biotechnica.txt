@@ -1,0 +1,333 @@
+focus_tree = {
+	id = BIO_focus
+	country = {
+		factor = 0
+		modifier = { add = 100 tag = BIO }
+	}
+	default = no
+
+	focus = {
+		id = BIO_directorates_2069_program
+		icon = GFX_goal_generic_scientific_exchange
+		x = 10
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+			add_to_variable = { biotechnica_research_progress = 3 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_map_the_continental_network
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 1
+		cost = 7
+		prerequisite = { focus = BIO_directorates_2069_program }
+		completion_reward = {
+			add_to_variable = { biotechnica_research_progress = 4 }
+			add_stability = 0.02
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+
+	# Genetics and pharmaceutical research.
+	focus = {
+		id = BIO_secure_genetics_campus
+		icon = GFX_goal_generic_scientific_exchange
+		x = 2
+		y = 2
+		cost = 7
+		prerequisite = { focus = BIO_map_the_continental_network }
+		completion_reward = {
+			139 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_to_variable = { biotechnica_research_progress = 5 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_computational_genomics
+		icon = GFX_goal_generic_radar
+		x = 1
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIO_secure_genetics_campus }
+		completion_reward = {
+			add_tech_bonus = {
+				name = BIO_computational_genomics_bonus
+				bonus = 0.75
+				uses = 2
+				category = computing_tech
+			}
+			add_to_variable = { biotechnica_research_progress = 6 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_continental_medicine_program
+		icon = GFX_goal_generic_consumer_goods
+		x = 3
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIO_secure_genetics_campus }
+		completion_reward = {
+			add_ideas = BIO_continental_medicine_program_spirit
+			EEC = { add_stability = 0.03 }
+			add_to_variable = { biotechnica_research_progress = 6 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_pharmaceutical_independence
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIO_computational_genomics }
+		prerequisite = { focus = BIO_continental_medicine_program }
+		completion_reward = {
+			975 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_ideas = BIO_advanced_pharmaceuticals
+			add_to_variable = { biotechnica_research_progress = 7 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+
+	# Agriculture and food security.
+	focus = {
+		id = BIO_reengineer_european_agriculture
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 7
+		y = 2
+		cost = 7
+		prerequisite = { focus = BIO_map_the_continental_network }
+		completion_reward = {
+			add_to_variable = { biotechnica_research_progress = 5 }
+			39 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_automated_cultivation
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIO_reengineer_european_agriculture }
+		completion_reward = {
+			add_tech_bonus = {
+				name = BIO_agricultural_automation_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+			add_to_variable = { biotechnica_research_progress = 6 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_strategic_seed_archives
+		icon = GFX_goal_generic_prospect_for_resources
+		x = 8
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIO_reengineer_european_agriculture }
+		completion_reward = {
+			848 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			add_stability = 0.03
+			add_to_variable = { biotechnica_research_progress = 5 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_food_security_guarantee
+		icon = GFX_goal_generic_consumer_goods
+		x = 7
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIO_automated_cultivation }
+		prerequisite = { focus = BIO_strategic_seed_archives }
+		completion_reward = {
+			add_ideas = BIO_food_security_guarantee_spirit
+			EEC = { add_ideas = EEC_biotechnica_food_security }
+			add_to_variable = { biotechnica_research_progress = 7 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+
+	# Ecological restoration.
+	focus = {
+		id = BIO_restore_the_damaged_continent
+		icon = GFX_goal_generic_prospect_for_resources
+		x = 13
+		y = 2
+		cost = 7
+		prerequisite = { focus = BIO_map_the_continental_network }
+		completion_reward = {
+			add_to_variable = { biotechnica_research_progress = 5 }
+			148 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_soil_and_water_recovery
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 12
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIO_restore_the_damaged_continent }
+		completion_reward = {
+			148 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			72 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_to_variable = { biotechnica_research_progress = 5 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_climate_resilient_crops
+		icon = GFX_goal_generic_scientific_exchange
+		x = 14
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIO_restore_the_damaged_continent }
+		completion_reward = {
+			add_stability = 0.03
+			add_to_variable = { biotechnica_research_progress = 7 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_environmental_engineering_corps
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 13
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIO_soil_and_water_recovery }
+		prerequisite = { focus = BIO_climate_resilient_crops }
+		completion_reward = {
+			add_ideas = BIO_environmental_engineering_corps_spirit
+			add_to_variable = { biotechnica_research_progress = 7 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+
+	# Corporate security and wartime support.
+	focus = {
+		id = BIO_protect_the_research_network
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 18
+		y = 2
+		cost = 7
+		prerequisite = { focus = BIO_map_the_continental_network }
+		completion_reward = {
+			army_experience = 15
+			add_ideas = BIO_secure_research_network
+		}
+	}
+	focus = {
+		id = BIO_containment_response_units
+		icon = GFX_goal_generic_position_armies
+		x = 17
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIO_protect_the_research_network }
+		completion_reward = {
+			army_experience = 20
+			add_manpower = 2500
+			add_equipment_to_stockpile = { type = support_equipment amount = 300 producer = BIO }
+		}
+	}
+	focus = {
+		id = BIO_counter_industrial_espionage
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 19
+		y = 3
+		cost = 10
+		prerequisite = { focus = BIO_protect_the_research_network }
+		completion_reward = {
+			add_ideas = BIO_counterespionage_protocols
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = BIO_emergency_biological_reserve
+		icon = GFX_goal_generic_stockpile_fuel
+		x = 18
+		y = 4
+		cost = 10
+		prerequisite = { focus = BIO_containment_response_units }
+		prerequisite = { focus = BIO_counter_industrial_espionage }
+		completion_reward = {
+			add_ideas = BIO_emergency_biological_reserve_spirit
+			add_war_support = 0.04
+			EEC = { add_war_support = 0.03 }
+		}
+	}
+
+	# The central political choice: accountable science or unrestricted acceleration.
+	focus = {
+		id = BIO_european_bioethics_convention
+		icon = GFX_goal_generic_improve_relations
+		x = 7
+		y = 6
+		cost = 10
+		prerequisite = { focus = BIO_pharmaceutical_independence }
+		prerequisite = { focus = BIO_food_security_guarantee }
+		prerequisite = { focus = BIO_environmental_engineering_corps }
+		mutually_exclusive = { focus = BIO_directorate_of_acceleration }
+		completion_reward = {
+			add_ideas = BIO_binding_bioethics
+			add_stability = 0.06
+			EEC = { add_stability = 0.03 }
+		}
+	}
+	focus = {
+		id = BIO_directorate_of_acceleration
+		icon = GFX_goal_generic_scientific_exchange
+		x = 13
+		y = 6
+		cost = 10
+		prerequisite = { focus = BIO_pharmaceutical_independence }
+		prerequisite = { focus = BIO_food_security_guarantee }
+		prerequisite = { focus = BIO_environmental_engineering_corps }
+		mutually_exclusive = { focus = BIO_european_bioethics_convention }
+		completion_reward = {
+			add_ideas = BIO_unrestricted_acceleration
+			add_to_variable = { biotechnica_research_progress = 12 }
+			add_stability = -0.04
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_science_in_service_of_europe
+		icon = GFX_goal_generic_improve_relations
+		x = 10
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = BIO_european_bioethics_convention
+			focus = BIO_directorate_of_acceleration
+		}
+		completion_reward = {
+			add_ideas = BIO_science_in_service_of_europe_spirit
+			EEC = { add_ideas = EEC_biotechnica_scientific_directorate }
+			add_to_variable = { biotechnica_research_progress = 10 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+	focus = {
+		id = BIO_bioeconomic_powerhouse
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 10
+		y = 8
+		cost = 10
+		prerequisite = { focus = BIO_science_in_service_of_europe }
+		completion_reward = {
+			add_ideas = BIO_bioeconomic_powerhouse_spirit
+			add_research_slot = 1
+			add_to_variable = { biotechnica_research_progress = 10 }
+			BIO_update_research_progress_spirit = yes
+		}
+	}
+}

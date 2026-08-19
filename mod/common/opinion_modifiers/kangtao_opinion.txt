@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	KGT_chinese_strategic_asset = { value = 75 }
+	KGT_arasaka_technology_partner = { value = 55 }
+	KGT_militech_export_competitor = { value = -45 }
+}

@@ -1,0 +1,293 @@
+add_namespace = sovoil
+
+# Introduction: establishes SovOil as an instrument of the Union, not a rival state.
+country_event = {
+	id = sovoil.1
+	title = sovoil.1.t
+	desc = sovoil.1.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sovoil.1.a
+		add_stability = 0.03
+		add_political_power = 50
+		USR = { add_stability = 0.01 }
+		ai_chance = { factor = 100 }
+	}
+	option = {
+		name = sovoil.1.b
+		add_to_variable = { sovoil_state_influence = 5 }
+		add_political_power = 75
+		ai_chance = { factor = 0 }
+	}
+}
+
+# The first annual energy directive frames the state/corporate relationship.
+country_event = {
+	id = sovoil.2
+	title = sovoil.2.t
+	desc = sovoil.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sovoil.2.a
+		add_to_variable = { sovoil_state_influence = 3 }
+		USR = { add_political_power = 35 }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = sovoil.2.b
+		add_to_variable = { sovoil_state_influence = -3 }
+		add_stability = 0.03
+		USR = { add_stability = 0.02 }
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = sovoil.3
+	title = sovoil.3.t
+	desc = sovoil.3.d
+	picture = GFX_report_event_generic_factory
+	trigger = {
+		tag = SVO
+		NOT = { has_country_flag = SVO_new_field_discovered }
+	}
+	mean_time_to_happen = { months = 14 }
+	fire_only_once = yes
+	immediate = { set_country_flag = SVO_new_field_discovered }
+
+	option = {
+		name = sovoil.3.a
+		571 = { add_resource = { type = oil amount = 12 } }
+		add_to_variable = { sovoil_state_influence = 5 }
+		add_political_power = -50
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = sovoil.3.b
+		add_political_power = 50
+		add_stability = 0.02
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = sovoil.4
+	title = sovoil.4.t
+	desc = sovoil.4.d
+	picture = GFX_report_event_generic_factory
+	trigger = {
+		tag = SVO
+		NOT = { has_country_flag = SVO_pipeline_sabotage_fired }
+	}
+	mean_time_to_happen = { months = 18 }
+	fire_only_once = yes
+	immediate = { set_country_flag = SVO_pipeline_sabotage_fired }
+
+	option = {
+		name = sovoil.4.a
+		add_political_power = -60
+		add_stability = -0.02
+		239 = { damage_building = { type = infrastructure damage = 1 } }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = sovoil.4.b
+		add_to_variable = { sovoil_state_influence = -5 }
+		add_stability = -0.05
+		USR = { add_stability = -0.02 }
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = sovoil.5
+	title = sovoil.5.t
+	desc = sovoil.5.d
+	picture = GFX_report_event_generic_navy
+	trigger = {
+		tag = SVO
+		NOT = { has_country_flag = SVO_arctic_breakthrough_fired }
+	}
+	mean_time_to_happen = { months = 22 }
+	fire_only_once = yes
+	immediate = { set_country_flag = SVO_arctic_breakthrough_fired }
+
+	option = {
+		name = sovoil.5.a
+		824 = { add_resource = { type = oil amount = 10 } }
+		825 = { add_resource = { type = oil amount = 10 } }
+		add_to_variable = { sovoil_state_influence = 6 }
+		add_political_power = -75
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = sovoil.5.b
+		add_political_power = 60
+		USR = { add_political_power = 30 }
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = sovoil.6
+	title = sovoil.6.t
+	desc = sovoil.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+
+	option = {
+		name = sovoil.6.a
+		add_political_power = -50
+		add_stability = -0.03
+		add_to_variable = { sovoil_state_influence = -3 }
+		USR = { add_stability = 0.02 }
+		ai_chance = { factor = 65 }
+	}
+	option = {
+		name = sovoil.6.b
+		add_political_power = 50
+		add_to_variable = { sovoil_state_influence = 4 }
+		USR = { add_stability = -0.03 }
+		ai_chance = { factor = 35 }
+	}
+}
+
+country_event = {
+	id = sovoil.7
+	title = sovoil.7.t
+	desc = sovoil.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	trigger = {
+		tag = SVO
+		NOT = { has_country_flag = SVO_export_negotiation_fired }
+	}
+	mean_time_to_happen = { months = 16 }
+	fire_only_once = yes
+	immediate = { set_country_flag = SVO_export_negotiation_fired }
+
+	option = {
+		name = sovoil.7.a
+		add_political_power = 80
+		add_to_variable = { sovoil_state_influence = 5 }
+		USR = { add_political_power = 50 }
+		ai_chance = { factor = 65 }
+	}
+	option = {
+		name = sovoil.7.b
+		add_stability = 0.04
+		USR = { add_stability = 0.03 }
+		ai_chance = { factor = 35 }
+	}
+}
+
+country_event = {
+	id = sovoil.8
+	title = sovoil.8.t
+	desc = sovoil.8.d
+	picture = GFX_report_event_generic_read_write
+	trigger = {
+		tag = SVO
+		NOT = { has_country_flag = SVO_automation_breakthrough_fired }
+	}
+	mean_time_to_happen = { months = 24 }
+	fire_only_once = yes
+	immediate = { set_country_flag = SVO_automation_breakthrough_fired }
+
+	option = {
+		name = sovoil.8.a
+		add_research_slot = 1
+		add_political_power = -100
+		add_to_variable = { sovoil_state_influence = 4 }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = sovoil.8.b
+		829 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+		}
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = sovoil.9
+	title = sovoil.9.t
+	desc = sovoil.9.d
+	picture = GFX_report_event_generic_factory
+	trigger = {
+		tag = SVO
+		NOT = { has_country_flag = SVO_environmental_disaster_fired }
+	}
+	mean_time_to_happen = { months = 30 }
+	fire_only_once = yes
+	immediate = { set_country_flag = SVO_environmental_disaster_fired }
+
+	option = {
+		name = sovoil.9.a
+		add_political_power = -100
+		add_stability = -0.02
+		ai_chance = { factor = 65 }
+	}
+	option = {
+		name = sovoil.9.b
+		SVO_begin_energy_crisis = yes
+		add_to_variable = { sovoil_state_influence = -7 }
+		USR = { add_stability = -0.03 }
+		ai_chance = { factor = 35 }
+	}
+}
+
+# Fired when the Union enters war and SovOil has not yet mobilized.
+country_event = {
+	id = sovoil.10
+	title = sovoil.10.t
+	desc = sovoil.10.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sovoil.10.a
+		SVO_begin_wartime_mobilization = yes
+		add_to_variable = { sovoil_state_influence = 8 }
+		USR = { add_war_support = 0.05 }
+		ai_chance = { factor = 85 }
+	}
+	option = {
+		name = sovoil.10.b
+		add_stability = 0.03
+		add_to_variable = { sovoil_state_influence = -5 }
+		USR = { add_war_support = -0.03 }
+		ai_chance = { factor = 15 }
+	}
+}
+
+# A low-influence SovOil receives a permanent loyal state charter while
+# remaining a separate playable strategic corporation.
+country_event = {
+	id = sovoil.11
+	title = sovoil.11.t
+	desc = sovoil.11.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = sovoil.11.a
+		add_ideas = SVO_loyal_union_instrument
+		set_country_flag = SVO_permanent_union_charter
+		set_variable = { sovoil_state_influence = 20 }
+		add_stability = 0.05
+		USR = {
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+}

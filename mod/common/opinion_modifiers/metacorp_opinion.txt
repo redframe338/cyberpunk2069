@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	MTC_MLT_federal_technology_competition = {
+		value = -35
+	}
+}

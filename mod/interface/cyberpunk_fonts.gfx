@@ -1,0 +1,132 @@
+spriteTypes = {
+}
+
+bitmapfonts = {
+
+	# ================================================================
+	# GLOBAL TEXT COLORS - Cyberpunk Override
+	# Used via §G, §R, §Y etc. in localisation files across entire game
+	# ================================================================
+	textcolors = {
+		C = { 0 212 255 }    # Cyan - cyber accent blue
+		L = { 220 200 200 }  # Lilac - light warm grey
+		W = { 255 255 255 }  # White
+		B = { 80 180 255 }   # Blue - readable light blue
+		G = { 50 255 100 }   # Green - bright neon green
+		R = { 255 48 48 }    # Red - neon red
+		b = { 200 200 200 }  # "Black" -> LIGHT GREY (readable on dark bg!)
+		g = { 180 180 180 }  # Grey - lighter for readability
+		Y = { 255 255 255 }  # Yellow -> WHITE (no yellow in cyberpunk)
+		H = { 255 48 48 }    # Header - neon red
+		T = { 255 255 255 }  # Title - white
+		O = { 255 120 80 }   # Orange - warm accent
+		0 = { 255 48 48 }    # Gradient 0 - red
+		1 = { 255 60 60 }    # Gradient 1
+		2 = { 255 80 80 }    # Gradient 2
+		3 = { 255 100 100 }  # Gradient 3
+		4 = { 255 140 140 }  # Gradient 4
+		5 = { 255 160 160 }  # Gradient 5
+		6 = { 255 180 180 }  # Gradient 6
+		7 = { 255 200 200 }  # Gradient 7
+		8 = { 255 220 220 }  # Gradient 8
+		9 = { 255 235 235 }  # Gradient 9
+		t = { 255 255 255 }  # Gradient 10 - white
+	}
+
+	# ================================================================
+	# BLACK FONT OVERRIDES -> WHITE for dark cyberpunk UI
+	# These three are the ONLY fonts with black color in vanilla
+	# ================================================================
+	bitmapfont = {
+		name = "Main_14_black"
+		path = "gfx/fonts/garamond_14_bold"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "vic_18_black"
+		path = "gfx/fonts/vic_18"
+		color = 0xffffffff
+	}
+
+	bitmapfont = {
+		name = "vic_36_black"
+		path = "gfx/fonts/vic_36"
+		color = 0xffffffff
+	}
+
+	# ================================================================
+	# MAP TEXT - Country/state names on the map
+	# Neon yellow for country/corp names
+	# ================================================================
+	bitmapfont = {
+		name = "AnimatedMapText"
+		fontfiles = {
+			"gfx/fonts/hoi_18"
+			"gfx/fonts/hoi_18_cryllic"
+		}
+		color = 0xffFFFF00
+	}
+
+	# ================================================================
+	# HEADER FONTS - Neon red for cyberpunk look
+	# ================================================================
+	bitmapfont = {
+		name = "hoi_24header"
+		fontfiles = {
+			"gfx/fonts/hoi_24header"
+		}
+		color = 0xffFF3030
+	}
+
+	bitmapfont = {
+		name = "nsb_hoi_24header"
+		fontfiles = {
+			"gfx/fonts/hoi_24header"
+		}
+		color = 0xffFF3030
+	}
+
+	bitmapfont = {
+		name = "hoi_30header"
+		fontfiles = {
+			"gfx/fonts/hoi_30header"
+		}
+		color = 0xffFF3030
+	}
+
+	bitmapfont = {
+		name = "hoi_36header"
+		fontfiles = {
+			"gfx/fonts/hoi_36header"
+		}
+		color = 0xffFF3030
+	}
+
+	bitmapfont = {
+		name = "nsb_hoi_36header"
+		fontfiles = {
+			"gfx/fonts/hoi_36header"
+		}
+		color = 0xffFF3030
+	}
+
+	# ================================================================
+	# CITY NAME FONT - Neon blue for VP/city labels on the map
+	# Used by victory_point_mapicon and capital_mapicon GUI overrides
+	# ================================================================
+	bitmapfont = {
+		name = "cyberpunk_city_name"
+		fontfiles = {
+			"gfx/fonts/hoi_20bs"
+		}
+		color = 0xff00D4FF
+		textcolors = {
+			W = { 0 212 255 }
+			Y = { 0 212 255 }
+			R = { 255 48 48 }
+			G = { 50 255 100 }
+			T = { 0 212 255 }
+		}
+	}
+}

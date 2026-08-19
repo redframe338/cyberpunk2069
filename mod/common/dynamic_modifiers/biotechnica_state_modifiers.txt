@@ -1,0 +1,120 @@
+BIO_european_bioengineering_campus_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	local_building_slots_factor = 0.25
+	research_speed_factor = 0.02
+	state_production_speed_industrial_complex_factor = 0.20
+}
+
+BIO_synthetic_agriculture_zone_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_resources_factor = 0.15
+	local_building_slots_factor = 0.25
+	state_production_speed_infrastructure_factor = 0.25
+}
+
+BIO_pharmaceutical_manufacturing_center_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_building_slots_factor = 0.25
+	state_production_speed_industrial_complex_factor = 0.25
+	local_org_regain = 0.05
+}
+
+BIO_environmental_restoration_network_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_building_slots_factor = 0.15
+	state_production_speed_infrastructure_factor = 0.35
+	local_org_regain = 0.10
+}
+
+BIO_continental_seed_vault_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	local_resources_factor = 0.20
+	local_building_slots_factor = 0.20
+	local_org_regain = 0.10
+}
+
+BIO_biotechnology_export_hub_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_navy_bonus
+	local_building_slots_factor = 0.20
+	state_production_speed_infrastructure_factor = 0.20
+}
+
+petrochem_petrochemical_complex = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	local_resources_factor = 0.25
+	local_building_slots_factor = 0.20
+	state_production_speed_industrial_complex_factor = 0.20
+}
+petrochem_synthetic_fuel_plant = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	local_resources_factor = 0.20
+	state_production_speed_synthetic_refinery_factor = 0.35
+	state_production_speed_infrastructure_factor = 0.20
+}
+petrochem_offshore_platform = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	local_resources_factor = 0.30
+	state_production_speed_dockyard_factor = 0.15
+	state_production_speed_infrastructure_factor = 0.15
+}
+petrochem_pipeline_junction = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	state_production_speed_infrastructure_factor = 0.40
+	local_org_regain = 0.10
+}
+petrochem_chemical_manufacturing_hub = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	local_building_slots_factor = 0.20
+	state_production_speed_industrial_complex_factor = 0.30
+}
+petrochem_industrial_polymer_center = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	local_resources_factor = 0.15
+	state_production_speed_arms_factory_factor = 0.20
+}
+petrochem_strategic_fuel_reserve = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	state_production_speed_infrastructure_factor = 0.20
+	local_org_regain = 0.10
+}
+petrochem_hydrogen_research_campus = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	research_speed_factor = 0.02
+	local_building_slots_factor = 0.15
+	state_production_speed_infrastructure_factor = 0.20
+}
+petrochem_fertilizer_production_facility = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	local_resources_factor = 0.15
+	state_production_speed_industrial_complex_factor = 0.15
+	local_org_regain = 0.05
+}
+petrochem_lng_export_terminal = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	state_production_speed_dockyard_factor = 0.20
+	state_production_speed_infrastructure_factor = 0.20
+	local_building_slots_factor = 0.10
+}
+petrochem_carbon_capture_network = {
+	enable = { always = yes }
+	icon = GFX_idea_petrochem_logo
+	local_building_slots_factor = 0.15
+	state_production_speed_infrastructure_factor = 0.30
+	local_org_regain = 0.05
+}

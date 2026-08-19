@@ -1,0 +1,1130 @@
+ideas = {
+	country = {
+
+		# ================================================================
+		# INITIAL UNION DEBUFF
+		# ================================================================
+		USR_fragile_union = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.10
+				war_support_factor = -0.05
+			}
+		}
+
+		# ================================================================
+		# SIX REFORM PATHS (Row 2 choices)
+		# ================================================================
+		USR_renewed_federal_compact = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.08
+				conscription_factor = 0.05
+			}
+		}
+		USR_cybernetic_planning = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+		# --- Project OGAS Spirits ---
+		USR_ogas_supply_network = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				supply_consumption_factor = -0.10
+				local_resources_factor = 0.10
+			}
+		}
+		USR_ogas_algorithmic_planning = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				production_factory_max_efficiency_factor = 0.10
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		USR_ogas_sovereign_firewall = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				resistance_target = -0.05
+				decryption_factor = 0.15
+			}
+		}
+		USR_total_cybernetic_economy_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.10
+				production_factory_max_efficiency_factor = 0.15
+				consumer_goods_factor = -0.08
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.10
+			}
+		}
+		USR_ogas_continental_brain_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				war_support_factor = 0.10
+				political_power_gain = 0.15
+				stability_factor = 0.05
+			}
+		}
+		USR_security_directorate = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				resistance_target = -0.10
+				political_power_gain = 0.05
+				stability_factor = -0.03
+			}
+		}
+		USR_corporate_energy_state = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.15
+				fuel_gain_factor = 0.15
+				consumer_goods_factor = 0.03
+			}
+		}
+		USR_confederal_compromise = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				political_power_gain = -0.05
+				conscription_factor = -0.08
+				local_resources_factor = 0.10
+			}
+		}
+		USR_internationalist_mission = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.12
+				justify_war_goal_time = -0.15
+				send_volunteer_size = 2
+			}
+		}
+
+		# ================================================================
+		# SHARED BRANCH SPIRITS
+		# ================================================================
+		USR_integrated_energy_planning = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+		USR_eurasian_industrial_engine = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				industrial_capacity_factory = 0.08
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		USR_modern_deep_battle = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				planning_speed = 0.10
+				land_reinforce_rate = 0.02
+			}
+		}
+		USR_strategic_missile_command = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				air_mission_efficiency = 0.05
+				air_accidents_factor = -0.10
+			}
+		}
+		USR_eurasian_defense_network = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				max_dig_in = 2
+				army_defence_factor = 0.05
+				enemy_army_bonus_air_superiority_factor = -0.10
+			}
+		}
+		USR_first_tier_superpower = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				research_speed_factor = 0.03
+			}
+		}
+
+		# ================================================================
+		# FOURTH POLITICAL THEORY - Opening Path Spirits
+		# ================================================================
+
+		# Transitional spirit: the Union has adopted a new identity
+		USR_eurasian_revival = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				war_support_factor = 0.05
+				drift_defence_factor = 0.15
+				stability_factor = -0.05
+			}
+		}
+
+		# Backlash from communists, liberals, nationalists, and minorities
+		USR_4pt_backlash = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = -0.15
+				conscription_factor = -0.05
+			}
+		}
+
+		# ================================================================
+		# DUGINIST ORTHODOXY BRANCH
+		# ================================================================
+
+		# Defense bonus from "The Sacred Continent"
+		USR_sacred_continent_defense = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				max_dig_in = 3
+				resistance_target_on_our_occupied_states = -0.15
+			}
+		}
+
+		# Capstone: Duginist Orthodoxy
+		# Traditional authority, civilizational identity, strong central leadership
+		USR_duginist_orthodoxy_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				war_support_factor = 0.10
+				political_power_gain = 0.15
+				army_morale_factor = 0.08
+				conscription = 0.01
+				research_speed_factor = -0.05
+			}
+		}
+
+		# ================================================================
+		# NATIONAL BOLSHEVIK BRANCH
+		# ================================================================
+
+		# From "Nation Above Class"
+		USR_revolutionary_discipline = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				conscription = 0.015
+				war_support_factor = 0.08
+				training_time_army_factor = -0.10
+			}
+		}
+
+		# From "Continental Vanguard"
+		USR_continental_vanguard_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				planning_speed = 0.15
+				land_reinforce_rate = 0.03
+				special_forces_cap = 0.05
+			}
+		}
+
+		# Capstone: National Bolshevik Revival
+		# Strongest army, highest mobilization, harshest repression
+		USR_national_bolshevik_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.15
+				conscription = 0.025
+				army_org_factor = 0.10
+				army_attack_factor = 0.08
+				army_defence_factor = 0.05
+				stability_factor = -0.08
+				resistance_target = 0.15
+			}
+		}
+
+		# ================================================================
+		# CYBER-EURASIANISM BRANCH
+		# ================================================================
+
+		# From "Sovereign Eurasian Net"
+		USR_sovereign_net = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				decryption_factor = 0.20
+				encryption_factor = 0.10
+			}
+		}
+
+		# From "Cybernetic Imperial Planning"
+		USR_cybernetic_planning_imperial = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.10
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		# Capstone: Cyber-Eurasianism
+		# Strongest research, powerful production, fragile stability
+		USR_cyber_eurasian_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				decryption_factor = 0.25
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.10
+				political_power_gain = -0.08
+			}
+		}
+
+		# ================================================================
+		# SHARED IMPERIAL BRANCH SPIRITS
+		# ================================================================
+
+		# From "Heartland Doctrine"
+		USR_heartland_defense = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				army_defence_factor = 0.08
+				max_dig_in = 2
+				planning_speed = 0.10
+			}
+		}
+
+		# ================================================================
+		# EMPIRE TYPE SPIRITS
+		# ================================================================
+
+		# Unitary Empire: direct rule from Moscow
+		USR_unitary_empire_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				conscription = 0.02
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.08
+				resistance_target = 0.15
+				stability_factor = -0.10
+			}
+		}
+
+		# Empire of Civilizations: autonomous cultural regions
+		USR_empire_of_civilizations_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				compliance_growth = 0.10
+				resistance_target = -0.10
+				conscription_factor = -0.05
+			}
+		}
+
+		# ================================================================
+		# SOVOIL RELATIONSHIP SPIRITS
+		# ================================================================
+
+		# Break the Energy Oligarchy: nationalize and dismantle SovOil
+		USR_energy_nationalized = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.20
+				local_resources_factor = 0.15
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+
+		# Imperial Energy Ministry: absorb SovOil into the state
+		USR_imperial_energy_ministry_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.30
+				production_speed_infrastructure_factor = 0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		# Alliance of Necessity: SovOil preserved as subordinate corp
+		USR_energy_alliance_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.15
+				production_speed_infrastructure_factor = 0.10
+				stability_factor = 0.03
+				local_resources_factor = 0.08
+			}
+		}
+
+		# ================================================================
+		# FINAL PROCLAMATION SPIRITS
+		# ================================================================
+
+		# True Eurasian Empire: authentic Duginist/NatBol/Cyber-Eurasian ending
+		USR_eurasian_empire_proclaimed = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.20
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				research_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				justify_war_goal_time = -0.25
+				conscription = 0.01
+			}
+		}
+
+		# Corporate Eurasia: cynical outcome if SovOil dominates
+		# Imperial trappings, corporate substance
+		USR_corporate_eurasia = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				fuel_gain_factor = 0.25
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+
+		# ================================================================
+		# GAZPROM: THE GAS ARTERIES OF THE UNION
+		# Starting spirit + influence tiers + path transformations
+		# ================================================================
+
+		# Starting national spirit — always present at game start
+		USR_gas_arteries_of_union = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				fuel_gain_factor = 0.08
+				local_resources_factor = 0.05
+				stability_factor = 0.03
+			}
+		}
+
+		# ---- Gazprom Influence Tiers ----
+		# Level 1: Firmly controlled by the state
+		USR_gazprom_federal_utility = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				fuel_gain_factor = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		# Level 2: Influential but loyal
+		USR_gazprom_privileged_corporation = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				fuel_gain_factor = 0.10
+				local_resources_factor = 0.08
+				political_power_gain = -0.05
+			}
+		}
+
+		# Level 3: Powerful enough to obstruct reforms
+		USR_gazprom_entrenched_bureaucracy = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				fuel_gain_factor = 0.15
+				local_resources_factor = 0.12
+				political_power_gain = -0.10
+				research_speed_factor = -0.03
+			}
+		}
+
+		# ---- Gazprom Focus Branch Spirits ----
+
+		# From "The Winter Must Not Fail"
+		USR_winter_gas_reserves = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				attrition = -0.05
+			}
+		}
+
+		# From "The Siberian Gas Frontier"
+		USR_siberian_gas_expansion = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.10
+				local_resources_factor = 0.10
+			}
+		}
+
+		# From "Protect the Energy Arteries"
+		USR_pipeline_defense_network = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.08
+				army_defence_factor = 0.03
+				max_dig_in = 1
+			}
+		}
+
+		# From "Keep Europe Dependent"
+		USR_european_gas_leverage = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				fuel_gain_factor = 0.10
+				trade_opinion_factor = 0.25
+			}
+		}
+
+		# From "Energy for the Republics"
+		USR_republican_gas_network = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				production_speed_infrastructure_factor = 0.10
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		# From "Turn the Pipelines East"
+		USR_eastern_gas_corridor = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.15
+				local_resources_factor = 0.08
+				industrial_capacity_factory = 0.03
+			}
+		}
+
+		# From "The Blue Flame of Eurasia" (capstone)
+		USR_blue_flame_of_eurasia = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				fuel_gain_factor = 0.15
+				local_resources_factor = 0.10
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+
+		# ---- Gazprom Path Transformation Spirits ----
+		# These replace the starting Gazprom spirit when a political path is chosen
+
+		# Renewed Federation: transparent public utility
+		USR_gazprom_public_energy_trust = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				stability_factor = 0.05
+				local_resources_factor = 0.10
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		# Iron Union: militarized pipelines
+		USR_gazprom_strategic_gas_directorate = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				war_support_factor = 0.08
+				fuel_gain_factor = 0.10
+				army_defence_factor = 0.03
+			}
+		}
+
+		# Sovereign Republics: collective ownership
+		USR_gazprom_eurasian_gas_consortium = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.10
+				stability_factor = 0.08
+				local_resources_factor = 0.15
+				political_power_gain = -0.05
+			}
+		}
+
+		# SovOil Ascendancy merger
+		USR_gazprom_great_energy_merger = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.25
+				local_resources_factor = 0.20
+				industrial_capacity_factory = 0.08
+				stability_factor = -0.08
+			}
+		}
+
+		# Cybernetic Socialism: automated grid
+		USR_gazprom_automated_energy_grid = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				research_speed_factor = 0.05
+				fuel_gain_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		# Eurasian Empire: imperial gas authority
+		USR_gazprom_imperial_gas_authority = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				fuel_gain_factor = 0.15
+				war_support_factor = 0.05
+				local_resources_factor = 0.10
+				conscription = 0.005
+			}
+		}
+
+		# ================================================================
+		# OPERATION BLACK GOLD — SOVOIL COUP SPIRITS
+		# ================================================================
+
+		# Board Resolution 69-1 authorized
+		USR_board_resolution_authorized = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+				fuel_gain_factor = 0.10
+			}
+		}
+
+		# Political infiltration capstone
+		USR_sovoil_political_network = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = -0.03
+			}
+		}
+
+		# Pipeline network locked under SovOil control
+		USR_sovoil_pipeline_lockdown = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.15
+				production_speed_infrastructure_factor = 0.10
+				stability_factor = -0.05
+			}
+		}
+
+		# Gazprom brought under SovOil authority
+		USR_gazprom_subdued = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.10
+				local_resources_factor = 0.10
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		# Energy Guard expanded
+		USR_energy_guard_expanded = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				army_org_factor = 0.05
+				war_support_factor = 0.03
+			}
+		}
+
+		# Moscow military command compromised
+		USR_moscow_command_compromised = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_attack_factor = 0.03
+				stability_factor = -0.05
+			}
+		}
+
+		# ---- Coup Outcome Spirits ----
+
+		# Bloodless coup — SovOil controls the government
+		USR_sovoil_executive_government = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				fuel_gain_factor = 0.20
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.05
+				stability_factor = -0.10
+			}
+		}
+
+		# Negotiated takeover — dual power
+		USR_corporate_state_dual_power = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				fuel_gain_factor = 0.10
+				stability_factor = -0.08
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		# ---- Post-Coup Path 1: Union Is Our Greatest Asset ----
+
+		# Corporate governance within Soviet shell
+		USR_corporate_governance = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				industrial_capacity_factory = 0.05
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+
+		# Socialism by contract — managed economy
+		USR_socialism_by_contract_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_speed_infrastructure_factor = 0.08
+			}
+		}
+
+		# Managed corporate union
+		USR_managed_corporate_union = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.10
+				fuel_gain_factor = 0.15
+				industrial_capacity_factory = 0.08
+			}
+		}
+
+		# The Union Incorporated — capstone
+		USR_union_incorporated_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				fuel_gain_factor = 0.20
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.10
+				production_speed_infrastructure_factor = 0.10
+				conscription_factor = 0.05
+			}
+		}
+
+		# ---- Post-Coup Path 2: The Corporation Is the State ----
+
+		# Corporate security apparatus
+		USR_corporate_security_apparatus = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				army_org_factor = 0.05
+				resistance_target = -0.10
+				conscription = 0.01
+			}
+		}
+
+		# Citizens reclassified as employees and clients
+		USR_corporate_citizenship = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = -0.08
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+
+		# Total energy monopoly — Gazprom merged
+		USR_total_energy_monopoly = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.30
+				local_resources_factor = 0.20
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+
+		# Sovereignty through energy
+		USR_energy_sovereignty_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+				fuel_gain_factor = 0.15
+				trade_opinion_factor = 0.20
+				war_support_factor = 0.05
+			}
+		}
+
+		# The World Runs on SovOil — final capstone
+		USR_world_runs_on_sovoil_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.20
+				fuel_gain_factor = 0.30
+				local_resources_factor = 0.25
+				industrial_capacity_factory = 0.15
+				production_speed_infrastructure_factor = 0.15
+				war_support_factor = 0.10
+				stability_factor = -0.08
+				conscription_factor = -0.10
+			}
+		}
+
+		# ================================================================
+		# OPERATION BLUE DAWN — DEMOCRATIC RESTORATION SPIRITS
+		# ================================================================
+
+		# Democratic Military Committee formed
+		USR_democratic_conspiracy_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				army_org_factor = 0.05
+				stability_factor = -0.05
+				political_power_gain = -0.05
+			}
+		}
+
+		# Gazprom joins the conspiracy — energy backing
+		USR_gazprom_support_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.10
+				political_power_gain = 0.05
+				stability_factor = -0.03
+			}
+		}
+
+		# Blue Flame Protocol — Gazprom energy grid weaponized
+		USR_blue_flame_active_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.15
+				army_org_factor = 0.05
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		# Political legitimacy — republic guarantees secured
+		USR_democratic_legitimacy_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.05
+				war_support_factor = 0.03
+			}
+		}
+
+		# Restoration Council — temporary military-civilian government
+		USR_restoration_council = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.10
+				war_support_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
+		# Gazprom receives democratic charter — autonomous energy institution
+		USR_gazprom_democratic_charter_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.10
+				stability_factor = 0.05
+				production_speed_infrastructure_factor = 0.08
+			}
+		}
+
+		# Russian Federation — unitary democratic state
+		USR_russian_federation_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.15
+				war_support_factor = 0.08
+				conscription_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		# Democracy Across Eurasia — RF capstone
+		USR_democracy_eurasia_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.20
+				war_support_factor = 0.10
+				conscription_factor = 0.08
+				industrial_capacity_factory = 0.10
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+
+		# Commonwealth of Independent States — loose democratic confederation
+		USR_commonwealth_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				political_power_gain = 0.10
+				trade_opinion_factor = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		# Independent, Not Divided — CIS capstone
+		USR_free_commonwealth_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.15
+				trade_opinion_factor = 0.20
+				consumer_goods_factor = -0.08
+				production_speed_infrastructure_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+
+		# ================================================================
+		# SOVIET EMPIRE PATH — National Spirits
+		# ================================================================
+
+		# Committee for Soviet Restoration — conspiracy phase
+		USR_committee_restoration_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				war_support_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		# Imperial Presidium — post-coup military government
+		USR_imperial_presidium_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				political_power_gain = 0.10
+				war_support_factor = 0.10
+				army_org_factor = 0.05
+				conscription_factor = 0.05
+			}
+		}
+
+		# Centralized Republics — end of federalism
+		USR_centralized_republics_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = 0.05
+				resistance_target = -0.10
+				conscription_factor = 0.08
+				consumer_goods_factor = 0.03
+			}
+		}
+
+		# Imperial General Staff
+		USR_se_general_staff_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				planning_speed = 0.15
+				max_planning = 0.10
+			}
+		}
+
+		# Cybernetic Political Commissars
+		USR_cybernetic_commissars_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				army_morale_factor = 0.08
+				army_org_factor = 0.05
+				resistance_target = -0.10
+				war_support_factor = 0.05
+			}
+		}
+
+		# Continental Missile Shield
+		USR_missile_shield_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				air_defence_factor = 0.15
+				air_interception_attack_factor = 0.10
+			}
+		}
+
+		# All-Union Planning Directorate
+		USR_allunion_planning_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		# Consumer Sacrifice for Imperial Strength
+		USR_consumer_sacrifice_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor = 0.10
+				stability_factor = -0.10
+			}
+		}
+
+		# Arsenal of Eurasia — economy capstone
+		USR_arsenal_eurasia_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.10
+				consumer_goods_factor = 0.05
+				stability_factor = -0.05
+			}
+		}
+
+		# Eurasian Offensive doctrine
+		USR_eurasian_offensive_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				justify_war_goal_time = -0.50
+				generate_wargoal_tension = -0.30
+			}
+		}
+
+		# The Red Imperial Colossus — permanent capstone
+		USR_red_colossus_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = 0.15
+				political_power_gain = 0.15
+				conscription_factor = 0.15
+				industrial_capacity_factory = 0.15
+				army_org_factor = 0.10
+				planning_speed = 0.10
+				consumer_goods_factor = 0.08
+				resistance_target = 0.10
+			}
+		}
+	}
+}

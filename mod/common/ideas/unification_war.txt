@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		FSA_metal_wars_emergency_mobilization = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.95
+				army_defence_factor = 0.25
+				army_org_factor = 0.15
+				army_morale_factor = 0.15
+				supply_consumption_factor = -0.20
+				attrition = -0.10
+			}
+		}
+
+		metal_wars_stalemate_safeguard = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.95
+			}
+		}
+	}
+}

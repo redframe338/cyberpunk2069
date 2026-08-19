@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+
+		PET_petrochemical_dominance = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.20
+				industrial_capacity_factory = 0.10
+				production_speed_oil_refinery_factor = 0.15
+			}
+		}
+		PET_gulf_coast_refining_empire = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.15
+				fuel_gain_factor = 0.10
+			}
+		}
+		PET_federal_energy_contracts = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.03
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+	}
+}

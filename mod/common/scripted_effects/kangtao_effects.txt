@@ -1,0 +1,32 @@
+KGT_clamp_influence = {
+	if = {
+		limit = { check_variable = { kangtao_state_influence > 100 } }
+		set_variable = { kangtao_state_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { kangtao_state_influence < 0 } }
+		set_variable = { kangtao_state_influence = 0 }
+	}
+}
+
+KGT_update_influence_spirit = {
+	KGT_clamp_influence = yes
+	if = { limit = { has_idea = KGT_influence_approved_contractor } remove_ideas = KGT_influence_approved_contractor }
+	if = { limit = { has_idea = KGT_influence_strategic_supplier } remove_ideas = KGT_influence_strategic_supplier }
+	if = { limit = { has_idea = KGT_influence_national_partner } remove_ideas = KGT_influence_national_partner }
+	if = { limit = { has_idea = KGT_influence_technology_leader } remove_ideas = KGT_influence_technology_leader }
+	if = { limit = { has_idea = KGT_influence_defense_giant } remove_ideas = KGT_influence_defense_giant }
+	if = { limit = { has_idea = KGT_influence_state_within_state } remove_ideas = KGT_influence_state_within_state }
+
+	if = { limit = { KGT_is_approved_contractor = yes } add_ideas = KGT_influence_approved_contractor }
+	if = { limit = { KGT_is_strategic_supplier = yes } add_ideas = KGT_influence_strategic_supplier }
+	if = { limit = { KGT_is_national_partner = yes } add_ideas = KGT_influence_national_partner }
+	if = { limit = { KGT_is_technology_leader = yes } add_ideas = KGT_influence_technology_leader }
+	if = { limit = { KGT_is_defense_giant = yes } add_ideas = KGT_influence_defense_giant }
+	if = { limit = { KGT_is_state_within_state = yes } add_ideas = KGT_influence_state_within_state }
+}
+
+KGT_gain_defense_influence = {
+	add_to_variable = { kangtao_state_influence = 5 }
+	KGT_update_influence_spirit = yes
+}

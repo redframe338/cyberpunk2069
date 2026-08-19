@@ -1,0 +1,20 @@
+# Binary files — never diff, never convert line endings
+*.dds binary
+*.tga binary
+*.ogg binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+
+# Text files — normalize to LF in repo, native on checkout
+*.txt text
+*.yml text
+*.md text
+*.mod text
+*.gfx text
+*.gui text
+*.lua text
+*.shader text
+*.fxh text
+*.asset text

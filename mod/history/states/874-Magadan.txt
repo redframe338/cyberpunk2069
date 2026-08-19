@@ -1,0 +1,27 @@
+# AUTO-GENERATED map override: SOV -> USR (Cyberpunk conversion). See docs/03.
+
+state = {
+	id = 874
+	name = "STATE_874" # Magadan
+	manpower = 63481
+	state_category = pastoral
+	
+	history = {
+		victory_points = { 
+			12683 1 
+		}
+
+		owner = USR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = USR
+		add_core_of = USR
+	}
+
+	provinces = {
+		1865 10540 12683
+	}
+
+	local_supplies = 0.0 
+}

@@ -1,0 +1,42 @@
+# Free States of West America starting army: exactly 20 divisions.
+
+division_template = {
+	name = "Free States Territorial Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = { name = "1st Free States Territorial Division"  location = 1827 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "2nd Free States Territorial Division"  location = 4799 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "3rd Free States Territorial Division"  location = 853  division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "4th Free States Territorial Division"  location = 4860 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "5th Free States Territorial Division"  location = 4975 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "6th Free States Territorial Division"  location = 1827 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "7th Free States Territorial Division"  location = 4799 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "8th Free States Territorial Division"  location = 853  division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "9th Free States Territorial Division"  location = 4860 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "10th Free States Territorial Division" location = 4975 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "11th Free States Territorial Division" location = 1827 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "12th Free States Territorial Division" location = 4799 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "13th Free States Territorial Division" location = 853  division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "14th Free States Territorial Division" location = 4860 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "15th Free States Territorial Division" location = 4975 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "16th Free States Territorial Division" location = 1827 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "17th Free States Territorial Division" location = 4799 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "18th Free States Territorial Division" location = 853  division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "19th Free States Territorial Division" location = 4860 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+	division = { name = "20th Free States Territorial Division" location = 4975 division_template = "Free States Territorial Division" start_experience_factor = 0.35 }
+}

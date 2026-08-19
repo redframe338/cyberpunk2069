@@ -1,0 +1,260 @@
+metacorp_technology_initiative = {
+	MTC_expand_semiconductor_production = {
+		icon = generic_construction
+		allowed = { tag = MTC }
+		available = { has_political_power > 80 }
+		cost = 80
+		days_remove = 120
+		days_re_enable = 300
+		complete_effect = {
+			1094 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			MTC_compete_with_militech = yes
+		}
+		ai_will_do = { factor = 24 }
+	}
+
+	MTC_construct_ai_laboratories = {
+		icon = generic_research
+		allowed = { tag = MTC }
+		available = { has_political_power > 90 }
+		cost = 90
+		days_remove = 150
+		days_re_enable = 365
+		complete_effect = {
+			add_tech_bonus = { bonus = 0.50 uses = 2 category = electronics }
+			add_to_variable = { metacorp_federal_influence = 5 }
+			MTC_update_influence_spirit = yes
+		}
+		ai_will_do = { factor = 25 }
+	}
+
+	MTC_develop_quantum_computing = {
+		icon = generic_research
+		allowed = { tag = MTC }
+		available = { has_political_power > 120 }
+		cost = 120
+		days_remove = 210
+		fire_only_once = yes
+		complete_effect = {
+			add_research_slot = 1
+			add_tech_bonus = { bonus = 0.75 uses = 1 category = electronics }
+			add_to_variable = { metacorp_federal_influence = 8 }
+			MTC_update_influence_spirit = yes
+		}
+		ai_will_do = { factor = 22 }
+	}
+
+	MTC_expand_robotics_manufacturing = {
+		icon = generic_construction
+		allowed = { tag = MTC }
+		available = { has_political_power > 85 }
+		cost = 85
+		days_remove = 135
+		days_re_enable = 300
+		complete_effect = {
+			1095 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			MTC_compete_with_militech = yes
+		}
+		ai_will_do = { factor = 18 }
+	}
+
+	MTC_launch_national_cloud = {
+		icon = generic_construction
+		allowed = { tag = MTC }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 120
+		days_re_enable = 240
+		complete_effect = {
+			1097 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			1101 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_to_variable = { metacorp_federal_influence = 5 }
+			NUS = { add_stability = 0.01 }
+			MTC_update_influence_spirit = yes
+		}
+		ai_will_do = { factor = 23 }
+	}
+
+	MTC_expand_telecommunications = {
+		icon = generic_construction
+		allowed = { tag = MTC }
+		available = { has_political_power > 65 }
+		cost = 65
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			1096 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_political_power = 50
+			add_to_variable = { metacorp_federal_influence = 4 }
+			MTC_update_influence_spirit = yes
+		}
+		ai_will_do = { factor = 22 }
+	}
+
+	MTC_expand_consumer_electronics = {
+		icon = generic_construction
+		allowed = { tag = MTC }
+		available = { has_political_power > 70 }
+		cost = 70
+		days_remove = 105
+		days_re_enable = 270
+		complete_effect = {
+			1100 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+			add_political_power = 60
+			add_to_variable = { metacorp_federal_influence = 4 }
+			MTC_update_influence_spirit = yes
+		}
+		ai_will_do = { factor = 20 }
+	}
+
+	MTC_increase_research_funding = {
+		icon = generic_research
+		allowed = { tag = MTC }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		days_re_enable = 365
+		complete_effect = {
+			add_tech_bonus = { bonus = 0.40 uses = 2 category = industry }
+			add_tech_bonus = { bonus = 0.40 uses = 2 category = electronics }
+			add_to_variable = { metacorp_federal_influence = 5 }
+			MTC_update_influence_spirit = yes
+		}
+		ai_will_do = { factor = 25 }
+	}
+}
+
+federal_technology_policy = {
+	NUS_award_metacorp_contracts = {
+		icon = generic_research
+		allowed = { tag = NUS }
+		available = { has_political_power > 65 }
+		cost = 65
+		days_remove = 90
+		days_re_enable = 210
+		complete_effect = {
+			MTC = {
+				add_to_variable = { metacorp_federal_influence = 7 }
+				add_autonomy_ratio = { value = 0.04 }
+				add_political_power = 40
+				MTC_update_influence_spirit = yes
+			}
+			if = {
+				limit = { country_exists = MLT }
+				MLT = { add_to_variable = { militech_federal_influence = -3 } }
+			}
+		}
+		ai_will_do = { factor = 14 modifier = { factor = 2 NOT = { has_war = yes } } }
+	}
+
+	NUS_launch_semiconductor_initiative = {
+		icon = generic_construction
+		allowed = { tag = NUS }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			add_research_slot = 1
+			MTC = {
+				add_to_variable = { metacorp_federal_influence = 8 }
+				MTC_update_influence_spirit = yes
+			}
+		}
+		ai_will_do = { factor = 20 }
+	}
+
+	NUS_expand_digital_infrastructure = {
+		icon = generic_construction
+		allowed = { tag = NUS }
+		available = { has_political_power > 80 }
+		cost = 80
+		days_remove = 120
+		days_re_enable = 300
+		complete_effect = {
+			add_stability = 0.02
+			MTC = {
+				add_to_variable = { metacorp_federal_influence = 5 }
+				MTC_update_influence_spirit = yes
+			}
+		}
+		ai_will_do = { factor = 18 }
+	}
+
+	NUS_strengthen_technology_regulation = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = NUS }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 120
+		days_re_enable = 300
+		complete_effect = {
+			MTC = {
+				add_to_variable = { metacorp_federal_influence = -10 }
+				add_autonomy_ratio = { value = -0.05 }
+				add_ideas = MTC_federal_regulation
+				MTC_update_influence_spirit = yes
+			}
+			add_stability = 0.02
+		}
+		ai_will_do = {
+			factor = 6
+			modifier = { factor = 5 MTC = { check_variable = { metacorp_federal_influence > 75 } } }
+		}
+	}
+
+	NUS_fund_military_ai = {
+		icon = generic_research
+		allowed = { tag = NUS }
+		available = { has_political_power > 90 }
+		cost = 90
+		days_remove = 150
+		days_re_enable = 365
+		complete_effect = {
+			MTC = {
+				add_to_variable = { metacorp_federal_influence = 3 }
+				add_political_power = 30
+				MTC_update_influence_spirit = yes
+			}
+			MLT = { add_to_variable = { militech_federal_influence = 4 } }
+			add_war_support = 0.02
+		}
+		ai_will_do = { factor = 15 modifier = { factor = 3 has_war = yes } }
+	}
+
+	NUS_balance_corporate_pillars = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = NUS }
+		available = { has_political_power > 60 }
+		cost = 60
+		days_remove = 60
+		days_re_enable = 180
+		complete_effect = {
+			MTC = {
+				add_to_variable = { metacorp_federal_influence = -3 }
+				MTC_update_influence_spirit = yes
+			}
+			MLT = { add_to_variable = { militech_federal_influence = -3 } }
+			add_stability = 0.02
+		}
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				factor = 4
+				OR = {
+					MTC = { check_variable = { metacorp_federal_influence > 75 } }
+					MLT = { check_variable = { militech_federal_influence > 75 } }
+				}
+			}
+		}
+	}
+}

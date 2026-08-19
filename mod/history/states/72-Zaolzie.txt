@@ -1,0 +1,29 @@
+# AUTO-GENERATED map override: CZE -> EEC (Cyberpunk conversion). See docs/03.
+state={
+	id=72
+	name="STATE_72"
+	manpower = 70000
+	
+	resources = {
+		coal = 7 # initial distribution / 60 total
+	}
+
+	state_category = rural
+	
+	history={
+		add_dynamic_modifier = { modifier = BIO_synthetic_agriculture_zone_modifier }
+		owner = BIO
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+		}
+		add_core_of = BIO
+		add_core_of = EEC
+	}
+
+	provinces={
+		9551 9567 
+	}
+
+	local_supplies=1.0 
+}

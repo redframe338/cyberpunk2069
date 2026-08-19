@@ -1,0 +1,58 @@
+capital = 326
+set_oob = "KGT_2069"
+
+set_research_slots = 5
+set_stability = 0.78
+set_war_support = 0.62
+set_convoys = 70
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	motorised_infantry = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_logistics_company = 1
+	interwar_artillery = 1
+	artillery1 = 1
+	support_weapons = 1
+}
+
+add_ideas = {
+	KGT_precision_manufacturing
+	KGT_smart_weapons_pioneer
+	KGT_integrated_robotics_industry
+	KGT_global_arms_exporter
+}
+
+add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 5000 producer = KGT }
+add_equipment_to_stockpile = { type = support_equipment amount = 900 producer = KGT }
+add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = KGT }
+add_equipment_to_stockpile = { type = motorized_equipment amount = 1200 producer = KGT }
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2064.1.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 82
+	democratic = 8
+	fascism = 8
+	communism = 2
+}
+
+create_country_leader = {
+	name = "Ling Xiaohan"
+	picture = GFX_portrait_KGT_ling_xiaohan
+	expire = "2100.1.1"
+	ideology = despotism
+	traits = { }
+}
+
+set_variable = { kangtao_state_influence = 45 }
+set_country_flag = KGT_strategic_national_defense_corporation

@@ -1,0 +1,71 @@
+BIO_economic_engine_plan = {
+	name = "Biotechnica economic engine plan"
+	desc = "Prioritize research, civilian industry, infrastructure, and EEC support."
+
+	allowed = { original_tag = BIO }
+	enable = { always = yes }
+	abort = { always = no }
+
+	ai_national_focuses = {
+		BIO_directorates_2069_program
+		BIO_map_the_continental_network
+		BIO_reengineer_european_agriculture
+		BIO_automated_cultivation
+		BIO_strategic_seed_archives
+		BIO_food_security_guarantee
+		BIO_secure_genetics_campus
+		BIO_continental_medicine_program
+		BIO_computational_genomics
+		BIO_pharmaceutical_independence
+		BIO_restore_the_damaged_continent
+		BIO_soil_and_water_recovery
+		BIO_climate_resilient_crops
+		BIO_environmental_engineering_corps
+		BIO_european_bioethics_convention
+		BIO_science_in_service_of_europe
+		BIO_bioeconomic_powerhouse
+	}
+	research = { }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = {
+		type = support
+		id = "EEC"
+		value = 250
+	}
+	ai_strategy = {
+		type = protect
+		id = "EEC"
+		value = 100
+	}
+
+	weight = { factor = 1.0 }
+}
+
+EEC_biotechnica_control_plan = {
+	name = "EEC Biotechnica control plan"
+	desc = "Preserve Biotechnica as an integrated scientific and agricultural authority."
+
+	allowed = { original_tag = EEC }
+	enable = { BIO = { is_subject_of = EEC } }
+	abort = { NOT = { BIO = { is_subject_of = EEC } } }
+
+	ai_national_focuses = { }
+	research = { }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = {
+		type = support
+		id = "BIO"
+		value = 200
+	}
+	ai_strategy = {
+		type = protect
+		id = "BIO"
+		value = 150
+	}
+
+	weight = { factor = 1.0 }
+}

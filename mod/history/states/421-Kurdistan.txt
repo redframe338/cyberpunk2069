@@ -1,0 +1,24 @@
+# Cyberpunk: People's Republic of Iran (North Iran)
+
+state={
+	id=421
+	name="STATE_421"
+	manpower = 390139
+	
+	state_category = rural
+
+	history={
+		owner = NIR
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = NIR
+		add_core_of = NIR
+	}
+
+	provinces={
+		829 5050 10774 
+	}
+
+	local_supplies=0.0 
+}

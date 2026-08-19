@@ -1,0 +1,151 @@
+ideas = {
+	country = {
+		SVO_energy_superpower = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.25
+				production_speed_infrastructure_factor = 0.20
+				production_factory_efficiency_gain_factor = 0.05
+				trade_opinion_factor = 0.15
+			}
+		}
+
+		SVO_state_industrial_combine = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				stability_factor = 0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		SVO_soviet_energy_monopoly = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.25
+				political_power_gain = 0.10
+				fuel_gain_factor = 0.15
+			}
+		}
+
+		SVO_arctic_resource_network = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.25
+				supply_consumption_factor = -0.08
+				attrition = -0.08
+			}
+		}
+
+		SVO_elite_energy_guard = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.15
+				army_attack_factor = 0.20
+				army_defence_factor = 0.25
+				planning_speed = 0.25
+				max_planning = 0.10
+				experience_gain_army_factor = 0.25
+				supply_consumption_factor = -0.15
+			}
+		}
+
+		SVO_loyal_union_instrument = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+
+		USR_sovoil_energy_dividend = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.12
+				industrial_capacity_factory = 0.05
+				consumer_goods_factor = -0.03
+			}
+		}
+
+		SVO_wartime_energy_mobilization = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = 0.15
+				fuel_gain_factor = 0.30
+				consumer_goods_factor = 0.08
+				stability_factor = -0.05
+			}
+		}
+
+		SVO_energy_crisis = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = -0.35
+				industrial_capacity_factory = -0.15
+				production_speed_infrastructure_factor = -0.20
+				stability_factor = -0.10
+			}
+		}
+
+		SVO_influence_agency = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { political_power_gain = -0.10 }
+		}
+		SVO_influence_combine = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.05
+				fuel_gain_factor = 0.05
+			}
+		}
+		SVO_influence_pillar = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				fuel_gain_factor = 0.10
+			}
+		}
+		SVO_influence_power_center = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				industrial_capacity_factory = 0.08
+				fuel_gain_factor = 0.15
+			}
+		}
+		SVO_influence_directorate = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.20
+				industrial_capacity_factory = 0.12
+				fuel_gain_factor = 0.20
+			}
+		}
+		SVO_influence_energy_state = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.30
+				industrial_capacity_factory = 0.15
+				fuel_gain_factor = 0.25
+				stability_factor = -0.05
+			}
+		}
+	}
+}

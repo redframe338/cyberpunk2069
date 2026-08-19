@@ -1,0 +1,37 @@
+ARK_corporate_headquarters_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_political_advisor
+
+	local_building_slots_factor = 0.25
+}
+
+ARK_corporate_industrial_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+
+	local_resources_factor = 0.10
+	local_building_slots_factor = 0.25
+}
+
+ARK_secured_zone_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_fortify_the_borders
+
+	attrition = -0.10
+	local_building_slots_factor = 0.15
+}
+
+ARK_research_campus_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+
+	local_building_slots_factor = 0.20
+	research_speed_factor = 0.02
+}
+
+ARK_port_authority_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_navy_bonus
+
+	local_building_slots_factor = 0.20
+}

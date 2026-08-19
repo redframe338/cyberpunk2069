@@ -1,0 +1,5 @@
+opinion_modifiers = {
+	CHI_USR_strategic_rivalry = {
+		value = -125
+	}
+}

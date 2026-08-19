@@ -1,0 +1,91 @@
+ideas = {
+	country = {
+		MLT_military_industrial_titan = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_arms_factory_factor = 0.20
+			}
+		}
+		MLT_private_army_doctrine = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				special_forces_cap = 0.05
+				experience_gain_army_factor = 0.10
+				planning_speed = 0.15
+			}
+		}
+		MLT_apex_infantry_system = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.20
+				army_attack_factor = 0.30
+				army_defence_factor = 0.35
+				army_morale_factor = 0.20
+				max_planning = 0.15
+				planning_speed = 0.30
+				experience_gain_army_factor = 0.30
+				supply_consumption_factor = -0.20
+				attrition = -0.15
+			}
+		}
+		MLT_advanced_weapons_development = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				equipment_capture_factor = 0.05
+			}
+		}
+		MLT_federal_defense_contracts = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+				consumer_goods_factor = -0.04
+			}
+		}
+		NUS_militech_defense_dependency = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				army_org_factor = 0.03
+				political_power_gain = -0.05
+			}
+		}
+		MLT_emergency_defense_mobilization = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = 0.20
+				consumer_goods_factor = 0.08
+				stability_factor = -0.05
+			}
+		}
+		MLT_defense_reform_restrictions = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+				political_power_gain = -0.10
+				stability_factor = 0.05
+			}
+		}
+
+		MLT_influence_contractor = { allowed = { always = no } removal_cost = -1 modifier = { political_power_gain = -0.10 } }
+		MLT_influence_supplier = { allowed = { always = no } removal_cost = -1 modifier = { production_speed_arms_factory_factor = 0.05 } }
+		MLT_influence_partner = { allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.05 army_org_factor = 0.03 } }
+		MLT_influence_institution = { allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.08 political_power_gain = 0.10 } }
+		MLT_influence_power_broker = { allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.12 political_power_gain = 0.20 army_org_factor = 0.05 } }
+		MLT_influence_military_government = { allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.15 political_power_gain = 0.30 army_org_factor = 0.08 stability_factor = -0.05 } }
+	}
+}

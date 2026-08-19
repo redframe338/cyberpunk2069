@@ -1,0 +1,17 @@
+# Cyberpunk override: Karakalpakstan
+state = {
+	id = 823
+	name = "STATE_823"
+	manpower = 258430
+	state_category = rural
+	history = {
+		owner = USR
+		add_core_of = USR
+		victory_points = { 1614 1 }
+		buildings = {
+			infrastructure = 2
+		}
+	}
+	provinces = { 1479 1576 1614 1721 4488 4618 7541 10348 12233 12471 12474 13207 }
+	local_supplies = 2.0
+}

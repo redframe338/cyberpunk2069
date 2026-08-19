@@ -1,0 +1,22 @@
+SVO_is_influence_agency = {
+	check_variable = { sovoil_state_influence < 20 }
+}
+SVO_is_influence_combine = {
+	check_variable = { sovoil_state_influence > 19 }
+	check_variable = { sovoil_state_influence < 40 }
+}
+SVO_is_influence_pillar = {
+	check_variable = { sovoil_state_influence > 39 }
+	check_variable = { sovoil_state_influence < 60 }
+}
+SVO_is_influence_power_center = {
+	check_variable = { sovoil_state_influence > 59 }
+	check_variable = { sovoil_state_influence < 80 }
+}
+SVO_is_influence_directorate = {
+	check_variable = { sovoil_state_influence > 79 }
+	check_variable = { sovoil_state_influence < 100 }
+}
+SVO_is_influence_energy_state = {
+	check_variable = { sovoil_state_influence > 99 }
+}

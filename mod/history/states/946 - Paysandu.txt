@@ -1,0 +1,38 @@
+# AUTO-GENERATED map override: URG -> OAS (Cyberpunk conversion). See docs/03.
+
+state = {
+	id = 946
+	name = "STATE_946"
+	manpower = 320000
+	
+	state_category = rural
+	
+	resources = {
+		oil = 3 
+	}
+
+	history = {
+
+		owner = OAS
+		add_core_of = OAS
+
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+
+		victory_points = {
+			12468 2
+		}
+
+		victory_points = {
+			10502 1
+		}
+	}
+
+	provinces = {
+		1613 1626 10502 12440 12468
+	}
+
+	local_supplies = 0.0 
+}

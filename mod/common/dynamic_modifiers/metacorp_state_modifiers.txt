@@ -1,0 +1,62 @@
+MTC_global_technology_headquarters_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	local_building_slots_factor = 0.30
+	research_speed_factor = 0.03
+	state_production_speed_industrial_complex_factor = 0.25
+}
+MTC_semiconductor_fabrication_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_building_slots_factor = 0.30
+	state_production_speed_industrial_complex_factor = 0.35
+}
+MTC_artificial_intelligence_campus_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	research_speed_factor = 0.03
+	local_building_slots_factor = 0.25
+}
+MTC_robotics_manufacturing_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_building_slots_factor = 0.25
+	state_production_speed_arms_factory_factor = 0.25
+	state_production_speed_industrial_complex_factor = 0.20
+}
+MTC_national_data_infrastructure_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	state_production_speed_infrastructure_factor = 0.40
+	local_org_regain = 0.10
+}
+MTC_consumer_electronics_hub_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_building_slots_factor = 0.30
+	state_production_speed_industrial_complex_factor = 0.30
+}
+MTC_telecommunications_center_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	state_production_speed_infrastructure_factor = 0.35
+	local_building_slots_factor = 0.20
+}
+MTC_quantum_computing_laboratory_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	research_speed_factor = 0.04
+	local_building_slots_factor = 0.20
+}
+MTC_cybernetics_research_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	research_speed_factor = 0.02
+	state_production_speed_arms_factory_factor = 0.20
+}
+MTC_cloud_computing_complex_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	state_production_speed_infrastructure_factor = 0.30
+	local_building_slots_factor = 0.25
+}

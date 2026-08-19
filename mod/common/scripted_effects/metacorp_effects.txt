@@ -1,0 +1,37 @@
+MTC_clamp_influence = {
+	if = {
+		limit = { check_variable = { metacorp_federal_influence > 100 } }
+		set_variable = { metacorp_federal_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { metacorp_federal_influence < 0 } }
+		set_variable = { metacorp_federal_influence = 0 }
+	}
+}
+
+MTC_update_influence_spirit = {
+	MTC_clamp_influence = yes
+	if = { limit = { has_idea = MTC_influence_supplier } remove_ideas = MTC_influence_supplier }
+	if = { limit = { has_idea = MTC_influence_contractor } remove_ideas = MTC_influence_contractor }
+	if = { limit = { has_idea = MTC_influence_national_leader } remove_ideas = MTC_influence_national_leader }
+	if = { limit = { has_idea = MTC_influence_digital_backbone } remove_ideas = MTC_influence_digital_backbone }
+	if = { limit = { has_idea = MTC_influence_technology_giant } remove_ideas = MTC_influence_technology_giant }
+	if = { limit = { has_idea = MTC_influence_digital_state } remove_ideas = MTC_influence_digital_state }
+
+	if = { limit = { MTC_is_influence_supplier = yes } add_ideas = MTC_influence_supplier }
+	if = { limit = { MTC_is_influence_contractor = yes } add_ideas = MTC_influence_contractor }
+	if = { limit = { MTC_is_influence_national_leader = yes } add_ideas = MTC_influence_national_leader }
+	if = { limit = { MTC_is_influence_digital_backbone = yes } add_ideas = MTC_influence_digital_backbone }
+	if = { limit = { MTC_is_influence_technology_giant = yes } add_ideas = MTC_influence_technology_giant }
+	if = { limit = { MTC_is_influence_digital_state = yes } add_ideas = MTC_influence_digital_state }
+}
+
+MTC_compete_with_militech = {
+	add_to_variable = { metacorp_federal_influence = 4 }
+	add_to_variable = { metacorp_militech_competition = 1 }
+	if = {
+		limit = { country_exists = MLT }
+		MLT = { add_to_variable = { militech_federal_influence = -2 } }
+	}
+	MTC_update_influence_spirit = yes
+}

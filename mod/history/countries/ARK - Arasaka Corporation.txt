@@ -1,0 +1,216 @@
+capital = 532
+
+set_oob = "ARK_2069"
+
+set_research_slots = 4
+set_stability = 0.80
+set_war_support = 0.70
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	tech_mountaineers = 1
+	interwar_artillery = 1
+	interwar_antitank = 1
+	support_weapons = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	synth_oil_experiments = 1
+	construction1 = 1
+	construction2 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	basic_train = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2064.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 0
+	fascism = 15
+	communism = 0
+	neutrality = 85
+}
+
+add_ideas = {
+	ARK_arasaka_dynasty
+	ARK_corporate_security_state
+	ARK_zaibatsu_war_machine
+	ARK_global_corporate_network
+	ARK_oceanic_security_hegemony
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	set_technology = {
+		advanced_ship_hull_light = 1
+		advanced_ship_hull_cruiser = 1
+		advanced_ship_hull_heavy = 1
+		advanced_ship_hull_carrier = 1
+		advanced_ship_hull_submarine = 1
+		advanced_ship_torpedo_launcher = 1
+		advanced_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		improved_heavy_armor_scheme = 1
+		advanced_fire_control_system = 1
+	}
+
+	create_equipment_variant = {
+		name = "Shinobi Class"
+		type = ship_hull_light_4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = light_ship_engine_4
+			fixed_ship_torpedo_slot = ship_torpedo_4
+			mid_1_custom_slot = ship_torpedo_4
+			rear_1_custom_slot = ship_depth_charge_4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Kitsune Class"
+		type = ship_hull_cruiser_4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = cruiser_ship_engine_4
+			fixed_ship_armor_slot = ship_armor_cruiser_4
+			front_1_custom_slot = ship_light_medium_battery_4
+			mid_1_custom_slot = ship_anti_air_4
+			mid_2_custom_slot = ship_torpedo_4
+			rear_1_custom_slot = ship_light_medium_battery_4
+			rear_2_custom_slot = ship_anti_air_4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Oni Class"
+		type = ship_hull_cruiser_4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = cruiser_ship_engine_4
+			fixed_ship_armor_slot = ship_armor_cruiser_4
+			front_1_custom_slot = ship_medium_battery_4
+			mid_1_custom_slot = ship_anti_air_4
+			mid_2_custom_slot = ship_torpedo_4
+			rear_1_custom_slot = ship_medium_battery_4
+			rear_2_custom_slot = ship_anti_air_4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Kusanagi Class"
+		type = ship_hull_heavy_4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = heavy_ship_engine_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_3
+			front_1_custom_slot = ship_heavy_battery_4
+			mid_1_custom_slot = ship_heavy_battery_4
+			mid_2_custom_slot = dp_ship_secondaries_2
+			mid_3_custom_slot = ship_anti_air_4
+			rear_1_custom_slot = ship_heavy_battery_4
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Mikoshi Class"
+		type = ship_hull_carrier_3
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = carrier_ship_engine_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			rear_1_custom_slot = ship_deck_space
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Ghost Class"
+		type = ship_hull_submarine_4
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_4
+			fixed_ship_engine_slot = sub_ship_engine_4
+			front_1_custom_slot = ship_torpedo_sub_4
+			mid_1_custom_slot = ship_sub_snorkel_2
+			rear_1_custom_slot = ship_torpedo_sub_4
+		}
+	}
+
+	set_naval_oob = "ARK_2069_naval"
+}
+
+if = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		advanced_destroyer = 1
+		advanced_light_cruiser = 1
+		advanced_heavy_cruiser = 1
+		advanced_battleship = 1
+		advanced_carrier = 1
+		advanced_submarine = 1
+	}
+	set_naval_oob = "ARK_2069_naval_legacy"
+}
+
+set_variable = { arasaka_influence_japan = 40 }
+set_country_flag = is_corporate_sovereignty
+set_convoys = 20
+
+create_country_leader = {
+	name = "Saburo Arasaka"
+	picture = GFX_portrait_ARK_saburo_arasaka
+	expire = "2100.1.1"
+	ideology = despotism
+	traits = { ARK_chief_executive_officer }
+}
+
+recruit_character = ARK_adam_smasher
+recruit_character = ARK_goro_takemura
+recruit_character = ARK_masato_kuroda
+recruit_character = ARK_akira_shibata
+recruit_character = ARK_naoki_hasegawa
+recruit_character = ARK_ryo_hayashi
+recruit_character = ARK_kazuki_arai
+recruit_character = ARK_takeshi_ono
+recruit_character = ARK_shun_okamoto
+recruit_character = ARK_tatsuya_fujii
+recruit_character = ARK_kohei_matsuda
+recruit_character = ARK_isamu_nishimura

@@ -1,0 +1,1286 @@
+focus_tree = {
+	id = NUS_focus
+	country = {
+		factor = 0
+		modifier = { add = 100 tag = NUS }
+	}
+	default = no
+
+	# ================================================================
+	# ROW 0-1: OPENING â€” THE UNION AT THE BRINK
+	# ================================================================
+	focus = {
+		id = NUS_state_of_the_union
+		icon = GFX_goal_generic_major_war
+		x = 18
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+			custom_effect_tooltip = NUS_state_of_the_union_tt
+		}
+	}
+	focus = {
+		id = NUS_constitutional_crisis
+		icon = GFX_goal_generic_political_pressure
+		x = 18
+		y = 1
+		cost = 7
+		prerequisite = { focus = NUS_state_of_the_union }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.02
+			set_variable = { NUS_militech_fascist_influence = 0 }
+			set_variable = { NUS_militech_corporate_influence = 0 }
+			set_variable = { NUS_militech_federalist_influence = 0 }
+			set_variable = { NUS_militech_communist_influence = 0 }
+			set_variable = { NUS_petrochem_fascist_influence = 0 }
+			set_variable = { NUS_petrochem_corporate_influence = 0 }
+			set_variable = { NUS_petrochem_federalist_influence = 0 }
+			set_variable = { NUS_petrochem_communist_influence = 0 }
+			custom_effect_tooltip = NUS_constitutional_crisis_tt
+		}
+	}
+
+	# ================================================================
+	# ROW 2: FOUR COMPETING ANSWERS TO THE CRISIS
+	# ================================================================
+
+	# ---------------------------------------------------------------
+	# PATH 1 â€” FASCIST: EMPIRE OF AMERICA (center x=6)
+	# ---------------------------------------------------------------
+	focus = {
+		id = NUS_america_first_movement
+		icon = GFX_goal_generic_national_unity
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = NUS_constitutional_crisis }
+		mutually_exclusive = {
+			focus = NUS_accelerationist_manifesto
+			focus = NUS_federalist_restoration
+			focus = NUS_workers_revolution
+		}
+		completion_reward = {
+			remove_ideas = NUS_fragile_republic
+			add_ideas = NUS_america_first_fervor
+			add_political_power = 100
+			add_war_support = 0.05
+			set_variable = { NUS_militech_fascist_influence = 15 }
+			set_variable = { NUS_petrochem_fascist_influence = 10 }
+			country_event = { id = nus_civil_war.1 days = 5 }
+		}
+	}
+	focus = {
+		id = NUS_national_salvation_council
+		icon = GFX_goal_generic_forceful_treaty
+		x = 6
+		y = 3
+		cost = 8
+		prerequisite = { focus = NUS_america_first_movement }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = -0.02
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = NUS_patriot_brigades
+		icon = GFX_goal_generic_propaganda
+		x = 4
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_national_salvation_council }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.04
+			add_stability = -0.01
+		}
+	}
+	focus = {
+		id = NUS_emergency_powers_act
+		icon = GFX_goal_generic_political_pressure
+		x = 4
+		y = 5
+		cost = 8
+		prerequisite = { focus = NUS_patriot_brigades }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.03
+			add_ideas = NUS_emergency_powers_spirit
+		}
+	}
+	focus = {
+		id = NUS_purge_dissenters
+		icon = GFX_goal_generic_intelligence_agency
+		x = 4
+		y = 6
+		cost = 10
+		prerequisite = { focus = NUS_emergency_powers_act }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_ideas = NUS_patriot_brigade_network
+		}
+	}
+	focus = {
+		id = NUS_loyal_officer_corps
+		icon = GFX_goal_generic_army_doctrines
+		x = 8
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_national_salvation_council }
+		completion_reward = {
+			add_political_power = 50
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = NUS_militarize_homeland
+		icon = GFX_goal_generic_defence
+		x = 8
+		y = 5
+		cost = 8
+		prerequisite = { focus = NUS_loyal_officer_corps }
+		completion_reward = {
+			add_war_support = 0.05
+			361 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_iron_eagle_doctrine
+		icon = GFX_goal_generic_major_war
+		x = 8
+		y = 6
+		cost = 10
+		prerequisite = { focus = NUS_militarize_homeland }
+		completion_reward = {
+			add_war_support = 0.08
+			army_experience = 30
+			add_ideas = NUS_iron_eagle_officer_corps
+		}
+	}
+	focus = {
+		id = NUS_fascist_court_militech
+		icon = GFX_goal_generic_military_sphere
+		x = 4
+		y = 8
+		cost = 6
+		prerequisite = { focus = NUS_purge_dissenters }
+		completion_reward = {
+			add_to_variable = { NUS_militech_fascist_influence = 20 }
+			add_political_power = 40
+			custom_effect_tooltip = NUS_militech_courted_tt
+		}
+	}
+	focus = {
+		id = NUS_fascist_court_petrochem
+		icon = GFX_goal_generic_oil_refinery
+		x = 8
+		y = 8
+		cost = 6
+		prerequisite = { focus = NUS_iron_eagle_doctrine }
+		completion_reward = {
+			add_to_variable = { NUS_petrochem_fascist_influence = 20 }
+			add_political_power = 40
+			custom_effect_tooltip = NUS_petrochem_courted_tt
+		}
+	}
+	focus = {
+		id = NUS_march_on_washington
+		icon = GFX_goal_generic_demand_territory
+		x = 6
+		y = 9
+		cost = 10
+		prerequisite = { focus = NUS_purge_dissenters }
+		prerequisite = { focus = NUS_iron_eagle_doctrine }
+		completion_reward = {
+			custom_effect_tooltip = NUS_march_on_washington_tt
+			country_event = { id = nus_civil_war.2 days = 1 }
+		}
+	}
+	focus = {
+		id = NUS_crush_the_resistance
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 6
+		y = 10
+		cost = 10
+		prerequisite = { focus = NUS_march_on_washington }
+		completion_reward = {
+			country_event = { id = nus_civil_war.3 days = 1 }
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = NUS_purge_the_officer_corps
+		icon = GFX_goal_generic_intelligence_agency
+		x = 4
+		y = 11
+		cost = 8
+		prerequisite = { focus = NUS_crush_the_resistance }
+		completion_reward = {
+			add_political_power = 60
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = NUS_total_war_footing
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 12
+		cost = 8
+		prerequisite = { focus = NUS_purge_the_officer_corps }
+		completion_reward = {
+			add_war_support = 0.06
+			361 = { add_building_construction = { type = arms_factory level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_imperial_guard_legions
+		icon = GFX_goal_generic_special_forces
+		x = 4
+		y = 13
+		cost = 10
+		prerequisite = { focus = NUS_total_war_footing }
+		completion_reward = {
+			add_ideas = NUS_imperial_guard_supremacy
+			army_experience = 40
+		}
+	}
+	focus = {
+		id = NUS_nationalize_war_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 8
+		y = 11
+		cost = 8
+		prerequisite = { focus = NUS_crush_the_resistance }
+		completion_reward = {
+			add_political_power = 60
+			add_to_variable = { petrochem_industrial_capacity = 5 }
+		}
+	}
+	focus = {
+		id = NUS_forced_labor_battalions
+		icon = GFX_goal_generic_production
+		x = 8
+		y = 12
+		cost = 8
+		prerequisite = { focus = NUS_nationalize_war_industry }
+		completion_reward = {
+			add_stability = -0.03
+			357 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_imperial_war_economy
+		icon = GFX_goal_generic_production2
+		x = 8
+		y = 13
+		cost = 10
+		prerequisite = { focus = NUS_forced_labor_battalions }
+		completion_reward = {
+			add_ideas = NUS_total_war_economy
+			358 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_american_imperium
+		icon = GFX_goal_generic_major_alliance
+		x = 6
+		y = 14
+		cost = 10
+		prerequisite = { focus = NUS_imperial_guard_legions }
+		prerequisite = { focus = NUS_imperial_war_economy }
+		completion_reward = {
+			add_ideas = NUS_imperial_consolidation
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = NUS_continental_hegemony
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 6
+		y = 15
+		cost = 10
+		prerequisite = { focus = NUS_american_imperium }
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 100
+			custom_effect_tooltip = NUS_continental_hegemony_tt
+		}
+	}
+	focus = {
+		id = NUS_proclaim_empire_of_america
+		icon = GFX_goal_generic_national_unity
+		x = 6
+		y = 16
+		cost = 12
+		prerequisite = { focus = NUS_continental_hegemony }
+		completion_reward = {
+			set_cosmetic_tag = NUS_empire_america
+			add_ideas = NUS_empire_of_america_spirit
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_political_power = 150
+			country_event = { id = nus_civil_war.13 days = 1 }
+		}
+	}
+
+	# ---------------------------------------------------------------
+	# PATH 2 â€” ACCELERATIONIST / CORPORATE: CONFEDERATION OF
+	# CORPORATE STATES (center x=14)
+	# ---------------------------------------------------------------
+	focus = {
+		id = NUS_accelerationist_manifesto
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 14
+		y = 2
+		cost = 10
+		prerequisite = { focus = NUS_constitutional_crisis }
+		mutually_exclusive = {
+			focus = NUS_america_first_movement
+			focus = NUS_federalist_restoration
+			focus = NUS_workers_revolution
+		}
+		completion_reward = {
+			remove_ideas = NUS_fragile_republic
+			add_ideas = NUS_shareholder_fervor
+			add_political_power = 100
+			add_stability = -0.02
+			set_variable = { NUS_militech_corporate_influence = 20 }
+			set_variable = { NUS_petrochem_corporate_influence = 20 }
+			country_event = { id = nus_civil_war.4 days = 5 }
+		}
+	}
+	focus = {
+		id = NUS_board_of_directors_ascendant
+		icon = GFX_goal_generic_forceful_treaty
+		x = 14
+		y = 3
+		cost = 8
+		prerequisite = { focus = NUS_accelerationist_manifesto }
+		completion_reward = {
+			add_political_power = 60
+			359 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_deregulation_blitz
+		icon = GFX_goal_generic_consumer_goods
+		x = 12
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_board_of_directors_ascendant }
+		completion_reward = {
+			add_stability = -0.02
+			629 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_privatize_federal_services
+		icon = GFX_goal_generic_construct_civilian
+		x = 12
+		y = 5
+		cost = 8
+		prerequisite = { focus = NUS_deregulation_blitz }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = NUS_market_above_law
+		icon = GFX_goal_generic_dangerous_deal
+		x = 12
+		y = 6
+		cost = 10
+		prerequisite = { focus = NUS_privatize_federal_services }
+		completion_reward = {
+			360 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_ideas = NUS_deregulated_markets
+		}
+	}
+	focus = {
+		id = NUS_corporate_lobbying_offensive
+		icon = GFX_goal_generic_political_pressure
+		x = 16
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_board_of_directors_ascendant }
+		completion_reward = {
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = NUS_shareholders_over_citizens
+		icon = GFX_goal_generic_propaganda
+		x = 16
+		y = 5
+		cost = 8
+		prerequisite = { focus = NUS_corporate_lobbying_offensive }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = NUS_dissolve_congress
+		icon = GFX_goal_generic_demand_territory
+		x = 16
+		y = 6
+		cost = 10
+		prerequisite = { focus = NUS_shareholders_over_citizens }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.03
+			add_ideas = NUS_congress_dissolved_spirit
+		}
+	}
+	focus = {
+		id = NUS_corporate_court_militech
+		icon = GFX_goal_generic_military_sphere
+		x = 12
+		y = 8
+		cost = 6
+		prerequisite = { focus = NUS_market_above_law }
+		completion_reward = {
+			add_to_variable = { NUS_militech_corporate_influence = 25 }
+			add_political_power = 40
+			custom_effect_tooltip = NUS_militech_courted_tt
+		}
+	}
+	focus = {
+		id = NUS_corporate_court_petrochem
+		icon = GFX_goal_generic_oil_refinery
+		x = 16
+		y = 8
+		cost = 6
+		prerequisite = { focus = NUS_dissolve_congress }
+		completion_reward = {
+			add_to_variable = { NUS_petrochem_corporate_influence = 25 }
+			add_political_power = 40
+			custom_effect_tooltip = NUS_petrochem_courted_tt
+		}
+	}
+	focus = {
+		id = NUS_hostile_takeover
+		icon = GFX_goal_generic_dangerous_deal
+		x = 14
+		y = 9
+		cost = 10
+		prerequisite = { focus = NUS_market_above_law }
+		prerequisite = { focus = NUS_dissolve_congress }
+		completion_reward = {
+			custom_effect_tooltip = NUS_hostile_takeover_tt
+			country_event = { id = nus_civil_war.5 days = 1 }
+		}
+	}
+	focus = {
+		id = NUS_establish_corporate_order
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 14
+		y = 10
+		cost = 10
+		prerequisite = { focus = NUS_hostile_takeover }
+		completion_reward = {
+			country_event = { id = nus_civil_war.6 days = 1 }
+			add_stability = 0.05
+			363 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_privatize_the_armed_forces
+		icon = GFX_goal_generic_army_doctrines
+		x = 12
+		y = 11
+		cost = 8
+		prerequisite = { focus = NUS_establish_corporate_order }
+		completion_reward = {
+			add_political_power = 60
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = NUS_mercenary_legions
+		icon = GFX_goal_generic_special_forces
+		x = 12
+		y = 12
+		cost = 8
+		prerequisite = { focus = NUS_privatize_the_armed_forces }
+		completion_reward = {
+			army_experience = 25
+			add_manpower = 50000
+		}
+	}
+	focus = {
+		id = NUS_corporate_security_state
+		icon = GFX_goal_generic_intelligence_agency
+		x = 12
+		y = 13
+		cost = 10
+		prerequisite = { focus = NUS_mercenary_legions }
+		completion_reward = {
+			add_ideas = NUS_privatized_military_spirit
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = NUS_abolish_labor_law
+		icon = GFX_goal_generic_consumer_goods
+		x = 16
+		y = 11
+		cost = 8
+		prerequisite = { focus = NUS_establish_corporate_order }
+		completion_reward = {
+			add_stability = -0.027
+			631 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_total_shareholder_value
+		icon = GFX_goal_generic_production
+		x = 16
+		y = 12
+		cost = 8
+		prerequisite = { focus = NUS_abolish_labor_law }
+		completion_reward = {
+			364 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = NUS_post_national_economy
+		icon = GFX_goal_generic_production2
+		x = 16
+		y = 13
+		cost = 10
+		prerequisite = { focus = NUS_total_shareholder_value }
+		completion_reward = {
+			add_ideas = NUS_post_national_markets
+			365 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_ceo_council_supreme
+		icon = GFX_goal_generic_major_alliance
+		x = 14
+		y = 14
+		cost = 10
+		prerequisite = { focus = NUS_corporate_security_state }
+		prerequisite = { focus = NUS_post_national_economy }
+		completion_reward = {
+			add_ideas = NUS_corporate_order_established
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = NUS_free_market_conquers_all
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 14
+		y = 15
+		cost = 10
+		prerequisite = { focus = NUS_ceo_council_supreme }
+		completion_reward = {
+			add_political_power = 100
+			366 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			custom_effect_tooltip = NUS_free_market_conquers_all_tt
+		}
+	}
+	focus = {
+		id = NUS_proclaim_corporate_confederation
+		icon = GFX_goal_generic_national_unity
+		x = 14
+		y = 16
+		cost = 12
+		prerequisite = { focus = NUS_free_market_conquers_all }
+		completion_reward = {
+			set_cosmetic_tag = NUS_corporate_confederation
+			add_ideas = NUS_corporate_confederation_spirit
+			add_stability = 0.08
+			367 = { add_building_construction = { type = industrial_complex level = 3 instant_build = yes } }
+			add_political_power = 150
+			country_event = { id = nus_civil_war.13 days = 1 }
+		}
+	}
+
+	# ---------------------------------------------------------------
+	# PATH 3 â€” FEDERALIST: AMERICAN FEDERATION (center x=22)
+	# ---------------------------------------------------------------
+	focus = {
+		id = NUS_federalist_restoration
+		icon = GFX_goal_generic_national_unity
+		x = 22
+		y = 2
+		cost = 10
+		prerequisite = { focus = NUS_constitutional_crisis }
+		mutually_exclusive = {
+			focus = NUS_america_first_movement
+			focus = NUS_accelerationist_manifesto
+			focus = NUS_workers_revolution
+		}
+		completion_reward = {
+			remove_ideas = NUS_fragile_republic
+			add_ideas = NUS_restoration_fervor
+			add_political_power = 100
+			add_stability = 0.05
+			set_variable = { NUS_militech_federalist_influence = 5 }
+			set_variable = { NUS_petrochem_federalist_influence = 5 }
+			country_event = { id = nus_civil_war.7 days = 5 }
+		}
+	}
+	focus = {
+		id = NUS_defend_the_constitution
+		icon = GFX_goal_generic_forceful_treaty
+		x = 22
+		y = 3
+		cost = 8
+		prerequisite = { focus = NUS_federalist_restoration }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = NUS_free_press_act
+		icon = GFX_goal_generic_propaganda
+		x = 20
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_defend_the_constitution }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = NUS_restore_free_elections
+		icon = GFX_goal_generic_political_pressure
+		x = 20
+		y = 5
+		cost = 8
+		prerequisite = { focus = NUS_free_press_act }
+		completion_reward = {
+			add_stability = 0.04
+			add_political_power = 60
+		}
+	}
+	focus = {
+		id = NUS_civilian_oversight_military
+		icon = GFX_goal_generic_army_doctrines
+		x = 20
+		y = 6
+		cost = 10
+		prerequisite = { focus = NUS_restore_free_elections }
+		completion_reward = {
+			add_stability = 0.05
+			add_ideas = NUS_free_press_restored
+		}
+	}
+	focus = {
+		id = NUS_anti_corporate_legislation
+		icon = GFX_goal_generic_consumer_goods
+		x = 24
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_defend_the_constitution }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NUS_break_monopolies
+		icon = GFX_goal_generic_dangerous_deal
+		x = 24
+		y = 5
+		cost = 8
+		prerequisite = { focus = NUS_anti_corporate_legislation }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = NUS_federal_regulatory_authority
+		icon = GFX_goal_generic_construct_civilian
+		x = 24
+		y = 6
+		cost = 10
+		prerequisite = { focus = NUS_break_monopolies }
+		completion_reward = {
+			add_stability = 0.03
+			add_ideas = NUS_monopolies_broken
+		}
+	}
+	focus = {
+		id = NUS_federalist_court_militech
+		icon = GFX_goal_generic_military_sphere
+		x = 20
+		y = 8
+		cost = 6
+		prerequisite = { focus = NUS_civilian_oversight_military }
+		completion_reward = {
+			add_to_variable = { NUS_militech_federalist_influence = 15 }
+			add_political_power = 40
+			custom_effect_tooltip = NUS_militech_courted_tt
+		}
+	}
+	focus = {
+		id = NUS_federalist_court_petrochem
+		icon = GFX_goal_generic_oil_refinery
+		x = 24
+		y = 8
+		cost = 6
+		prerequisite = { focus = NUS_federal_regulatory_authority }
+		completion_reward = {
+			add_to_variable = { NUS_petrochem_federalist_influence = 15 }
+			add_political_power = 40
+			custom_effect_tooltip = NUS_petrochem_courted_tt
+		}
+	}
+	focus = {
+		id = NUS_democratic_revolution
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 9
+		cost = 10
+		prerequisite = { focus = NUS_civilian_oversight_military }
+		prerequisite = { focus = NUS_federal_regulatory_authority }
+		completion_reward = {
+			custom_effect_tooltip = NUS_democratic_revolution_tt
+			country_event = { id = nus_civil_war.8 days = 1 }
+		}
+	}
+	focus = {
+		id = NUS_rebuild_the_republic
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 22
+		y = 10
+		cost = 10
+		prerequisite = { focus = NUS_democratic_revolution }
+		completion_reward = {
+			country_event = { id = nus_civil_war.9 days = 1 }
+			add_stability = 0.06
+		}
+	}
+	focus = {
+		id = NUS_reconvene_congress
+		icon = GFX_goal_generic_political_pressure
+		x = 20
+		y = 11
+		cost = 8
+		prerequisite = { focus = NUS_rebuild_the_republic }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = NUS_supreme_court_restoration
+		icon = GFX_goal_generic_intelligence_agency
+		x = 20
+		y = 12
+		cost = 8
+		prerequisite = { focus = NUS_reconvene_congress }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NUS_national_referendum_act
+		icon = GFX_goal_generic_propaganda
+		x = 20
+		y = 13
+		cost = 10
+		prerequisite = { focus = NUS_supreme_court_restoration }
+		completion_reward = {
+			add_ideas = NUS_referendum_democracy
+			add_stability = 0.04
+		}
+	}
+	focus = {
+		id = NUS_public_investment_program
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 24
+		y = 11
+		cost = 8
+		prerequisite = { focus = NUS_rebuild_the_republic }
+		completion_reward = {
+			361 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NUS_federal_infrastructure_act
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 24
+		y = 12
+		cost = 8
+		prerequisite = { focus = NUS_public_investment_program }
+		completion_reward = {
+			370 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NUS_new_deal_reconstruction
+		icon = GFX_goal_generic_production
+		x = 24
+		y = 13
+		cost = 10
+		prerequisite = { focus = NUS_federal_infrastructure_act }
+		completion_reward = {
+			add_ideas = NUS_new_deal_spirit
+			372 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_bill_of_rights_renewed
+		icon = GFX_goal_generic_major_alliance
+		x = 22
+		y = 14
+		cost = 10
+		prerequisite = { focus = NUS_national_referendum_act }
+		prerequisite = { focus = NUS_new_deal_reconstruction }
+		completion_reward = {
+			add_ideas = NUS_republic_rebuilding
+			add_stability = 0.08
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = NUS_arsenal_of_democracy
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 22
+		y = 15
+		cost = 10
+		prerequisite = { focus = NUS_bill_of_rights_renewed }
+		completion_reward = {
+			add_war_support = 0.08
+			373 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			custom_effect_tooltip = NUS_arsenal_of_democracy_tt
+		}
+	}
+	focus = {
+		id = NUS_proclaim_american_federation
+		icon = GFX_goal_generic_national_unity
+		x = 22
+		y = 16
+		cost = 12
+		prerequisite = { focus = NUS_arsenal_of_democracy }
+		completion_reward = {
+			set_cosmetic_tag = NUS_american_federation
+			add_ideas = NUS_american_federation_spirit
+			add_stability = 0.12
+			add_political_power = 150
+			country_event = { id = nus_civil_war.13 days = 1 }
+		}
+	}
+
+	# ---------------------------------------------------------------
+	# PATH 4 â€” COMMUNIST: UNION OF SOCIALIST STATES OF AMERICA
+	# (center x=30)
+	# ---------------------------------------------------------------
+	focus = {
+		id = NUS_workers_revolution
+		icon = GFX_goal_generic_national_unity
+		x = 30
+		y = 2
+		cost = 10
+		prerequisite = { focus = NUS_constitutional_crisis }
+		mutually_exclusive = {
+			focus = NUS_america_first_movement
+			focus = NUS_accelerationist_manifesto
+			focus = NUS_federalist_restoration
+		}
+		completion_reward = {
+			remove_ideas = NUS_fragile_republic
+			add_ideas = NUS_revolutionary_fervor
+			add_political_power = 100
+			add_stability = -0.03
+			set_variable = { NUS_militech_communist_influence = 0 }
+			set_variable = { NUS_petrochem_communist_influence = 0 }
+			country_event = { id = nus_civil_war.10 days = 5 }
+		}
+	}
+	focus = {
+		id = NUS_revolutionary_vanguard_party
+		icon = GFX_goal_generic_forceful_treaty
+		x = 30
+		y = 3
+		cost = 8
+		prerequisite = { focus = NUS_workers_revolution }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = NUS_underground_cells
+		icon = GFX_goal_generic_intelligence_agency
+		x = 28
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_revolutionary_vanguard_party }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NUS_agitate_the_masses
+		icon = GFX_goal_generic_propaganda
+		x = 28
+		y = 5
+		cost = 8
+		prerequisite = { focus = NUS_underground_cells }
+		completion_reward = {
+			add_political_power = 60
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = NUS_general_strike
+		icon = GFX_goal_generic_political_pressure
+		x = 28
+		y = 6
+		cost = 10
+		prerequisite = { focus = NUS_agitate_the_masses }
+		completion_reward = {
+			add_stability = -0.03
+			add_ideas = NUS_general_strike_spirit
+		}
+	}
+	focus = {
+		id = NUS_seize_means_of_production
+		icon = GFX_goal_generic_consumer_goods
+		x = 32
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_revolutionary_vanguard_party }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = NUS_workers_councils
+		icon = GFX_goal_generic_construct_civilian
+		x = 32
+		y = 5
+		cost = 8
+		prerequisite = { focus = NUS_seize_means_of_production }
+		completion_reward = {
+			add_political_power = 60
+			380 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_nationalize_everything
+		icon = GFX_goal_generic_production2
+		x = 32
+		y = 6
+		cost = 10
+		prerequisite = { focus = NUS_workers_councils }
+		completion_reward = {
+			390 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_ideas = NUS_means_of_production_seized
+		}
+	}
+	focus = {
+		id = NUS_communist_court_militech
+		icon = GFX_goal_generic_military_sphere
+		x = 28
+		y = 8
+		cost = 6
+		prerequisite = { focus = NUS_general_strike }
+		completion_reward = {
+			add_to_variable = { NUS_militech_communist_influence = 10 }
+			add_political_power = 40
+			custom_effect_tooltip = NUS_militech_courted_tt
+		}
+	}
+	focus = {
+		id = NUS_communist_court_petrochem
+		icon = GFX_goal_generic_oil_refinery
+		x = 32
+		y = 8
+		cost = 6
+		prerequisite = { focus = NUS_nationalize_everything }
+		completion_reward = {
+			add_to_variable = { NUS_petrochem_communist_influence = 10 }
+			add_political_power = 40
+			custom_effect_tooltip = NUS_petrochem_courted_tt
+		}
+	}
+	focus = {
+		id = NUS_red_dawn_rising
+		icon = GFX_goal_generic_demand_territory
+		x = 30
+		y = 9
+		cost = 10
+		prerequisite = { focus = NUS_general_strike }
+		prerequisite = { focus = NUS_nationalize_everything }
+		completion_reward = {
+			custom_effect_tooltip = NUS_red_dawn_rising_tt
+			country_event = { id = nus_civil_war.11 days = 1 }
+		}
+	}
+	focus = {
+		id = NUS_peoples_republic
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 30
+		y = 10
+		cost = 10
+		prerequisite = { focus = NUS_red_dawn_rising }
+		completion_reward = {
+			country_event = { id = nus_civil_war.12 days = 1 }
+			add_ideas = NUS_peoples_republic_spirit
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = NUS_arm_the_workers
+		icon = GFX_goal_generic_army_doctrines
+		x = 28
+		y = 11
+		cost = 8
+		prerequisite = { focus = NUS_peoples_republic }
+		completion_reward = {
+			add_manpower = 50000
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = NUS_red_guard_militias
+		icon = GFX_goal_generic_special_forces
+		x = 28
+		y = 12
+		cost = 8
+		prerequisite = { focus = NUS_arm_the_workers }
+		completion_reward = {
+			army_experience = 25
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = NUS_revolutionary_armed_forces
+		icon = GFX_goal_generic_major_war
+		x = 28
+		y = 13
+		cost = 10
+		prerequisite = { focus = NUS_red_guard_militias }
+		completion_reward = {
+			add_ideas = NUS_revolutionary_army_spirit
+			add_war_support = 0.06
+		}
+	}
+	focus = {
+		id = NUS_five_year_plan
+		icon = GFX_goal_generic_production
+		x = 32
+		y = 11
+		cost = 8
+		prerequisite = { focus = NUS_peoples_republic }
+		completion_reward = {
+			add_political_power = 60
+			391 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_collectivize_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 32
+		y = 12
+		cost = 8
+		prerequisite = { focus = NUS_five_year_plan }
+		completion_reward = {
+			392 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = NUS_planned_economy_triumphant
+		icon = GFX_goal_generic_production2
+		x = 32
+		y = 13
+		cost = 10
+		prerequisite = { focus = NUS_collectivize_industry }
+		completion_reward = {
+			add_ideas = NUS_planned_economy_spirit
+			393 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_socialist_industrial_plan
+		icon = GFX_goal_generic_major_alliance
+		x = 30
+		y = 14
+		cost = 10
+		prerequisite = { focus = NUS_revolutionary_armed_forces }
+		prerequisite = { focus = NUS_planned_economy_triumphant }
+		completion_reward = {
+			add_political_power = 100
+			394 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_world_revolution_begins
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 30
+		y = 15
+		cost = 10
+		prerequisite = { focus = NUS_socialist_industrial_plan }
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 100
+			custom_effect_tooltip = NUS_world_revolution_begins_tt
+		}
+	}
+	focus = {
+		id = NUS_proclaim_ussa
+		icon = GFX_goal_generic_national_unity
+		x = 30
+		y = 16
+		cost = 12
+		prerequisite = { focus = NUS_world_revolution_begins }
+		completion_reward = {
+			set_cosmetic_tag = NUS_socialist_states
+			add_ideas = NUS_ussa_spirit
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_political_power = 150
+			country_event = { id = nus_civil_war.13 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# SHARED BRANCHES â€” AVAILABLE TO ALL PATHS
+	# ================================================================
+
+	# --- Federal Economic Review (x=15) ---
+	focus = {
+		id = NUS_federal_economic_review
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 15
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_constitutional_crisis }
+		completion_reward = {
+			add_political_power = 60
+			395 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_reconstruction_bonds
+		icon = GFX_goal_generic_consumer_goods
+		x = 13
+		y = 5
+		cost = 6
+		prerequisite = { focus = NUS_federal_economic_review }
+		completion_reward = {
+			add_political_power = 50
+			361 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_industrial_survey_corps
+		icon = GFX_goal_generic_prospect_for_resources
+		x = 15
+		y = 5
+		cost = 6
+		prerequisite = { focus = NUS_federal_economic_review }
+		completion_reward = {
+			361 = { add_resource = { type = steel amount = 20 } }
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = NUS_currency_stabilization_act
+		icon = GFX_goal_generic_production
+		x = 17
+		y = 5
+		cost = 6
+		prerequisite = { focus = NUS_federal_economic_review }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 40
+		}
+	}
+	focus = {
+		id = NUS_economic_foundation
+		icon = GFX_goal_generic_construct_civilian
+		x = 15
+		y = 6
+		cost = 8
+		prerequisite = { focus = NUS_reconstruction_bonds }
+		prerequisite = { focus = NUS_industrial_survey_corps }
+		prerequisite = { focus = NUS_currency_stabilization_act }
+		completion_reward = {
+			add_ideas = NUS_economic_foundation_spirit
+			396 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		}
+	}
+
+	# --- Pentagon Assessment (x=21) ---
+	focus = {
+		id = NUS_pentagon_assessment
+		icon = GFX_goal_generic_defence
+		x = 21
+		y = 4
+		cost = 8
+		prerequisite = { focus = NUS_constitutional_crisis }
+		completion_reward = {
+			add_political_power = 60
+			army_experience = 10
+		}
+	}
+	focus = {
+		id = NUS_officer_corps_review
+		icon = GFX_goal_generic_army_doctrines
+		x = 19
+		y = 5
+		cost = 6
+		prerequisite = { focus = NUS_pentagon_assessment }
+		completion_reward = {
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = NUS_national_guard_mobilization
+		icon = GFX_goal_generic_position_armies
+		x = 21
+		y = 5
+		cost = 6
+		prerequisite = { focus = NUS_pentagon_assessment }
+		completion_reward = {
+			add_manpower = 40000
+		}
+	}
+	focus = {
+		id = NUS_defense_industrial_base
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 23
+		y = 5
+		cost = 6
+		prerequisite = { focus = NUS_pentagon_assessment }
+		completion_reward = {
+			361 = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = NUS_military_readiness
+		icon = GFX_goal_generic_fortify_city
+		x = 21
+		y = 6
+		cost = 8
+		prerequisite = { focus = NUS_officer_corps_review }
+		prerequisite = { focus = NUS_national_guard_mobilization }
+		prerequisite = { focus = NUS_defense_industrial_base }
+		completion_reward = {
+			add_ideas = NUS_military_readiness_spirit
+			add_war_support = 0.05
+		}
+	}
+}

@@ -1,0 +1,234 @@
+biotechnica_scientific_programs = {
+	BIO_expand_genetic_research = {
+		icon = generic_research
+		cost = 60
+		days_remove = 90
+		days_re_enable = 180
+		available = { has_stability > 0.45 }
+		complete_effect = {
+			add_research_slot = 1
+			add_to_variable = { biotechnica_research_progress = 8 }
+			add_tech_bonus = { bonus = 0.50 uses = 2 category = electronics }
+		}
+		ai_will_do = { factor = 1.4 }
+	}
+	BIO_develop_new_pharmaceuticals = {
+		icon = generic_economy
+		cost = 45
+		days_remove = 75
+		days_re_enable = 150
+		available = { has_stability > 0.40 }
+		complete_effect = {
+			add_stability = 0.03
+			add_to_variable = { biotechnica_research_progress = 6 }
+			add_political_power = 25
+		}
+		ai_will_do = { factor = 1.5 }
+	}
+	BIO_modernize_agricultural_systems = {
+		icon = generic_economy
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		complete_effect = {
+			add_to_variable = { biotechnica_research_progress = 6 }
+			39 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			172 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+		ai_will_do = { factor = 1.8 }
+	}
+	BIO_construct_additional_laboratories = {
+		icon = generic_research
+		cost = 70
+		days_remove = 120
+		days_re_enable = 240
+		available = { num_of_civilian_factories > 2 }
+		complete_effect = {
+			add_to_variable = { biotechnica_research_progress = 8 }
+			8 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			139 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+		ai_will_do = { factor = 1.6 }
+	}
+	BIO_expand_synthetic_food_production = {
+		icon = generic_economy
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		complete_effect = {
+			add_to_variable = { biotechnica_research_progress = 6 }
+			788 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+			add_stability = 0.02
+		}
+		ai_will_do = { factor = 1.8 }
+	}
+	BIO_launch_environmental_recovery_projects = {
+		icon = generic_prospect_for_resources
+		cost = 55
+		days_remove = 120
+		days_re_enable = 240
+		complete_effect = {
+			add_to_variable = { biotechnica_research_progress = 7 }
+			148 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			add_stability = 0.02
+		}
+		ai_will_do = { factor = 1.4 }
+	}
+	BIO_increase_medical_exports = {
+		icon = generic_economy
+		cost = 40
+		days_remove = 60
+		days_re_enable = 120
+		complete_effect = {
+			add_political_power = 45
+			add_to_variable = { biotechnica_research_progress = 4 }
+			EEC = { add_political_power = 25 }
+		}
+		ai_will_do = { factor = 1.5 }
+	}
+	BIO_automate_continental_agriculture = {
+		icon = generic_economy
+		cost = 65
+		days_remove = 100
+		days_re_enable = 200
+		available = { has_tech = computing_machine }
+		complete_effect = {
+			add_to_variable = { biotechnica_research_progress = 8 }
+			add_tech_bonus = { bonus = 0.50 uses = 2 category = industry }
+		}
+		ai_will_do = { factor = 1.7 }
+	}
+	BIO_improve_crop_engineering = {
+		icon = generic_research
+		cost = 45
+		days_remove = 75
+		days_re_enable = 150
+		complete_effect = {
+			add_to_variable = { biotechnica_research_progress = 6 }
+			add_stability = 0.02
+		}
+		ai_will_do = { factor = 1.6 }
+	}
+	BIO_expand_biotechnology_universities = {
+		icon = generic_research
+		cost = 70
+		days_remove = 120
+		days_re_enable = 240
+		available = { check_variable = { biotechnica_research_progress > 39 } }
+		complete_effect = {
+			add_to_variable = { biotechnica_research_progress = 10 }
+			add_tech_bonus = { bonus = 0.75 uses = 1 category = electronics }
+		}
+		ai_will_do = { factor = 1.5 }
+	}
+}
+
+european_biotechnology_policy = {
+	EEC_increase_biotechnica_funding = {
+		icon = generic_research
+		cost = 65
+		days_remove = 90
+		days_re_enable = 180
+		available = { BIO = { is_subject_of = EEC } }
+		complete_effect = {
+			BIO = {
+				add_to_variable = { biotechnica_research_progress = 8 }
+				add_political_power = 35
+			}
+			add_political_power = -15
+		}
+		ai_will_do = { factor = 1.8 }
+	}
+	EEC_expand_food_security_programs = {
+		icon = generic_economy
+		cost = 50
+		days_remove = 75
+		days_re_enable = 150
+		available = { BIO = { is_subject_of = EEC } }
+		complete_effect = {
+			add_stability = 0.03
+			BIO = { add_to_variable = { biotechnica_research_progress = 5 } }
+		}
+		ai_will_do = { factor = 1.7 }
+	}
+	EEC_national_research_initiative = {
+		icon = generic_research
+		cost = 75
+		days_remove = 120
+		days_re_enable = 240
+		available = { BIO = { is_subject_of = EEC } }
+		complete_effect = {
+			add_tech_bonus = { bonus = 0.50 uses = 2 category = electronics }
+			BIO = { add_to_variable = { biotechnica_research_progress = 8 } }
+		}
+		ai_will_do = { factor = 1.6 }
+	}
+	EEC_strengthen_pharmaceutical_regulation = {
+		icon = generic_political_actions
+		cost = 40
+		days_remove = 60
+		days_re_enable = 120
+		available = { BIO = { is_subject_of = EEC } }
+		complete_effect = {
+			add_stability = 0.02
+			BIO = {
+				add_to_variable = { biotechnica_research_progress = -3 }
+				add_stability = 0.03
+			}
+		}
+		ai_will_do = { factor = 1.1 }
+	}
+	EEC_launch_continental_health_program = {
+		icon = generic_economy
+		cost = 60
+		days_remove = 90
+		days_re_enable = 180
+		complete_effect = {
+			add_stability = 0.05
+			BIO = { add_to_variable = { biotechnica_research_progress = 6 } }
+		}
+		ai_will_do = { factor = 1.8 }
+	}
+	EEC_increase_agricultural_subsidies = {
+		icon = generic_economy
+		cost = 50
+		days_remove = 90
+		days_re_enable = 180
+		complete_effect = {
+			BIO = {
+				add_to_variable = { biotechnica_research_progress = 5 }
+				add_political_power = 20
+			}
+		}
+		ai_will_do = { factor = 1.6 }
+	}
+	EEC_expand_strategic_seed_reserves = {
+		icon = generic_prospect_for_resources
+		cost = 45
+		days_remove = 75
+		days_re_enable = 150
+		complete_effect = {
+			848 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			BIO = { add_to_variable = { biotechnica_research_progress = 5 } }
+			add_stability = 0.02
+		}
+		ai_will_do = { factor = 1.5 }
+	}
+	EEC_accelerate_bioengineering_projects = {
+		icon = generic_research
+		cost = 80
+		days_remove = 120
+		days_re_enable = 240
+		available = {
+			BIO = {
+				is_subject_of = EEC
+				check_variable = { biotechnica_research_progress > 59 }
+			}
+		}
+		complete_effect = {
+			BIO = { add_to_variable = { biotechnica_research_progress = 12 } }
+			add_tech_bonus = { bonus = 0.75 uses = 1 category = industry }
+		}
+		ai_will_do = { factor = 1.4 }
+	}
+}

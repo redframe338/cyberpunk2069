@@ -1,0 +1,16 @@
+metacorp_technology_initiative = {
+	icon = generic_research
+	allowed = { tag = MTC }
+	visible = { tag = MTC }
+	priority = 55
+}
+
+federal_technology_policy = {
+	icon = generic_research
+	allowed = { tag = NUS }
+	visible = {
+		tag = NUS
+		country_exists = MTC
+	}
+	priority = 55
+}

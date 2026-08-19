@@ -1,0 +1,39 @@
+is_sovereign_corporation = {
+	OR = {
+		tag = ARK
+		tag = SVO
+		tag = MLT
+		tag = BIO
+		tag = MTC
+		tag = KGT
+	}
+}
+
+corporate_host_country_exists = {
+	OR = {
+		AND = {
+			tag = ARK
+			country_exists = JAP
+		}
+		AND = {
+			tag = SVO
+			country_exists = USR
+		}
+		AND = {
+			tag = MLT
+			country_exists = NUS
+		}
+		AND = {
+			tag = BIO
+			country_exists = EEC
+		}
+		AND = {
+			tag = MTC
+			country_exists = NUS
+		}
+		AND = {
+			tag = KGT
+			country_exists = CHI
+		}
+	}
+}

@@ -1,0 +1,36 @@
+# AUTO-GENERATED map override: USA -> NUS (Cyberpunk conversion). See docs/03.
+
+state={
+	id=389
+	name="STATE_389"
+	manpower = 40000
+	state_category = rural
+	resources={
+		steel=17 # was: 24
+		oil=7 # was: 10
+		coal = 12 # initial distribution = with infra 25.2 / 1280 total
+	}
+
+	history={
+		add_dynamic_modifier = { modifier = MLT_military_testing_grounds_modifier }
+		owner = MLT
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 2
+			anti_air_building = 3
+		}
+		add_core_of = MLT
+		add_core_of = NUS
+		victory_points = {
+			1836 1 
+		}
+
+	}
+
+	provinces={
+		1752 1836 1870 3719 4759 4772 6722 7877 10685 10709 12566 12685 
+	}
+
+	local_supplies=9.0 
+}

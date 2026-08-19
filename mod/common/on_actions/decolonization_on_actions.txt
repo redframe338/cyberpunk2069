@@ -1,0 +1,197 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			# The 2069 world has no surviving British Empire.  Vanilla country
+			# history creates these relationships before our start date, so
+			# dissolve them after all country history has been evaluated.
+			if = {
+				limit = { country_exists = ENG }
+				ENG = {
+					# Decades of isolation and deindustrialization have reduced
+					# Britain to a small, obsolete domestic economy.
+					every_owned_state = {
+						set_building_level = {
+							type = industrial_complex
+							level = 1
+						}
+						set_building_level = {
+							type = arms_factory
+							level = 0
+						}
+						set_building_level = {
+							type = dockyard
+							level = 0
+						}
+					}
+					if = {
+						limit = {
+							country_exists = CAN
+							CAN = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = CAN
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = AST
+							AST = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = AST
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = NZL
+							NZL = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = NZL
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = SAF
+							SAF = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = SAF
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = RAJ
+							RAJ = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = RAJ
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = MAL
+							MAL = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = MAL
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = BRM
+							BRM = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = BRM
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = OMA
+							OMA = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = OMA
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = PAL
+							PAL = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = PAL
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = JOR
+							JOR = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = JOR
+							autonomous_state = autonomy_free
+						}
+					}
+					if = {
+						limit = {
+							country_exists = KUW
+							KUW = { is_subject_of = ENG }
+						}
+						set_autonomy = {
+							target = KUW
+							autonomous_state = autonomy_free
+						}
+					}
+				}
+			}
+
+			# The old Allies faction is a WWII artifact.  Former dominions begin
+			# 2069 diplomatically independent as well as legally sovereign.
+			if = {
+				limit = { country_exists = CAN }
+				CAN = {
+					if = {
+						limit = { is_in_faction = yes }
+						faction_leader = { remove_from_faction = CAN }
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = AST }
+				AST = {
+					if = {
+						limit = { is_in_faction = yes }
+						faction_leader = { remove_from_faction = AST }
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = NZL }
+				NZL = {
+					if = {
+						limit = { is_in_faction = yes }
+						faction_leader = { remove_from_faction = NZL }
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = SAF }
+				SAF = {
+					if = {
+						limit = { is_in_faction = yes }
+						faction_leader = { remove_from_faction = SAF }
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = RAJ }
+				RAJ = {
+					if = {
+						limit = { is_in_faction = yes }
+						faction_leader = { remove_from_faction = RAJ }
+					}
+				}
+			}
+			if = {
+				limit = { country_exists = MAL }
+				MAL = {
+					if = {
+						limit = { is_in_faction = yes }
+						faction_leader = { remove_from_faction = MAL }
+					}
+				}
+			}
+		}
+	}
+}

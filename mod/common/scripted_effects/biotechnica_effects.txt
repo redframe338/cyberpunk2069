@@ -1,0 +1,27 @@
+BIO_clamp_research_progress = {
+	if = {
+		limit = { check_variable = { biotechnica_research_progress > 100 } }
+		set_variable = { biotechnica_research_progress = 100 }
+	}
+	if = {
+		limit = { check_variable = { biotechnica_research_progress < 0 } }
+		set_variable = { biotechnica_research_progress = 0 }
+	}
+}
+
+BIO_update_research_progress_spirit = {
+	BIO_clamp_research_progress = yes
+	if = { limit = { has_idea = BIO_progress_foundation } remove_ideas = BIO_progress_foundation }
+	if = { limit = { has_idea = BIO_progress_expansion } remove_ideas = BIO_progress_expansion }
+	if = { limit = { has_idea = BIO_progress_innovation } remove_ideas = BIO_progress_innovation }
+	if = { limit = { has_idea = BIO_progress_industrial } remove_ideas = BIO_progress_industrial }
+	if = { limit = { has_idea = BIO_progress_leadership } remove_ideas = BIO_progress_leadership }
+	if = { limit = { has_idea = BIO_progress_superpower } remove_ideas = BIO_progress_superpower }
+
+	if = { limit = { BIO_is_progress_foundation = yes } add_ideas = BIO_progress_foundation }
+	if = { limit = { BIO_is_progress_expansion = yes } add_ideas = BIO_progress_expansion }
+	if = { limit = { BIO_is_progress_innovation = yes } add_ideas = BIO_progress_innovation }
+	if = { limit = { BIO_is_progress_industrial = yes } add_ideas = BIO_progress_industrial }
+	if = { limit = { BIO_is_progress_leadership = yes } add_ideas = BIO_progress_leadership }
+	if = { limit = { BIO_is_progress_superpower = yes } add_ideas = BIO_progress_superpower }
+}

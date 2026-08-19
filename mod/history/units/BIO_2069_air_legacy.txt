@@ -1,0 +1,193 @@
+# AUTO-GENERATED: exactly 10,000 advanced Biotechnica aircraft.
+air_wings = {
+	8 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 8"
+	}
+	39 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 39"
+	}
+	72 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 72"
+	}
+	139 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 139"
+	}
+	148 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 148"
+	}
+	172 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 172"
+	}
+	698 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 698"
+	}
+	788 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 788"
+	}
+	848 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 848"
+	}
+	975 = {
+		fighter_equipment_3 = {
+			owner = BIO
+			amount = 500
+		}
+		CAS_equipment_3 = {
+			owner = BIO
+			amount = 250
+		}
+		tac_bomber_equipment_3 = {
+			owner = BIO
+			amount = 150
+		}
+		nav_bomber_equipment_3 = {
+			owner = BIO
+			amount = 100
+		}
+		name = "Biotechnica Air Command 975"
+	}
+}

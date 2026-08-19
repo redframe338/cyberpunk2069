@@ -1,0 +1,16 @@
+BIO_petrochem_balanced_investment_plan = {
+	name = "Biotechnica PetroChem balanced investment plan"
+	desc = "Balance energy security, chemical production, agriculture, and future hydrogen research."
+	allowed = { original_tag = BIO }
+	enable = { always = yes }
+	abort = { always = no }
+	ai_national_focuses = { }
+	research = { }
+	ideas = { }
+	traits = { }
+	weight = {
+		factor = 1
+		modifier = { factor = 2 has_war = yes }
+		modifier = { factor = 1.5 date > 2072.1.1 }
+	}
+}

@@ -1,0 +1,152 @@
+add_namespace = kangtao
+
+country_event = {
+	id = kangtao.1
+	title = kangtao.1.t
+	desc = kangtao.1.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = kangtao.1.a
+		add_stability = 0.02
+		add_political_power = 40
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = kangtao.1.b
+		add_to_variable = { kangtao_state_influence = 5 }
+		KGT_update_influence_spirit = yes
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = kangtao.2
+	title = kangtao.2.t
+	desc = kangtao.2.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = KGT NOT = { has_country_flag = KGT_major_contract_fired } }
+	mean_time_to_happen = { months = 10 }
+	fire_only_once = yes
+	immediate = { set_country_flag = KGT_major_contract_fired }
+	option = {
+		name = kangtao.2.a
+		add_to_variable = { kangtao_state_influence = 6 }
+		add_political_power = 50
+		CHI = { add_war_support = 0.01 }
+		KGT_update_influence_spirit = yes
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = kangtao.2.b
+		add_political_power = 100
+		add_to_variable = { kangtao_state_influence = -3 }
+		KGT_update_influence_spirit = yes
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = kangtao.3
+	title = kangtao.3.t
+	desc = kangtao.3.d
+	picture = GFX_report_event_generic_read_write
+	trigger = { tag = KGT NOT = { has_country_flag = KGT_drone_breakthrough_fired } }
+	mean_time_to_happen = { months = 16 }
+	fire_only_once = yes
+	immediate = { set_country_flag = KGT_drone_breakthrough_fired }
+	option = {
+		name = kangtao.3.a
+		add_tech_bonus = { bonus = 0.60 uses = 2 category = electronics }
+		add_to_variable = { kangtao_state_influence = 6 }
+		KGT_update_influence_spirit = yes
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = kangtao.3.b
+		745 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		add_political_power = 40
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = kangtao.4
+	title = kangtao.4.t
+	desc = kangtao.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	trigger = { tag = KGT NOT = { has_country_flag = KGT_arasaka_export_fair_fired } }
+	mean_time_to_happen = { months = 20 }
+	fire_only_once = yes
+	immediate = { set_country_flag = KGT_arasaka_export_fair_fired }
+	option = {
+		name = kangtao.4.a
+		add_opinion_modifier = {
+			target = ARK
+			modifier = KGT_arasaka_technology_partner
+		}
+		add_political_power = 70
+		add_to_variable = { kangtao_state_influence = 4 }
+		KGT_update_influence_spirit = yes
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = kangtao.4.b
+		add_political_power = 100
+		CHI = { add_stability = 0.01 }
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = kangtao.5
+	title = kangtao.5.t
+	desc = kangtao.5.d
+	picture = GFX_report_event_generic_read_write
+	trigger = { tag = KGT NOT = { has_country_flag = KGT_cyberattack_fired } }
+	mean_time_to_happen = { months = 25 }
+	fire_only_once = yes
+	immediate = { set_country_flag = KGT_cyberattack_fired }
+	option = {
+		name = kangtao.5.a
+		add_political_power = -60
+		add_stability = 0.02
+		add_tech_bonus = { bonus = 0.40 uses = 1 category = electronics }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = kangtao.5.b
+		add_stability = -0.05
+		add_to_variable = { kangtao_state_influence = -6 }
+		KGT_update_influence_spirit = yes
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = kangtao.6
+	title = kangtao.6.t
+	desc = kangtao.6.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = KGT NOT = { has_country_flag = KGT_industrial_sabotage_fired } }
+	mean_time_to_happen = { months = 30 }
+	fire_only_once = yes
+	immediate = { set_country_flag = KGT_industrial_sabotage_fired }
+	option = {
+		name = kangtao.6.a
+		add_political_power = -75
+		add_stability = 0.02
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = kangtao.6.b
+		add_stability = -0.04
+		add_to_variable = { kangtao_state_influence = -5 }
+		KGT_update_influence_spirit = yes
+		ai_chance = { factor = 30 }
+	}
+}

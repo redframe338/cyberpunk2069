@@ -1,0 +1,19 @@
+# Paradox / HOI4 local junk
+*.log
+logs/
+.mod
+descriptor.mod.bak
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Preview images at project root (generated, not needed in repo)
+*_preview.png
+
+# Keep the mod's own descriptor and content tracked (only ignore stray ones above)
+!mod/descriptor.mod

@@ -1,0 +1,339 @@
+ideas = {
+	country = {
+		BIO_european_scientific_excellence = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.10
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		BIO_agricultural_revolution = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.08
+				production_speed_infrastructure_factor = 0.20
+				stability_factor = 0.08
+			}
+		}
+		BIO_pharmaceutical_monopoly = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.15
+			}
+		}
+		BIO_state_biotechnology_initiative = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.06
+				production_factory_efficiency_gain_factor = 0.08
+				industrial_capacity_factory = 0.05
+			}
+		}
+		BIO_global_logistics_genome = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.50
+				army_fuel_consumption_factor = -0.50
+				org_loss_when_moving = -0.40
+				army_speed_factor = 0.15
+				attrition = -0.30
+				industry_repair_factor = 0.50
+				production_speed_supply_node_factor = 0.75
+				production_speed_rail_way_factor = 0.75
+				production_speed_infrastructure_factor = 0.75
+			}
+		}
+		BIO_aerospace_supremacy = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				air_mission_efficiency = 0.50
+				air_range_factor = 1.00
+				air_accidents_factor = -0.75
+				air_attack_factor = 0.50
+				air_defence_factor = 0.50
+				air_agility_factor = 0.40
+				air_ace_generation_chance_factor = 1.00
+				experience_gain_air_factor = 0.50
+			}
+		}
+		BIO_bioeconomic_hegemony = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.75
+				industrial_capacity_dockyard = 0.50
+				production_factory_max_efficiency_factor = 0.35
+				production_factory_efficiency_gain_factor = 0.50
+				production_speed_buildings_factor = 0.50
+				consumer_goods_factor = -0.20
+				research_speed_factor = 0.20
+				local_resources_factor = 0.50
+				fuel_gain_factor = 2.00
+				navy_fuel_consumption_factor = -0.50
+			}
+			equipment_bonus = {
+				screen_ship = { naval_range = 0.50 naval_speed = 0.10 }
+				carrier = { naval_range = 0.50 naval_speed = 0.10 }
+				capital_ship = { naval_range = 0.50 naval_speed = 0.10 }
+				submarine = { naval_range = 0.50 naval_speed = 0.10 }
+			}
+		}
+		EEC_biotechnica_scientific_directorate = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.03
+				production_speed_industrial_complex_factor = 0.08
+				stability_factor = 0.03
+			}
+		}
+		BIO_biotechnology_crisis = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = -0.10
+				industrial_capacity_factory = -0.10
+				stability_factor = -0.10
+			}
+		}
+		BIO_emergency_scientific_mobilization = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.12
+				production_factory_efficiency_gain_factor = 0.15
+				consumer_goods_factor = 0.05
+				stability_factor = -0.03
+			}
+		}
+		BIO_continental_medicine_program_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				weekly_manpower = 75
+				consumer_goods_factor = -0.02
+			}
+		}
+		BIO_advanced_pharmaceuticals = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.04
+				industrial_capacity_factory = 0.05
+				trade_opinion_factor = 0.10
+			}
+		}
+		BIO_food_security_guarantee_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				consumer_goods_factor = -0.03
+				local_resources_factor = 0.05
+			}
+		}
+		EEC_biotechnica_food_security = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.04
+				consumer_goods_factor = -0.02
+			}
+		}
+		BIO_environmental_engineering_corps_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				local_resources_factor = 0.08
+				industry_repair_factor = 0.10
+			}
+		}
+		BIO_secure_research_network = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				resistance_target = -0.05
+				intelligence_agency_defense = 0.10
+			}
+		}
+		BIO_counterespionage_protocols = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				operative_slot = 1
+				agency_upgrade_time = -0.10
+			}
+		}
+		BIO_emergency_biological_reserve_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.05
+				attrition = -0.05
+				army_morale_factor = 0.05
+			}
+		}
+		BIO_binding_bioethics = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				research_speed_factor = -0.02
+				political_power_gain = 0.08
+			}
+		}
+		BIO_unrestricted_acceleration = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+				stability_factor = -0.06
+			}
+		}
+		BIO_science_in_service_of_europe_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.06
+				political_power_gain = 0.08
+				consumer_goods_factor = -0.02
+			}
+		}
+		BIO_bioeconomic_powerhouse_spirit = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.08
+				stability_factor = 0.05
+			}
+		}
+
+		BIO_progress_foundation = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.01 } }
+		BIO_progress_expansion = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.03 production_speed_industrial_complex_factor = 0.05 } }
+		BIO_progress_innovation = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.05 industrial_capacity_factory = 0.03 } }
+		BIO_progress_industrial = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.07 industrial_capacity_factory = 0.06 } }
+		BIO_progress_leadership = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.10 industrial_capacity_factory = 0.08 consumer_goods_factor = -0.02 } }
+		BIO_progress_superpower = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.15 industrial_capacity_factory = 0.12 consumer_goods_factor = -0.04 stability_factor = 0.05 } }
+
+		petrochem_capital_program = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.04
+				production_speed_infrastructure_factor = 0.10
+				production_speed_synthetic_refinery_factor = 0.15
+			}
+		}
+		petrochem_regional_refinery_network = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { fuel_gain_factor = 0.05 production_speed_infrastructure_factor = 0.03 }
+		}
+		petrochem_national_energy_producer = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { fuel_gain_factor = 0.12 local_resources_factor = 0.05 production_speed_infrastructure_factor = 0.05 }
+		}
+		petrochem_continental_supplier = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { fuel_gain_factor = 0.20 local_resources_factor = 0.08 industrial_capacity_factory = 0.04 production_factory_efficiency_gain_factor = 0.05 }
+		}
+		petrochem_nusa_industrial_backbone = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { fuel_gain_factor = 0.30 local_resources_factor = 0.12 industrial_capacity_factory = 0.07 production_factory_efficiency_gain_factor = 0.08 supply_consumption_factor = -0.05 }
+		}
+		petrochem_strategic_energy_giant = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { fuel_gain_factor = 0.45 local_resources_factor = 0.16 industrial_capacity_factory = 0.10 production_factory_efficiency_gain_factor = 0.12 supply_consumption_factor = -0.08 consumer_goods_factor = -0.02 }
+		}
+		petrochem_global_petrochemical_leader = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { fuel_gain_factor = 0.65 local_resources_factor = 0.20 industrial_capacity_factory = 0.14 production_factory_efficiency_gain_factor = 0.15 supply_consumption_factor = -0.10 consumer_goods_factor = -0.03 research_speed_factor = 0.05 }
+		}
+		petrochem_energy_production_branch = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { fuel_gain_factor = 0.15 local_resources_factor = 0.08 production_speed_infrastructure_factor = 0.10 }
+		}
+		petrochem_chemical_manufacturing_branch = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { industrial_capacity_factory = 0.06 production_factory_efficiency_gain_factor = 0.08 production_speed_industrial_complex_factor = 0.08 }
+		}
+		petrochem_synthetic_fuels_branch = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { fuel_gain_factor = 0.20 production_speed_synthetic_refinery_factor = 0.20 army_fuel_consumption_factor = -0.05 }
+		}
+		petrochem_fertilizer_production_branch = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { consumer_goods_factor = -0.02 stability_factor = 0.03 production_speed_infrastructure_factor = 0.05 }
+		}
+		petrochem_hydrogen_technologies_branch = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = { research_speed_factor = 0.04 fuel_gain_factor = 0.10 production_speed_infrastructure_factor = 0.10 }
+		}
+		petrochem_continental_energy_initiative_spirit = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.20
+				production_speed_infrastructure_factor = 0.15
+				supply_consumption_factor = -0.05
+				local_resources_factor = 0.05
+			}
+		}
+		petrochem_pollution_penalties = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.04
+				consumer_goods_factor = 0.03
+			}
+		}
+		petrochem_hydrogen_breakthrough_spirit = {
+			picture = petrochem_logo
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				fuel_gain_factor = 0.12
+				production_speed_infrastructure_factor = 0.10
+			}
+		}
+	}
+}

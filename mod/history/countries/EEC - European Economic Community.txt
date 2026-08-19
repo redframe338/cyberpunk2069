@@ -1,0 +1,38 @@
+# European Economic Community â€” 2069 starting setup (auto-generated first pass; placeholder government).
+capital = 64
+
+set_oob = "EEC_2069"
+
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.40
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2064.01.01"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 25
+	neutrality = 60
+	fascism = 10
+	communism = 5
+}
+
+create_country_leader = {
+	name = "The European Parliament"
+	picture = GFX_portrait_EEC_european_parliament
+	expire = "2100.1.1"
+	ideology = oligarchism
+	traits = { }
+}
+
+set_autonomy = {
+	target = BIO
+	autonomous_state = autonomy_integrated_scientific_corporation
+	freedom_level = 0.10
+}
+add_ideas = EEC_biotechnica_scientific_directorate
+set_variable = { biotechnica_research_progress = 35 }

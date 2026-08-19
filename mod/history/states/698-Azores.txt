@@ -1,0 +1,35 @@
+# AUTO-GENERATED map override: POR -> EEC (Cyberpunk conversion). See docs/03.
+state={
+	id=698
+	name="STATE_698"
+	manpower = 50000
+	
+	state_category = small_island
+	
+	history={
+		add_dynamic_modifier = { modifier = BIO_biotechnology_export_hub_modifier }
+		owner = BIO
+		victory_points = {
+			1751 3 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			dockyard = 10
+			1751 = {
+				naval_base = 10
+			}
+		}
+		strategic_state_location = {
+			favorable_approach = 1751
+		}
+		add_core_of = BIO
+		add_core_of = EEC
+	}
+	
+	provinces={
+		1751 
+	}
+
+	local_supplies=0.0 
+}

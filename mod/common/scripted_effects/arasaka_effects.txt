@@ -1,0 +1,64 @@
+ARK_clamp_influence = {
+	if = {
+		limit = { check_variable = { arasaka_influence_japan > 100 } }
+		set_variable = { arasaka_influence_japan = 100 }
+	}
+	if = {
+		limit = { check_variable = { arasaka_influence_japan < 0 } }
+		set_variable = { arasaka_influence_japan = 0 }
+	}
+}
+
+ARK_update_influence_spirit = {
+	ARK_clamp_influence = yes
+
+	if = {
+		limit = { has_idea = ARK_influence_restricted }
+		remove_ideas = ARK_influence_restricted
+	}
+	if = {
+		limit = { has_idea = ARK_influence_contractor }
+		remove_ideas = ARK_influence_contractor
+	}
+	if = {
+		limit = { has_idea = ARK_influence_partner }
+		remove_ideas = ARK_influence_partner
+	}
+	if = {
+		limit = { has_idea = ARK_influence_state_within_state }
+		remove_ideas = ARK_influence_state_within_state
+	}
+	if = {
+		limit = { has_idea = ARK_influence_government_control }
+		remove_ideas = ARK_influence_government_control
+	}
+	if = {
+		limit = { has_idea = ARK_influence_dominance }
+		remove_ideas = ARK_influence_dominance
+	}
+
+	if = {
+		limit = { ARK_is_influence_restricted = yes }
+		add_ideas = ARK_influence_restricted
+	}
+	if = {
+		limit = { ARK_is_influence_contractor = yes }
+		add_ideas = ARK_influence_contractor
+	}
+	if = {
+		limit = { ARK_is_influence_partner = yes }
+		add_ideas = ARK_influence_partner
+	}
+	if = {
+		limit = { ARK_is_influence_state_within_state = yes }
+		add_ideas = ARK_influence_state_within_state
+	}
+	if = {
+		limit = { ARK_is_influence_government_control = yes }
+		add_ideas = ARK_influence_government_control
+	}
+	if = {
+		limit = { ARK_is_influence_dominance = yes }
+		add_ideas = ARK_influence_dominance
+	}
+}

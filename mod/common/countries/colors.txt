@@ -1,0 +1,212 @@
+#reload countrycolors
+# Cyberpunk conversion color table. Surviving vanilla nations keep their original
+# colors; new Cyberpunk tags use the canon-map palette. See docs/03.
+
+# ---- New Cyberpunk powers ----
+NUS = {
+	color = rgb { 25 50 130 }
+	color_ui = rgb { 45 80 175 }
+}
+USR = {
+	color = rgb { 100 10 10 }
+	color_ui = rgb { 130 20 20 }
+}
+WCS = {
+	color = rgb { 120 170 210 }
+	color_ui = rgb { 150 195 230 }
+}
+FSA = {
+	color = rgb { 175 205 230 }
+	color_ui = rgb { 200 225 245 }
+}
+TEX = {
+	color = rgb { 205 95 70 }
+	color_ui = rgb { 230 120 95 }
+}
+OAS = {
+	color = rgb { 90 150 210 }
+	color_ui = rgb { 120 180 235 }
+}
+EEC = {
+	color = rgb { 45 100 205 }
+	color_ui = rgb { 70 130 235 }
+}
+GRN = {
+	color = rgb { 120 130 150 }
+	color_ui = rgb { 150 160 180 }
+}
+KOR = {
+	color = rgb { 180 140 200 }
+	color_ui = rgb { 205 170 225 }
+}
+URB = {
+	color = rgb { 210 150 90 }
+	color_ui = rgb { 235 180 120 }
+}
+ASN = {
+	color = rgb { 230 100 160 }
+	color_ui = rgb { 245 130 185 }
+}
+IDN = {
+	color = rgb { 235 130 180 }
+	color_ui = rgb { 250 160 205 }
+}
+UAR = {
+	color = rgb { 150 170 90 }
+	color_ui = rgb { 180 200 120 }
+}
+PAC = {
+	color = rgb { 60 150 70 }
+	color_ui = rgb { 85 180 95 }
+}
+UNW = {
+	color = rgb { 240 200 90 }
+	color_ui = rgb { 250 220 130 }
+}
+MOR = {
+	color = rgb { 140 45 45 }
+	color_ui = rgb { 175 70 70 }
+}
+ALG = {
+	color = rgb { 110 60 60 }
+	color_ui = rgb { 145 90 90 }
+}
+AZA = {
+	color = rgb { 200 120 60 }
+	color_ui = rgb { 225 150 90 }
+}
+NIR = {
+	color = rgb { 55 85 55 }
+	color_ui = rgb { 75 110 75 }
+}
+SIR = {
+	color = rgb { 60 140 120 }
+	color_ui = rgb { 85 170 150 }
+}
+
+ARK = {
+	color = rgb { 40 0 0 }
+	color_ui = rgb { 160 20 30 }
+}
+SVO = {
+	color = rgb { 72 32 12 }
+	color_ui = rgb { 180 95 35 }
+}
+MLT = {
+	color = rgb { 190 145 32 }
+	color_ui = rgb { 235 190 70 }
+}
+MTC = {
+	color = rgb { 220 105 5 }
+	color_ui = rgb { 255 145 20 }
+}
+BIO = {
+	color = rgb { 30 145 65 }
+	color_ui = rgb { 70 205 95 }
+}
+
+# ---- Eurasian Empire cosmetic tags ----
+USR_eurasian_empire = {
+	color = rgb { 90 82 12 }
+	color_ui = rgb { 170 155 30 }
+}
+USR_corporate_eurasia = {
+	color = rgb { 65 60 20 }
+	color_ui = rgb { 140 130 40 }
+}
+
+# ---- SovOil Eurasia cosmetic tag ----
+USR_sovoil_eurasia = {
+	color = rgb { 30 30 30 }
+	color_ui = rgb { 180 95 35 }
+}
+
+# ---- Democratic Restoration cosmetic tags ----
+USR_russian_federation = {
+	color = rgb { 30 70 160 }
+	color_ui = rgb { 50 100 210 }
+}
+USR_commonwealth_states = {
+	color = rgb { 30 160 60 }
+	color_ui = rgb { 50 200 80 }
+}
+
+# ---- Gazprom Corporation ----
+GAZ = {
+	color = rgb { 150 200 240 }
+	color_ui = rgb { 175 220 250 }
+}
+
+# ---- Holy Russian Empire ----
+HRE = {
+	color = rgb { 255 255 0 }
+	color_ui = rgb { 255 255 50 }
+}
+
+# ---- Soviet Empire cosmetic tag ----
+USR_soviet_empire = {
+	color = rgb { 112 12 24 }
+	color_ui = rgb { 150 20 35 }
+}
+
+# ---- Surviving nations (vanilla colors preserved) ----
+GER = { color = HSV { 0.1 0.15 0.4 } color_ui = rgb { 138 155 116 } }
+ENG = { color = rgb { 35 75 155 } color_ui = rgb { 65 115 210 } }
+FRA = { color = rgb { 57 113 228 } color_ui = rgb { 74 147 255 } }
+ITA = { color = rgb { 67 127 63 } color_ui = rgb { 87 165 82 } }
+SPR = { color = rgb { 242 205 94 } color_ui = rgb { 255 255 122 } }
+POR = { color = rgb { 39 116 70 } color_ui = rgb { 51 151 91 } }
+POL = { color = rgb { 214 102 139 } color_ui = rgb { 255 120 138 } }
+CZE = { color = rgb { 54 167 156 } color_ui = rgb { 70 217 203 } }
+AUS = { color = rgb { 194 198 215 } color_ui = rgb { 255 255 255 } }
+HUN = { color = rgb { 249 126 98 } color_ui = rgb { 255 164 127 } }
+ROM = { color = rgb { 215 196 72 } color_ui = rgb { 255 255 120 } }
+BUL = { color = rgb { 51 155 0 } color_ui = rgb { 51 155 0 } }
+YUG = { color = rgb { 72 73 126 } color_ui = rgb { 94 95 164 } }
+GRE = { color = rgb { 93 181 227 } color_ui = rgb { 121 235 255 } }
+ALB = { color = rgb { 149 45 102 } color_ui = rgb { 194 59 133 } }
+SWI = { color = rgb { 224 5 5 } color_ui = rgb { 193 81 81 } }
+BEL = { color = rgb { 193 171 8 } color_ui = rgb { 251 222 10 } }
+HOL = { color = rgb { 203 138 74 } color_ui = rgb { 255 179 96 } }
+LUX = { color = rgb { 65 175 179 } color_ui = rgb { 85 228 233 } }
+IRE = { color = rgb { 80 159 90 } color_ui = rgb { 104 207 117 } }
+NOR = { color = rgb { 111 71 71 } color_ui = rgb { 144 92 92 } }
+SWE = { color = rgb { 36 132 247 } color_ui = rgb { 47 172 255 } }
+DEN = { color = rgb { 153 116 93 } color_ui = rgb { 199 151 121 } }
+FIN = { color = rgb { 205 212 228 } color_ui = rgb { 255 255 255 } }
+ICE = { color = rgb { 100 125 175 } color_ui = rgb { 100 125 175 } }
+TUR = { color = rgb { 171 190 152 } color_ui = rgb { 222 247 198 } }
+CHI = { color = rgb { 105 15 24 } color_ui = rgb { 155 28 38 } }
+KGT = { color = rgb { 150 65 5 } color_ui = rgb { 210 100 15 } }
+JAP = { color = rgb { 235 235 235 } color_ui = rgb { 255 255 255 } }
+MON = { color = rgb { 108 140 42 } color_ui = rgb { 209 247 133 } }
+AST = { color = rgb { 57 143 97 } color_ui = rgb { 74 186 126 } }
+NZL = { color = rgb { 152 130 191 } color_ui = rgb { 198 169 248 } }
+CAN = { color = rgb { 233 59 59 } color_ui = rgb { 155 62 51 } }
+SAU = { color = rgb { 171 190 152 } color_ui = rgb { 222 247 198 } }
+YEM = { color = rgb { 155 101 107 } color_ui = rgb { 202 131 139 } }
+OMA = { color = rgb { 155 101 107 } color_ui = rgb { 202 131 139 } }
+
+# ---- NUS Cosmetic Tags ----
+NUS_empire_america = {
+	color = rgb { 50 50 50 }
+	color_ui = rgb { 80 80 80 }
+}
+NUS_corporate_confederation = {
+	color = rgb { 200 170 50 }
+	color_ui = rgb { 230 200 80 }
+}
+NUS_american_federation = {
+	color = rgb { 30 80 180 }
+	color_ui = rgb { 50 120 230 }
+}
+NUS_socialist_states = {
+	color = rgb { 180 30 30 }
+	color_ui = rgb { 220 50 50 }
+}
+
+# ---- Petrochem Corporation ----
+PET = {
+	color = rgb { 120 40 160 }
+	color_ui = rgb { 160 60 210 }
+}

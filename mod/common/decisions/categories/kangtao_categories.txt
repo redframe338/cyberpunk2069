@@ -1,0 +1,16 @@
+kangtao_corporate_expansion = {
+	icon = generic_research
+	allowed = { tag = KGT }
+	visible = { tag = KGT }
+	priority = 65
+}
+
+chinese_defense_policy = {
+	icon = generic_prepare_civil_war
+	allowed = { tag = CHI }
+	visible = {
+		tag = CHI
+		country_exists = KGT
+	}
+	priority = 65
+}

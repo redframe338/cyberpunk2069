@@ -1,0 +1,106 @@
+ideas = {
+	country = {
+		KGT_precision_manufacturing = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		KGT_smart_weapons_pioneer = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				experience_gain_army_factor = 0.15
+				army_org_factor = 0.05
+			}
+		}
+		KGT_integrated_robotics_industry = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.06
+				industrial_capacity_factory = 0.10
+				production_factory_efficiency_gain_factor = 0.10
+			}
+		}
+		KGT_global_arms_exporter = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.30
+				political_power_gain = 0.12
+				consumer_goods_factor = -0.04
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		KGT_export_superpower = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.50
+				political_power_gain = 0.15
+				industrial_capacity_factory = 0.12
+				industrial_capacity_dockyard = 0.15
+				consumer_goods_factor = -0.05
+			}
+		}
+		KGT_autonomous_combat_systems = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				army_morale_factor = 0.08
+				recon_factor = 0.10
+			}
+		}
+		KGT_government_oversight = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.08
+				research_speed_factor = -0.04
+				stability_factor = 0.05
+			}
+		}
+		KGT_export_restrictions = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = -0.25
+				industrial_capacity_factory = -0.08
+				political_power_gain = -0.08
+			}
+		}
+		KGT_wartime_mobilization = {
+			allowed = { original_tag = KGT }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = 0.20
+				consumer_goods_factor = 0.08
+				supply_consumption_factor = -0.10
+			}
+		}
+
+		CHI_kangtao_defense_partnership = {
+			allowed = { original_tag = CHI }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.04
+				industrial_capacity_factory = 0.04
+				army_org_factor = 0.02
+			}
+		}
+
+		KGT_influence_approved_contractor = { allowed = { always = no } removal_cost = -1 modifier = { political_power_gain = -0.05 } }
+		KGT_influence_strategic_supplier = { allowed = { always = no } removal_cost = -1 modifier = { industrial_capacity_factory = 0.03 } }
+		KGT_influence_national_partner = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.03 industrial_capacity_factory = 0.04 } }
+		KGT_influence_technology_leader = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.05 industrial_capacity_factory = 0.07 political_power_gain = 0.05 } }
+		KGT_influence_defense_giant = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.08 industrial_capacity_factory = 0.10 political_power_gain = 0.10 } }
+		KGT_influence_state_within_state = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.12 industrial_capacity_factory = 0.15 political_power_gain = 0.20 stability_factor = -0.05 } }
+	}
+}

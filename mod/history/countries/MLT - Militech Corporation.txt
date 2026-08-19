@@ -1,0 +1,100 @@
+# Militech Corporation — 1 January 2069
+capital = 362
+set_oob = "MLT_2069"
+
+set_research_slots = 5
+set_stability = 0.72
+set_war_support = 0.72
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2064.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 65
+	democratic = 20
+	fascism = 14
+	communism = 1
+}
+
+create_country_leader = {
+	name = "Lucas Harford"
+	picture = GFX_portrait_MLT_lucas_harford
+	expire = "2100.1.1"
+	ideology = despotism
+	traits = { }
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	advanced_infantry_weapons = 1
+	advanced_infantry_weapons2 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	interwar_artillery = 1
+	artillery1 = 1
+	artillery2 = 1
+	artillery3 = 1
+	artillery4 = 1
+	artillery5 = 1
+	interwar_antitank = 1
+	antitank1 = 1
+	antitank2 = 1
+	antitank3 = 1
+	antitank4 = 1
+	antitank5 = 1
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	support_weapons4 = 1
+	tech_logistics_company = 1
+	tech_logistics_company2 = 1
+	tech_logistics_company3 = 1
+	tech_logistics_company4 = 1
+	tech_mountaineers = 1
+	paratroopers = 1
+	armored_car1 = 1
+	basic_light_tank_chassis = 1
+	basic_medium_tank_chassis = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	construction1 = 1
+	construction2 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+}
+
+add_ideas = MLT_military_industrial_titan
+add_ideas = MLT_private_army_doctrine
+add_ideas = MLT_advanced_weapons_development
+add_ideas = MLT_federal_defense_contracts
+add_ideas = MLT_apex_infantry_system
+
+set_variable = { militech_federal_influence = 45 }
+set_country_flag = MLT_strategic_defense_corporation
+set_convoys = 40
+
+add_equipment_to_stockpile = { type = infantry_equipment amount = 9000 producer = MLT }
+add_equipment_to_stockpile = { type = support_equipment amount = 1200 producer = MLT }
+add_equipment_to_stockpile = { type = motorized_equipment amount = 1800 producer = MLT }
+add_equipment_to_stockpile = { type = artillery_equipment amount = 500 producer = MLT }
+add_equipment_to_stockpile = { type = infantry_equipment_3 amount = 150000 producer = MLT }
+add_equipment_to_stockpile = { type = support_equipment amount = 20000 producer = MLT }
+add_equipment_to_stockpile = { type = artillery_equipment_3 amount = 20000 producer = MLT }
+add_equipment_to_stockpile = { type = anti_tank_equipment_3 amount = 10000 producer = MLT }
+add_equipment_to_stockpile = { type = motorized_equipment amount = 10000 producer = MLT }

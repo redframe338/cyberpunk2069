@@ -1,0 +1,32 @@
+# AUTO-GENERATED map override: USA -> NUS (Cyberpunk conversion). See docs/03.
+
+state={
+	id=384
+	name="STATE_384"
+	manpower = 90000
+	
+	state_category = large_town
+
+	history={
+		add_dynamic_modifier = { modifier = MLT_military_industrial_complex_modifier }
+		owner = MLT
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 3
+			anti_air_building = 2
+		}
+		add_core_of = MLT
+		add_core_of = NUS
+		victory_points = {
+			12586 1 
+		}
+
+	}
+
+	provinces={
+		1683 3613 3708 3855 4749 4760 4830 7840 7852 10606 10676 12516 12586 
+	}
+
+	local_supplies=0.0 
+}

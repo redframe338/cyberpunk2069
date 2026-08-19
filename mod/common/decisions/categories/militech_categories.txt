@@ -1,0 +1,16 @@
+militech_corporate_operations = {
+	icon = generic_prepare_civil_war
+	allowed = { tag = MLT }
+	visible = { tag = MLT }
+	priority = 50
+}
+
+federal_defense_policy = {
+	icon = generic_prepare_civil_war
+	allowed = { tag = NUS }
+	visible = {
+		tag = NUS
+		country_exists = MLT
+	}
+	priority = 50
+}

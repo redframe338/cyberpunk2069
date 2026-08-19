@@ -1,0 +1,42 @@
+# Western Corporate States starting army: exactly 20 divisions.
+
+division_template = {
+	name = "Western Corporate Security Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	division = { name = "1st Cascadian Security Division"  location = 7315 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "2nd Cascadian Security Division"  location = 9616 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "3rd Cascadian Security Division"  location = 3513 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "4th Cascadian Security Division"  location = 1690 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "5th Cascadian Security Division"  location = 7315 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "6th Cascadian Security Division"  location = 9616 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "7th Cascadian Security Division"  location = 3513 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "8th Cascadian Security Division"  location = 1690 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "9th Cascadian Security Division"  location = 7315 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "10th Cascadian Security Division" location = 9616 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "11th Cascadian Security Division" location = 3513 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "12th Cascadian Security Division" location = 1690 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "13th Cascadian Security Division" location = 7315 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "14th Cascadian Security Division" location = 9616 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "15th Cascadian Security Division" location = 3513 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "16th Cascadian Security Division" location = 1690 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "17th Cascadian Security Division" location = 7315 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "18th Cascadian Security Division" location = 9616 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "19th Cascadian Security Division" location = 3513 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+	division = { name = "20th Cascadian Security Division" location = 1690 division_template = "Western Corporate Security Division" start_experience_factor = 0.30 }
+}

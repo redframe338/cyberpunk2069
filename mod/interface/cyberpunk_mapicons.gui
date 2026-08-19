@@ -1,0 +1,58 @@
+#### CYBERPUNK VICTORY POINTS MAP ICON OVERRIDE
+#### City names rendered in neon blue (cyberpunk_city_name font)
+
+guiTypes = {
+
+	#### VICTORY POINTS MAP ICON
+	containerWindowType = {
+		name = "victory_point_mapicon"
+		position = { x=0 y=0 }
+		size = { width=160 height=30 }
+		orientation = upper_left
+
+		iconType = {
+			name ="icon"
+			spriteType = "GFX_onmap_victorypoints_strip"
+			position = { x=-5 y=0 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextboxType = {
+			name = "text"
+			position = { x=26 y=5 }
+			font = "cyberpunk_city_name"
+			text = ""
+			maxWidth = 149
+			maxHeight = 30
+			format = left
+			alwaystransparent = yes
+		}
+	}
+
+	#### CAPITAL MAP ICON
+	containerWindowType = {
+		name = "capital_mapicon"
+		position = { x=0 y=0 }
+		size = { width=160 height=30 }
+		orientation = upper_left
+
+		iconType = {
+			name ="icon"
+			spriteType = "GFX_onmap_victorypoints_strip"
+			position = { x=-5 y=0 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "text"
+			position = { x=26 y=5 }
+			font = "cyberpunk_city_name"
+			text = ""
+			maxWidth = 149
+			maxHeight = 30
+			format = left
+			alwaystransparent = yes
+		}
+	}
+}

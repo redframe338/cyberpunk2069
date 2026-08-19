@@ -1,0 +1,37 @@
+# AUTO-GENERATED map override: ARG -> OAS (Cyberpunk conversion). See docs/03.
+state = {
+	id = 953
+	name = "STATE_953"
+	manpower = 80765
+	
+	state_category = pastoral
+	
+	resources = {
+		oil = 1
+	}
+
+	history = {
+
+		owner = OAS
+		add_core_of = OAS
+		add_core_of = OAS
+
+		buildings = {
+			infrastructure = 0
+			13300 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			13300 1 
+		}
+		
+	}
+
+	provinces = {
+		11009 13299 13300
+	}
+
+	local_supplies = 0.0 
+}

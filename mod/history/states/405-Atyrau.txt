@@ -1,0 +1,25 @@
+# Cyberpunk override: Caspian Extraction Zone
+state = {
+	id = 405
+	name = "STATE_405"
+	manpower = 160000
+	state_category = town
+	resources = { oil = 75 }
+	history = {
+		add_dynamic_modifier = { modifier = SVO_national_energy_basin_modifier }
+		owner = SVO
+		add_core_of = SVO
+		add_core_of = USR
+		victory_points = { 1459 7 }
+		victory_points = { 10488 3 }
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 1
+			fuel_silo = 2
+			air_base = 2
+		}
+	}
+	provinces = { 1459 4629 7682 10488 11687 }
+	local_supplies = 10.0
+}

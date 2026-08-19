@@ -1,0 +1,37 @@
+# AUTO-GENERATED map override: LIT -> USR (Cyberpunk conversion). See docs/03.
+state = {
+	id = 188
+	name = "STATE_188"
+	manpower = 150000
+	
+	state_category = rural
+	
+	history = {
+
+		owner = USR
+		add_core_of = USR
+		victory_points = {
+			3288 3 # Klaipeda/Memel
+		}
+		
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+			3288 = {
+				naval_base = 1
+			}
+		}
+		
+		2101.3.22 = {
+			owner = USR
+			controller = USR
+			add_core_of = USR
+		}
+
+	}
+
+	provinces = {
+		3288 	
+	}
+	local_supplies = 0.0 
+}

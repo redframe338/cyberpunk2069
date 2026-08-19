@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	USR_western_security_zone = {
+		value = -100
+		decay = 0
+	}
+}

@@ -1,0 +1,278 @@
+add_namespace = usr_sovoil_coup
+
+# ================================================================
+# EVENT 1: An Unacceptable Audit
+# The government investigation that triggers the conspiracy
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.1
+	title = usr_sovoil_coup.1.t
+	desc = usr_sovoil_coup.1.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.1.a
+		add_stability = -0.02
+		custom_effect_tooltip = USR_coup_preparation_begins_tt
+	}
+}
+
+# ================================================================
+# EVENT 2: Gazprom's Response
+# When SovOil moves to bring Gazprom to heel
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.2
+	title = usr_sovoil_coup.2.t
+	desc = usr_sovoil_coup.2.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	# Gazprom accepts SovOil's protection
+	option = {
+		name = usr_sovoil_coup.2.a
+		ai_chance = { factor = 40 }
+		add_to_variable = { USR_coup_readiness = 10 }
+		add_stability = 0.03
+		add_fuel = 3000
+		custom_effect_tooltip = USR_gazprom_compliance_tt
+	}
+
+	# Gazprom resists — replace its directors
+	option = {
+		name = usr_sovoil_coup.2.b
+		ai_chance = { factor = 35 }
+		add_to_variable = { USR_coup_readiness = 5 }
+		add_to_variable = { USR_government_suspicion = 10 }
+		add_stability = -0.05
+		custom_effect_tooltip = USR_gazprom_directors_replaced_tt
+	}
+
+	# Threaten to cut Gazprom's infrastructure access
+	option = {
+		name = usr_sovoil_coup.2.c
+		ai_chance = { factor = 25 }
+		add_to_variable = { USR_coup_readiness = 8 }
+		add_to_variable = { USR_government_suspicion = 5 }
+		add_stability = -0.03
+		custom_effect_tooltip = USR_gazprom_threatened_tt
+	}
+}
+
+# ================================================================
+# EVENT 3: Operation Black Gold — Final Preparations
+# The security branch capstone event
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.3
+	title = usr_sovoil_coup.3.t
+	desc = usr_sovoil_coup.3.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.3.a
+		add_war_support = 0.03
+		custom_effect_tooltip = USR_black_gold_ready_tt
+	}
+}
+
+# ================================================================
+# EVENT 4: The Executive Ultimatum
+# Sokolov delivers the demands — the climax
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.4
+	title = usr_sovoil_coup.4.t
+	desc = usr_sovoil_coup.4.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.4.a
+		custom_effect_tooltip = USR_ultimatum_delivered_tt
+	}
+}
+
+# ================================================================
+# EVENT 5: The Government Capitulates
+# Bloodless corporate takeover succeeds
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.5
+	title = usr_sovoil_coup.5.t
+	desc = usr_sovoil_coup.5.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.5.a
+		create_country_leader = {
+			name = "Viktor Sokolov"
+			picture = GFX_portrait_USR_supreme_soviet
+			expire = "2100.1.1"
+			ideology = stalinism
+			traits = { }
+		}
+		custom_effect_tooltip = USR_sokolov_takes_power_tt
+	}
+}
+
+# ================================================================
+# EVENT 6: An Uneasy Compromise
+# Negotiated dual power arrangement
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.6
+	title = usr_sovoil_coup.6.t
+	desc = usr_sovoil_coup.6.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.6.a
+		custom_effect_tooltip = USR_dual_power_established_tt
+	}
+}
+
+# ================================================================
+# EVENT 7: The Energy War Begins
+# The coup fails — civil war erupts
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.7
+	title = usr_sovoil_coup.7.t
+	desc = usr_sovoil_coup.7.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.7.a
+		start_civil_war = {
+			ideology = communism
+			size = 0.4
+		}
+		custom_effect_tooltip = USR_energy_war_erupts_tt
+	}
+}
+
+# ================================================================
+# EVENT 8: The Union Incorporated
+# Path 1 capstone — the managed corporate union
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.8
+	title = usr_sovoil_coup.8.t
+	desc = usr_sovoil_coup.8.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.8.a
+		add_stability = 0.03
+	}
+}
+
+# ================================================================
+# EVENT 9: Proclaim SovOil Eurasia
+# Path 2 — the corporate sovereignty declaration
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.9
+	title = usr_sovoil_coup.9.t
+	desc = usr_sovoil_coup.9.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.9.a
+		add_war_support = 0.03
+	}
+}
+
+# ================================================================
+# EVENT 10: The World Runs on SovOil
+# Final capstone — the world reacts
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.10
+	title = usr_sovoil_coup.10.t
+	desc = usr_sovoil_coup.10.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_sovoil_coup.10.a
+		every_country = {
+			limit = {
+				NOT = { tag = ROOT }
+				is_major = yes
+			}
+			add_opinion_modifier = { target = ROOT modifier = USR_eurasian_hostility }
+		}
+	}
+}
+
+# ================================================================
+# EVENT 11: Government Suspicion — Moscow Investigates
+# Random event that fires when suspicion is high
+# ================================================================
+country_event = {
+	id = usr_sovoil_coup.11
+	title = usr_sovoil_coup.11.t
+	desc = usr_sovoil_coup.11.d
+	picture = GFX_report_event_generic_rally
+
+	trigger = {
+		tag = USR
+		has_idea = USR_board_resolution_authorized
+		check_variable = { USR_government_suspicion > 40 }
+		NOT = { has_country_flag = USR_moscow_investigated_recent }
+		NOT = { has_completed_focus = USR_the_executive_ultimatum }
+	}
+
+	mean_time_to_happen = { months = 6 }
+
+	immediate = {
+		set_country_flag = { flag = USR_moscow_investigated_recent days = 180 value = 1 }
+	}
+
+	# Bribe the investigators
+	option = {
+		name = usr_sovoil_coup.11.a
+		ai_chance = { factor = 50 }
+		add_political_power = -75
+		add_to_variable = { USR_government_suspicion = -15 }
+		custom_effect_tooltip = USR_investigators_bribed_tt
+	}
+
+	# Accelerate the coup timeline
+	option = {
+		name = usr_sovoil_coup.11.b
+		ai_chance = { factor = 30 }
+		add_to_variable = { USR_coup_readiness = 5 }
+		add_to_variable = { USR_government_suspicion = 10 }
+		custom_effect_tooltip = USR_accelerate_timeline_tt
+	}
+
+	# Sacrifice a minor executive to deflect attention
+	option = {
+		name = usr_sovoil_coup.11.c
+		ai_chance = { factor = 20 }
+		add_to_variable = { USR_government_suspicion = -20 }
+		add_to_variable = { USR_coup_readiness = -5 }
+		add_stability = 0.02
+		custom_effect_tooltip = USR_sacrifice_executive_tt
+	}
+}

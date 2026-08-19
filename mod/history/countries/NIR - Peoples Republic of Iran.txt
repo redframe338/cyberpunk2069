@@ -1,0 +1,27 @@
+capital = 266
+
+set_research_slots = 3
+set_stability = 0.50
+set_war_support = 0.55
+
+set_politics = {
+	ruling_party = communism
+	last_election = "2062.01.01"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 5
+	neutrality = 15
+	fascism = 5
+	communism = 75
+}
+
+create_country_leader = {
+	name = "Reza Mohammadi"
+	picture = GFX_Portrait_Arabia_Generic_1
+	expire = "2100.1.1"
+	ideology = leninism
+	traits = { }
+}

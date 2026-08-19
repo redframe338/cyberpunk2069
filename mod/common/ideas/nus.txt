@@ -1,0 +1,358 @@
+ideas = {
+	country = {
+
+		# ================================================================
+		# STARTING DEBUFF
+		# ================================================================
+		NUS_fragile_republic = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				political_power_gain = -0.10
+				war_support_factor = -0.05
+			}
+		}
+
+		# ================================================================
+		# SUBJECT DEPENDENCY
+		# ================================================================
+		NUS_petrochem_energy_dependency = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.05
+				industrial_capacity_factory = 0.03
+				political_power_gain = -0.03
+			}
+		}
+
+		# ================================================================
+		# CIVIL WAR ALLEGIANCE SPIRITS
+		# ================================================================
+		NUS_militech_wartime_support = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+				land_reinforce_rate = 0.10
+			}
+		}
+		NUS_militech_wartime_defection = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.08
+				stability_factor = -0.05
+				army_org_factor = -0.05
+			}
+		}
+		NUS_petrochem_wartime_support = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.03
+				fuel_gain_factor = 0.05
+			}
+		}
+		NUS_petrochem_wartime_defection = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.08
+				stability_factor = -0.05
+			}
+		}
+
+		# ================================================================
+		# PATH 1 — FASCIST: EMPIRE OF AMERICA
+		# ================================================================
+		NUS_america_first_fervor = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.10
+				stability_factor = -0.05
+				conscription_factor = 0.10
+			}
+		}
+		NUS_emergency_powers_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = 0.05
+			}
+		}
+		NUS_patriot_brigade_network = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.08
+				stability_factor = 0.05
+				conscription_factor = 0.15
+			}
+		}
+		NUS_iron_eagle_officer_corps = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				army_speed_factor = 0.05
+				land_reinforce_rate = 0.10
+			}
+		}
+		NUS_imperial_consolidation = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		NUS_imperial_guard_supremacy = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.10
+				land_reinforce_rate = 0.15
+			}
+		}
+		NUS_total_war_economy = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		NUS_empire_of_america_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				industrial_capacity_factory = 0.10
+				political_power_gain = 0.10
+			}
+		}
+
+		# ================================================================
+		# PATH 2 — ACCELERATIONIST / CORPORATE: CONFEDERATION OF
+		# CORPORATE STATES
+		# ================================================================
+		NUS_shareholder_fervor = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		NUS_deregulated_markets = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		NUS_congress_dissolved_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = -0.05
+			}
+		}
+		NUS_corporate_order_established = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		NUS_privatized_military_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.10
+				army_speed_factor = 0.05
+				land_reinforce_rate = 0.10
+			}
+		}
+		NUS_post_national_markets = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				production_speed_buildings_factor = 0.10
+			}
+		}
+		NUS_corporate_confederation_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				stability_factor = 0.08
+				political_power_gain = 0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+
+		# ================================================================
+		# PATH 3 — FEDERALIST: AMERICAN FEDERATION
+		# ================================================================
+		NUS_restoration_fervor = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.05
+			}
+		}
+		NUS_free_press_restored = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
+		NUS_monopolies_broken = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.03
+				stability_factor = 0.03
+			}
+		}
+		NUS_republic_rebuilding = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.08
+			}
+		}
+		NUS_referendum_democracy = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+			}
+		}
+		NUS_new_deal_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.03
+			}
+		}
+		NUS_american_federation_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.10
+				war_support_factor = 0.05
+				industrial_capacity_factory = 0.08
+			}
+		}
+
+		# ================================================================
+		# PATH 4 — COMMUNIST: UNION OF SOCIALIST STATES OF AMERICA
+		# ================================================================
+		NUS_revolutionary_fervor = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = 0.05
+				conscription_factor = 0.10
+			}
+		}
+		NUS_general_strike_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		NUS_means_of_production_seized = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.05
+			}
+		}
+		NUS_peoples_republic_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.05
+				conscription_factor = 0.10
+			}
+		}
+		NUS_revolutionary_army_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.08
+				war_support_factor = 0.08
+			}
+		}
+		NUS_planned_economy_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.10
+				consumer_goods_factor = -0.08
+			}
+		}
+		NUS_ussa_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				industrial_capacity_factory = 0.15
+				war_support_factor = 0.10
+				political_power_gain = 0.10
+			}
+		}
+
+		# ================================================================
+		# SHARED BRANCH CAPSTONES
+		# ================================================================
+		NUS_economic_foundation_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.08
+				consumer_goods_factor = -0.03
+			}
+		}
+		NUS_military_readiness_spirit = {
+			allowed = { original_tag = NUS }
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.05
+				war_support_factor = 0.05
+				land_reinforce_rate = 0.10
+			}
+		}
+	}
+}

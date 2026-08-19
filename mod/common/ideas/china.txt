@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		CHI_commercial_non_intervention = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.35
+				consumer_goods_factor = -0.04
+				stability_factor = 0.08
+				war_support_factor = -0.10
+			}
+		}
+		CHI_global_military_supply_network = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.12
+				production_factory_efficiency_gain_factor = 0.10
+				production_lack_of_resource_penalty_factor = -0.10
+				lend_lease_tension = -0.50
+			}
+		}
+	}
+}

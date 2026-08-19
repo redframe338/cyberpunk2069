@@ -1,0 +1,24 @@
+# AUTO-GENERATED map override: NOR -> EEC (Cyberpunk conversion). See docs/03.
+state = { # Jan Mayen
+	id = 914
+	name = "STATE_914"
+	manpower = 10
+	state_category = tiny_island
+	history = {
+		owner = EEC
+		#add_core_of = EEC		
+		add_core_of = EEC
+		buildings = {
+			13272 = {
+				naval_base = 1
+			}
+		}	
+	}
+
+
+	provinces = {
+		13272
+	}
+	
+	local_supplies=0.000
+}

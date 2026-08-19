@@ -1,0 +1,52 @@
+characters = {
+	BIO_lukas_weber = {
+		name = BIO_lukas_weber
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { brilliant_strategist armor_officer } skill = 6 attack_skill = 7 defense_skill = 5 planning_skill = 6 logistics_skill = 6 legacy_id = -1 }
+	}
+	BIO_elodie_marchand = {
+		name = BIO_elodie_marchand
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { infantry_officer defensive_doctrine } skill = 6 attack_skill = 5 defense_skill = 7 planning_skill = 7 logistics_skill = 5 legacy_id = -1 }
+	}
+	BIO_matteo_rinaldi = {
+		name = BIO_matteo_rinaldi
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { trait_reckless aggressive_assaulter } skill = 6 attack_skill = 8 defense_skill = 4 planning_skill = 5 logistics_skill = 5 legacy_id = -1 }
+	}
+	BIO_javier_ortega = {
+		name = BIO_javier_ortega
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { infantry_officer career_officer } skill = 5 attack_skill = 6 defense_skill = 5 planning_skill = 6 logistics_skill = 6 legacy_id = -1 }
+	}
+	BIO_zofia_nowak = {
+		name = BIO_zofia_nowak
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { trait_engineer defensive_doctrine } skill = 6 attack_skill = 4 defense_skill = 7 planning_skill = 6 logistics_skill = 8 legacy_id = -1 }
+	}
+	BIO_henrik_lindstrom = {
+		name = BIO_henrik_lindstrom
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { brilliant_strategist trait_cautious } skill = 6 attack_skill = 5 defense_skill = 7 planning_skill = 8 logistics_skill = 6 legacy_id = -1 }
+	}
+	BIO_anouk_de_vries = {
+		name = BIO_anouk_de_vries
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { armor_officer career_officer } skill = 6 attack_skill = 6 defense_skill = 6 planning_skill = 6 logistics_skill = 7 legacy_id = -1 }
+	}
+	BIO_tomas_ferreira = {
+		name = BIO_tomas_ferreira
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { infantry_officer trait_cautious } skill = 5 attack_skill = 4 defense_skill = 7 planning_skill = 6 logistics_skill = 7 legacy_id = -1 }
+	}
+	BIO_andrei_popescu = {
+		name = BIO_andrei_popescu
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { trait_reckless armor_officer } skill = 6 attack_skill = 7 defense_skill = 5 planning_skill = 5 logistics_skill = 6 legacy_id = -1 }
+	}
+	BIO_petra_novakova = {
+		name = BIO_petra_novakova
+		portraits = { army = { large = GFX_portrait_BIO_corporate_commander small = GFX_portrait_BIO_corporate_commander_small } }
+		corps_commander = { traits = { trait_engineer brilliant_strategist } skill = 7 attack_skill = 6 defense_skill = 6 planning_skill = 8 logistics_skill = 8 legacy_id = -1 }
+	}
+}

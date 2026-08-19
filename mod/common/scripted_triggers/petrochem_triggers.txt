@@ -1,0 +1,25 @@
+petrochem_is_regional_network = { check_variable = { petrochem_industrial_capacity < 20 } }
+petrochem_is_national_producer = {
+	check_variable = { petrochem_industrial_capacity > 19 }
+	check_variable = { petrochem_industrial_capacity < 40 }
+}
+petrochem_is_continental_supplier = {
+	check_variable = { petrochem_industrial_capacity > 39 }
+	check_variable = { petrochem_industrial_capacity < 60 }
+}
+petrochem_is_nusa_backbone = {
+	check_variable = { petrochem_industrial_capacity > 59 }
+	check_variable = { petrochem_industrial_capacity < 80 }
+}
+petrochem_is_strategic_giant = {
+	check_variable = { petrochem_industrial_capacity > 79 }
+	check_variable = { petrochem_industrial_capacity < 100 }
+}
+petrochem_is_global_leader = { check_variable = { petrochem_industrial_capacity > 99 } }
+petrochem_has_investment_budget = { check_variable = { petrochem_corporate_investment_points > 0 } }
+petrochem_has_major_budget = { check_variable = { petrochem_corporate_investment_points > 2 } }
+petrochem_energy_specialist = { check_variable = { petrochem_energy_investment > 14 } }
+petrochem_chemicals_specialist = { check_variable = { petrochem_chemical_investment > 14 } }
+petrochem_synthetics_specialist = { check_variable = { petrochem_synthetic_investment > 14 } }
+petrochem_fertilizer_specialist = { check_variable = { petrochem_fertilizer_investment > 14 } }
+petrochem_hydrogen_specialist = { check_variable = { petrochem_hydrogen_investment > 14 } }

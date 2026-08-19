@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_EEC_european_parliament"
+		texturefile = "gfx/leaders/EEC/portrait_EEC_european_parliament.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_USR_supreme_soviet"
+		texturefile = "gfx/leaders/USR/portrait_USR_supreme_soviet.dds"
+	}
+}

@@ -1,0 +1,75 @@
+ideas = {
+	country = {
+		MTC_american_technology_leader = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.15
+				production_speed_industrial_complex_factor = 0.20
+				decryption = 1
+			}
+		}
+		MTC_semiconductor_superpower = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.12
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.10
+			}
+		}
+		MTC_artificial_intelligence_initiative = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.08
+				encryption = 2
+				political_power_gain = 0.10
+			}
+		}
+		MTC_national_digital_infrastructure = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.08
+				trade_opinion_factor = 0.15
+			}
+		}
+		NUS_metacorp_digital_dependency = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				political_power_gain = -0.04
+			}
+		}
+		MTC_federal_regulation = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.10
+				research_speed_factor = -0.05
+				stability_factor = 0.05
+			}
+		}
+		MTC_emergency_technology_mobilization = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				supply_consumption_factor = -0.10
+				consumer_goods_factor = 0.06
+			}
+		}
+
+		MTC_influence_supplier = { allowed = { always = no } removal_cost = -1 modifier = { political_power_gain = -0.05 } }
+		MTC_influence_contractor = { allowed = { always = no } removal_cost = -1 modifier = { production_speed_industrial_complex_factor = 0.05 } }
+		MTC_influence_national_leader = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.03 industrial_capacity_factory = 0.03 } }
+		MTC_influence_digital_backbone = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.05 industrial_capacity_factory = 0.06 political_power_gain = 0.05 } }
+		MTC_influence_technology_giant = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.08 industrial_capacity_factory = 0.10 political_power_gain = 0.10 } }
+		MTC_influence_digital_state = { allowed = { always = no } removal_cost = -1 modifier = { research_speed_factor = 0.12 industrial_capacity_factory = 0.15 political_power_gain = 0.20 stability_factor = -0.05 } }
+	}
+}

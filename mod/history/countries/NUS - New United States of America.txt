@@ -1,0 +1,68 @@
+# New United States of America — 1 Jan 2069 starting setup (Phase 1 vertical slice).
+# Ideologies use vanilla slots as placeholders; they map to mod ideologies later:
+#   neutrality  -> Federal Reconstruction Authority (ruling)
+#   democratic  -> Democratic Restoration
+#   fascism     -> Militarized Corporate Rule
+# See docs/07_NUSA_DESIGN.md.
+
+capital = 361 # Maryland / Washington DC — reconstruction capital
+
+set_research_slots = 3
+set_stability = 0.55
+set_war_support = 0.50
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2065.11.03"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 35
+	neutrality = 50
+	fascism = 15
+	communism = 0
+}
+
+create_country_leader = {
+	name = "Rosalind Myers"
+	picture = GFX_portrait_NUS_rosalind_myers
+	expire = "2100.1.1"
+	ideology = despotism
+	traits = { }
+}
+
+set_autonomy = {
+	target = MLT
+	autonomous_state = autonomy_strategic_defense_corporation
+	freedom_level = 0.65
+}
+
+set_autonomy = {
+	target = MTC
+	autonomous_state = autonomy_strategic_technology_corporation
+	freedom_level = 0.65
+}
+
+set_autonomy = {
+	target = PET
+	autonomous_state = autonomy_strategic_technology_corporation
+	freedom_level = 0.65
+}
+
+add_ideas = {
+	NUS_militech_defense_dependency
+	NUS_metacorp_digital_dependency
+	NUS_petrochem_energy_dependency
+	NUS_fragile_republic
+}
+set_variable = { militech_federal_influence = 45 }
+set_variable = { metacorp_federal_influence = 45 }
+set_variable = { petrochem_industrial_capacity = 25 }
+set_variable = { petrochem_corporate_investment_points = 4 }
+set_variable = { petrochem_energy_investment = 10 }
+set_variable = { petrochem_chemical_investment = 8 }
+set_variable = { petrochem_synthetic_investment = 4 }
+set_variable = { petrochem_fertilizer_investment = 6 }
+set_variable = { petrochem_hydrogen_investment = 0 }

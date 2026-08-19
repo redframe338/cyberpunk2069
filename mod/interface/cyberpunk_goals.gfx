@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_goal_USR_eurasian_empire"
+		texturefile = "gfx/interface/goals/goal_USR_eurasian_empire.dds"
+	}
+}

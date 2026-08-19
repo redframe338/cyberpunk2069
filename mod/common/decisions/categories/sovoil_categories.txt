@@ -1,0 +1,14 @@
+sovoil_development_program = {
+	icon = generic_construction
+	allowed = { tag = SVO }
+	visible = { tag = SVO }
+}
+
+soviet_state_energy_policy = {
+	icon = generic_construction
+	allowed = { tag = USR }
+	visible = {
+		tag = USR
+		country_exists = SVO
+	}
+}

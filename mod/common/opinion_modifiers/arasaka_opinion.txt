@@ -1,0 +1,13 @@
+opinion_modifiers = {
+	ARK_strategic_partner_opinion = {
+		value = 50
+	}
+
+	ARK_military_tension = {
+		value = -30
+	}
+
+	ARK_MLT_corporate_archrivals = {
+		value = -200
+	}
+}

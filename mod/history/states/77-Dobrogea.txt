@@ -1,0 +1,27 @@
+# AUTO-GENERATED map override: ROM -> EEC (Cyberpunk conversion). See docs/03.
+
+state={
+	id=77
+	name="STATE_77"
+	manpower = 378000
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			11597 1
+		}
+		owner = EEC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = EEC
+		}
+
+	provinces={
+		9614 11597 
+	}
+
+	local_supplies=1.0 
+}

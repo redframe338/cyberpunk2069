@@ -1,0 +1,45 @@
+SVO_clamp_influence = {
+	if = {
+		limit = { check_variable = { sovoil_state_influence > 100 } }
+		set_variable = { sovoil_state_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { sovoil_state_influence < 0 } }
+		set_variable = { sovoil_state_influence = 0 }
+	}
+}
+
+SVO_update_influence_spirit = {
+	SVO_clamp_influence = yes
+	if = { limit = { has_idea = SVO_influence_agency } remove_ideas = SVO_influence_agency }
+	if = { limit = { has_idea = SVO_influence_combine } remove_ideas = SVO_influence_combine }
+	if = { limit = { has_idea = SVO_influence_pillar } remove_ideas = SVO_influence_pillar }
+	if = { limit = { has_idea = SVO_influence_power_center } remove_ideas = SVO_influence_power_center }
+	if = { limit = { has_idea = SVO_influence_directorate } remove_ideas = SVO_influence_directorate }
+	if = { limit = { has_idea = SVO_influence_energy_state } remove_ideas = SVO_influence_energy_state }
+
+	if = { limit = { SVO_is_influence_agency = yes } add_ideas = SVO_influence_agency }
+	if = { limit = { SVO_is_influence_combine = yes } add_ideas = SVO_influence_combine }
+	if = { limit = { SVO_is_influence_pillar = yes } add_ideas = SVO_influence_pillar }
+	if = { limit = { SVO_is_influence_power_center = yes } add_ideas = SVO_influence_power_center }
+	if = { limit = { SVO_is_influence_directorate = yes } add_ideas = SVO_influence_directorate }
+	if = { limit = { SVO_is_influence_energy_state = yes } add_ideas = SVO_influence_energy_state }
+}
+
+SVO_begin_wartime_mobilization = {
+	if = {
+		limit = { NOT = { has_idea = SVO_wartime_energy_mobilization } }
+		add_ideas = SVO_wartime_energy_mobilization
+	}
+	remove_ideas = SVO_energy_crisis
+	set_country_flag = SVO_wartime_mobilized
+}
+
+SVO_begin_energy_crisis = {
+	if = {
+		limit = { NOT = { has_idea = SVO_energy_crisis } }
+		add_ideas = SVO_energy_crisis
+	}
+	add_stability = -0.05
+	set_country_flag = SVO_active_energy_crisis
+}

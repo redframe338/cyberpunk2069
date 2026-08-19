@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_NUS_rosalind_myers"
+		texturefile = "gfx/leaders/NUS/portrait_NUS_rosalind_myers.dds"
+	}
+}

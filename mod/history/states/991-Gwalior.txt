@@ -1,0 +1,19 @@
+# AUTO-GENERATED map override: RAJ -> URB (Cyberpunk conversion). See docs/03.
+state={
+	id=991
+	name="STATE_991"
+	provinces={
+		1949 2036 10807 
+	}
+	state_category = rural
+	manpower = 3523000
+	history={
+		owner = URB
+		add_core_of = URB
+		buildings = {
+			infrastructure = 1
+		}
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

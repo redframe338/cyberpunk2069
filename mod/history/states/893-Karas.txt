@@ -1,0 +1,26 @@
+# AUTO-GENERATED map override: SAF -> PAC (Cyberpunk conversion). See docs/03.
+state={
+	id=893
+	name="STATE_893"
+	manpower = 46200
+	state_category = wasteland
+
+	history={
+		owner = PAC
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+		add_core_of = PAC
+		add_core_of = PAC
+
+	}
+
+	provinces={
+		2229 5154 5189 7605 10963 
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

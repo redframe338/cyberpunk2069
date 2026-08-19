@@ -1,0 +1,56 @@
+# AUTO-GENERATED map override: CZE -> EEC (Cyberpunk conversion). See docs/03.
+state = {
+
+	id = 664
+
+	name = "STATE_664"
+
+	manpower = 854300
+
+	resources = {
+		steel = 13 # was: 20
+		chromium = 3 # was: 4
+	}
+	
+	state_category = town
+	
+	history = {
+
+		owner = EEC
+
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 3
+		}
+
+		victory_points = {
+			6573 1 # Kosice
+		}
+
+		add_core_of = EEC
+		add_core_of = EEC
+
+		# This should isntead be reclaimable through Hungarian focuses with ww
+		IF = {
+			limit = {
+				NOT = {
+					has_dlc = "Gotterdammerung"
+				}
+			}
+			}
+		
+
+		2101.3.14 = {
+			owner = EEC
+			controller = EEC
+			remove_claim_by = HUN
+			add_core_of = EEC
+		}
+	}
+	
+	provinces = {
+		3565 3716 6561 6573 9537 11679 
+	}
+
+	local_supplies = 3.0 
+}

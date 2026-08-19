@@ -1,0 +1,35 @@
+MLT_clamp_influence = {
+	if = {
+		limit = { check_variable = { militech_federal_influence > 100 } }
+		set_variable = { militech_federal_influence = 100 }
+	}
+	if = {
+		limit = { check_variable = { militech_federal_influence < 0 } }
+		set_variable = { militech_federal_influence = 0 }
+	}
+}
+
+MLT_update_influence_spirit = {
+	MLT_clamp_influence = yes
+	if = { limit = { has_idea = MLT_influence_contractor } remove_ideas = MLT_influence_contractor }
+	if = { limit = { has_idea = MLT_influence_supplier } remove_ideas = MLT_influence_supplier }
+	if = { limit = { has_idea = MLT_influence_partner } remove_ideas = MLT_influence_partner }
+	if = { limit = { has_idea = MLT_influence_institution } remove_ideas = MLT_influence_institution }
+	if = { limit = { has_idea = MLT_influence_power_broker } remove_ideas = MLT_influence_power_broker }
+	if = { limit = { has_idea = MLT_influence_military_government } remove_ideas = MLT_influence_military_government }
+
+	if = { limit = { MLT_is_influence_contractor = yes } add_ideas = MLT_influence_contractor }
+	if = { limit = { MLT_is_influence_supplier = yes } add_ideas = MLT_influence_supplier }
+	if = { limit = { MLT_is_influence_partner = yes } add_ideas = MLT_influence_partner }
+	if = { limit = { MLT_is_influence_institution = yes } add_ideas = MLT_influence_institution }
+	if = { limit = { MLT_is_influence_power_broker = yes } add_ideas = MLT_influence_power_broker }
+	if = { limit = { MLT_is_influence_military_government = yes } add_ideas = MLT_influence_military_government }
+}
+
+MLT_begin_emergency_mobilization = {
+	if = {
+		limit = { NOT = { has_idea = MLT_emergency_defense_mobilization } }
+		add_ideas = MLT_emergency_defense_mobilization
+	}
+	set_country_flag = MLT_emergency_mobilized
+}

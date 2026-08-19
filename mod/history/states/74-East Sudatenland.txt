@@ -1,0 +1,42 @@
+# AUTO-GENERATED map override: CZE -> EEC (Cyberpunk conversion). See docs/03.
+state = {
+	id = 74
+	name = "STATE_74"
+	manpower = 820000
+	
+	resources = {
+		coal = 12 # initial distribution / 60 total
+	}
+
+	state_category = rural
+	
+	history = {
+		
+		owner = EEC
+		add_core_of = EEC
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+		}
+
+		victory_points = {
+			3583 5 # Ostrava
+		}
+
+		victory_points = {
+			3414 2 # Opava
+		}
+
+		2101.9.30 = {
+			owner = EEC
+			controller = EEC
+			add_core_of = EEC
+		}
+	}
+
+	provinces = {
+		421 3414 3583 6485
+ 	}
+
+	local_supplies = 2.0 
+}

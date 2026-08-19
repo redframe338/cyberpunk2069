@@ -1,0 +1,27 @@
+capital = 411
+
+set_research_slots = 3
+set_stability = 0.45
+set_war_support = 0.40
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2065.01.01"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 25
+	neutrality = 50
+	fascism = 5
+	communism = 20
+}
+
+create_country_leader = {
+	name = "Darius Shahrokhi"
+	picture = GFX_Portrait_Arabia_Generic_1
+	expire = "2100.1.1"
+	ideology = despotism
+	traits = { }
+}

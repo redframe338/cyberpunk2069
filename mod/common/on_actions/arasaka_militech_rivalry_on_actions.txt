@@ -1,0 +1,22 @@
+# The Arasaka-Militech rivalry is a permanent feature of the 2069 world.
+on_actions = {
+	on_startup = {
+		effect = {
+			ARK = {
+				set_country_flag = ARK_MLT_archrival
+				add_opinion_modifier = {
+					target = MLT
+					modifier = ARK_MLT_corporate_archrivals
+				}
+			}
+
+			MLT = {
+				set_country_flag = MLT_ARK_archrival
+				add_opinion_modifier = {
+					target = ARK
+					modifier = ARK_MLT_corporate_archrivals
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,45 @@
+# AUTO-GENERATED map override: HOL -> OAS (Cyberpunk conversion). See docs/03.
+state = {
+	id = 695
+	name = "STATE_695"
+	manpower = 76299
+	
+	state_category = rural
+
+	resources = {
+		oil = 35 # was: 126
+	}
+
+	history = {
+		
+		owner = OAS
+		add_core_of = OAS
+
+		victory_points = {
+			153 1 # Willemstad
+		}
+
+		buildings = {
+			fuel_silo = 1
+			infrastructure = 2
+			153 = {
+				naval_base = 1
+				coastal_bunker = 2
+			}
+		}
+
+		2101.1.1 = {
+			buildings = {
+				# From "Expand Curacao Oil Refieries"
+				industrial_complex = 1
+				synthetic_refinery = 1
+			}
+		}
+	}
+
+	provinces = {
+		153 
+	}
+
+	local_supplies = 0.0 
+}

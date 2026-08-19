@@ -1,0 +1,18 @@
+BIO_is_progress_foundation = { check_variable = { biotechnica_research_progress < 20 } }
+BIO_is_progress_expansion = {
+	check_variable = { biotechnica_research_progress > 19 }
+	check_variable = { biotechnica_research_progress < 40 }
+}
+BIO_is_progress_innovation = {
+	check_variable = { biotechnica_research_progress > 39 }
+	check_variable = { biotechnica_research_progress < 60 }
+}
+BIO_is_progress_industrial = {
+	check_variable = { biotechnica_research_progress > 59 }
+	check_variable = { biotechnica_research_progress < 80 }
+}
+BIO_is_progress_leadership = {
+	check_variable = { biotechnica_research_progress > 79 }
+	check_variable = { biotechnica_research_progress < 100 }
+}
+BIO_is_progress_superpower = { check_variable = { biotechnica_research_progress > 99 } }

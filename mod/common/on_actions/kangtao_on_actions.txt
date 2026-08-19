@@ -1,0 +1,67 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = { country_exists = KGT }
+				KGT = {
+					KGT_update_influence_spirit = yes
+					add_opinion_modifier = {
+						target = CHI
+						modifier = KGT_chinese_strategic_asset
+					}
+					if = {
+						limit = { country_exists = ARK }
+						add_opinion_modifier = {
+							target = ARK
+							modifier = KGT_arasaka_technology_partner
+						}
+					}
+					if = {
+						limit = { country_exists = MLT }
+						add_opinion_modifier = {
+							target = MLT
+							modifier = KGT_militech_export_competitor
+						}
+					}
+					country_event = { id = kangtao.1 hours = 6 }
+				}
+				CHI = {
+					add_opinion_modifier = {
+						target = KGT
+						modifier = KGT_chinese_strategic_asset
+					}
+				}
+				if = {
+					limit = { country_exists = ARK }
+					ARK = {
+						add_opinion_modifier = {
+							target = KGT
+							modifier = KGT_arasaka_technology_partner
+						}
+					}
+				}
+				if = {
+					limit = { country_exists = MLT }
+					MLT = {
+						add_opinion_modifier = {
+							target = KGT
+							modifier = KGT_militech_export_competitor
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_war = {
+		effect = {
+			if = {
+				limit = {
+					tag = KGT
+					NOT = { has_idea = KGT_wartime_mobilization }
+				}
+				add_timed_idea = { idea = KGT_wartime_mobilization days = 180 }
+			}
+		}
+	}
+}

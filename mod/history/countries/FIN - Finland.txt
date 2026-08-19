@@ -1,0 +1,19 @@
+capital = 146
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2065.1.1"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 0
+	neutrality = 100
+}
+create_country_leader = {
+	name = "Finnish Council"
+	picture = GFX_Portrait_Europe_Generic_2
+	ideology = despotism
+}
+set_convoys = 5

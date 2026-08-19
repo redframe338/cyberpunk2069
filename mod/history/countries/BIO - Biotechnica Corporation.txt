@@ -1,0 +1,337 @@
+# Biotechnica Corporation — 1 January 2069
+capital = 8
+set_oob = "BIO_2069"
+
+set_research_slots = 5
+set_stability = 0.78
+set_war_support = 0.22
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2064.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 75
+	democratic = 20
+	fascism = 3
+	communism = 2
+}
+
+create_country_leader = {
+	name = "Nicolo Loggagia"
+	picture = GFX_portrait_BIO_nicolo_loggagia
+	expire = "2100.1.1"
+	ideology = oligarchism
+	traits = { }
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_military_police = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	support_weapons = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	construction1 = 1
+	construction2 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+}
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		advanced_ship_hull_light = 1
+		advanced_ship_hull_cruiser = 1
+		advanced_ship_hull_heavy = 1
+		advanced_ship_hull_carrier = 1
+		advanced_ship_hull_submarine = 1
+		advanced_ship_torpedo_launcher = 1
+		advanced_depth_charges = 1
+		basic_cruiser_armor_scheme = 1
+		improved_heavy_armor_scheme = 1
+		advanced_fire_control_system = 1
+	}
+	create_equipment_variant = {
+		name = "Vector Class"
+		type = ship_hull_light_4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = light_ship_engine_4
+			fixed_ship_torpedo_slot = ship_torpedo_4
+			mid_1_custom_slot = ship_torpedo_4
+			rear_1_custom_slot = ship_depth_charge_4
+		}
+	}
+	create_equipment_variant = {
+		name = "Europa Class"
+		type = ship_hull_cruiser_4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = cruiser_ship_engine_4
+			fixed_ship_armor_slot = ship_armor_cruiser_4
+			front_1_custom_slot = ship_light_medium_battery_4
+			mid_1_custom_slot = ship_anti_air_4
+			mid_2_custom_slot = ship_torpedo_4
+			rear_1_custom_slot = ship_light_medium_battery_4
+		}
+	}
+	create_equipment_variant = {
+		name = "Chimera Class"
+		type = ship_hull_cruiser_4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = cruiser_ship_engine_4
+			fixed_ship_armor_slot = ship_armor_cruiser_4
+			front_1_custom_slot = ship_medium_battery_4
+			mid_1_custom_slot = ship_anti_air_4
+			mid_2_custom_slot = ship_torpedo_4
+			rear_1_custom_slot = ship_medium_battery_4
+		}
+	}
+	create_equipment_variant = {
+		name = "Genome Class"
+		type = ship_hull_heavy_4
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = heavy_ship_engine_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			fixed_ship_armor_slot = ship_armor_bb_3
+			front_1_custom_slot = ship_heavy_battery_4
+			mid_1_custom_slot = ship_heavy_battery_4
+			mid_2_custom_slot = dp_ship_secondaries_2
+			mid_3_custom_slot = ship_anti_air_4
+			rear_1_custom_slot = ship_heavy_battery_4
+		}
+	}
+	create_equipment_variant = {
+		name = "Helix Class"
+		type = ship_hull_carrier_3
+		parent_version = 0
+		modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space
+			fixed_ship_deck_slot_2 = ship_deck_space
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_radar_slot = ship_radar_4
+			fixed_ship_engine_slot = carrier_ship_engine_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			front_1_custom_slot = ship_deck_space
+			mid_1_custom_slot = ship_deck_space
+			rear_1_custom_slot = ship_deck_space
+		}
+	}
+	create_equipment_variant = {
+		name = "Leviathan Class"
+		type = ship_hull_submarine_4
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_4
+			fixed_ship_engine_slot = sub_ship_engine_4
+			front_1_custom_slot = ship_torpedo_sub_4
+			mid_1_custom_slot = ship_sub_snorkel_2
+			rear_1_custom_slot = ship_torpedo_sub_4
+		}
+	}
+	set_naval_oob = "BIO_2069_naval"
+}
+
+if = {
+	limit = { NOT = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		advanced_destroyer = 1
+		advanced_light_cruiser = 1
+		advanced_heavy_cruiser = 1
+		advanced_battleship = 1
+		advanced_carrier = 1
+		advanced_submarine = 1
+	}
+	set_naval_oob = "BIO_2069_naval_legacy"
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		advanced_small_airframe = 1
+		advanced_medium_airframe = 1
+		advanced_large_airframe = 1
+		engines_4 = 1
+		aa_cannon_3 = 1
+		early_bombs = 1
+		air_torpedoe_1 = 1
+	}
+	create_equipment_variant = {
+		name = "Genetek Air Superiority"
+		type = small_plane_airframe_3
+		parent_version = 0
+		modules = {
+			fixed_main_weapon_slot = aircraft_cannon_2_2x
+			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+			fixed_engine_type_slot = engine_4_1x
+			special_type_slot_1 = self_sealing_fuel_tanks_small
+			special_type_slot_2 = fuel_tanks_small
+		}
+	}
+	create_equipment_variant = {
+		name = "Manticore CAS"
+		type = small_plane_cas_airframe_3
+		parent_version = 0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = rocket_rails
+			fixed_engine_type_slot = engine_4_1x
+			special_type_slot_1 = armor_plate_small
+			special_type_slot_2 = self_sealing_fuel_tanks_small
+		}
+	}
+	create_equipment_variant = {
+		name = "Europa Strategic Tactical"
+		type = medium_plane_airframe_3
+		parent_version = 0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			fixed_engine_type_slot = engine_4_2x
+			special_type_slot_1 = fuel_tanks_medium
+			special_type_slot_2 = self_sealing_fuel_tanks_medium
+		}
+	}
+	create_equipment_variant = {
+		name = "Leviathan Naval Bomber"
+		type = small_plane_naval_bomber_airframe_3
+		parent_version = 0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_engine_type_slot = engine_4_1x
+			special_type_slot_1 = fuel_tanks_small
+			special_type_slot_2 = self_sealing_fuel_tanks_small
+		}
+	}
+	# Keep the strategic air arm in reserve at startup. Deploying 40 full wings
+	# during initialization can exhaust the 8 GB target system's UI buffers.
+	add_equipment_to_stockpile = {
+		type = small_plane_airframe_3
+		amount = 5000
+		producer = BIO
+		variant_name = "Genetek Air Superiority"
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_cas_airframe_3
+		amount = 2500
+		producer = BIO
+		variant_name = "Manticore CAS"
+	}
+	add_equipment_to_stockpile = {
+		type = medium_plane_airframe_3
+		amount = 1500
+		producer = BIO
+		variant_name = "Europa Strategic Tactical"
+	}
+	add_equipment_to_stockpile = {
+		type = small_plane_naval_bomber_airframe_3
+		amount = 1000
+		producer = BIO
+		variant_name = "Leviathan Naval Bomber"
+	}
+}
+
+if = {
+	limit = { NOT = { has_dlc = "By Blood Alone" } }
+	set_technology = {
+		fighter3 = 1
+		CAS3 = 1
+		naval_bomber3 = 1
+		tactical_bomber3 = 1
+	}
+	add_equipment_to_stockpile = {
+		type = fighter_equipment_3
+		amount = 5000
+		producer = BIO
+	}
+	add_equipment_to_stockpile = {
+		type = CAS_equipment_3
+		amount = 2500
+		producer = BIO
+	}
+	add_equipment_to_stockpile = {
+		type = tac_bomber_equipment_3
+		amount = 1500
+		producer = BIO
+	}
+	add_equipment_to_stockpile = {
+		type = nav_bomber_equipment_3
+		amount = 1000
+		producer = BIO
+	}
+}
+
+add_ideas = BIO_european_scientific_excellence
+add_ideas = BIO_agricultural_revolution
+add_ideas = BIO_pharmaceutical_monopoly
+add_ideas = BIO_state_biotechnology_initiative
+add_ideas = BIO_global_logistics_genome
+add_ideas = BIO_aerospace_supremacy
+add_ideas = BIO_bioeconomic_hegemony
+
+add_offsite_building = { type = industrial_complex level = 20 }
+add_offsite_building = { type = arms_factory level = 20 }
+add_offsite_building = { type = dockyard level = 10 }
+
+8 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+39 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+72 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+139 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+148 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+172 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+698 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+788 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+848 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+975 = { add_building_construction = { type = air_base level = 10 instant_build = yes } }
+
+set_variable = { biotechnica_research_progress = 35 }
+set_country_flag = BIO_integrated_scientific_corporation
+
+# Multinational European corporate command staff.
+recruit_character = BIO_lukas_weber
+recruit_character = BIO_elodie_marchand
+recruit_character = BIO_matteo_rinaldi
+recruit_character = BIO_javier_ortega
+recruit_character = BIO_zofia_nowak
+recruit_character = BIO_henrik_lindstrom
+recruit_character = BIO_anouk_de_vries
+recruit_character = BIO_tomas_ferreira
+recruit_character = BIO_andrei_popescu
+recruit_character = BIO_petra_novakova
+
+set_convoys = 2000
+
+add_equipment_to_stockpile = { type = infantry_equipment amount = 3500 producer = BIO }
+add_equipment_to_stockpile = { type = support_equipment amount = 700 producer = BIO }
+add_equipment_to_stockpile = { type = motorized_equipment amount = 450 producer = BIO }

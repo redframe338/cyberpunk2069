@@ -1,0 +1,18 @@
+KGT_is_approved_contractor = { check_variable = { kangtao_state_influence < 20 } }
+KGT_is_strategic_supplier = {
+	check_variable = { kangtao_state_influence > 19 }
+	check_variable = { kangtao_state_influence < 40 }
+}
+KGT_is_national_partner = {
+	check_variable = { kangtao_state_influence > 39 }
+	check_variable = { kangtao_state_influence < 60 }
+}
+KGT_is_technology_leader = {
+	check_variable = { kangtao_state_influence > 59 }
+	check_variable = { kangtao_state_influence < 80 }
+}
+KGT_is_defense_giant = {
+	check_variable = { kangtao_state_influence > 79 }
+	check_variable = { kangtao_state_influence < 100 }
+}
+KGT_is_state_within_state = { check_variable = { kangtao_state_influence > 99 } }

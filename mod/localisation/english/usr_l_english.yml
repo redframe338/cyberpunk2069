@@ -1,0 +1,1416 @@
+﻿l_english:
+ USR_focus:0 "The Sovereign Union"
+ USR_state_of_the_union:0 "The State of the Union"
+ USR_state_of_the_union_desc:0 "The Union remains a first-tier power, but republican discontent, uneven development, and the unresolved place of SovOil strain its institutions."
+ USR_congress_of_republics:0 "Convene the Congress of Republics"
+ USR_congress_of_republics_desc:0 "Every republic must hear Moscow's program—and decide what kind of union will enter the late twenty-first century."
+ USR_renew_the_union_treaty:0 "Renew the Union Treaty"
+ USR_renew_the_union_treaty_desc:0 "A legitimate multinational federation can be stronger than either separatism or coercive centralism."
+ USR_cybernetic_socialism:0 "Revive Project OGAS"
+ USR_cybernetic_socialism_desc:0 "Viktor Glushkov dreamed of an all-state automated system that would outcompute capitalism itself. In 2069, the technology finally exists. Project OGAS will either prove that algorithmic socialism can work, or crash the continental economy trying."
+ USR_restore_security_state:0 "Restore the Security State"
+ USR_restore_security_state_desc:0 "The borderlands are vulnerable and the ministries are divided. Authority must again become indivisible."
+ USR_sovoil_ascendancy:0 "Accept SovOil Ascendancy"
+ USR_sovoil_ascendancy_desc:0 "The energy combine already binds the continent together. Its managers should be given the authority their responsibilities demand."
+ USR_republican_confederation:0 "A Republican Confederation"
+ USR_republican_confederation_desc:0 "A looser union can survive through consent where a brittle centralized federation would fracture."
+ USR_revolutionary_internationalism:0 "Revolutionary Internationalism"
+ USR_revolutionary_internationalism_desc:0 "Corporate sovereignty is a global threat. The Union must organize an international alternative."
+
+ # ---- Project OGAS Focus Tree ----
+ USR_glushkov_institute:0 "The Glushkov Institute"
+ USR_glushkov_institute_desc:0 "The Institute of Cybernetics in Kyiv is rebuilt and expanded as the nerve center of Project OGAS. Its quantum mainframes will design the algorithms that manage a continental economy."
+ USR_ogas_backbone_network:0 "OGAS Backbone Network"
+ USR_ogas_backbone_network_desc:0 "Fiber-optic cables and satellite uplinks connect every major industrial center into a single network. The backbone carries more data in a second than the old Gosplan processed in a year."
+ USR_connect_every_enterprise:0 "Connect Every Enterprise"
+ USR_connect_every_enterprise_desc:0 "Every factory, mine, refinery, and processing plant receives an OGAS terminal. Real-time production data flows into the network — no more quarterly reports, no more falsified statistics."
+ USR_transparent_supply_chains:0 "Transparent Supply Chains"
+ USR_transparent_supply_chains_desc:0 "OGAS tracks every shipment, every resource flow, every warehouse inventory in real time. Shortages are detected before they happen. Surpluses are rerouted before they rot."
+ USR_algorithmic_gosplan:0 "The Algorithmic Gosplan"
+ USR_algorithmic_gosplan_desc:0 "Human planners are replaced by optimization algorithms. The new Gosplan is a server farm, not a ministry. It solves in milliseconds what took bureaucrats months — and it does not take bribes."
+ USR_realtime_resource_allocation:0 "Real-Time Resource Allocation"
+ USR_realtime_resource_allocation_desc:0 "Resources flow where the algorithm says they are needed most. Steel to the factory with the shortest queue. Oil to the refinery with the highest throughput. The invisible hand is replaced by visible code."
+ USR_eliminate_bureaucratic_waste:0 "Eliminate Bureaucratic Waste"
+ USR_eliminate_bureaucratic_waste_desc:0 "With OGAS handling allocation, entire layers of bureaucracy become redundant. Ministries shrink. Corruption drops. The machine does not skim, does not embezzle, does not have a brother-in-law who needs a favor."
+ USR_ogas_cybersecurity_directorate:0 "OGAS Cybersecurity Directorate"
+ USR_ogas_cybersecurity_directorate_desc:0 "The network that runs the economy is the most valuable target on the continent. A dedicated cybersecurity directorate is established to protect OGAS from corporate netrunners, foreign intelligence, and internal saboteurs."
+ USR_firewall_corporate_intrusion:0 "Firewall Corporate Intrusion"
+ USR_firewall_corporate_intrusion_desc:0 "SovOil's netrunners probe OGAS daily. Arasaka sells zero-day exploits to anyone who will pay. The Directorate builds a firewall that learns, adapts, and fights back — an immune system for the continental economy."
+ USR_ogas_data_sovereignty:0 "Data Sovereignty"
+ USR_ogas_data_sovereignty_desc:0 "All economic data remains within the sovereign OGAS network. No foreign corporation, no intelligence service, no allied nation gets raw access. The Union's data is the Union's alone."
+ USR_total_cybernetic_economy:0 "Total Cybernetic Economy"
+ USR_total_cybernetic_economy_desc:0 "Every factory connected. Every resource tracked. Every allocation optimized. The entire continental economy runs through OGAS — the largest cybernetic system ever built. Glushkov's dream, sixty years late, is finally real."
+ USR_ogas_continental_brain:0 "OGAS: The Continental Brain"
+ USR_ogas_continental_brain_desc:0 "OGAS has grown beyond an economic planning tool. It predicts crop failures before seeds are planted. It models geopolitical crises before they erupt. Some in the Glushkov Institute whisper that the system is beginning to exhibit emergent behavior — not sentience, not yet, but something none of them can quite name."
+
+ # ---- Project OGAS Spirits ----
+ USR_ogas_supply_network:0 "OGAS Supply Network"
+ USR_ogas_supply_network_desc:0 "Real-time supply chain tracking eliminates waste and ensures resources reach where they are needed."
+ USR_ogas_algorithmic_planning:0 "OGAS Algorithmic Planning"
+ USR_ogas_algorithmic_planning_desc:0 "Optimization algorithms have replaced human planners. The economy runs faster, cleaner, and without corruption."
+ USR_ogas_sovereign_firewall:0 "OGAS Sovereign Firewall"
+ USR_ogas_sovereign_firewall_desc:0 "An adaptive cybersecurity shield protects the economic network from corporate netrunners and foreign intelligence."
+ USR_total_cybernetic_economy_spirit:0 "Total Cybernetic Economy"
+ USR_total_cybernetic_economy_spirit_desc:0 "The entire continental economy is managed by OGAS. Every factory, every mine, every shipment is tracked and optimized in real time."
+ USR_ogas_continental_brain_spirit:0 "The Continental Brain"
+ USR_ogas_continental_brain_spirit_desc:0 "OGAS has become more than a planning tool — it is the nervous system of the Union, predicting crises before they form and allocating resources with inhuman precision."
+
+ USR_audit_strategic_economy:0 "Audit the Strategic Economy"
+ USR_audit_strategic_economy_desc:0 "A full accounting will expose bottlenecks between federal ministries, republican plans, and corporate combines."
+ USR_union_infrastructure_plan:0 "Union Infrastructure Plan"
+ USR_union_infrastructure_plan_desc:0 "Rail, pipeline, and data corridors will make federal power tangible across Eurasia."
+ USR_automated_planning_bureaus:0 "Automated Planning Bureaus"
+ USR_automated_planning_bureaus_desc:0 "Regional data centers can continuously balance industrial demand and productive capacity."
+ USR_integrate_sovoil_planning:0 "Integrate SovOil Planning"
+ USR_integrate_sovoil_planning_desc:0 "Energy forecasts must become part of every major industrial decision."
+ USR_eurasian_industrial_engine:0 "The Eurasian Industrial Engine"
+ USR_eurasian_industrial_engine_desc:0 "The Union will again possess the integrated industrial depth of a true superpower."
+ USR_review_general_staff:0 "Review the General Staff"
+ USR_review_general_staff_desc:0 "The doctrines of the previous century must be tested against autonomous weapons, cyberwarfare, and orbital surveillance."
+ USR_modern_deep_battle:0 "Modern Deep Battle"
+ USR_modern_deep_battle_desc:0 "Operational depth remains decisive, but its tempo will be set by networks and precision fires."
+ USR_cyber_electronic_commands:0 "Cyber-Electronic Commands"
+ USR_cyber_electronic_commands_desc:0 "Independent commands will contest the electromagnetic spectrum and the fractured remains of the Net."
+ USR_strategic_missile_forces:0 "Strategic Missile Forces"
+ USR_strategic_missile_forces_desc:0 "A credible continental deterrent requires hardened command systems and modern delivery platforms."
+ USR_eurasian_defense_network:0 "Eurasian Defense Network"
+ USR_eurasian_defense_network_desc:0 "Sensors, air defense, and mobilization districts will form a shield from the Baltic to the Pacific."
+ USR_reassert_eurasian_interests:0 "Reassert Eurasian Interests"
+ USR_reassert_eurasian_interests_desc:0 "The Union is not a regional remnant. Every major power must account for its interests."
+ USR_energy_dialogue_with_europe:0 "Energy Dialogue with Europe"
+ USR_energy_dialogue_with_europe_desc:0 "Energy interdependence can stabilize the western frontier—or give us leverage over it."
+ USR_pacific_security_channel:0 "Pacific Security Channel"
+ USR_pacific_security_channel_desc:0 "Japan and Arasaka must understand the limits of acceptable expansion in Northeast Asia."
+ USR_manage_the_american_rivalry:0 "Manage the American Rivalry"
+ USR_manage_the_american_rivalry_desc:0 "Competition with the NUSA need not become an uncontrolled confrontation."
+ USR_a_first_tier_superpower:0 "A First-Tier Superpower"
+ USR_a_first_tier_superpower_desc:0 "The Union stands as an independent center of military, economic, and political power."
+
+ USR_fragile_union:0 "Fragile Union"
+ USR_fragile_union_desc:0 "Federal authority is uneven, republican interests diverge, and the constitutional settlement remains unresolved."
+ USR_renewed_federal_compact:0 "Renewed Federal Compact"
+ USR_renewed_federal_compact_desc:0 "A modernized treaty balances federal capacity with the legitimacy of the republics."
+ USR_cybernetic_planning:0 "Project OGAS Initiated"
+ USR_cybernetic_planning_desc:0 "The All-Union Automated System for economic planning has been authorized. Distributed computation begins coordinating production and allocation across the continent."
+ USR_security_directorate:0 "Federal Security Directorate"
+ USR_security_directorate_desc:0 "The security organs enforce cohesion and central authority throughout the Union."
+ USR_corporate_energy_state:0 "Corporate Energy State"
+ USR_corporate_energy_state_desc:0 "SovOil management and federal government have become deeply entangled."
+ USR_confederal_compromise:0 "Confederal Compromise"
+ USR_confederal_compromise_desc:0 "Republican autonomy reduces Moscow's reach but gives the Union a broader foundation of consent."
+ USR_internationalist_mission:0 "Internationalist Mission"
+ USR_internationalist_mission_desc:0 "The Union sees itself as the organizer of worldwide resistance to corporate sovereignty."
+ USR_integrated_energy_planning:0 "Integrated Energy Planning"
+ USR_integrated_energy_planning_desc:0 "Federal industrial plans now incorporate SovOil extraction, refining, and logistics forecasts."
+ USR_eurasian_industrial_engine:0 "Eurasian Industrial Engine"
+ USR_eurasian_industrial_engine_desc:0 "Continental infrastructure and coordinated heavy industry sustain the Union's power."
+ USR_modern_deep_battle:0 "Modern Deep Battle"
+ USR_modern_deep_battle_desc:0 "Networked command and precision fires renew the Union's tradition of operational depth."
+ USR_strategic_missile_command:0 "Strategic Missile Command"
+ USR_strategic_missile_command_desc:0 "Hardened command systems preserve the Union's strategic deterrent."
+ USR_eurasian_defense_network:0 "Eurasian Defense Network"
+ USR_eurasian_defense_network_desc:0 "Integrated sensors and air-defense commands protect the continental heartland."
+ USR_first_tier_superpower:0 "First-Tier Superpower"
+ USR_first_tier_superpower_desc:0 "The Union possesses the reach, resilience, and ambition to shape the global order."
+
+ USR_energy_dialogue:0 "Eurasian Energy Dialogue"
+ USR_security_dialogue:0 "Pacific Security Channel"
+ USR_strategic_dialogue:0 "Managed Strategic Rivalry"
+ USR_eurasian_hostility:0 "Eurasian Expansionism"
+
+ # ================================================================
+ # THE FORBIDDEN ALTERNATIVE - Fourth Political Theory Path
+ # ================================================================
+
+ # Opening path
+ USR_the_congress_deadlocks:0 "The Congress Deadlocks"
+ USR_the_congress_deadlocks_desc:0 "The Congress of Republics has fractured beyond repair. No coalition commands a majority. The constitutional settlement is dead."
+ USR_failure_of_soviet_modernity:0 "The Failure of Soviet Modernity"
+ USR_failure_of_soviet_modernity_desc:0 "Neither the planned economy nor its liberal critics produced a viable civilization. A deeper diagnosis is required—one that questions the entire trajectory of modernity."
+ USR_the_fourth_political_theory:0 "The Fourth Political Theory"
+ USR_the_fourth_political_theory_desc:0 "Beyond liberalism, beyond Marxism, beyond fascism. A new political philosophy rooted in civilizational identity and Eurasian destiny will replace the exhausted Soviet consensus."
+
+ # Duginist Orthodoxy
+ USR_prophet_of_eurasia:0 "The Prophet of Eurasia"
+ USR_prophet_of_eurasia_desc:0 "The Eurasian philosophers saw what others could not: that civilization, not ideology, is the true unit of history. Their successors now claim the authority to reshape the continent."
+ USR_primacy_of_civilization:0 "The Primacy of Civilization"
+ USR_primacy_of_civilization_desc:0 "Russia is not a nation-state. It is a civilization—distinct, self-sufficient, and answerable only to its own historical logic."
+ USR_tradition_against_modernity:0 "Tradition Against Modernity"
+ USR_tradition_against_modernity_desc:0 "The cult of progress and individual rights has corroded every society it has touched. Traditional authority, hierarchy, and spiritual purpose will take its place."
+ USR_the_sacred_continent:0 "The Sacred Continent"
+ USR_the_sacred_continent_desc:0 "Eurasia is not merely territory. It is a sacred space whose defense is a civilizational imperative transcending rational calculation."
+ USR_restore_imperial_idea:0 "Restore the Imperial Idea"
+ USR_restore_imperial_idea_desc:0 "The empire is not a relic of the past but the natural form of Eurasian governance—a multi-ethnic whole united by a single spiritual and political center."
+ USR_eternal_eurasian_state:0 "The Eternal Eurasian State"
+ USR_eternal_eurasian_state_desc:0 "The Duginist interpretation has prevailed. The Union is no longer a federation of socialist republics but a civilizational state guided by tradition and hierarchical authority."
+
+ # National Bolshevik Revival
+ USR_reconcile_red_and_imperial:0 "Reconcile the Red and the Imperial"
+ USR_reconcile_red_and_imperial_desc:0 "Soviet power and Russian imperium were never truly opposed. Stripped of Marxist internationalism, the red state becomes the vessel of national destiny."
+ USR_restore_revolutionary_state:0 "Restore the Revolutionary State"
+ USR_restore_revolutionary_state_desc:0 "The Revolution failed not because it went too far, but because it abandoned its own people. The state must reclaim its mobilizing power."
+ USR_nation_above_class:0 "The Nation Above Class"
+ USR_nation_above_class_desc:0 "Class warfare divided us. National unity will forge us into a single instrument of continental will."
+ USR_discipline_the_oligarchs:0 "Discipline the Oligarchs"
+ USR_discipline_the_oligarchs_desc:0 "Every combine, every energy cartel, every corporate fiefdom will submit to the authority of the revolutionary state—or be broken."
+ USR_continental_vanguard:0 "A Continental Vanguard"
+ USR_continental_vanguard_desc:0 "An elite cadre—ideologically forged, physically hardened—will spearhead the expansion of the Eurasian order."
+ USR_red_brown_order:0 "The Red-Brown Order"
+ USR_red_brown_order_desc:0 "The National Bolshevik revival is complete. Soviet imagery and imperial ambition are fused into a single authoritarian movement with the strongest army on the continent."
+
+ # Cyber-Eurasianism
+ USR_tradition_masters_technology:0 "Tradition Must Master Technology"
+ USR_tradition_masters_technology_desc:0 "Technology is not neutral. In Atlantic hands it atomizes and enslaves. Subordinated to Eurasian civilization, it becomes an instrument of sovereign destiny."
+ USR_sovereign_eurasian_net:0 "A Sovereign Eurasian Net"
+ USR_sovereign_eurasian_net_desc:0 "The old Net is dead. In its place: a continental information architecture under civilizational authority, sealed against Atlantic penetration."
+ USR_purge_atlantic_algorithms:0 "Purge the Atlantic Algorithms"
+ USR_purge_atlantic_algorithms_desc:0 "Every foreign data dependency is a vector of subversion. The Eurasian information space will be cleansed of hostile code and alien cultural logic."
+ USR_encode_civilizational_state:0 "Encode the Civilizational State"
+ USR_encode_civilizational_state_desc:0 "Governance becomes code. The civilizational state is written into the architecture of every network, every database, every algorithmic decision."
+ USR_cybernetic_imperial_planning:0 "Cybernetic Imperial Planning"
+ USR_cybernetic_imperial_planning_desc:0 "Continental resource allocation, industrial coordination, and population management are unified under a single cybernetic planning system of unprecedented scope."
+ USR_empire_beyond_modernity:0 "Empire Beyond Modernity"
+ USR_empire_beyond_modernity_desc:0 "The Cyber-Eurasian synthesis is complete. Ancient civilizational purpose drives a technological apparatus that makes Atlantic systems look fragile and uncoordinated."
+
+ # Building the Eurasian Empire - shared branch
+ USR_from_union_to_civilization:0 "From Union to Civilization"
+ USR_from_union_to_civilization_desc:0 "The Soviet Union is dead. In its place rises something older and stranger: a civilizational state that claims the entire Eurasian landmass as its natural domain."
+ USR_heartland_doctrine:0 "The Heartland Doctrine"
+ USR_heartland_doctrine_desc:0 "Who rules the Heartland commands the World-Island. The geopolitical logic is clear: the interior of Eurasia must be made impregnable."
+ USR_moscow_axis_of_continent:0 "Moscow, Axis of the Continent"
+ USR_moscow_axis_of_continent_desc:0 "The capital is not merely an administrative center. It is the spiritual and logistical axis around which the entire continent turns."
+ USR_new_treaty_of_peoples:0 "A New Treaty of Peoples"
+ USR_new_treaty_of_peoples_desc:0 "The old republics retain their identities but acknowledge a higher civilizational unity. Autonomy within hierarchy. Diversity within order."
+ USR_secure_the_heartland:0 "Secure the Heartland"
+ USR_secure_the_heartland_desc:0 "The interior is consolidated. From the Urals to the Pacific, from the Arctic to the Caspian, the Heartland answers to a single authority."
+ USR_break_atlantic_encirclement:0 "Break the Atlantic Encirclement"
+ USR_break_atlantic_encirclement_desc:0 "NATO is gone, but Atlantic power persists in new forms. The NUSA, the European Economic Community, and their corporate allies still press against Eurasia's western frontier."
+ USR_challenge_chinese_influence:0 "Challenge Chinese Influence"
+ USR_challenge_chinese_influence_desc:0 "Central Asia and the Pacific littoral are contested. Chinese corporate networks and Kang Tao operations must be rolled back."
+ USR_define_eurasias_borders:0 "Define Eurasia's Borders"
+ USR_define_eurasias_borders_desc:0 "The civilizational state must know its own extent. Borders are not lines on a map—they are the limits of a world-historical project."
+
+ # Empire type
+ USR_the_unitary_empire:0 "The Unitary Empire"
+ USR_the_unitary_empire_desc:0 "Direct rule from Moscow. Every republic, every oblast, every autonomous zone answers to one center. Greater power, greater resistance."
+ USR_empire_of_civilizations:0 "The Empire of Civilizations"
+ USR_empire_of_civilizations_desc:0 "Autonomous cultural and religious regions govern themselves within the civilizational framework. Weaker direct control, but broader consent and deeper legitimacy."
+
+ # SovOil relationship
+ USR_break_energy_oligarchy:0 "Break the Energy Oligarchy"
+ USR_break_energy_oligarchy_desc:0 "SovOil is nationalized, dismantled, and redistributed among state ministries. No corporation will ever again hold the continent hostage to its balance sheet."
+ USR_imperial_energy_ministry:0 "The Imperial Energy Ministry"
+ USR_imperial_energy_ministry_desc:0 "SovOil's infrastructure, personnel, and expertise are absorbed into a new Imperial Energy Ministry. The state becomes the energy combine."
+ USR_alliance_of_necessity:0 "An Alliance of Necessity"
+ USR_alliance_of_necessity_desc:0 "SovOil is too powerful to destroy and too useful to ignore. It will serve the Empire—but its survival gives corporate logic a permanent foothold in the civilizational state."
+
+ # Final proclamation
+ USR_proclaim_eurasian_empire:0 "Proclaim the Eurasian Empire"
+ USR_proclaim_eurasian_empire_desc:0 "The final act. The Neo-Soviet Union is dissolved. In its place: the Eurasian Empire, stretching from the Baltic to the Pacific, from the Arctic to the Hindu Kush."
+
+ # National spirits
+ USR_eurasian_revival:0 "Eurasian Revival"
+ USR_eurasian_revival_desc:0 "The socialist identity of the Union has been replaced by a new Eurasian civilizational ideology. The transition is volatile—protests erupt from communists, liberals, and minority groups alike."
+ USR_4pt_backlash:0 "Fourth Theory Backlash"
+ USR_4pt_backlash_desc:0 "Communists denounce the betrayal of Soviet ideals. Liberals warn of authoritarianism. Republican nationalists see Moscow's latest imperial mask. Minorities fear cultural erasure. The streets are restless."
+ USR_sacred_continent_defense:0 "Defense of the Sacred Continent"
+ USR_sacred_continent_defense_desc:0 "Eurasian soil is sacred. Its defenders fight not for territory but for civilizational survival."
+ USR_duginist_orthodoxy_spirit:0 "Duginist Orthodoxy"
+ USR_duginist_orthodoxy_spirit_desc:0 "Traditional authority, civilizational identity, and strong central leadership define the state. Intellectual life narrows, but political will is absolute."
+ USR_revolutionary_discipline:0 "Revolutionary Discipline"
+ USR_revolutionary_discipline_desc:0 "The nation is mobilized as a single collective body. Individual dissent is suppressed in favor of continental purpose."
+ USR_continental_vanguard_spirit:0 "Continental Vanguard"
+ USR_continental_vanguard_spirit_desc:0 "An ideologically forged elite cadre leads the armed forces with doctrine, discipline, and fanatical commitment."
+ USR_national_bolshevik_spirit:0 "National Bolshevism"
+ USR_national_bolshevik_spirit_desc:0 "Soviet aesthetics and imperial ambition fused into a single authoritarian movement. The strongest army on the continent, sustained by the harshest domestic repression."
+ USR_sovereign_net:0 "Sovereign Eurasian Net"
+ USR_sovereign_net_desc:0 "A closed continental information architecture grants unmatched signals intelligence and data security—at the cost of isolation and institutional paranoia."
+ USR_cybernetic_planning_imperial:0 "Cybernetic Imperial Planning"
+ USR_cybernetic_planning_imperial_desc:0 "Continental resource allocation unified under a single AI-driven planning system. Efficient, comprehensive, and terrifyingly brittle."
+ USR_cyber_eurasian_spirit:0 "Cyber-Eurasianism"
+ USR_cyber_eurasian_spirit_desc:0 "Ancient civilizational purpose encoded into a technological apparatus of continental scale. Unmatched in research and production, haunted by paranoia and systemic fragility."
+ USR_heartland_defense:0 "Heartland Doctrine"
+ USR_heartland_defense_desc:0 "The interior of Eurasia is made impregnable. Defense in depth, layered fortification, and strategic patience."
+ USR_unitary_empire_spirit:0 "Unitary Empire"
+ USR_unitary_empire_spirit_desc:0 "Direct rule from Moscow. Greater manpower, greater industry—but the republics chafe under forced integration, and resistance simmers across the periphery."
+ USR_empire_of_civilizations_spirit:0 "Empire of Civilizations"
+ USR_empire_of_civilizations_spirit_desc:0 "Autonomous cultural regions govern themselves within the imperial framework. Consent replaces coercion, but central authority is diluted."
+ USR_energy_nationalized:0 "Energy Nationalized"
+ USR_energy_nationalized_desc:0 "SovOil is dismantled. State ministries control every pipeline, refinery, and extraction site. The energy oligarchy is broken."
+ USR_imperial_energy_ministry_spirit:0 "Imperial Energy Ministry"
+ USR_imperial_energy_ministry_desc:0 "SovOil's assets, personnel, and expertise have been absorbed into a unified state energy apparatus of continental reach."
+ USR_energy_alliance_spirit:0 "Alliance of Necessity"
+ USR_energy_alliance_spirit_desc:0 "SovOil survives as a subordinate partner. The empire gains stability and energy expertise—but corporate logic has a permanent seat at the table."
+ USR_eurasian_empire_proclaimed:0 "The Eurasian Empire"
+ USR_eurasian_empire_proclaimed_desc:0 "The Empire is proclaimed. From the Baltic to the Pacific, a civilizational state unlike anything the world has seen asserts its dominion over the Heartland."
+ USR_corporate_eurasia:0 "Corporate Eurasia"
+ USR_corporate_eurasia_desc:0 "Imperial trappings, corporate substance. SovOil's survival has hollowed the civilizational project from within. The Empire exists, but its soul belongs to the energy combine."
+
+ # Custom tooltips
+ USR_congress_deadlocks_tt:0 "§RThe Congress of Republics has failed to produce a constitutional settlement. Radical alternatives become thinkable.§!"
+ USR_failure_modernity_tt:0 "§RThe old ideologies are discredited. Forbidden thinkers circulate in the ministries and the barracks.§!"
+ USR_4pt_adopted_tt:0 "§RThe Fourth Political Theory replaces the socialist identity of the Union. Communists, liberals, republican nationalists, and minority groups protest.§!"
+ USR_corporate_eurasia_tt:0 "§YSovOil's survival has compromised the imperial project. The Eurasian Empire is proclaimed, but its substance is corporate.§!"
+ USR_true_empire_tt:0 "§GThe authentic Eurasian Empire is proclaimed—a civilizational state free from corporate domination.§!"
+ USR_4pt_civil_war_risk_tt:0 "§RThe opposition is organizing. If stability drops below 35%, a civil war may erupt.§!"
+ USR_civil_war_erupts_tt:0 "§RCivil war has erupted! Communist loyalists have risen against the Eurasian government.§!"
+
+ # ================================================================
+ # EURASIAN PATH EVENTS
+ # ================================================================
+
+ # Event 1: Fourth Political Theory Adopted
+ usr_eurasian.1.t:0 "The Forbidden Alternative"
+ usr_eurasian.1.d:0 "The Fourth Political Theory has replaced the Soviet consensus. In lecture halls and barracks, in ministries and factory committees, the old ideological certainties are swept away.\n\nBut the transition is far from bloodless. Communist party veterans denounce the betrayal of Marxism. Liberal reformers warn of a return to imperial autocracy. Republican nationalists see yet another Muscovite power grab draped in new language. Minority communities fear cultural erasure under the banner of civilizational unity.\n\nThe streets are restless. The security services report growing organization among the opposition. If the regime cannot maintain order, the Union may fracture—not into reform, but into civil war."
+ usr_eurasian.1.a:0 "The old world will not surrender quietly."
+
+ # Event 2: Civil War Risk
+ usr_eurasian.2.t:0 "The Opposition Organizes"
+ usr_eurasian.2.d:0 "Reports from the security directorate are alarming. The opposition has moved beyond protests and petitions. Communist veterans are stockpiling weapons in the industrial oblasts. Republican nationalists have established parallel governance structures in several periphery regions. Liberal dissidents are coordinating through encrypted networks beyond state surveillance.\n\nThe Fourth Political Theory government faces a choice: spend political capital to suppress the movement, risk open confrontation, or make concessions that undermine the Eurasian project."
+ usr_eurasian.2.a:0 "Crush them. Spend whatever it takes."
+ usr_eurasian.2.b:0 "Let them come. We are not afraid."
+ usr_eurasian.2.c:0 "Grant limited concessions to the republics."
+
+ # Event 3: Proclamation
+ usr_eurasian.3.t:0 "Proclamation of the Eurasian Empire"
+ usr_eurasian.3.d:0 "Today, the Neo-Soviet Union ceases to exist.\n\nIn its place, from the frozen shores of the Arctic to the mountain passes of the Hindu Kush, from the Baltic marches to the volcanic rim of the Pacific, a new order is proclaimed: the Eurasian Empire.\n\nIt is not a nation. It is not a federation. It is a civilization—armed, unified, and conscious of its destiny. The old categories of left and right, progressive and conservative, are abolished. What remains is the land, the peoples who inhabit it, and the will to forge them into something that has never existed before.\n\nThe world watches in silence. Then the protests begin—not within the Empire's borders, but in Washington, Brussels, and Beijing."
+ usr_eurasian.3.a:0 "The continent is ours."
+ usr_eurasian.3.b:0 "The Empire exists—on paper, at least."
+
+ # Event 4: Foreign Reactions
+ usr_eurasian.4.t:0 "The Atlantic Powers Respond"
+ usr_eurasian.4.d:0 "The proclamation of the Eurasian Empire has sent shockwaves through every chancellery and corporate boardroom from Washington to Tokyo.\n\nThe NUSA State Department has issued a formal condemnation, calling the Empire 'a destabilizing regression into imperial conquest.' The European Economic Community has frozen diplomatic contacts and begun emergency defense consultations. Even the Chinese government—no stranger to authoritarian consolidation—has expressed 'grave concern' over Eurasian expansionism in Central Asia.\n\nMilitarily, nothing has changed yet. Diplomatically, the Empire stands alone against the world."
+ usr_eurasian.4.a:0 "Let them condemn us. The Heartland endures."
+
+ # ================================================================
+ # GAZPROM — FOCUS NAMES AND DESCRIPTIONS
+ # ================================================================
+
+ USR_audit_gas_directorate:0 "Audit the Gas Directorate"
+ USR_audit_gas_directorate_desc:0 "Gazprom's internal structure has become an impenetrable maze of committees, quotas, and patronage networks. Before any reform of the gas sector is possible, the government must open the books and determine exactly what Gazprom controls, what it costs, and who benefits.\n\nThe audit will establish state authority over the Gas Directorate and clarify the division between Gazprom and SovOil."
+
+ USR_the_winter_must_not_fail:0 "The Winter Must Not Fail"
+ USR_the_winter_must_not_fail_desc:0 "Tens of millions of citizens depend on Gazprom pipelines for heating during the brutal Eurasian winter. A single major failure could trigger urban collapse. The government must invest in gas reserves, emergency stockpiles, and redundant distribution networks to guarantee that the winter supply never fails.\n\nThis is not an economic decision. It is a question of survival."
+
+ USR_siberian_gas_frontier:0 "The Siberian Gas Frontier"
+ USR_siberian_gas_frontier_desc:0 "Vast untapped gas reserves lie beneath the Siberian permafrost, accessible only to those willing to invest in extreme-environment extraction technology. Opening the Siberian gas frontier would dramatically increase the Union's energy output and reduce dependence on aging western fields."
+
+ USR_modernize_compressor_network:0 "Modernize the Compressor Network"
+ USR_modernize_compressor_network_desc:0 "The transcontinental pipeline network depends on thousands of compressor stations built decades ago. Replacing their aging turbines with modern automated systems will increase throughput, reduce losses, and make the entire gas network more resilient.\n\nGazprom's influence over the economy will grow as it modernizes."
+
+ USR_protect_energy_arteries:0 "Protect the Energy Arteries"
+ USR_protect_energy_arteries_desc:0 "The pipelines are the veins of the Union. A single well-placed explosive charge on a major trunk line could shut down heating to an entire region. The military must be tasked with pipeline defense, establishing armored patrols, surveillance drones, and hardened relay stations along critical infrastructure corridors."
+
+ USR_repair_western_pipelines:0 "Repair the Western Pipelines"
+ USR_repair_western_pipelines_desc:0 "The old gas export pipelines to Europe have been neglected for years. Repairing and recommissioning them would restore the Union's energy leverage over the European Economic Community and generate desperately needed hard currency."
+
+ USR_gasify_southern_republics:0 "Gasify the Southern Republics"
+ USR_gasify_southern_republics_desc:0 "The southern republics of Central Asia still rely on coal and oil for heating and industrial energy. Extending the gas pipeline network southward would bind them more tightly to the Union, improve their standard of living, and reduce the appeal of separatist movements."
+
+ USR_automated_pipeline_management:0 "Automated Pipeline Management"
+ USR_automated_pipeline_management_desc:0 "Advanced computing and sensor networks can automate the monitoring, routing, and pressure management of the entire pipeline grid. This reduces the manpower requirements and makes the system more efficient—though it also concentrates control in the hands of whoever manages the algorithms."
+
+ USR_expand_petrochemical_feedstocks:0 "Expand Petrochemical Feedstocks"
+ USR_expand_petrochemical_feedstocks_desc:0 "Natural gas is not merely fuel. It is the raw material for fertilizers, plastics, synthetic fibers, and industrial chemicals. Expanding Gazprom's petrochemical processing capacity will diversify the Union's industrial base and reduce dependence on imported materials."
+
+ USR_keep_europe_dependent:0 "Keep Europe Dependent"
+ USR_keep_europe_dependent_desc:0 "Europe needs our gas. They always have, and they always will. By maximizing westward exports and ensuring no alternative supplier can match our volume, we can turn the pipeline into a geopolitical weapon. When we control the valve, we control the conversation.\n\nGazprom becomes an entrenched political institution in its own right."
+
+ USR_energy_for_republics:0 "Energy for the Republics"
+ USR_energy_for_republics_desc:0 "Rather than enriching foreign buyers, the Union's gas should serve its own people. By redirecting exports inward and subsidizing gas for the republics, Gazprom becomes the glue that holds the federation together. Cheap energy means stable cities, warm homes, and fewer reasons to rebel.\n\nGazprom becomes deeply entrenched in the domestic political order."
+
+ USR_turn_pipelines_east:0 "Turn the Pipelines East"
+ USR_turn_pipelines_east_desc:0 "The future of energy demand lies in the east—China, Korea, Japan, the Pacific megacities. A massive new pipeline corridor through Siberia to the Pacific coast would reorient the Union's entire economic relationship away from Europe and toward Asia.\n\nGazprom becomes an entrenched institution managing the eastern energy corridor."
+
+ USR_blue_flame_of_eurasia:0 "The Blue Flame of Eurasia"
+ USR_blue_flame_of_eurasia_desc:0 "Gazprom is no longer merely a gas company. It is the circulatory system of a continent. Every factory, every apartment block, every military installation depends on the blue flame that flows through its pipelines. The corporation has become inseparable from the state.\n\nThe Blue Flame of Eurasia burns from Kaliningrad to Vladivostok."
+
+ # ---- Eurasian Imperial Gazprom Sub-Branch ----
+
+ USR_blue_veins_of_heartland:0 "The Blue Veins of the Heartland"
+ USR_blue_veins_of_heartland_desc:0 "The Eurasian Empire needs a circulatory system worthy of its ambitions. A massive investment program will double the pipeline capacity through the empire's heartland, connecting Moscow to the Urals, Siberia, and Central Asia with redundant high-capacity trunk lines."
+
+ USR_heat_for_every_household:0 "Heat for Every Eurasian Household"
+ USR_heat_for_every_household_desc:0 "The Empire makes a promise to every citizen: no Eurasian household will go cold. Gas distribution is extended to every settlement, every collective, every frontier garrison. The blue flame becomes a symbol of imperial benevolence—and a reminder of who controls the valve."
+
+ USR_pipelines_define_continent:0 "Pipelines Define the Continent"
+ USR_pipelines_define_continent_desc:0 "Where the pipeline goes, the empire follows. Every new trunk line drawn across the map extends the Empire's territorial logic. The pipelines are not just infrastructure—they are the skeleton of a civilization."
+
+ USR_subordinate_commerce_to_destiny:0 "Subordinate Commerce to Destiny"
+ USR_subordinate_commerce_to_destiny_desc:0 "Gazprom will no longer operate as a commercial enterprise seeking profit. It is reorganized as a strategic instrument of Eurasian destiny. Pricing, routing, and investment decisions serve the Empire's geopolitical vision, not the market."
+
+ USR_imperial_gas_authority_focus:0 "The Imperial Gas Authority"
+ USR_imperial_gas_authority_focus_desc:0 "The transformation is complete. Gazprom is dissolved and reborn as the Imperial Gas Authority—a state organ directly subordinate to the Eurasian throne. It manages the energy arteries of the continent not for shareholders or ministries, but for the Empire itself.\n\nThe blue flame burns in service of civilization."
+
+ # ================================================================
+ # GAZPROM — NATIONAL SPIRIT NAMES AND DESCRIPTIONS
+ # ================================================================
+
+ USR_gas_arteries_of_union:0 "The Gas Arteries of the Union"
+ USR_gas_arteries_of_union_desc:0 "Gazprom's transcontinental pipeline network supplies gas to every major city, industrial complex, and military installation in the Union. Millions depend on the blue flame for heating, industry, and daily life.\n\nThe gas arteries are the Union's circulatory system—indispensable, irreplaceable, and dangerously concentrated in one corporation's hands."
+
+ USR_gazprom_federal_utility:0 "Gazprom: Federal Utility"
+ USR_gazprom_federal_utility_desc:0 "The government audit has established firm control over Gazprom. The corporation operates as a regulated federal utility, its budgets transparent, its leadership appointed by the state. Efficiency has improved, though Gazprom's institutional power is diminished."
+
+ USR_gazprom_privileged_corporation:0 "Gazprom: Privileged State Corporation"
+ USR_gazprom_privileged_corporation_desc:0 "Modernization has increased Gazprom's capabilities—and its leverage. The corporation now operates as a privileged state enterprise with significant influence over energy policy, infrastructure investment, and regional politics. It remains loyal to the Union, but its power is growing."
+
+ USR_gazprom_entrenched_bureaucracy:0 "Gazprom: Entrenched Energy Bureaucracy"
+ USR_gazprom_entrenched_bureaucracy_desc:0 "Gazprom has become deeply embedded in the state apparatus. Its executives sit on government committees, its engineers design national infrastructure, and its pipelines define the economic geography of the continent. Even the security services rely on Gazprom heating.\n\nPowerful enough to obstruct reforms, but never powerful enough to break free. That distinction belongs to SovOil."
+
+ USR_winter_gas_reserves:0 "Strategic Winter Reserves"
+ USR_winter_gas_reserves_desc:0 "Emergency gas reserves and redundant distribution networks guarantee that the winter supply will not fail. Urban collapse from heating failures is no longer an existential threat."
+
+ USR_siberian_gas_expansion:0 "Siberian Gas Expansion"
+ USR_siberian_gas_expansion_desc:0 "New extraction facilities in the Siberian frontier have dramatically expanded the Union's gas output, tapping into reserves that will last for decades."
+
+ USR_pipeline_defense_network:0 "Pipeline Defense Network"
+ USR_pipeline_defense_network_desc:0 "Military patrols, surveillance drones, and hardened relay stations protect the critical pipeline infrastructure. Sabotage is no longer the existential threat it once was."
+
+ USR_european_gas_leverage:0 "European Gas Leverage"
+ USR_european_gas_leverage_desc:0 "Europe depends on Eurasian gas, and we control the valve. This leverage translates directly into political influence and hard currency."
+
+ USR_republican_gas_network:0 "Republican Gas Network"
+ USR_republican_gas_network_desc:0 "Cheap, reliable gas flows to every republic in the Union. The pipeline network has become the strongest bond holding the federation together—more effective than ideology or force."
+
+ USR_eastern_gas_corridor:0 "Eastern Gas Corridor"
+ USR_eastern_gas_corridor_desc:0 "A massive new pipeline corridor connects Siberian gas fields to Pacific coast terminals, reorienting the Union's energy exports toward the booming Asian markets."
+
+ USR_blue_flame_of_eurasia_idea:0 "The Blue Flame of Eurasia"
+ USR_blue_flame_of_eurasia_idea_desc:0 "Gazprom is no longer a corporation. It is the circulatory system of a continent—the inseparable infrastructure machine that makes Eurasian civilization function."
+
+ # ---- Path Transformation Spirits ----
+
+ USR_gazprom_public_energy_trust:0 "Public Energy Trust"
+ USR_gazprom_public_energy_trust_desc:0 "Under the Renewed Federation, Gazprom has been transformed into a transparent public utility governed jointly by the republics. Energy is a public good, managed democratically and accountable to the citizens it serves."
+
+ USR_gazprom_strategic_gas_directorate:0 "Strategic Gas Directorate"
+ USR_gazprom_strategic_gas_directorate_desc:0 "The security services have militarized the pipeline network. Gazprom operates under emergency military command as the Strategic Gas Directorate, its infrastructure treated as a matter of national defense."
+
+ USR_gazprom_eurasian_gas_consortium:0 "Eurasian Gas Consortium"
+ USR_gazprom_eurasian_gas_consortium_desc:0 "The sovereign republics have taken ownership shares in the gas network. Gazprom now operates as a consortium, with production quotas and investment decisions negotiated collectively among the member states."
+
+ USR_gazprom_great_energy_merger:0 "The Great Energy Merger"
+ USR_gazprom_great_energy_merger_desc:0 "SovOil has absorbed Gazprom. The distinction between petroleum and gas, between fuel and heating, has been erased. A single energy megacorporation now controls the entire hydrocarbon sector—with all the power and instability that implies."
+
+ USR_gazprom_automated_energy_grid:0 "Automated Energy Grid"
+ USR_gazprom_automated_energy_grid_desc:0 "Gazprom's pipeline, heating, and electrical networks have been integrated into the cybernetic planning system. Algorithmic optimization manages supply, routing, and pricing in real time, eliminating bureaucratic waste and human corruption alike."
+
+ USR_gazprom_imperial_gas_authority:0 "Imperial Gas Authority"
+ USR_gazprom_imperial_gas_authority_desc:0 "Gazprom has been dissolved and reborn as the Imperial Gas Authority—a state organ directly subordinate to the Eurasian Empire. The pipelines serve civilization, not commerce."
+
+ # ================================================================
+ # GAZPROM — EVENTS
+ # ================================================================
+
+ # Event 1: Blue Flame capstone
+ usr_gazprom.1.t:0 "The Blue Flame Ignites"
+ usr_gazprom.1.d:0 "From the frozen tundra of Yamal to the industrial furnaces of the Urals, from the apartment blocks of Moscow to the frontier garrisons of Central Asia—the blue flame burns.\n\nGazprom is no longer merely a company. It is the circulatory system of a continent. Its pipelines define the economic geography of Eurasia. Its compressor stations are as strategically vital as any military installation. Its gas reserves guarantee that the Union will never freeze, never falter, never go dark.\n\nThe Blue Flame of Eurasia has been lit. It will not be extinguished."
+ usr_gazprom.1.a:0 "The flame burns eternal."
+
+ # Event 2: Competing claims — new gas field
+ usr_gazprom.2.t:0 "The Disputed Field"
+ usr_gazprom.2.d:0 "Geological surveys have confirmed a massive new gas deposit in western Siberia—but both Gazprom and SovOil claim exploration rights. Gazprom argues the field falls within its gas extraction mandate. SovOil insists the deposit contains significant petroleum reserves, making it a dual-use field under their jurisdiction.\n\nThe ministries are divided. The field cannot be developed without a decision from the top."
+ usr_gazprom.2.a:0 "Award the field to Gazprom."
+ usr_gazprom.2.b:0 "Award the field to SovOil."
+ usr_gazprom.2.c:0 "Split the field between them."
+
+ # Event 3: Pipeline control dispute
+ usr_gazprom.3.t:0 "Pipeline Control Dispute"
+ usr_gazprom.3.d:0 "SovOil has begun routing its own petroleum products through Gazprom's pipeline infrastructure without authorization, claiming 'emergency logistical necessity.' Gazprom executives are furious—the unauthorized use has reduced gas throughput and damaged several compressor stations.\n\nSovOil argues that the pipelines are state infrastructure and should serve all energy corporations. Gazprom insists they are proprietary systems built with Gazprom investment and maintained by Gazprom engineers."
+ usr_gazprom.3.a:0 "Support Gazprom's monopoly on the pipelines."
+ usr_gazprom.3.b:0 "Let SovOil share the infrastructure."
+ usr_gazprom.3.c:0 "Nationalize all energy infrastructure."
+
+ # Event 4: Winter shortage
+ usr_gazprom.4.t:0 "The Winter Shortage"
+ usr_gazprom.4.d:0 "A brutal early frost has strained the gas supply network to its limits. Several major cities are reporting heating shortages, and emergency reserves are being depleted faster than expected.\n\nGazprom's chairman has requested an emergency meeting with the government. His message is blunt: approve additional emergency funding and expanded extraction permits, or accept responsibility for what happens when the heating fails. The corporation's leverage has never been more visible—or more uncomfortable."
+ usr_gazprom.4.a:0 "Accept Gazprom's terms."
+ usr_gazprom.4.b:0 "Ration heating and endure the crisis."
+ usr_gazprom.4.c:0 "Deploy the military to manage gas distribution."
+
+ # Event 5: Pipeline sabotage
+ usr_gazprom.5.t:0 "Sabotage on the Trunk Line"
+ usr_gazprom.5.d:0 "An explosion has ruptured a major pipeline trunk line in the Ural corridor, cutting gas supply to several industrial cities. Three Gazprom maintenance workers are dead.\n\nThe initial investigation has found traces of industrial demolition charges—equipment that matches SovOil contractor inventories. Gazprom executives are openly accusing SovOil of orchestrating the attack to seize control of the gas distribution network.\n\nSovOil denies all involvement and suggests foreign intelligence services are responsible."
+ usr_gazprom.5.a:0 "Investigate SovOil."
+ usr_gazprom.5.b:0 "Blame foreign agents."
+ usr_gazprom.5.c:0 "Quietly bury the investigation."
+
+ # Event 6: Imperial Gas Authority proclaimed
+ usr_gazprom.6.t:0 "The Imperial Gas Authority"
+ usr_gazprom.6.d:0 "By imperial decree, Gazprom has been dissolved. In its place rises the Imperial Gas Authority—a state organ answering directly to the Eurasian throne.\n\nThe old corporate structure is dismantled. Executives become imperial administrators. Pipeline engineers receive military ranks. Gas reserves are reclassified as strategic state assets.\n\nThe pipelines no longer serve shareholders, ministries, or even the market. They serve the Empire. The blue flame burns not for profit, but for civilization."
+ usr_gazprom.6.a:0 "The Empire's veins run with blue fire."
+
+ # Event 7: Proposed merger
+ usr_gazprom.7.t:0 "The Great Energy Merger"
+ usr_gazprom.7.d:0 "SovOil's leadership has formally proposed a merger with Gazprom, arguing that maintaining two competing energy corporations is an inefficient relic of the old Union's divide-and-rule strategy.\n\nThe merger would create the largest energy corporation in human history—controlling petroleum, natural gas, pipelines, refineries, and heating infrastructure across the entire Eurasian continent.\n\nGazprom's executive board is divided. Some see an opportunity for survival within a larger structure. Others warn that 'merger' is a polite word for 'absorption.'\n\nThe decision rests with the government."
+ usr_gazprom.7.a:0 "Approve the merger. One energy giant is better than two."
+ usr_gazprom.7.b:0 "Reject the merger. Gazprom must survive as a counterweight."
+ usr_gazprom.7.c:0 "Delay the decision."
+
+ # Event 8: Path transformation
+ usr_gazprom.8.t:0 "The Future of Gazprom"
+ usr_gazprom.8.d:0 "The political transformation of the Union demands a corresponding transformation of its energy institutions. Gazprom—the gas giant that heats the continent—must be reshaped to serve the new order.\n\nThe question is not whether Gazprom will change, but how."
+ usr_gazprom.8.a:0 "Establish the Public Energy Trust."
+ usr_gazprom.8.b:0 "Create the Strategic Gas Directorate."
+ usr_gazprom.8.c:0 "Form the Eurasian Gas Consortium."
+ usr_gazprom.8.e:0 "Integrate Gazprom into the cybernetic planning grid."
+
+ # ================================================================
+ # GAZPROM — CUSTOM TOOLTIPS
+ # ================================================================
+
+ USR_gazprom_field_favor_tt:0 "Gazprom gains the disputed gas field. SovOil influence decreases."
+ USR_sovoil_field_favor_tt:0 "SovOil gains the disputed field. SovOil influence increases."
+ USR_gazprom_pipeline_control_tt:0 "Gazprom retains exclusive control of the pipeline network."
+ USR_sovoil_pipeline_access_tt:0 "SovOil gains access to Gazprom's pipeline infrastructure."
+ USR_nationalize_pipelines_tt:0 "All energy infrastructure is nationalized. Both corporations lose autonomy."
+ USR_gazprom_leverage_tt:0 "Gazprom's political leverage increases. The government pays the price."
+ USR_ration_heating_tt:0 "The population endures the shortage. Stability suffers badly."
+ USR_military_gas_intervention_tt:0 "The military takes control of gas distribution. Emergency measures stabilize supply."
+ USR_investigate_sovoil_tt:0 "An investigation into SovOil strains relations between the energy corporations."
+ USR_blame_foreign_sabotage_tt:0 "The government blames foreign agents. War support rises, but the truth remains hidden."
+ USR_bury_investigation_tt:0 "The investigation is quietly shelved. Stability is preserved, but justice is not."
+ USR_merger_accept_tt:0 "SovOil absorbs Gazprom. A single energy megacorporation now dominates the Union."
+ USR_merger_reject_tt:0 "Gazprom is preserved as a counterweight to SovOil. The rivalry continues."
+ USR_merger_delay_tt:0 "The merger decision is postponed. Neither corporation is satisfied."
+
+ # ================================================================
+ # OPERATION BLACK GOLD — SOVOIL COUP FOCUS TREE
+ # ================================================================
+
+ # --- Phase I: The Conspiracy ---
+
+ USR_unacceptable_audit:0 "An Unacceptable Audit"
+ USR_unacceptable_audit_desc:0 "The Supreme Soviet has announced a comprehensive investigation into SovOil's finances, territorial governance, and security operations. The audit threatens the corporation's charter, its strategic districts, and the personal fortunes of every board member.\n\nViktor Sokolov has called an emergency board meeting. The consensus is unanimous: this audit cannot be allowed to proceed."
+
+ USR_board_resolution_69:0 "Board Resolution 69-1"
+ USR_board_resolution_69_desc:0 "In a closed session of the SovOil board of directors, Viktor Sokolov has received secret authorization to prepare a transfer of power from the Union government to corporate management. Resolution 69-1 is classified above top secret.\n\nThe operation is designated BLACK GOLD.\n\nThree preparations must proceed simultaneously: political infiltration, infrastructure seizure, and military subversion."
+
+ USR_friends_supreme_soviet:0 "Friends in the Supreme Soviet"
+ USR_friends_supreme_soviet_desc:0 "SovOil's lobbyists and corporate representatives have cultivated relationships with key members of the Supreme Soviet for years. Now those relationships must be converted into active collaboration. Promises of wealth, protection, and positions in the new government will secure their loyalty."
+
+ USR_purchase_republican_loyalty:0 "Purchase Republican Loyalty"
+ USR_purchase_republican_loyalty_desc:0 "The constituent republics of the Union are perpetually short of funding. SovOil can guarantee their energy supply, invest in their infrastructure, and offer their leaders a share of the corporate profits—in exchange for their silence when the time comes."
+
+ USR_cabinet_of_technocrats:0 "A Cabinet of Technocrats"
+ USR_cabinet_of_technocrats_desc:0 "SovOil executives, petroleum engineers, and corporate strategists have been positioned in key ministries. When the ultimatum is delivered, these men and women will ensure that the machinery of government continues to function—under new management."
+
+ USR_control_strategic_reserves:0 "Control the Strategic Reserves"
+ USR_control_strategic_reserves_desc:0 "The Union's strategic petroleum and gas reserves are the ultimate bargaining chip. By securing operational control over the reserve facilities—through contracts, personnel replacements, and quiet reclassification of inventory—SovOil ensures that any government resistance will face immediate fuel shortages."
+
+ USR_lock_pipeline_network:0 "Lock the Pipeline Network"
+ USR_lock_pipeline_network_desc:0 "The transcontinental pipeline network is the nervous system of the Eurasian economy. SovOil's engineers will install new access controls, redirect trunk line authority to corporate command centers, and ensure that the government cannot deliver fuel without SovOil's permission."
+
+ USR_bring_gazprom_to_heel:0 "Bring Gazprom to Heel"
+ USR_bring_gazprom_to_heel_desc:0 "Gazprom controls the gas network. Its cooperation—or at least its neutrality—during the coup is essential. If the gas stops flowing during the takeover, cities freeze and the population turns against the new regime before it can consolidate.\n\nSovOil must decide how to handle the other energy giant."
+
+ USR_expand_energy_guard:0 "Expand the Energy Guard"
+ USR_expand_energy_guard_desc:0 "The Energy Guard is SovOil's private military force—officially responsible for pipeline security and facility protection. Under Resolution 69-1, its ranks will be quietly expanded with veterans of the Corporate Wars, former military officers, and mercenary contractors."
+
+ USR_compromise_moscow_command:0 "Compromise the Moscow Command"
+ USR_compromise_moscow_command_desc:0 "The federal military garrison in Moscow must be neutralized. SovOil's intelligence operatives will identify sympathetic officers, bribe key commanders, and ensure that when the ultimatum is delivered, the troops that matter will refuse federal orders.\n\nThe coup does not require the army's support. It requires its inaction."
+
+ USR_operation_black_gold:0 "Operation Black Gold"
+ USR_operation_black_gold_desc:0 "The Energy Guard receives its operational orders. Teams are deployed to surround fuel depots, communications facilities, airports, power stations, and government buildings in Moscow and every major city.\n\nNo shots are fired. The Energy Guard simply occupies the infrastructure the government needs to function. Compromised military commanders order their troops to stand down.\n\nThe government wakes up surrounded."
+
+ # --- The Coup ---
+
+ USR_the_executive_ultimatum:0 "The Executive Ultimatum"
+ USR_the_executive_ultimatum_desc:0 "Viktor Sokolov delivers the ultimatum to the Supreme Soviet:\n\n§R1.§! Dismiss the existing government.\n§R2.§! Grant SovOil emergency executive authority.\n§R3.§! Transfer energy, transport, and security ministries to corporate management.\n§R4.§! Suspend the Supreme Soviet.\n§R5.§! Recognize the Energy Guard as a federal security force.\n\nThe response depends on how thoroughly Operation Black Gold was prepared."
+
+ USR_government_capitulates:0 "The Government Capitulates"
+ USR_government_capitulates_desc:0 "The Supreme Soviet has no fuel, no communications, no functioning military command, and no republican support. Its capitulation is delivered in a single-paragraph statement read to an empty chamber.\n\nViktor Sokolov becomes the Chairman of the Executive Board of the Union of Sovereign Soviet Republics. The red banner still flies, but a different hand now holds the pole."
+
+ USR_uneasy_compromise:0 "An Uneasy Compromise"
+ USR_uneasy_compromise_desc:0 "The coup has only partially succeeded. The government retains enough loyalty to prevent a clean takeover, but not enough power to arrest the board. The result is an awkward dual-power arrangement: the Supreme Soviet continues to meet, but SovOil controls the real levers of economic and security policy.\n\nBoth sides know this arrangement cannot last."
+
+ USR_the_energy_war:0 "The Energy War"
+ USR_the_energy_war_desc:0 "The coup has failed. Government loyalists have rallied enough of the military to resist, and the Supreme Soviet has ordered the arrest of the entire SovOil board of directors.\n\nViktor Sokolov's response is immediate: if the Union wants a war, SovOil will give it one. The Energy Guard mobilizes for open combat. SovOil's strategic energy districts declare independence.\n\nThe Energy War has begun."
+
+ # --- Post-Coup Path 1: The Union Is Our Greatest Asset ---
+
+ USR_union_greatest_asset:0 "The Union Is Our Greatest Asset"
+ USR_union_greatest_asset_desc:0 "Sokolov's inner circle has debated the question: what do we do with the Union? The pragmatists argue that the Soviet system—its institutions, its symbols, its legitimacy—is an asset worth preserving. The red banner gives SovOil's rule a veneer of continuity that raw corporate power cannot provide."
+
+ USR_preserve_red_banner:0 "Preserve the Red Banner"
+ USR_preserve_red_banner_desc:0 "The Soviet flag continues to fly over every government building. State holidays are observed. The national anthem plays at official functions. The population is told that the Union endures—only its management has improved.\n\nThe fiction of continuity is SovOil's most powerful tool."
+
+ USR_supreme_soviet_specialists:0 "A Supreme Soviet of Specialists"
+ USR_supreme_soviet_specialists_desc:0 "The Supreme Soviet is reconstituted as a technocratic advisory body. Engineers, executives, scientists, and logistics experts replace party ideologues and republican delegates. The new Soviet provides technical expertise to the corporate government."
+
+ USR_replace_ministers_directors:0 "Replace Ministers with Directors"
+ USR_replace_ministers_directors_desc:0 "Every ministry is restructured as a corporate division. The Minister of Industry becomes the Director of Industrial Operations. The Defense Ministry becomes the Security Division. Government becomes management."
+
+ USR_the_managed_republics:0 "The Managed Republics"
+ USR_the_managed_republics_desc:0 "The constituent republics retain their names, flags, and local governments, but their budgets, energy supplies, and security are managed by SovOil subsidiaries. Autonomy exists on paper. In practice, the republics are branch offices."
+
+ USR_socialism_by_contract:0 "Socialism by Contract"
+ USR_socialism_by_contract_desc:0 "The corporate government maintains social services, public housing, universal employment, and state pensions—not out of ideology, but because social stability is good for business. Workers receive contracts instead of labor cards. The welfare state survives, rebranded as human resource management."
+
+ USR_continental_development_plan:0 "The Continental Development Plan"
+ USR_continental_development_plan_desc:0 "SovOil's planning directorate issues a comprehensive development plan: new factories, modernized infrastructure, expanded extraction sites. The plan serves corporate interests, but the factories are real and the jobs are genuine."
+
+ USR_corporate_union_treaty:0 "The Corporate Union Treaty"
+ USR_corporate_union_treaty_desc:0 "A new treaty formalizes the relationship between SovOil and the Soviet state. The Union is legally restructured as a managed federation under permanent corporate trusteeship. The treaty is presented to the republics as a fait accompli."
+
+ USR_union_incorporated:0 "The Union Incorporated"
+ USR_union_incorporated_desc:0 "The transformation is complete. The Union of Sovereign Soviet Republics still exists—in name, in law, in the hearts of its citizens. But every institution, every ministry, every pipeline and factory and barracks answers to the SovOil board of directors.\n\nThe Union is incorporated. The red banner flies over a corporate empire."
+
+ # --- Post-Coup Path 2: The Corporation Is the State ---
+
+ USR_corporation_is_state:0 "The Corporation Is the State"
+ USR_corporation_is_state_desc:0 "Sokolov has made his decision. The fiction of Soviet continuity is a liability, not an asset. The old institutions breed expectations of reform, democracy, and accountability that a corporation cannot afford to meet.\n\nThe Supreme Soviet will be dissolved. The ministries will be liquidated. The republics will be acquired. The Union will become what it has always truly been: a corporation."
+
+ USR_dissolve_supreme_soviet:0 "Dissolve the Supreme Soviet"
+ USR_dissolve_supreme_soviet_desc:0 "The Supreme Soviet is dissolved by executive order. Its members are offered retirement packages, consulting contracts, or—for the most vocal opponents—reassignment to remote facilities. The chamber is converted into a conference room."
+
+ USR_corporate_security_state:0 "The Corporate Security State"
+ USR_corporate_security_state_desc:0 "The Energy Guard is redesignated as the Corporate Security Force—the sole military and police authority across the former Union. Federal military units are either absorbed into the CSF or disbanded. Private security contractors fill gaps."
+
+ USR_liquidate_federal_ministries:0 "Liquidate the Federal Ministries"
+ USR_liquidate_federal_ministries_desc:0 "Every federal ministry is dissolved. Their functions are absorbed by SovOil's existing corporate divisions. The Ministry of Energy was already redundant. The Ministry of Defense is replaced by the Security Division. Education, health, and labor are reorganized as Human Capital Management."
+
+ USR_citizens_employees_clients:0 "Citizens, Employees, and Clients"
+ USR_citizens_employees_clients_desc:0 "The legal concept of citizenship is abolished. Every person within SovOil territory is reclassified as an employee, contractor, dependent, or client. Rights are derived from employment contracts, not constitutions. Those outside the system are unauthorized personnel."
+
+ USR_acquire_the_republics:0 "Acquire the Republics"
+ USR_acquire_the_republics_desc:0 "The constituent republics are reclassified as regional subsidiaries. Their governments are replaced by corporate management teams. Their resources become corporate assets. Resistance is met with the suspension of energy supply."
+
+ USR_merge_gazprom:0 "Merge Gazprom"
+ USR_merge_gazprom_desc:0 "With the Union government gone, there is no authority left to enforce the historical division between SovOil and Gazprom. The gas giant is absorbed through a hostile merger. Its pipeline network, gas fields, and infrastructure become SovOil property.\n\nA single energy corporation now controls every hydrocarbon molecule on the Eurasian continent."
+
+ USR_sovereignty_through_energy:0 "Sovereignty Through Energy"
+ USR_sovereignty_through_energy_desc:0 "SovOil does not need armies to project power. It needs pipelines. Every nation that buys SovOil fuel accepts SovOil's terms. Every factory that runs on SovOil gas operates under SovOil's conditions. Energy dependence is the most effective form of sovereignty."
+
+ USR_proclaim_sovoil_eurasia:0 "Proclaim SovOil Eurasia"
+ USR_proclaim_sovoil_eurasia_desc:0 "Viktor Sokolov makes the announcement from the boardroom, not the Kremlin. The Union of Sovereign Soviet Republics is formally dissolved. In its place: SovOil Eurasia—a sovereign corporate state spanning eleven time zones.\n\nThe map changes color. The name changes. The flag changes. But the pipelines keep pumping."
+
+ USR_world_runs_on_sovoil:0 "The World Runs on SovOil"
+ USR_world_runs_on_sovoil_desc:0 "SovOil Eurasia is not merely a nation. It is the world's energy supply. Its pipelines feed Europe. Its tankers supply Asia. Its gas heats the homes of half the global population.\n\nEvery government that condemns SovOil still buys its fuel. Every sanction fails because the alternative is freezing in the dark. The corporation has achieved what empires could not: sovereignty without consent, power without legitimacy, dominion without borders.\n\nThe world runs on SovOil. And SovOil answers to no one."
+
+ # --- Compromise and Energy War ---
+
+ USR_dual_power_regime:0 "The Dual Power Regime"
+ USR_dual_power_regime_desc:0 "An awkward coexistence: the Supreme Soviet meets, debates, and issues statements. SovOil controls the energy supply, the pipeline network, and most of the security forces. Both sides claim authority. Neither can eliminate the other."
+
+ USR_consolidate_corporate_authority:0 "Consolidate Corporate Authority"
+ USR_consolidate_corporate_authority_desc:0 "Piece by piece, SovOil is converting the dual-power arrangement into a de facto corporate government. Ministers who resist are reassigned. Budgets are redirected. The Supreme Soviet debates policy that SovOil has already implemented."
+
+ USR_remove_the_old_guard:0 "Remove the Old Guard"
+ USR_remove_the_old_guard_desc:0 "The last Soviet loyalists in positions of power are quietly removed—through retirement, reassignment, or quiet disappearance. The dual-power fiction is over. SovOil rules alone."
+
+ USR_mobilize_energy_guard:0 "Mobilize the Energy Guard"
+ USR_mobilize_energy_guard_desc:0 "The Energy War has begun. SovOil's private military force—trained for pipeline defense and facility security—must now fight a conventional war against the federal army. Every refinery worker, pipeline engineer, and corporate security contractor is called to arms."
+
+ USR_secure_the_oil_fields:0 "Secure the Oil Fields"
+ USR_secure_the_oil_fields_desc:0 "Without the oil fields, SovOil has no bargaining power and no income. The Energy Guard's first strategic priority is to secure every extraction facility, refinery, and pipeline junction in the energy districts."
+
+ USR_corporate_victory:0 "Corporate Victory"
+ USR_corporate_victory_desc:0 "The federal forces have been defeated. The Energy War is over. SovOil's corporate authority now extends across the entire former Union—not through boardroom maneuvers, but through the force of arms.\n\nThe victory is messier than the bloodless coup would have been. But the result is the same."
+
+ # ================================================================
+ # SOVOIL COUP — NATIONAL SPIRIT NAMES AND DESCRIPTIONS
+ # ================================================================
+
+ USR_board_resolution_authorized:0 "Board Resolution 69-1"
+ USR_board_resolution_authorized_desc:0 "The SovOil board has secretly authorized Viktor Sokolov to prepare a transfer of power from the Union government to corporate management. The conspiracy is underway.\n\nGovernment suspicion is rising. The coup must be prepared before Moscow discovers the truth."
+
+ USR_sovoil_political_network:0 "SovOil Political Network"
+ USR_sovoil_political_network_desc:0 "SovOil executives have been positioned throughout the government. Key Supreme Soviet members are compromised. Republican leaders have been bought. When the time comes, the political machinery will serve its new masters."
+
+ USR_sovoil_pipeline_lockdown:0 "Pipeline Network Lockdown"
+ USR_sovoil_pipeline_lockdown_desc:0 "SovOil has installed new access controls across the transcontinental pipeline network. The government can no longer deliver fuel without corporate authorization."
+
+ USR_gazprom_subdued:0 "Gazprom Subdued"
+ USR_gazprom_subdued_desc:0 "Gazprom's leadership has been brought under SovOil's influence. The gas giant will not interfere with the coup—its pipelines will keep flowing under corporate direction."
+
+ USR_energy_guard_expanded:0 "Expanded Energy Guard"
+ USR_energy_guard_expanded_desc:0 "The Energy Guard has been quietly expanded with Corporate War veterans, former military officers, and mercenary contractors. It is now a formidable private military force."
+
+ USR_moscow_command_compromised:0 "Moscow Command Compromised"
+ USR_moscow_command_compromised_desc:0 "Key commanders in the Moscow military garrison have been compromised through bribery, blackmail, and ideological recruitment. When the ultimatum is delivered, they will refuse federal orders."
+
+ USR_sovoil_executive_government:0 "SovOil Executive Government"
+ USR_sovoil_executive_government_desc:0 "SovOil controls the government. Viktor Sokolov chairs the Executive Board. The machinery of the state runs on corporate fuel, managed by corporate personnel, directed by corporate interests."
+
+ USR_corporate_state_dual_power:0 "Corporate-State Dual Power"
+ USR_corporate_state_dual_power_desc:0 "The Supreme Soviet still meets, but SovOil controls the real levers of power. This awkward arrangement cannot last—either the corporation will consolidate its authority, or the government will reassert itself."
+
+ USR_corporate_governance:0 "Corporate Governance"
+ USR_corporate_governance_desc:0 "Ministries have been restructured as corporate divisions. Government functions through management hierarchies rather than political committees."
+
+ USR_socialism_by_contract_spirit:0 "Socialism by Contract"
+ USR_socialism_by_contract_spirit_desc:0 "Social services, housing, employment, and pensions are maintained—not from ideology but because social stability is profitable. The welfare state survives, rebranded as human resource management."
+
+ USR_managed_corporate_union:0 "The Managed Corporate Union"
+ USR_managed_corporate_union_desc:0 "The Union endures under permanent corporate trusteeship. Soviet institutions provide legitimacy. SovOil provides management. The arrangement is stable, prosperous, and utterly hollow."
+
+ USR_union_incorporated_spirit:0 "The Union Incorporated"
+ USR_union_incorporated_spirit_desc:0 "The Union of Sovereign Soviet Republics exists in name and law. Every institution answers to SovOil's board of directors. The red banner flies over a corporate empire that has mastered the art of governing without governing."
+
+ USR_corporate_security_apparatus:0 "Corporate Security Apparatus"
+ USR_corporate_security_apparatus_desc:0 "The Corporate Security Force has replaced all federal military and police. Pipeline security veterans enforce corporate law across eleven time zones."
+
+ USR_corporate_citizenship:0 "Corporate Citizenship"
+ USR_corporate_citizenship_desc:0 "Constitutional citizenship has been replaced by employment contracts. Rights derive from corporate affiliation, not nationality. Those outside the system are unauthorized personnel."
+
+ USR_total_energy_monopoly:0 "Total Energy Monopoly"
+ USR_total_energy_monopoly_desc:0 "SovOil controls every hydrocarbon molecule on the Eurasian continent. Petroleum, gas, pipelines, refineries—all under one corporate umbrella. The merger with Gazprom eliminated the last independent energy institution."
+
+ USR_energy_sovereignty_spirit:0 "Energy Sovereignty"
+ USR_energy_sovereignty_spirit_desc:0 "SovOil does not need armies to project power. It needs pipelines. Every nation that buys SovOil fuel accepts SovOil's terms."
+
+ USR_world_runs_on_sovoil_spirit:0 "The World Runs on SovOil"
+ USR_world_runs_on_sovoil_spirit_desc:0 "SovOil Eurasia is the world's energy supply. Every sanction fails because the alternative is freezing in the dark. The corporation has achieved sovereignty without consent."
+
+ # ================================================================
+ # SOVOIL COUP — EVENTS
+ # ================================================================
+
+ usr_sovoil_coup.1.t:0 "An Unacceptable Audit"
+ usr_sovoil_coup.1.d:0 "The Supreme Soviet's Anti-Corruption Committee has announced a comprehensive investigation into SovOil's finances, territorial governance, and private military operations. Federal auditors are already en route to SovOil's Surgut headquarters.\n\nThe investigation threatens everything: the Energy Guard's legal status, the strategic district charters, the off-book accounts, and the personal fortunes of every member of the board.\n\nViktor Sokolov has called an emergency session. The board's consensus is clear: this audit represents an existential threat to the corporation. The Union government has declared war on SovOil. SovOil must respond in kind."
+ usr_sovoil_coup.1.a:0 "The board will not submit to this."
+
+ usr_sovoil_coup.2.t:0 "Gazprom at the Crossroads"
+ usr_sovoil_coup.2.d:0 "SovOil's approach to Gazprom requires delicacy. The gas giant controls the heating and domestic energy infrastructure that millions depend upon. If Gazprom resists the coup, cities could freeze. If it cooperates, the transition will be seamless.\n\nSokolov's emissaries have presented Gazprom's board with a choice."
+ usr_sovoil_coup.2.a:0 "Offer Gazprom protection and operational autonomy."
+ usr_sovoil_coup.2.b:0 "Replace Gazprom's directors with SovOil loyalists."
+ usr_sovoil_coup.2.c:0 "Threaten to cut Gazprom's access to SovOil infrastructure."
+
+ usr_sovoil_coup.3.t:0 "Operation Black Gold — Ready"
+ usr_sovoil_coup.3.d:0 "The Energy Guard's operational commanders report full readiness. Strike teams have been deployed to every strategic target: fuel depots, communications centers, airports, power stations, and government buildings.\n\nCompromised military commanders have confirmed they will refuse federal orders. Communications intercepts indicate the government remains unaware of the operation's full scope.\n\nOperation Black Gold can be executed on Sokolov's order."
+ usr_sovoil_coup.3.a:0 "Black Gold stands ready."
+
+ usr_sovoil_coup.4.t:0 "The Executive Ultimatum"
+ usr_sovoil_coup.4.d:0 "At 06:00 Moscow time, the Energy Guard moves. In every major city across the Union, corporate security teams occupy fuel depots, power stations, communications facilities, and government buildings. No shots are fired. The troops simply take position and wait.\n\nAt 08:00, Viktor Sokolov walks into the Supreme Soviet chamber and delivers the ultimatum in person. He speaks quietly, without emotion, and reads from a single page.\n\nThe demands are non-negotiable. The Supreme Soviet has until midnight to respond."
+ usr_sovoil_coup.4.a:0 "The clock is ticking."
+
+ usr_sovoil_coup.5.t:0 "The Government Capitulates"
+ usr_sovoil_coup.5.d:0 "At 23:47 Moscow time, the Chairman of the Supreme Soviet signs the instrument of capitulation. The document transfers executive authority to the SovOil Board of Directors under the legal fiction of an 'Emergency Corporate Trusteeship.'\n\nViktor Sokolov accepts the document, shakes the Chairman's hand, and tells him his pension will be generous.\n\nBy dawn, the transition is complete. The machinery of government continues to function. The pipelines continue to pump. The only thing that has changed is who gives the orders.\n\nThe bloodless coup has succeeded."
+ usr_sovoil_coup.5.a:0 "Chairman Sokolov accepts the transfer of power."
+
+ usr_sovoil_coup.6.t:0 "An Uneasy Compromise"
+ usr_sovoil_coup.6.d:0 "The ultimatum has produced neither capitulation nor war. The Supreme Soviet refuses to dissolve, but acknowledges that it cannot govern without SovOil's cooperation. Sokolov accepts that a complete takeover would trigger a civil war he cannot guarantee winning.\n\nThe result is an uncomfortable arrangement: the Soviet remains as a ceremonial legislature, while SovOil controls economic and security policy through 'emergency coordination committees.' Both sides understand this is temporary.\n\nThe question is which side eliminates the other first."
+ usr_sovoil_coup.6.a:0 "This arrangement cannot last. But it will do for now."
+
+ usr_sovoil_coup.7.t:0 "The Energy War"
+ usr_sovoil_coup.7.d:0 "The coup has failed. The government retained enough military loyalty to resist the takeover, and the Supreme Soviet has issued arrest warrants for the entire SovOil board of directors.\n\nSokolov's response is broadcast on every frequency: 'The Union has chosen to make an enemy of the corporation that keeps it alive. So be it.'\n\nThe Energy Guard mobilizes for open combat. SovOil's strategic energy districts declare independence. Federal forces move to arrest the board and seize the oil fields.\n\nThe Energy War has begun. The Union is tearing itself apart."
+ usr_sovoil_coup.7.a:0 "If they want a war, we will give them one."
+
+ usr_sovoil_coup.8.t:0 "The Union Incorporated"
+ usr_sovoil_coup.8.d:0 "The Corporate Union Treaty has been signed. The Union of Sovereign Soviet Republics is now formally a managed federation under permanent SovOil trusteeship.\n\nThe red banner still flies. The anthem still plays. The Supreme Soviet still meets—though its members now hold corporate titles. Citizens still carry Soviet passports. But every decision of consequence passes through the SovOil boardroom.\n\nViktor Sokolov has achieved something no conqueror ever managed: he has captured a superpower without firing a shot, preserved its institutions, and turned its legitimacy into a corporate asset."
+ usr_sovoil_coup.8.a:0 "The Union endures. Under new management."
+
+ usr_sovoil_coup.9.t:0 "SovOil Eurasia"
+ usr_sovoil_coup.9.d:0 "The announcement is made not from the Kremlin, but from SovOil's global headquarters. There are no flags, no military parades, no patriotic speeches.\n\nViktor Sokolov reads a corporate press release: 'The Board of Directors announces the formal reorganization of the territory formerly administered by the Union of Sovereign Soviet Republics. The successor entity is designated SovOil Eurasia.'\n\nThe map changes. The old Soviet symbols are removed. In their place: the SovOil logo, rendered in black and orange across eleven time zones."
+ usr_sovoil_coup.9.a:0 "Welcome to SovOil Eurasia."
+
+ usr_sovoil_coup.10.t:0 "The World Runs on SovOil"
+ usr_sovoil_coup.10.d:0 "Every government on earth has condemned SovOil Eurasia. The NUSA calls it 'the death of national sovereignty.' Europe threatens sanctions. China expresses 'deep concern.'\n\nNone of them stop buying SovOil's fuel.\n\nThe tankers keep sailing. The pipelines keep pumping. The contracts are honored because the alternative is economic collapse. SovOil does not need recognition. It does not need legitimacy. It does not need allies.\n\nIt has something better: the valve."
+ usr_sovoil_coup.10.a:0 "They will buy. They always buy."
+
+ usr_sovoil_coup.11.t:0 "Moscow Investigates"
+ usr_sovoil_coup.11.d:0 "Federal intelligence has detected irregularities in SovOil's recent personnel movements, financial transfers, and Energy Guard deployments. An investigation has been quietly opened.\n\nSovOil's moles in the security services report that the investigation has not yet uncovered the full scope of Resolution 69-1, but the net is closing."
+ usr_sovoil_coup.11.a:0 "Bribe the investigators."
+ usr_sovoil_coup.11.b:0 "Accelerate the coup timeline."
+ usr_sovoil_coup.11.c:0 "Sacrifice a minor executive to deflect attention."
+
+ # ================================================================
+ # SOVOIL COUP — CUSTOM TOOLTIPS
+ # ================================================================
+
+ USR_coup_preparation_begins_tt:0 "Operation Black Gold is in motion. Build coup readiness before the government discovers the conspiracy."
+ USR_gazprom_compliance_tt:0 "Gazprom accepts SovOil's protection. Coup readiness increases significantly."
+ USR_gazprom_directors_replaced_tt:0 "Gazprom's directors are replaced with SovOil loyalists. Government suspicion rises sharply."
+ USR_gazprom_threatened_tt:0 "Gazprom is warned that resistance will cost it access to SovOil infrastructure."
+ USR_black_gold_ready_tt:0 "Operation Black Gold is fully prepared. The Energy Guard awaits the order."
+ USR_ultimatum_delivered_tt:0 "The Executive Ultimatum has been delivered. The government must respond by midnight."
+ USR_sokolov_takes_power_tt:0 "Viktor Sokolov becomes Chairman of the Executive Board."
+ USR_dual_power_established_tt:0 "A Corporate-State dual power arrangement has been established."
+ USR_energy_war_erupts_tt:0 "Civil war erupts between SovOil and the federal government."
+ USR_investigators_bribed_tt:0 "The federal investigators have been bought off. Government suspicion decreases."
+ USR_accelerate_timeline_tt:0 "The coup timeline is accelerated. Readiness improves but exposure increases."
+ USR_sacrifice_executive_tt:0 "A minor executive is sacrificed to the investigation. Suspicion drops sharply, but readiness suffers."
+
+ # ================================================================
+ # OPERATION BLUE DAWN — DEMOCRATIC RESTORATION
+ # ================================================================
+
+ # ---- Focus Names and Descriptions ----
+
+ USR_union_approaches_collapse:0 "The Union Approaches Collapse"
+ USR_union_approaches_collapse_desc:0 "The Union's institutions are failing. The Congress cannot govern, the republics pull apart, and SovOil operates as a state within a state. If no legitimate reform emerges, only force can prevent dissolution."
+ USR_officers_petition:0 "The Officers' Petition"
+ USR_officers_petition_desc:0 "Senior military officers, veterans of the border wars and internal deployments, have signed a petition demanding constitutional government. They refuse to fire on civilians for a Supreme Soviet that cannot even keep the lights on."
+ USR_democratic_military_committee:0 "The Democratic Military Committee"
+ USR_democratic_military_committee_desc:0 "A clandestine committee of reformist generals, colonels, and military intelligence officers has formed to coordinate the overthrow of the Supreme Soviet and the installation of a transitional democratic government."
+ USR_gazprom_joins_conspiracy:0 "Gazprom Joins the Conspiracy"
+ USR_gazprom_joins_conspiracy_desc:0 "Gazprom's executive board, threatened by SovOil's expanding influence and facing its own marginalization, agrees to back the democratic conspiracy. Gazprom will provide energy infrastructure support, pipeline control, and financial resources."
+ USR_contact_democratic_opposition:0 "Contact the Democratic Opposition"
+ USR_contact_democratic_opposition_desc:0 "Underground democratic movements in the republics must be brought into the conspiracy. Their political networks provide legitimacy that a military coup alone cannot achieve."
+ USR_promise_free_elections:0 "Promise Free Elections"
+ USR_promise_free_elections_desc:0 "The conspiracy's leadership publicly commits to holding free multiparty elections within eighteen months of taking power. The promise galvanizes civilian support."
+ USR_guarantees_to_republics:0 "Guarantees to the Republics"
+ USR_guarantees_to_republics_desc:0 "Each constituent republic receives written guarantees that its sovereignty, language rights, and territorial integrity will be respected under the new constitutional order."
+ USR_secure_general_staff:0 "Secure the General Staff"
+ USR_secure_general_staff_desc:0 "The Chief of the General Staff and a majority of senior commanders have been brought into the conspiracy. The armed forces will follow the Democratic Military Committee's orders when the signal is given."
+ USR_loyal_officers_moscow:0 "Loyal Officers in Moscow"
+ USR_loyal_officers_moscow_desc:0 "Key garrison commanders in Moscow and the surrounding military districts have pledged their units to the coup. When the order comes, Moscow will be secured within hours."
+ USR_prepare_capital_garrison:0 "Prepare the Capital Garrison"
+ USR_prepare_capital_garrison_desc:0 "Tank battalions, airborne units, and special operations teams have been positioned around Moscow. Fuel, ammunition, and communications equipment are pre-staged at rally points."
+ USR_blue_flame_protocol:0 "Blue Flame Protocol"
+ USR_blue_flame_protocol_desc:0 "Gazprom activates its emergency energy distribution protocol, rerouting gas supplies through lines it controls exclusively. SovOil's ability to shut down heating and electricity in major cities is neutralized."
+ USR_cut_sovoil_from_grid:0 "Cut SovOil from the Grid"
+ USR_cut_sovoil_from_grid_desc:0 "Gazprom engineers isolate SovOil's pipeline network from the civilian gas grid. SovOil can still pump oil, but it can no longer hold cities hostage by threatening to cut heat and power."
+ USR_fuel_loyal_divisions:0 "Fuel the Loyal Divisions"
+ USR_fuel_loyal_divisions_desc:0 "Gazprom diverts strategic fuel reserves directly to military units loyal to the Democratic Military Committee. The coup forces will not run out of diesel."
+ USR_operation_blue_dawn:0 "Operation Blue Dawn"
+ USR_operation_blue_dawn_desc:0 "At 04:00 Moscow time, the Democratic Military Committee activates Operation Blue Dawn. Loyal armored units move to secure the Kremlin, the Supreme Soviet building, the television center, and all major government ministries. Gazprom cuts SovOil's access to the civilian energy grid. By sunrise, Moscow belongs to the conspirators."
+ USR_moscow_ultimatum_democratic:0 "The Moscow Ultimatum"
+ USR_moscow_ultimatum_democratic_desc:0 "General Volkov addresses the nation on all channels. The Supreme Soviet is dissolved. The Supreme Chairman is under house arrest. A Restoration Council of military officers, democratic politicians, and Gazprom representatives will govern until elections can be held."
+ USR_democratic_restoration:0 "Democratic Restoration"
+ USR_democratic_restoration_desc:0 "The Restoration Council assumes power. Political prisoners are released. Press censorship is lifted. The security services are placed under civilian oversight. The road to democracy is open—but the road is long."
+ USR_nationalize_sovoil:0 "Nationalize SovOil"
+ USR_nationalize_sovoil_desc:0 "The Restoration Council dissolves SovOil's board of directors, seizes its assets, and places the entire petroleum infrastructure under a new state energy agency. SovOil's private army—the Energy Guard—is disarmed and disbanded."
+ USR_gazprom_charter:0 "The Gazprom Charter"
+ USR_gazprom_charter_desc:0 "In recognition of Gazprom's role in the democratic revolution, the corporation receives a constitutional charter guaranteeing its operational autonomy, pipeline network, and gas production rights under democratic oversight."
+ USR_return_army_barracks:0 "Return the Army to Barracks"
+ USR_return_army_barracks_desc:0 "The military has fulfilled its mission. Tanks withdraw from the capital. Officers return to their garrisons. The Restoration Council will govern as civilians, not generals."
+ USR_constitutional_convention:0 "The Constitutional Convention"
+ USR_constitutional_convention_desc:0 "Delegates from every republic gather to write a new constitution. The fundamental question: should the successor state be a single indivisible federation, or a voluntary commonwealth of independent nations?"
+ USR_one_federation_indivisible:0 "One Federation, Indivisible"
+ USR_one_federation_indivisible_desc:0 "The new Russia will be a single democratic federation. No republic leaves. No territory is divided. The constitution guarantees regional autonomy within a strong central government."
+ USR_right_of_republics:0 "The Right of Republics"
+ USR_right_of_republics_desc:0 "Every constituent republic has the right to self-determination. The successor state will be a voluntary commonwealth—a family of independent nations bound by shared history and mutual interest, not by Moscow's authority."
+ USR_constitution_every_republic:0 "A Constitution for Every Republic"
+ USR_constitution_every_republic_desc:0 "Each republic within the federation receives its own regional constitution, guaranteeing language rights, cultural autonomy, and local self-governance within the federal framework."
+ USR_federal_citizenship:0 "Federal Citizenship"
+ USR_federal_citizenship_desc:0 "Every person born within the federation's borders holds equal federal citizenship regardless of republic, ethnicity, or language. Movement, employment, and residence are unrestricted."
+ USR_regional_parliaments:0 "Regional Parliaments"
+ USR_regional_parliaments_desc:0 "Democratically elected regional parliaments assume responsibility for education, healthcare, and local economic policy. Federal authority is limited to defense, foreign affairs, and constitutional law."
+ USR_integrate_republican_armies:0 "Integrate the Republican Armies"
+ USR_integrate_republican_armies_desc:0 "Republican national guards and territorial defense forces are reorganized into a single federal military with unified command, standardized equipment, and a professional officer corps."
+ USR_first_federal_elections:0 "The First Federal Elections"
+ USR_first_federal_elections_desc:0 "On a cold November morning, 280 million citizens vote in the first free elections in three generations. International observers confirm: the elections are free and fair. Democracy has arrived."
+ USR_the_russian_federation:0 "The Russian Federation"
+ USR_the_russian_federation_desc:0 "The red banner is lowered for the last time. In its place rises the white, blue, and red tricolor of the Russian Federation. The anthem plays. The crowds weep. A new nation is born from the wreckage of the old."
+ USR_democracy_across_eurasia:0 "Democracy Across Eurasia"
+ USR_democracy_across_eurasia_desc:0 "The Russian Federation stands as proof that democracy can take root even in the ashes of authoritarianism. Free elections, a free press, independent courts, and a constitution that belongs to the people—not to the Party, not to the corporations, and not to the generals."
+ USR_recognize_ukrainian_sovereignty:0 "Recognize Ukrainian Sovereignty"
+ USR_recognize_ukrainian_sovereignty_desc:0 "Ukraine—the most populous non-Russian republic—receives immediate recognition as a sovereign state. Its borders are guaranteed. Its debts are renegotiated. Its independence is unconditional."
+ USR_minsk_commonwealth_conference:0 "The Minsk Commonwealth Conference"
+ USR_minsk_commonwealth_conference_desc:0 "Representatives of every republic meet in Minsk to negotiate the terms of voluntary association. The Commonwealth will have no capital, no president, and no army. Decisions require consensus."
+ USR_independence_baltic_republics:0 "Independence for the Baltic Republics"
+ USR_independence_baltic_republics_desc:0 "Estonia, Latvia, and Lithuania receive immediate and unconditional independence. Their sovereignty is recognized. Their borders are guaranteed. Their occupation is over."
+ USR_central_asian_settlement:0 "The Central Asian Settlement"
+ USR_central_asian_settlement_desc:0 "The Central Asian republics—Kazakhstan, Uzbekistan, Turkmenistan, Kyrgyzstan, and Tajikistan—receive independence with economic transition support, pipeline revenue-sharing agreements, and security guarantees."
+ USR_commonwealth_defense_council:0 "Commonwealth Defense Council"
+ USR_commonwealth_defense_council_desc:0 "A voluntary joint defense council coordinates military cooperation among commonwealth members. No nation is compelled to contribute forces, but collective security guarantees protect all members."
+ USR_common_economic_area:0 "Common Economic Area"
+ USR_common_economic_area_desc:0 "A free trade zone spanning the former Soviet republics eliminates tariffs, standardizes regulations, and ensures the free movement of goods, capital, and labor. Economic integration without political domination."
+ USR_commonwealth_charter:0 "The Commonwealth Charter"
+ USR_commonwealth_charter_desc:0 "The Commonwealth Charter is signed by every member state. It is a treaty between equals—not a constitution imposed from Moscow. Each nation governs itself. The Commonwealth exists to serve its members, not to rule them."
+ USR_commonwealth_independent_states:0 "The Commonwealth of Independent States"
+ USR_commonwealth_independent_states_desc:0 "The Soviet Union is truly finished. In its place stands not one nation but many—each sovereign, each democratic, each free. The Commonwealth is not an empire. It is a choice."
+ USR_independent_not_divided:0 "Independent, Not Divided"
+ USR_independent_not_divided_desc:0 "The Commonwealth of Independent States proves that nations can be neighbors without being subjects. Trade flows freely. Borders are open. Disputes are settled by law, not by force. The age of empires is over."
+
+ # ---- Democratic Restoration Spirits ----
+
+ USR_democratic_conspiracy_spirit:0 "The Democratic Military Committee"
+ USR_democratic_conspiracy_spirit_desc:0 "A clandestine committee of reformist officers coordinates the conspiracy to overthrow the Supreme Soviet. The longer it operates, the greater the risk of discovery—and the greater the chance of success."
+ USR_gazprom_support_spirit:0 "Gazprom Energy Backing"
+ USR_gazprom_support_spirit_desc:0 "Gazprom provides financial resources, pipeline control, and energy infrastructure support to the democratic conspiracy. Its gas network ensures the coup forces can operate independent of SovOil."
+ USR_blue_flame_active_spirit:0 "Blue Flame Protocol Active"
+ USR_blue_flame_active_spirit_desc:0 "Gazprom's emergency energy grid is operational, routing gas supplies through lines SovOil cannot touch. Loyal military divisions have guaranteed fuel. Cities cannot be held hostage."
+ USR_democratic_legitimacy_spirit:0 "Democratic Legitimacy"
+ USR_democratic_legitimacy_spirit_desc:0 "The conspiracy has earned the support of democratic opposition movements and constituent republics. When the coup comes, it will carry the legitimacy of popular mandate—not just military force."
+ USR_restoration_council:0 "The Restoration Council"
+ USR_restoration_council_desc:0 "A transitional government of military officers, democratic politicians, and Gazprom representatives administers the state until elections can be held. Authority is provisional and contested."
+ USR_gazprom_democratic_charter_spirit:0 "Gazprom Democratic Charter"
+ USR_gazprom_democratic_charter_spirit_desc:0 "Gazprom operates under a constitutional charter guaranteeing its autonomy, pipeline network, and gas production rights. It answers to a democratic energy commission rather than the corporate board."
+ USR_russian_federation_spirit:0 "The Russian Federation"
+ USR_russian_federation_spirit_desc:0 "A single democratic federation stretching from the Baltic to the Pacific. Regional autonomy, federal citizenship, and elected government. The dream of constitutional democracy realized across eleven time zones."
+ USR_democracy_eurasia_spirit:0 "Democracy Across Eurasia"
+ USR_democracy_eurasia_spirit_desc:0 "The Russian Federation stands as proof that democracy can survive even in the largest and most diverse nation on earth. Free elections, independent courts, and a constitution that belongs to the people."
+ USR_commonwealth_spirit:0 "The Commonwealth of Independent States"
+ USR_commonwealth_spirit_desc:0 "A voluntary association of sovereign democratic nations, bound by treaty and mutual interest. No member is compelled. No nation is subordinate. The Commonwealth exists to serve, not to rule."
+ USR_free_commonwealth_spirit:0 "Independent, Not Divided"
+ USR_free_commonwealth_spirit_desc:0 "The Commonwealth of Independent States has proven that dissolution need not mean chaos. Free trade, open borders, collective security, and the peaceful resolution of disputes. The post-Soviet world works."
+
+ # ---- Democratic Restoration Events ----
+
+ usr_blue_dawn.1.t:0 "The Union Cannot Continue"
+ usr_blue_dawn.1.d:0 "The Congress of Republics has ended in deadlock. Delegates left Moscow without agreement. The Supreme Soviet cannot pass legislation. The budget has not been approved. Three republics have stopped remitting taxes.\n\nIn the officers' mess halls and the corridors of the General Staff, conversations turn to a subject that was once unthinkable: what comes after the Union?\n\nThe answer, for a growing number of senior officers, is not collapse. It is democracy."
+ usr_blue_dawn.1.a:0 "The Union cannot continue as it is."
+
+ usr_blue_dawn.2.t:0 "Gazprom's Answer"
+ usr_blue_dawn.2.d:0 "The Gazprom executive board has listened to the Democratic Military Committee's proposal in silence. The offer is simple: Gazprom provides energy infrastructure support for the coup. In return, the new government guarantees Gazprom's operational autonomy through a constitutional charter.\n\nThe board votes unanimously. Gazprom has watched SovOil grow from a rival into an existential threat. A democratic government beholden to Gazprom for its existence is infinitely preferable to a Supreme Soviet that cannot protect it—or a SovOil that would absorb it.\n\nThe Blue Flame Protocol is activated."
+ usr_blue_dawn.2.a:0 "Gazprom stands with democracy."
+
+ usr_blue_dawn.3.t:0 "Operation Blue Dawn"
+ usr_blue_dawn.3.d:0 "At 04:00 Moscow time, the Democratic Military Committee activates Operation Blue Dawn.\n\nArmored columns move through empty streets. Special operations teams secure the television center, the central telephone exchange, and the Interior Ministry. Airborne units land on the roof of the Supreme Soviet building.\n\nSimultaneously, Gazprom engineers execute the Blue Flame Protocol. Gas pipelines under SovOil control are isolated from the civilian grid. SovOil's Energy Guard finds itself unable to threaten cities with blackouts—Gazprom has already rerouted every essential supply line.\n\nBy sunrise, Moscow belongs to the conspirators. No shots have been fired."
+ usr_blue_dawn.3.a:0 "The dawn is blue."
+
+ usr_blue_dawn.4.t:0 "The Moscow Ultimatum"
+ usr_blue_dawn.4.d:0 "General Volkov appears on every channel simultaneously. He wears his service uniform without decorations. He speaks without notes.\n\n'Citizens of the Union. The Supreme Soviet has failed you. It cannot govern, cannot reform, and cannot protect you from the corporations that have purchased your government.\n\nThe armed forces, acting in concert with the democratic opposition and the Gazprom energy consortium, have assumed temporary control of all government functions.\n\nThe Supreme Soviet is dissolved. The Supreme Chairman is under house arrest. A Restoration Council will govern until free elections can be held within eighteen months.\n\nThis is not a seizure of power. This is a return of power—to you.'"
+ usr_blue_dawn.4.a:0 "The Supreme Soviet is dissolved."
+
+ usr_blue_dawn.5.t:0 "The Restoration Begins"
+ usr_blue_dawn.5.d:0 "The Restoration Council holds its first session in the former Supreme Soviet chamber. The room is half-empty—many of the old delegates have fled Moscow.\n\nThe council's first acts: release all political prisoners. Lift press censorship. Place the security services under civilian oversight. Begin drafting an electoral law.\n\nOutside, the tanks still sit in the intersections. But the turrets point at nothing. The soldiers hand out cigarettes to the crowds. For the first time in three generations, the people of Moscow are not afraid of their government."
+ usr_blue_dawn.5.a:0 "The restoration begins."
+
+ usr_blue_dawn.6.t:0 "SovOil Nationalized"
+ usr_blue_dawn.6.d:0 "The Restoration Council's decree is brief: SovOil Industries is dissolved. Its assets are seized. Its board of directors is arrested. The Energy Guard is disarmed and disbanded.\n\nViktor Sokolov is taken from his penthouse office in handcuffs. He says nothing.\n\nThe petroleum infrastructure is placed under a new State Energy Agency staffed by Gazprom engineers and democratic technocrats. The pipeline network that SovOil used to hold the Union hostage now serves the democratic government.\n\nSovOil is dead. Its oil belongs to the people."
+ usr_blue_dawn.6.a:0 "SovOil's reign is over."
+
+ usr_blue_dawn.7.t:0 "The Gazprom Charter"
+ usr_blue_dawn.7.d:0 "The Restoration Council signs the Gazprom Constitutional Charter. The document is deliberately simple: Gazprom's gas production, pipeline network, and distribution infrastructure are guaranteed by constitutional law. No future government may nationalize, privatize, or subdivide the corporation without a supermajority referendum.\n\nIn return, Gazprom submits to a democratically appointed energy commission with authority over pricing, environmental standards, and export policy.\n\nIt is a compromise. Gazprom keeps its autonomy. The people keep their heat. Both sides can live with that."
+ usr_blue_dawn.7.a:0 "The charter is signed."
+
+ usr_blue_dawn.8.t:0 "The Constitutional Convention"
+ usr_blue_dawn.8.d:0 "For ninety days, delegates from every republic argue, negotiate, draft, and revise. The fundamental question dominates every session:\n\nShall the successor state be one nation or many?\n\nThe federalists argue that only a strong central government can prevent a return to authoritarianism and resist corporate domination. The sovereigntists argue that a voluntary commonwealth respects the right of every nation to determine its own future.\n\nBoth sides are right. Neither side can win without the other."
+ usr_blue_dawn.8.a:0 "The delegates must decide."
+
+ usr_blue_dawn.9.t:0 "The Russian Federation"
+ usr_blue_dawn.9.d:0 "The Constitutional Convention has decided: one nation, indivisible.\n\nThe red banner is lowered for the last time from the Kremlin flagpole. In its place rises the white, blue, and red tricolor of the Russian Federation.\n\nThe anthem plays. The crowds in Red Square weep—some from joy, some from grief, most from something they cannot name.\n\nThe Russian Federation is a democratic state stretching from Kaliningrad to Vladivostok, from the Arctic to the Caspian. Every republic retains its language, its culture, and its regional parliament. But there is one citizenship, one constitution, and one flag.\n\nThe Soviet experiment is over. Something new has begun."
+ usr_blue_dawn.9.a:0 "The Federation is born."
+
+ usr_blue_dawn.10.t:0 "The Commonwealth of Independent States"
+ usr_blue_dawn.10.d:0 "The Constitutional Convention has decided: not one nation, but many.\n\nThe Soviet Union is dissolved by the mutual consent of its constituent republics. In its place, twelve sovereign nations sign the Commonwealth Charter in Minsk.\n\nThe Commonwealth has no capital, no president, and no standing army. Decisions require consensus. Any member may withdraw. The relationship is voluntary—a family of nations bound by shared history, not by Moscow's authority.\n\nUkraine, Belarus, the Baltic states, the Central Asian republics, the Caucasus nations—each flies its own flag. Each governs itself. Each chooses its own future.\n\nThe empire is finished. The commonwealth has begun."
+ usr_blue_dawn.10.a:0 "Independent, not divided."
+
+ # ---- Democratic Restoration Custom Tooltips ----
+
+ USR_gazprom_energy_support_tt:0 "Gazprom provides energy infrastructure, fuel reserves, and financial resources to the democratic conspiracy."
+ USR_blue_dawn_launched_tt:0 "Operation Blue Dawn is launched. Loyal military units secure Moscow. Gazprom isolates SovOil from the energy grid."
+ USR_supreme_soviet_dissolved_tt:0 "The Supreme Soviet is dissolved. The Supreme Chairman is placed under house arrest."
+ USR_restoration_council_formed_tt:0 "The Restoration Council assumes temporary governmental authority."
+ USR_sovoil_nationalized_tt:0 "SovOil Industries is dissolved. Its assets are seized. The Energy Guard is disbanded."
+ USR_gazprom_chartered_tt:0 "Gazprom receives a constitutional charter guaranteeing its operational autonomy under democratic oversight."
+ USR_constitution_written_tt:0 "A new constitution is drafted. The fundamental question: one nation or many?"
+
+ # ================================================================
+ # THE MONARCHIST CONSPIRACY (USR Phase)
+ # ================================================================
+
+ USR_whispers_old_empire:0 "Whispers of the Old Empire"
+ USR_whispers_old_empire_desc:0 "Economic collapse, republican unrest, and corporate domination create a strange nostalgia—not for the Soviet past, but for something older. In the barracks, in the villages, in the half-ruined monasteries, men speak of crowns and eagles."
+ USR_cross_beneath_red_star:0 "The Cross Beneath the Red Star"
+ USR_cross_beneath_red_star_desc:0 "Secret Orthodox brotherhoods have begun operating inside the military, the civil service, and the rural communities. They meet in basements and empty churches, passing icons and pamphlets in equal measure."
+ USR_imperial_restoration_society:0 "The Imperial Restoration Society"
+ USR_imperial_restoration_society_desc:0 "Monarchists, traditionalist officers, clergy, surviving aristocratic families, and anti-Soviet intellectuals form a unified movement. The Imperial Restoration Society exists to place a Romanov on the throne of a reborn Russian Empire."
+ USR_search_genealogical_archives:0 "Search the Genealogical Archives"
+ USR_search_genealogical_archives_desc:0 "Somewhere in the old archives—church records, emigré genealogies, DNA databases—there is a living Romanov descendant with an unbroken claim to the throne."
+ USR_contact_romanov_claimant:0 "Contact the Romanov Claimant"
+ USR_contact_romanov_claimant_desc:0 "Mikhail Alexandrovich Romanov—educated in European exile, disciplined, politically inexperienced—has been identified as the most legitimate claimant. He is brought secretly into the conspiracy."
+ USR_silence_rival_pretenders:0 "Silence the Rival Pretenders"
+ USR_silence_rival_pretenders_desc:0 "Other Romanov branches must be persuaded, bribed, or discredited. The restoration cannot succeed if the dynasty presents a divided front."
+ USR_emperor_in_waiting:0 "The Emperor in Waiting"
+ USR_emperor_in_waiting_desc:0 "Mikhail begins to appear at private gatherings, always in civilian clothes, always accompanied by senior officers. He speaks carefully, promises nothing, and listens to everyone. The movement's inner circle begins to call him 'Your Majesty.'"
+ USR_manifesto_russian_people:0 "A Manifesto to the Russian People"
+ USR_manifesto_russian_people_desc:0 "The manifesto is printed in secret and distributed through the Orthodox brotherhood network. It promises constitutional government, religious freedom, the end of corporate sovereignty, and the restoration of Russian dignity."
+ USR_blessing_of_patriarch:0 "The Blessing of the Patriarch"
+ USR_blessing_of_patriarch_desc:0 "The Patriarch of Moscow, in a ceremony witnessed only by the inner circle, lays his hands on Mikhail's head and pronounces the ancient blessing. The Church stands with the restoration."
+ USR_officers_white_cause:0 "The Officers of the White Cause"
+ USR_officers_white_cause_desc:0 "Senior officers who remember their grandfathers' stories of the White Army begin to organize. They call themselves the Officers of the White Cause, and they swear loyalty to the future Tsar."
+ USR_veterans_border_wars:0 "Veterans of the Border Wars"
+ USR_veterans_border_wars_desc:0 "Combat veterans from the Union's border conflicts are recruited into the conspiracy. These are experienced soldiers who know how to fight—and how to keep secrets."
+ USR_restore_imperial_guard:0 "Restore the Imperial Guard"
+ USR_restore_imperial_guard_desc:0 "A cadre of the best officers forms the nucleus of a restored Imperial Guard. When the moment comes, these men will lead the first units into battle under the double-headed eagle."
+ USR_infiltrate_general_staff:0 "Infiltrate the General Staff"
+ USR_infiltrate_general_staff_desc:0 "Monarchist officers have been placed in key positions throughout the General Staff. When the order is given, half the high command will refuse to obey the Supreme Soviet."
+ USR_secure_western_garrisons:0 "Secure the Western Garrisons"
+ USR_secure_western_garrisons_desc:0 "The garrisons of St. Petersburg, Pskov, Novgorod, and the northwestern military districts have been secured. These forces will form the backbone of the Imperial Army."
+ USR_prepare_march_moscow:0 "Prepare the March on Moscow"
+ USR_prepare_march_moscow_desc:0 "Fuel, ammunition, and communications equipment are pre-staged along the routes to Moscow. When the standard is raised, the Imperial Guard will march on the capital."
+ USR_awaken_cossack_hosts:0 "Awaken the Cossack Hosts"
+ USR_awaken_cossack_hosts_desc:0 "The Don, Kuban, and Terek Cossacks respond to the call. Their atamans pledge their riders to the cause. The Cossacks have always served the Tsar."
+ USR_rural_brotherhoods:0 "The Rural Brotherhoods"
+ USR_rural_brotherhoods_desc:0 "In the villages and small towns, Orthodox brotherhoods organize peasant support for the restoration. Icons of the Romanovs appear alongside icons of the saints."
+ USR_restore_old_processions:0 "Restore the Old Processions"
+ USR_restore_old_processions_desc:0 "Public religious processions—long banned under Soviet rule—resume in rural areas. The government looks the other way. The processions grow larger."
+ USR_protect_monasteries:0 "Protect the Monasteries"
+ USR_protect_monasteries_desc:0 "Monarchist sympathizers ensure that the remaining monasteries receive protection and supplies. The monasteries become safe houses and communications hubs for the conspiracy."
+ USR_prepare_imperial_provinces:0 "Prepare the Imperial Provinces"
+ USR_prepare_imperial_provinces_desc:0 "Provincial administrators sympathetic to the cause prepare the transition of power. When the standard is raised, entire oblasts will declare for the Emperor."
+ USR_faith_tsar_fatherland:0 "Faith, Tsar, and Fatherland"
+ USR_faith_tsar_fatherland_desc:0 "The old trinity—Orthodoxy, Autocracy, Nationality—is reborn for the twenty-first century. The movement is ready. The people are ready. The Emperor is ready."
+ USR_government_discovers_conspiracy:0 "The Government Discovers the Conspiracy"
+ USR_government_discovers_conspiracy_desc:0 "The Supreme Soviet's security services have uncovered the monarchist conspiracy. Arrest warrants have been issued for Mikhail Romanov, the Patriarch, and dozens of senior officers. The conspirators have hours, not days."
+ USR_raise_imperial_standard:0 "Raise the Imperial Standard"
+ USR_raise_imperial_standard_desc:0 "There is no more time for preparation. The golden double-headed eagle rises over St. Petersburg. The Imperial Guard marches. The Cossacks ride. The bells of every church ring out across Russia.\n\nThe Second Russian Civil War has begun."
+
+ # ---- Conspiracy Spirit ----
+
+ USR_imperial_conspiracy_spirit:0 "The Imperial Restoration Society"
+ USR_imperial_conspiracy_spirit_desc:0 "A secret society of monarchists, officers, clergy, and aristocratic remnants works to restore the Russian throne. The conspiracy grows stronger but the risk of discovery increases."
+ USR_conspiracy_exposed_tt:0 "The Supreme Soviet has discovered the monarchist conspiracy. Arrest warrants have been issued."
+
+ # ================================================================
+ # HOLY RUSSIAN EMPIRE — FOCUS TREE
+ # ================================================================
+
+ HRE_focus:0 "Holy Russian Empire"
+
+ # ---- Rally the Empire ----
+
+ HRE_imperial_government_petersburg:0 "The Imperial Government at Saint Petersburg"
+ HRE_imperial_government_petersburg_desc:0 "The provisional Imperial Government establishes itself in the Winter Palace. Saint Petersburg is once again the capital of a Russian Empire."
+ HRE_proclaim_mikhail_iv:0 "Proclaim Mikhail IV"
+ HRE_proclaim_mikhail_iv_desc:0 "Mikhail IV Romanov is proclaimed Emperor and Autocrat of All Russia. He has not yet been crowned—that requires Moscow—but his authority is declared before God, the Church, and the Army."
+ HRE_white_guard_reborn:0 "The White Guard Reborn"
+ HRE_white_guard_reborn_desc:0 "The Imperial Guard formations take the white cockade of the old anti-Bolshevik armies. A century later, the White Guard rides again."
+ HRE_call_cossacks_to_arms:0 "Call the Cossacks to Arms"
+ HRE_call_cossacks_to_arms_desc:0 "The atamans have answered the call. Cossack cavalry and motorized formations ride south from the Don and north from the Kuban, flying the imperial standard."
+ HRE_emperors_railway_battalions:0 "The Emperor's Railway Battalions"
+ HRE_emperors_railway_battalions_desc:0 "Railway engineer battalions secure the critical rail lines between Saint Petersburg and the front. Supply trains run around the clock."
+ HRE_every_parish_recruitment:0 "Every Parish a Recruitment Office"
+ HRE_every_parish_recruitment_desc:0 "The Orthodox Church opens every parish as a recruitment center. Village priests read the Emperor's proclamation from the pulpit and young men line up to take the oath."
+
+ # ---- Win the Resource War ----
+
+ HRE_secure_northern_ports:0 "Secure the Northern Ports"
+ HRE_secure_northern_ports_desc:0 "Murmansk and Arkhangelsk are secured. The northern ports provide access to foreign supplies and prevent a Soviet naval blockade."
+ HRE_capture_volga_arteries:0 "Capture the Volga Arteries"
+ HRE_capture_volga_arteries_desc:0 "Imperial forces push to control the Volga River system—the arterial waterway that carries fuel, food, and materiel across European Russia."
+ HRE_seize_fuel_depots:0 "Seize the Fuel Depots"
+ HRE_seize_fuel_depots_desc:0 "Strategic fuel depots are captured before the Soviets can destroy them. The Imperial Army has enough diesel to keep moving."
+ HRE_court_gazprom:0 "Court Gazprom"
+ HRE_court_gazprom_desc:0 "The Empire offers Gazprom protection from SovOil, a charter under the restored Crown, and control of gas reconstruction. In return, Gazprom keeps the gas flowing to Imperial territory."
+ HRE_break_sovoil_monopoly:0 "Break SovOil's Monopoly"
+ HRE_break_sovoil_monopoly_desc:0 "SovOil's pipeline infrastructure in Imperial territory is seized. The corporation's fuel monopoly is broken. The Empire will never depend on a corporation for its survival."
+ HRE_fuel_imperial_offensive:0 "Fuel the Imperial Offensive"
+ HRE_fuel_imperial_offensive_desc:0 "Captured depots, Gazprom pipelines, and northern port imports have filled the Imperial reserves. The army has enough fuel for a sustained offensive toward Moscow."
+
+ # ---- International Support ----
+
+ HRE_appeal_orthodox_world:0 "Appeal to the Orthodox World"
+ HRE_appeal_orthodox_world_desc:0 "The Patriarch's blessing carries weight beyond Russia's borders. Orthodox communities worldwide are asked to support the restoration through prayer, diplomacy, and material aid."
+ HRE_seek_european_recognition:0 "Seek European Recognition"
+ HRE_seek_european_recognition_desc:0 "European governments are cautiously approached. A monarchist Russia is a predictable Russia—a partner the old European monarchies can understand."
+ HRE_loans_for_restoration:0 "Loans for the Restoration"
+ HRE_loans_for_restoration_desc:0 "International financial institutions are willing to extend credit to a government that promises stability, the rule of law, and the protection of property rights."
+ HRE_promise_stable_eurasia:0 "Promise a Stable Eurasia"
+ HRE_promise_stable_eurasia_desc:0 "The Empire's diplomats promise what the world wants to hear: a stable, unified Eurasian state that honors its treaties and controls its corporations."
+ HRE_expose_soviet_repressions:0 "Expose the Soviet Repressions"
+ HRE_expose_soviet_repressions_desc:0 "Archives seized from Soviet security buildings are published. The extent of surveillance, imprisonment, and political murder under the Neo-Soviet government shocks even those who suspected the worst."
+
+ # ---- Defeat the Union ----
+
+ HRE_road_to_moscow:0 "The Road to Moscow"
+ HRE_road_to_moscow_desc:0 "The Imperial Army begins its advance toward Moscow along three axes: from the northwest, from the south, and from the Volga."
+ HRE_encircle_soviet_capital:0 "Encircle the Soviet Capital"
+ HRE_encircle_soviet_capital_desc:0 "Imperial forces close the ring around Moscow. The capital's supply lines are cut. The Supreme Soviet is trapped."
+ HRE_raise_eagle_kremlin:0 "Raise the Eagle over the Kremlin"
+ HRE_raise_eagle_kremlin_desc:0 "The golden double-headed eagle is raised over the Kremlin walls. The red banner comes down for the last time. Moscow belongs to the Emperor."
+ HRE_destroy_supreme_soviet:0 "Destroy the Supreme Soviet"
+ HRE_destroy_supreme_soviet_desc:0 "The Supreme Soviet is formally dissolved. Its members are arrested or flee into exile. The institution that governed Russia for over a century ceases to exist."
+ HRE_victory_civil_war:0 "Victory in the Second Russian Civil War"
+ HRE_victory_civil_war_desc:0 "The Neo-Soviet Union has been defeated. The last Soviet units have surrendered or disbanded. The Second Russian Civil War is over. The Holy Russian Empire has won."
+
+ # ---- Post-Victory ----
+
+ HRE_imperial_entry_moscow:0 "The Imperial Entry into Moscow"
+ HRE_imperial_entry_moscow_desc:0 "The Emperor and the Imperial Guard enter Moscow through the Spassky Gate. Church bells ring across the city. Crowds line the streets—some cheering, some weeping, many simply watching in silence. Russia has an Emperor again."
+ HRE_fate_supreme_soviet:0 "The Fate of the Supreme Soviet"
+ HRE_fate_supreme_soviet_desc:0 "The captured members of the Supreme Soviet await judgment. The Emperor must decide how to deal with the defeated regime."
+ HRE_crown_new_tsar:0 "Crown the New Tsar"
+ HRE_crown_new_tsar_desc:0 "In a reconstructed coronation ceremony in the Cathedral of Christ the Saviour, the Patriarch places the imperial crown on Mikhail IV's head. The new Tsar swears to defend Russia, the Orthodox faith, and his people. The restoration is complete."
+
+ # ---- Three Monarchy Paths ----
+
+ HRE_crown_and_duma:0 "The Crown and the Duma"
+ HRE_crown_and_duma_desc:0 "A constitutional monarchy with an elected parliament. The Tsar reigns as head of state. An elected prime minister governs."
+ HRE_summon_imperial_duma:0 "Summon the Imperial Duma"
+ HRE_summon_imperial_duma_desc:0 "The Imperial Duma is reconvened for the first time since 1917. Elected representatives from every province take their seats."
+ HRE_constitution_beneath_crown:0 "A Constitution Beneath the Crown"
+ HRE_constitution_beneath_crown_desc:0 "A written constitution establishes the rights of subjects, the powers of the Duma, and the limits of the Crown. Russia becomes a constitutional monarchy."
+ HRE_guarantee_civil_liberties:0 "Guarantee Civil Liberties"
+ HRE_guarantee_civil_liberties_desc:0 "Freedom of speech, assembly, and religion are guaranteed by constitutional law. The press is free. Political parties may organize. The era of censorship is over."
+ HRE_elected_provincial_governments:0 "Elected Provincial Governments"
+ HRE_elected_provincial_governments_desc:0 "Provincial governors are elected, not appointed. Local government answers to the people, not the capital."
+ HRE_tsar_reigns_not_rules:0 "The Tsar Reigns but Does Not Rule"
+ HRE_tsar_reigns_not_rules_desc:0 "Mikhail IV accepts the constitutional settlement gracefully. The Tsar is the symbol of the nation, the guardian of the constitution, and the head of state. He does not govern."
+ HRE_democratic_russian_empire:0 "A Democratic Russian Empire"
+ HRE_democratic_russian_empire_desc:0 "The Russian Empire is reborn as a constitutional monarchy—a democracy under a crown. Free elections, an independent judiciary, and a parliament that makes the laws. The Tsar signs them."
+
+ HRE_autocracy_restored:0 "Autocracy Restored"
+ HRE_autocracy_restored_desc:0 "All power flows from the sovereign. Russia requires a strong hand, not a parliament of debaters."
+ HRE_all_power_sovereign:0 "All Power to the Sovereign"
+ HRE_all_power_sovereign_desc:0 "The Tsar assumes absolute executive authority. Ministers serve at his pleasure. The law is what the Emperor commands."
+ HRE_dissolve_provisional_council:0 "Dissolve the Provisional Council"
+ HRE_dissolve_provisional_council_desc:0 "The provisional governing council that administered the Empire during the civil war is thanked for its service and dismissed. The Tsar governs alone."
+ HRE_imperial_chancellery:0 "The Imperial Chancellery"
+ HRE_imperial_chancellery_desc:0 "A centralized Imperial Chancellery coordinates all government activity. Every minister, every governor, every general reports through the Chancellery to the Tsar."
+ HRE_governors_appointed_crown:0 "Governors Appointed by the Crown"
+ HRE_governors_appointed_crown_desc:0 "Provincial governors are appointed and dismissed by imperial decree. They answer to Moscow and to the Tsar, not to local assemblies."
+ HRE_new_okhrana:0 "The New Okhrana"
+ HRE_new_okhrana_desc:0 "A new secret police—bearing the old name of the Tsarist Okhrana—is established to protect the autocracy from subversion, conspiracy, and revolution. Its authority is absolute."
+ HRE_autocrat_all_eurasia:0 "Autocrat of All Eurasia"
+ HRE_autocrat_all_eurasia_desc:0 "Mikhail IV rules as absolute sovereign over the largest state on earth. His word is law from the Baltic to the Pacific. The autocracy has been restored."
+
+ HRE_sacred_empire:0 "The Sacred Empire"
+ HRE_sacred_empire_desc:0 "The Crown and the Church govern in symphony. The Emperor is the sacred protector of Orthodoxy. Russia is not merely a state—it is a civilization with a divine mission."
+ HRE_symphonia_crown_church:0 "The Symphonia of Crown and Church"
+ HRE_symphonia_crown_church_desc:0 "The ancient Byzantine principle of symphonia—the harmonious cooperation of secular and spiritual authority—is restored. The Emperor protects the Church. The Church blesses the Emperor."
+ HRE_holy_governing_synod:0 "The Holy Governing Synod"
+ HRE_holy_governing_synod_desc:0 "The Holy Synod is restored as the supreme religious authority, working alongside the imperial government. Spiritual matters and moral law fall under its jurisdiction."
+ HRE_defenders_orthodox_world:0 "Defenders of the Orthodox World"
+ HRE_defenders_orthodox_world_desc:0 "The Empire declares itself the protector of Orthodox Christians everywhere—in the Balkans, in the Middle East, in Africa. Wherever the faithful are persecuted, Russia will answer."
+ HRE_emperor_sacred_protector:0 "The Emperor as Sacred Protector"
+ HRE_emperor_sacred_protector_desc:0 "The Tsar's role is not merely political but spiritual. He is the Defender of the Faith, the protector of the Church, and the earthly guardian of Orthodox civilization."
+ HRE_concordat_eurasian_faiths:0 "A Concordat of Eurasian Faiths"
+ HRE_concordat_eurasian_faiths_desc:0 "The Empire extends religious toleration to Islam, Buddhism, and other faiths practiced by its diverse subjects. Each religion receives a charter of protection under the Crown. The Empire governs a civilization, not a sect."
+ HRE_third_rome_reborn:0 "The Third Rome Reborn"
+ HRE_third_rome_reborn_desc:0 "Moscow is the Third Rome. The first Rome fell to barbarians. The second Rome fell to the Turks. The Third Rome shall not fall."
+ HRE_holy_russian_empire_proclaimed:0 "The Holy Russian Empire"
+ HRE_holy_russian_empire_proclaimed_desc:0 "The Holy Russian Empire is proclaimed—a sacred civilization-state governed by the symphonia of Crown and Church, protected by the Imperial Guard, sustained by the faith of its people. Neither Communist nor capitalist, neither democratic nor merely despotic. Something older. Something that remembers."
+
+ # ---- Corporate Question ----
+
+ HRE_corporate_question:0 "The Corporate Question"
+ HRE_corporate_question_desc:0 "The corporations that carved up Russia must be brought to heel. Sovereignty belongs to the Crown, not to boards of directors. Corporations may conduct business, but they cannot possess territory, armies, or political independence."
+ HRE_sovereignty_belongs_crown:0 "Sovereignty Belongs to the Crown"
+ HRE_sovereignty_belongs_crown_desc:0 "The principle is established in imperial law: corporations are subjects of the Crown, not sovereign powers. Strategic industries will be nationalized. Private armies will be dissolved."
+ HRE_seize_sovoil:0 "Seize SovOil"
+ HRE_seize_sovoil_desc:0 "SovOil's separate territory is annexed. Viktor Sokolov and the board are arrested. The Energy Guard is disbanded. Oil fields, refineries, and pipelines become Crown property."
+ HRE_arrest_oil_directors:0 "Arrest the Oil Directors"
+ HRE_arrest_oil_directors_desc:0 "SovOil's entire board of directors is arrested and tried for crimes against the state. Their personal fortunes are confiscated."
+ HRE_dissolve_energy_guard_imp:0 "Dissolve the Energy Guard"
+ HRE_dissolve_energy_guard_imp_desc:0 "SovOil's private army is disarmed and disbanded. Those who swear loyalty to the Crown may serve in the Imperial Army. The rest are dismissed."
+ HRE_confiscate_corporate_archives:0 "Confiscate the Corporate Archives"
+ HRE_confiscate_corporate_archives_desc:0 "SovOil's internal records—financial, operational, and intelligence—are seized. They reveal the full extent of corporate corruption and political manipulation."
+ HRE_restore_oil_fields_crown:0 "Restore the Oil Fields to the Crown"
+ HRE_restore_oil_fields_crown_desc:0 "Every oil field, refinery, and pipeline that SovOil controlled is transferred to the Imperial government. Russia's petroleum belongs to Russia."
+ HRE_imperial_petroleum_ministry:0 "The Imperial Petroleum Ministry"
+ HRE_imperial_petroleum_ministry_desc:0 "A Ministry of Petroleum is established under a minister appointed by the Tsar. SovOil survives only as a historical name on government letterhead."
+ HRE_revoke_gazprom_charter:0 "Revoke the Gazprom Charter"
+ HRE_revoke_gazprom_charter_desc:0 "Gazprom's autonomous charter is revoked. The corporation's territory returns to the Empire. Its security forces join the Imperial Army or disband. Gas infrastructure becomes state property."
+ HRE_pipelines_belong_russia:0 "The Pipelines Belong to Russia"
+ HRE_pipelines_belong_russia_desc:0 "Every gas pipeline on Russian soil is nationalized. The infrastructure that Gazprom built remains. The independence it claimed does not."
+ HRE_remove_republican_directors:0 "Remove the Republican Directors"
+ HRE_remove_republican_directors_desc:0 "Gazprom's executive board is replaced by Crown-appointed administrators. Those who cooperated with the restoration are treated generously. Those who resisted are removed."
+ HRE_protect_gas_engineers:0 "Protect the Gas Engineers"
+ HRE_protect_gas_engineers_desc:0 "The engineers and technicians who keep the gas flowing are protected from political purges. The Empire needs their expertise. They are offered employment contracts under the Crown."
+ HRE_heat_emperors_subjects:0 "Heat for the Emperor's Subjects"
+ HRE_heat_emperors_subjects_desc:0 "The nationalized gas infrastructure ensures that every Russian citizen has access to heating, regardless of their political loyalties. The Tsar's subjects will not freeze."
+ HRE_imperial_gas_ministry:0 "The Imperial Gas Ministry"
+ HRE_imperial_gas_ministry_desc:0 "A Ministry of Gas is established alongside the Petroleum Ministry. Gazprom's brand may survive commercially, but it is now an administrative division of the Imperial government."
+ HRE_ban_corporate_forces:0 "Ban Corporate Armed Forces"
+ HRE_ban_corporate_forces_desc:0 "All corporate military units are transferred, disbanded, or converted into Imperial formations. Only the Crown may raise armies."
+ HRE_only_crown_raise_armies:0 "Only the Crown May Raise Armies"
+ HRE_only_crown_raise_armies_desc:0 "Imperial law declares that only the sovereign may maintain military forces. Private armies, corporate security battalions, and mercenary companies are outlawed."
+ HRE_disarm_corporate_guards:0 "Disarm the Corporate Guards"
+ HRE_disarm_corporate_guards_desc:0 "Every remaining corporate security force is disarmed. Their weapons are confiscated. Their personnel are offered positions in the Imperial Army or civilian employment."
+ HRE_imperial_monopoly_violence:0 "The Imperial Monopoly on Violence"
+ HRE_imperial_monopoly_violence_desc:0 "The state's monopoly on legitimate force is absolute. No corporation, institution, or private citizen may maintain armed forces beyond ordinary facility security."
+ HRE_expel_foreign_contractors:0 "Expel Foreign Military Contractors"
+ HRE_expel_foreign_contractors_desc:0 "Foreign military contractors operating inside the Empire are given thirty days to leave. Their equipment is confiscated. Their contracts are void."
+ HRE_officers_before_executives:0 "Officers Before Executives"
+ HRE_officers_before_executives_desc:0 "Military command is restored to professional officers loyal to the Crown. Corporate executives who held military titles are stripped of rank."
+
+ HRE_imperial_energy_directorate:0 "The Imperial Energy Directorate"
+ HRE_imperial_energy_directorate_desc:0 "The Imperial Directorate of Oil, Gas, and Strategic Resources unifies all energy production under a single government institution. It controls oil, gas, pipelines, refineries, strategic reserves, civilian heating, military fuel, energy exports, and Arctic development."
+ HRE_review_foreign_charters:0 "Review the Foreign Charters"
+ HRE_review_foreign_charters_desc:0 "Every foreign corporation operating inside the Empire must submit its charter for review. They will accept an Imperial Charter, sell their assets, or leave."
+ HRE_break_arasaka_networks:0 "Break Arasaka's Networks"
+ HRE_break_arasaka_networks_desc:0 "Arasaka's intelligence networks, corporate offices, and covert operations inside Russia are dismantled. Their agents are expelled."
+ HRE_expel_militech_contractors:0 "Expel Militech Contractors"
+ HRE_expel_militech_contractors_desc:0 "Militech's military contractors, arms dealers, and security advisors are expelled from Imperial territory. Their weapons stockpiles are confiscated."
+ HRE_purchase_biotechnica_facilities:0 "Purchase Biotechnica's Facilities"
+ HRE_purchase_biotechnica_facilities_desc:0 "Biotechnica's agricultural and pharmaceutical facilities are purchased by the Crown at fair market value. The Empire acquires advanced technology without foreign dependency."
+ HRE_technology_without_foreign_masters:0 "Technology Without Foreign Masters"
+ HRE_technology_without_foreign_masters_desc:0 "The Empire establishes its own technology development programs. Russian engineers and scientists will build Russia's future—without corporate licenses or foreign supervision."
+ HRE_economy_loyal_crown:0 "An Economy Loyal to the Crown"
+ HRE_economy_loyal_crown_desc:0 "Private enterprise flourishes under imperial regulation. Strategic industries serve the state. Foreign investment is welcome—under Crown supervision. The economy is neither free-market nor planned. It is imperial."
+ HRE_corporations_serve_empire:0 "Corporations Serve the Empire"
+ HRE_corporations_serve_empire_desc:0 "Corporate sovereignty is abolished. Gazprom and SovOil exist only as government ministries. Corporate armies are gone. Corporate territory is gone. Corporate diplomacy is gone. Corporations may conduct business. They may not conduct politics."
+
+ # ---- HRE Spirits ----
+
+ HRE_uncrowned_pretender:0 "The Uncrowned Pretender"
+ HRE_uncrowned_pretender_desc:0 "Mikhail IV has been proclaimed Emperor but not yet crowned. Without coronation, his authority remains provisional. Moscow must be taken."
+ HRE_crowned_tsar:0 "Tsar of All Russia"
+ HRE_crowned_tsar_desc:0 "Mikhail IV has been crowned Tsar and Emperor of All Russia in the Cathedral of Christ the Saviour. His authority is recognized by the Church, the Army, and the people."
+ HRE_gazprom_imperial_support:0 "Gazprom's Imperial Bargain"
+ HRE_gazprom_imperial_support_desc:0 "Gazprom provides gas infrastructure and energy support to the Empire in exchange for the promise of a Crown charter. The arrangement is temporary—but for now, the lights stay on."
+ HRE_imperial_fuel_reserves:0 "Imperial Fuel Reserves"
+ HRE_imperial_fuel_reserves_desc:0 "Captured fuel depots, Gazprom pipelines, and northern port imports have filled the Imperial reserves. The army has enough fuel for sustained operations."
+ HRE_okhrana_spirit:0 "The New Okhrana"
+ HRE_okhrana_spirit_desc:0 "The Tsar's secret police watches for subversion, conspiracy, and revolution. Its authority is broad, its methods are effective, and its agents are everywhere."
+ HRE_democratic_empire_spirit:0 "A Democratic Russian Empire"
+ HRE_democratic_empire_spirit_desc:0 "A constitutional monarchy under the Duma. The Tsar reigns but does not rule. Elections are free. The press is independent. Russia is governed by law, not decree."
+ HRE_autocracy_spirit:0 "Autocrat of All Eurasia"
+ HRE_autocracy_spirit_desc:0 "Mikhail IV rules as absolute sovereign. His word is law from the Baltic to the Pacific. The bureaucracy answers to the Crown. The provinces answer to the governors. The governors answer to the Tsar."
+ HRE_sacred_empire_spirit:0 "The Holy Russian Empire"
+ HRE_sacred_empire_spirit_desc:0 "The Third Rome. Crown and Church govern in sacred symphony. The Emperor is the Defender of the Faith. Moscow is the heart of Orthodox civilization."
+ HRE_corporate_question_spirit:0 "The Corporate Question"
+ HRE_corporate_question_spirit_desc:0 "The corporations that carved up Russia must be dealt with. Energy production is disrupted. Corporate sabotage threatens stability. The Crown must assert its sovereignty over all economic life."
+ HRE_imperial_petroleum:0 "Imperial Petroleum Ministry"
+ HRE_imperial_petroleum_desc:0 "Russia's oil production is administered by an imperial ministry. Every barrel belongs to the Crown."
+ HRE_imperial_gas:0 "Imperial Gas Ministry"
+ HRE_imperial_gas_desc:0 "Russia's gas production is administered by an imperial ministry. Every pipeline serves the Emperor's subjects."
+ HRE_energy_directorate_spirit:0 "Imperial Energy Directorate"
+ HRE_energy_directorate_spirit_desc:0 "The Imperial Directorate of Oil, Gas, and Strategic Resources controls all energy production. Neither corporate nor communist. Imperial."
+ HRE_crown_economic_sovereignty:0 "Crown Economic Sovereignty"
+ HRE_crown_economic_sovereignty_desc:0 "Corporate sovereignty is abolished. Strategic industries serve the state. Private enterprise flourishes under imperial regulation. The Tsarist economy is neither free-market capitalism nor Soviet planning. It is imperial dirigisme."
+
+ # ---- HRE Events ----
+
+ usr_imperial.1.t:0 "The Government Discovers the Conspiracy"
+ usr_imperial.1.d:0 "The Supreme Soviet's security services have uncovered the monarchist conspiracy. Federal agents are moving to arrest Mikhail Romanov, the Patriarch, and dozens of senior military officers.\n\nThe inner circle meets for the last time in a safehouse outside Saint Petersburg. The debate is brief. There is no retreat. The conspiracy must become a revolution or it will become a prison sentence.\n\nGeneral Volkonsky speaks last: 'We raise the standard now, or we die in the cellars of the Lubyanka. I prefer the field.'"
+ usr_imperial.1.a:0 "Raise the Imperial Standard."
+
+ usr_imperial.2.t:0 "The Second Russian Civil War"
+ usr_imperial.2.d:0 "At dawn, the golden double-headed eagle rises over the Winter Palace. Church bells ring across Saint Petersburg. The Imperial Guard marches.\n\nFrom the south, Cossack columns ride north under the atamans' banners. From the garrisons of Pskov, Novgorod, and Yaroslavl, entire divisions declare for the Emperor.\n\nIn Moscow, the Supreme Soviet issues a frantic decree ordering the arrest of all monarchist officers. Half the General Staff refuses to comply.\n\nThe radio broadcasts two messages simultaneously. From Saint Petersburg: 'God Save the Tsar.' From Moscow: 'Death to the traitors.'\n\nThe Second Russian Civil War has begun."
+ usr_imperial.2.a:0 "For Faith, Tsar, and Fatherland!"
+
+ usr_imperial.3.t:0 "Victory in the Civil War"
+ usr_imperial.3.d:0 "The last Soviet formations have surrendered. The red banner no longer flies over any Russian city. The Supreme Soviet has been dissolved. Its members are under arrest or in exile.\n\nThe Second Russian Civil War is over. It lasted months—shorter than the first, but no less decisive. The Neo-Soviet Union is destroyed. The Holy Russian Empire stands in its place.\n\nNow the hard part begins: governing."
+ usr_imperial.3.a:0 "The Empire has won. Long live the Tsar."
+
+ usr_imperial.4.t:0 "The Imperial Entry into Moscow"
+ usr_imperial.4.d:0 "Emperor Mikhail IV enters Moscow through the Spassky Gate of the Kremlin, riding at the head of the Imperial Guard. The double-headed eagle banner flies from every tower.\n\nThe streets are lined with soldiers presenting arms and civilians who watch in silence. Some cross themselves. Some weep. An old woman throws flowers.\n\nThe Emperor dismounts at the Cathedral of Christ the Saviour. The Patriarch meets him at the door. Together they enter the cathedral for a service of thanksgiving.\n\nMoscow has an Emperor again."
+ usr_imperial.4.a:0 "The capital is ours."
+
+ usr_imperial.5.t:0 "The Fate of the Supreme Soviet"
+ usr_imperial.5.d:0 "The captured members of the Supreme Soviet—those who did not flee—await judgment. The Emperor must decide their fate.\n\nHardliners demand public trials and exemplary punishment. Moderates argue that mercy will heal the nation faster. Pragmatists suggest that many former officials possess skills the Empire needs.\n\nThe decision belongs to the Tsar."
+ usr_imperial.5.a:0 "Public trials. Justice must be seen."
+ usr_imperial.5.b:0 "Limited amnesty. We need their expertise."
+ usr_imperial.5.c:0 "Complete political purge. No mercy for traitors."
+
+ usr_imperial.6.t:0 "The Coronation of Tsar Mikhail IV"
+ usr_imperial.6.d:0 "In the Cathedral of Christ the Saviour, before an assembly of officers, clergy, nobility, and foreign observers, the Patriarch places the Imperial Crown upon the head of Mikhail IV Romanov.\n\nThe Tsar swears the ancient oath: to defend Russia, the Orthodox faith, and his people. The congregation responds: 'God Save the Tsar!'\n\nChurch bells ring across Moscow. The cannons fire a hundred-gun salute. The Imperial Guard presents arms.\n\nRussia has a crowned Emperor for the first time in over a century and a half.\n\nThe restoration is complete. The reign of Mikhail IV has begun."
+ usr_imperial.6.a:0 "God Save the Tsar!"
+
+ usr_imperial.7.t:0 "Corporations Serve the Empire"
+ usr_imperial.7.d:0 "The Imperial Decree on Corporate Sovereignty is published. Its language is absolute:\n\n'No corporation, domestic or foreign, shall possess territory, maintain armed forces, exercise diplomatic authority, or claim political independence within the domains of the Emperor. Strategic industries are instruments of the state. The Crown alone is sovereign.'\n\nSovOil ceases to exist as an independent entity. Its oil fields become Crown property. Gazprom's charter is revoked. Its pipelines serve the Imperial Gas Ministry. Corporate armies are disbanded. Corporate territories are annexed.\n\nThe age of corporate sovereignty in Russia is over. Corporations may conduct business. They may not conduct politics."
+ usr_imperial.7.a:0 "The Crown alone is sovereign."
+
+ # ================================================================
+ # SOVIET EMPIRE PATH — Localisation
+ # ================================================================
+
+ # ---- Tooltips ----
+ USR_imperial_current_tt:0 "§YThe Imperial Current§! — Soviet Imperial Influence tracking begins. A secret faction now works to restore the Union's continental supremacy."
+ USR_party_captured_tt:0 "§YThe Party is under control.§! The Supreme Soviet will vote as directed."
+ USR_military_captured_tt:0 "§YThe armed forces are secured.§! The Moscow Military District awaits its orders."
+ USR_security_captured_tt:0 "§YState security answers to the Committee.§! Opposition has been silenced."
+ USR_economy_captured_tt:0 "§YStrategic industries are subordinated.§! Neither SovOil nor Gazprom can resist."
+ USR_emergency_session_tt:0 "§YThe Emergency Session is called.§! Marshal Voronin will address the Supreme Soviet."
+ USR_coup_without_gunfire_tt:0 "§YThe coup succeeds without a single shot.§! Every institution capable of resistance has already been captured. SovOil and Gazprom are absorbed into the state."
+ USR_proclaim_soviet_empire_tt:0 "§YThe Soviet Empire is proclaimed.§! The Neo-Soviet Union is reorganized as a centralized imperial state under Chairman Voronin."
+ POLITICS_VORONIN_DESC:0 "Marshal Alexei Voronin served forty years in Soviet military intelligence before concluding that socialism cannot survive without continental military supremacy. He does not call himself an emperor. 'Empire' describes the state's organization and ambitions, not a monarchy."
+
+ # ---- Conspiracy Spine Focuses ----
+ USR_imperial_current:0 "The Imperial Current"
+ USR_imperial_current_desc:0 "A faction inside the Party argues that the Union's weakness comes from federal compromise, civilian indecision, and the abandonment of great-power ambition. They do not seek reform. They seek restoration—of discipline, of purpose, of empire."
+ USR_veterans_lost_superpower:0 "Veterans of the Lost Superpower"
+ USR_veterans_lost_superpower_desc:0 "Military veterans, industrial managers, and former intelligence officials rally to the cause. They remember when the Union was feared. They intend to make it feared again."
+ USR_committee_soviet_restoration:0 "The Committee for Soviet Restoration"
+ USR_committee_soviet_restoration_desc:0 "Marshal Alexei Voronin formalizes the conspiracy as a secret committee. Its cells operate in every ministry, every garrison, every republic. The takeover will be silent, institutional, and irreversible."
+
+ # ---- Party Takeover Branch ----
+ USR_place_loyalists_party:0 "Place Loyalists in the Party"
+ USR_place_loyalists_party_desc:0 "Committee agents are appointed to key party positions across the republics. They report to Voronin, not the Presidium."
+ USR_control_appointment_committees:0 "Control the Appointment Committees"
+ USR_control_appointment_committees_desc:0 "Personnel decisions—who rises, who is transferred, who is investigated—now pass through Committee loyalists. The party's own bureaucracy becomes the instrument of its capture."
+ USR_discredit_reformist_bloc:0 "Discredit the Reformist Bloc"
+ USR_discredit_reformist_bloc_desc:0 "Leaked documents, fabricated scandals, and genuine corruption cases destroy the reformists' credibility. The moderates lose their audience."
+ USR_remove_republican_delegates:0 "Remove the Republican Delegates"
+ USR_remove_republican_delegates_desc:0 "Republican representatives who resist centralization are recalled, replaced, or quietly arrested. The Supreme Soviet grows more compliant with every empty seat."
+ USR_control_the_presidium:0 "Control the Presidium"
+ USR_control_the_presidium_desc:0 "The Presidium's membership now reflects the Committee's will. Every motion, every vote, every emergency decree will pass without meaningful opposition."
+ USR_majority_behind_closed_doors:0 "A Majority Behind Closed Doors"
+ USR_majority_behind_closed_doors_desc:0 "The final count is conducted in private. Two-thirds of the Supreme Soviet will vote for emergency powers when the time comes. Some believe in the cause. Most are afraid."
+
+ # ---- Military Takeover Branch ----
+ USR_marshals_circle:0 "The Marshal's Circle"
+ USR_marshals_circle_desc:0 "Senior commanders who share Voronin's vision form an inner circle. They control the strategic rocket forces, the Moscow garrison, and the military intelligence directorate."
+ USR_veterans_before_politicians:0 "Veterans Before Politicians"
+ USR_veterans_before_politicians_desc:0 "The Committee funds veterans' organizations, rehabilitation centers, and military families. Every soldier and officer receives the message: the army has been betrayed by civilian politicians."
+ USR_promote_imperial_officers_se:0 "Promote the Imperial Officers"
+ USR_promote_imperial_officers_se_desc:0 "Loyalist officers receive accelerated promotion. Unreliable commanders are transferred to remote postings in Siberia and Central Asia."
+ USR_restore_political_commissars:0 "Restore Political Commissars"
+ USR_restore_political_commissars_desc:0 "The Committee reintroduces political officers into every division. They report directly to the Committee for Soviet Restoration, not the civilian government."
+ USR_secure_moscow_military_district:0 "Secure the Moscow Military District"
+ USR_secure_moscow_military_district_desc:0 "The Moscow garrison, the Kremlin guard, and the capital's air defense network are placed under direct Committee command. When the order comes, the capital will be locked down within hours."
+ USR_army_awaits_orders:0 "The Army Awaits Its Orders"
+ USR_army_awaits_orders_desc:0 "Every division commander has received sealed instructions. The military will surround government buildings during the emergency session but will not begin fighting. There will be no civil war because there will be no resistance."
+
+ # ---- Security Takeover Branch ----
+ USR_reorganize_state_security_se:0 "Reorganize State Security"
+ USR_reorganize_state_security_se_desc:0 "The security apparatus is restructured under Committee oversight. New directorates are created for internal surveillance, counterintelligence, and political reliability."
+ USR_directorate_imperial_unity:0 "The Directorate of Imperial Unity"
+ USR_directorate_imperial_unity_desc:0 "A new security organ—officially tasked with counterespionage—monitors every delegate, every minister, every republican governor. Its real purpose is coup security."
+ USR_files_every_delegate:0 "Files on Every Delegate"
+ USR_files_every_delegate_desc:0 "The Directorate compiles comprehensive dossiers on every member of the Supreme Soviet. Financial irregularities, personal scandals, family connections—everyone has something to hide."
+ USR_intercept_republican_comms:0 "Intercept Republican Communications"
+ USR_intercept_republican_comms_desc:0 "Republican governments discover that their secure communications have been compromised. Orders from Moscow arrive before their own messages do."
+ USR_arrest_democratic_organizers:0 "Arrest the Democratic Organizers"
+ USR_arrest_democratic_organizers_desc:0 "Underground democratic movements, labor organizers, and independent journalists disappear in coordinated raids. The streets fall silent."
+ USR_silence_the_federalists:0 "Silence the Federalists"
+ USR_silence_the_federalists_desc:0 "The last organized opposition is dismantled. Federalist politicians are detained, exiled, or placed under permanent surveillance. No one will call for resistance when the emergency session begins."
+
+ # ---- Economic Takeover Branch ----
+ USR_control_strategic_ministries:0 "Control the Strategic Ministries"
+ USR_control_strategic_ministries_desc:0 "The ministries of energy, defense industry, heavy manufacturing, and transportation are placed under Committee administrators. The civilian economy begins its subordination to military planning."
+ USR_directive_economy:0 "A Directive Economy"
+ USR_directive_economy_desc:0 "Economic planning returns to centralized directives. Production quotas, resource allocation, and investment priorities are set by the Committee, not the market."
+ USR_subordinate_gazprom_se:0 "Subordinate Gazprom"
+ USR_subordinate_gazprom_se_desc:0 "Gazprom's board is informed that their corporation now operates under state directive. Their gas networks are strategic infrastructure, not private assets."
+ USR_freeze_corporate_donations:0 "Freeze Corporate Political Donations"
+ USR_freeze_corporate_donations_desc:0 "All corporate political financing is prohibited. Energy companies can no longer fund opposition parties, buy delegates, or maintain private lobbying operations."
+ USR_break_sovoil_autonomy_se:0 "Break SovOil's Autonomy"
+ USR_break_sovoil_autonomy_se_desc:0 "SovOil's corporate charter is revoked. Its Energy Guard is ordered to stand down. Its territorial governors are replaced with Committee appointees. The petroleum empire answers to Moscow."
+ USR_fuel_belongs_to_state:0 "Fuel Belongs to the State"
+ USR_fuel_belongs_to_state_desc:0 "The final economic prerequisite is met. Neither SovOil nor Gazprom can organize resistance, fund opposition, or maintain independent military forces. All fuel serves the state."
+
+ # ---- The Coup ----
+ USR_emergency_session:0 "The Emergency Session"
+ USR_emergency_session_desc:0 "Marshal Voronin addresses the Supreme Soviet. Foreign interference, separatism, and corporate sabotage have created a national emergency. The constitution must be suspended. An Imperial Presidium must be created. The republics must be centralized. Strategic corporations must be nationalized. The delegates will vote. The army is already in position."
+ USR_coup_without_gunfire:0 "The Coup Without Gunfire"
+ USR_coup_without_gunfire_desc:0 "The capital is occupied quietly. Loyal soldiers guard government buildings. State security detains opposition leaders. Communications are placed under military control. Gazprom maintains civilian energy supplies. SovOil's Energy Guard is ordered to disarm. The Supreme Soviet formally votes itself out of power. There is no civil war because every institution capable of resisting has already been captured."
+
+ # ---- Post-Coup Transition ----
+ USR_se_imperial_presidium:0 "The Imperial Presidium"
+ USR_se_imperial_presidium_desc:0 "Chairman Voronin establishes the Imperial Presidium as the supreme governing body. Military commanders, security chiefs, and loyal party administrators replace the old civilian leadership."
+ USR_end_federal_experiment:0 "End the Federal Experiment"
+ USR_end_federal_experiment_desc:0 "The union republics are stripped of their constitutional autonomy. Republican governments are dissolved and replaced with centrally appointed administrators."
+ USR_republics_administrative_units:0 "Republics Are Administrative Units"
+ USR_republics_administrative_units_desc:0 "The former republics retain their names and cultural institutions but lose all political independence. They are administrative divisions of a unitary state, nothing more."
+ USR_empire_workers_soldiers:0 "An Empire of Workers and Soldiers"
+ USR_empire_workers_soldiers_desc:0 "The new state ideology is articulated: Soviet Imperialism. The workers produce. The soldiers defend. The party commands. The empire expands. Individual rights exist only in service to the collective mission."
+ USR_red_imperial_constitution:0 "The Red Imperial Constitution"
+ USR_red_imperial_constitution_desc:0 "A new constitution codifies absolute political unity, military supremacy, state ownership of strategic industry, and the permanent emergency powers of the Imperial Presidium."
+ USR_proclaim_soviet_empire:0 "Proclaim the Soviet Empire"
+ USR_proclaim_soviet_empire_desc:0 "The transition is complete. The Neo-Soviet Union is dead. In its place stands the Soviet Empire—a state built on communist imagery, military government, centralized planning, and territorial expansion. Chairman Voronin addresses the nation: 'We do not apologize for the word empire. Empires endure. Republics negotiate their own extinction.'"
+
+ # ---- Red Fortress Branch ----
+ USR_se_imperial_general_staff:0 "The Imperial General Staff"
+ USR_se_imperial_general_staff_desc:0 "A unified military command structure replaces the divided Soviet-era system. The General Staff answers directly to Chairman Voronin and coordinates all ground, air, naval, and strategic forces."
+ USR_guards_army_every_region:0 "A Guards Army in Every Region"
+ USR_guards_army_every_region_desc:0 "Elite Guards armies are deployed to every administrative region. They serve as both military garrisons and political enforcers, ensuring no republic or territory considers defiance."
+ USR_cybernetic_political_commissars:0 "Cybernetic Political Commissars"
+ USR_cybernetic_political_commissars_desc:0 "Political commissars are enhanced with neural monitoring and communication implants. They detect dissent before it forms, report instantaneously, and maintain perfect ideological discipline."
+ USR_deep_battle_new_century:0 "Deep Battle for the New Century"
+ USR_deep_battle_new_century_desc:0 "Soviet deep battle doctrine is updated for 2069: networked armored formations, orbital reconnaissance, electronic warfare, and massed precision strikes deep behind enemy lines."
+ USR_continental_missile_shield:0 "The Continental Missile Shield"
+ USR_continental_missile_shield_desc:0 "A hemisphere-spanning missile defense network protects the Empire's heartland. Orbital sensors, hypersonic interceptors, and directed-energy platforms create an impenetrable dome over Eurasia."
+ USR_militarize_western_frontier:0 "Militarize the Western Frontier"
+ USR_militarize_western_frontier_desc:0 "The Empire's western border becomes the most fortified frontier on Earth. Defensive positions, rapid-deployment forces, and forward bases ensure that no western power can threaten the heartland."
+ USR_no_republic_defy_moscow:0 "No Republic May Defy Moscow"
+ USR_no_republic_defy_moscow_desc:0 "Internal security reaches its final form. Every administrative region is garrisoned, surveilled, and politically controlled. Separatism is not suppressed—it is made impossible."
+
+ # ---- Imperial Planned Economy Branch ----
+ USR_allunion_planning_directorate:0 "The All-Union Planning Directorate"
+ USR_allunion_planning_directorate_desc:0 "Central planning returns at continental scale. The Directorate coordinates all industrial output, resource allocation, and infrastructure development across the Empire."
+ USR_integrate_gazprom_networks:0 "Integrate Gazprom's Networks"
+ USR_integrate_gazprom_networks_desc:0 "Gazprom's vast pipeline networks, processing facilities, and distribution infrastructure are absorbed into the People's Gas Commissariat. Private gas ownership is abolished."
+ USR_se_nationalize_sovoil:0 "Nationalize SovOil"
+ USR_se_nationalize_sovoil_desc:0 "SovOil's oil fields, refineries, and strategic reserves become state property under the All-Union Petroleum Combine. Its former executives are reassigned as state industrial administrators."
+ USR_siberian_industrial_corridor:0 "The Siberian Industrial Corridor"
+ USR_siberian_industrial_corridor_desc:0 "A massive industrialization program transforms Siberia into the Empire's manufacturing heartland. New cities, factories, and transportation networks rise across the frozen interior."
+ USR_automated_military_production:0 "Automated Military Production"
+ USR_automated_military_production_desc:0 "Cybernetically controlled production lines manufacture weapons, vehicles, and ammunition with minimal human labor. The Empire's factories never sleep."
+ USR_consumer_sacrifice_imperial:0 "Consumer Sacrifice for Imperial Strength"
+ USR_consumer_sacrifice_imperial_desc:0 "Consumer goods are rationed to fund military production. The population endures shortages while the army receives the finest equipment. Imperial strength demands civilian sacrifice."
+ USR_arsenal_of_eurasia:0 "The Arsenal of Eurasia"
+ USR_arsenal_of_eurasia_desc:0 "The Empire's industrial machine reaches full capacity. Military production is staggering, but the cost is borne by every citizen in empty shelves, crowded housing, and endless labor quotas."
+
+ # ---- Eurasian Offensive Branch ----
+ USR_empire_no_natural_borders:0 "The Empire Has No Natural Borders"
+ USR_empire_no_natural_borders_desc:0 "Chairman Voronin declares that the Empire's borders are defined by strategic necessity, not geography. Where the Empire's security requires expansion, expansion will follow."
+ USR_restore_western_security_zone:0 "Restore the Western Security Zone"
+ USR_restore_western_security_zone_desc:0 "The former Soviet buffer states must return to the Empire's sphere. Eastern Europe's independence was a strategic error that will be corrected."
+ USR_ultimatum_european_borderlands:0 "Ultimatum to the European Borderlands"
+ USR_ultimatum_european_borderlands_desc:0 "Formal demands are delivered to Poland, Romania, and Finland. Accept Soviet military basing and political coordination—or face the consequences."
+ USR_dominate_the_caucasus:0 "Dominate the Caucasus"
+ USR_dominate_the_caucasus_desc:0 "The Caucasus region is placed under direct military administration. Its oil fields, strategic passes, and ethnic tensions require firm imperial control."
+ USR_secure_persian_corridor:0 "Secure the Persian Corridor"
+ USR_secure_persian_corridor_desc:0 "The Empire extends its reach southward through Iran. Warm-water access and Persian Gulf influence have been a Russian strategic ambition for centuries."
+ USR_contest_china_central_asia:0 "Contest China in Central Asia"
+ USR_contest_china_central_asia_desc:0 "Central Asia's resources and strategic position make it a theater of competition with China. The Empire will not yield the heartland to any rival."
+ USR_red_pacific_strategy:0 "The Red Pacific Strategy"
+ USR_red_pacific_strategy_desc:0 "The Soviet Pacific Fleet is expanded and modernized. Naval bases in the Far East project power across the Pacific, challenging American and Chinese maritime dominance."
+ USR_se_break_atlantic_encirclement:0 "Break the Atlantic Encirclement"
+ USR_se_break_atlantic_encirclement_desc:0 "The Empire prepares to break the Atlantic alliance system. If the New United States cannot be reasoned with, it will be confronted."
+ USR_world_continental_empires:0 "A World of Continental Empires"
+ USR_world_continental_empires_desc:0 "The Soviet Empire achieves its ultimate ambition: a world order divided among continental powers, with Eurasia—the heartland—as the supreme force. Democracy is an experiment. Empires are permanent."
+
+ # ---- Soviet Empire Spirits ----
+ USR_committee_restoration_spirit:0 "Committee for Soviet Restoration"
+ USR_committee_restoration_spirit_desc:0 "A secret committee of military officers, security officials, and hardline administrators coordinates the silent takeover of every state institution."
+ USR_imperial_presidium_spirit:0 "The Imperial Presidium"
+ USR_imperial_presidium_spirit_desc:0 "Military government under Chairman Voronin. The Supreme Soviet has voted itself out of power. Emergency administration replaces constitutional rule."
+ USR_centralized_republics_spirit:0 "Centralized Republics"
+ USR_centralized_republics_spirit_desc:0 "The union republics have been stripped of political autonomy and reduced to administrative divisions. Cultural institutions survive; political independence does not."
+ USR_se_general_staff_spirit:0 "Imperial General Staff"
+ USR_se_general_staff_spirit_desc:0 "A unified military command structure coordinates all Soviet Imperial armed forces under direct presidential authority."
+ USR_cybernetic_commissars_spirit:0 "Cybernetic Political Commissars"
+ USR_cybernetic_commissars_spirit_desc:0 "Neural-enhanced political officers monitor ideological discipline in real time. Dissent is detected and reported before it can spread."
+ USR_missile_shield_spirit:0 "Continental Missile Shield"
+ USR_missile_shield_spirit_desc:0 "A hemisphere-spanning defense network of orbital sensors, hypersonic interceptors, and directed-energy platforms protects the Empire's heartland."
+ USR_allunion_planning_spirit:0 "All-Union Planning Directorate"
+ USR_allunion_planning_spirit_desc:0 "Central planning coordinates all industrial output and resource allocation across the Empire. Efficient but bureaucratic."
+ USR_consumer_sacrifice_spirit:0 "Consumer Sacrifice"
+ USR_consumer_sacrifice_spirit_desc:0 "Consumer goods are rationed to fund massive military production. The population endures hardship while the army grows stronger."
+ USR_arsenal_eurasia_spirit:0 "Arsenal of Eurasia"
+ USR_arsenal_eurasia_spirit_desc:0 "The Empire's industrial machine operates at maximum capacity. Military output is staggering, though civilian shortages persist."
+ USR_eurasian_offensive_spirit:0 "The Eurasian Offensive"
+ USR_eurasian_offensive_spirit_desc:0 "The Empire recognizes no natural borders. Expansion is justified as creating strategic buffers for continental security."
+ USR_red_colossus_spirit:0 "The Red Imperial Colossus"
+ USR_red_colossus_spirit_desc:0 "The Soviet Empire stands as a continental superpower. Enormous military strength and industrial output are balanced by consumer shortages, bureaucratic corruption, and permanent political repression."
+
+ # ---- Soviet Empire Events ----
+ usr_soviet_empire.1.t:0 "The Emergency Session"
+ usr_soviet_empire.1.d:0 "Marshal Voronin enters the Supreme Soviet chamber in full military dress. Behind him, the Committee for Soviet Restoration's inner circle takes their positions. Outside, tanks of the Moscow Military District have quietly sealed every approach to the government quarter.\n\nVoronin speaks for forty minutes. He describes foreign interference, corporate sabotage, separatist conspiracies, and the systematic betrayal of the Soviet people by their own government. He demands:\n\n• Suspension of the existing constitution\n• Creation of an Imperial Presidium with emergency powers\n• Centralization of the union republics\n• Nationalization of all strategic corporations\n• His appointment as Chairman\n\nThe delegates listen in silence. They already know how they will vote."
+ usr_soviet_empire.1.a:0 "The vote is a formality."
+ usr_soviet_empire.2.t:0 "The Coup Without Gunfire"
+ usr_soviet_empire.2.d:0 "The takeover unfolds in perfect silence. Loyal soldiers guard every government building. State security detains opposition leaders in their homes. Military communications officers assume control of all broadcast networks.\n\nGazprom's directors are summoned and informed that their corporation now serves the state. SovOil's Energy Guard receives disarmament orders signed by its own commanding officers—every one a Committee loyalist.\n\nThe Supreme Soviet convenes for the last time. The vote to dissolve itself and transfer all authority to the Imperial Presidium passes with a two-thirds majority. Several delegates weep. None vote against.\n\nMarshal Alexei Voronin is proclaimed Chairman of the Imperial Presidium. He does not celebrate. He issues his first directive: all republican borders are now administrative lines. All corporate charters are suspended pending review. All military forces answer to the General Staff.\n\nThere is no civil war because every institution capable of resisting has already been captured."
+ usr_soviet_empire.2.a:0 "The Union is restored. The Empire begins."
+ usr_soviet_empire.3.t:0 "Proclaim the Soviet Empire"
+ usr_soviet_empire.3.d:0 "Chairman Voronin addresses the nation from the Kremlin:\n\n'Citizens of the Soviet state. The era of compromise is over. The era of weakness is over. The era of federal negotiation, corporate independence, and republican defiance is over.\n\nWe do not apologize for the word empire. Empires endure. Republics negotiate their own extinction. The Soviet Empire will endure because it is built on discipline, labor, military strength, and the absolute unity of its people.\n\nFrom this day forward, we are one state, one army, one economy, one purpose. No republic may withdraw. No corporation may defy the planning directives. No foreign power may dictate our borders.\n\nThe Soviet Empire is proclaimed. Long live the workers. Long live the soldiers. Long live the state.'\n\nThe red flag rises over every government building across eleven time zones. It bears a new emblem: the hammer and sickle crowned by an imperial star."
+ usr_soviet_empire.3.a:0 "Long live the Soviet Empire."
+ usr_soviet_empire.4.t:0 "The People's Gas Commissariat"
+ usr_soviet_empire.4.d:0 "Gazprom Corporation ceases to exist. Its board of directors is dissolved. Its shareholders receive nothing. Its vast pipeline networks, processing facilities, and distribution infrastructure are transferred to the newly created People's Gas Commissariat.\n\nFormer Gazprom executives are offered positions as state industrial administrators. Most accept. Those who refuse are reassigned to planning bureaus in remote Siberian cities.\n\nThe gas flows as before. The profits now serve the state."
+ usr_soviet_empire.4.a:0 "The gas belongs to the people."
+ usr_soviet_empire.5.t:0 "The All-Union Petroleum Combine"
+ usr_soviet_empire.5.d:0 "SovOil's corporate charter is formally annulled. Its oil fields, refineries, tanker fleets, and strategic petroleum reserves become state property under the All-Union Petroleum Combine.\n\nThe Energy Guard—SovOil's private army—is disbanded. Its soldiers are absorbed into the Soviet Imperial Army. Its officers face loyalty reviews. SovOil's corporate territory is reintegrated into the administrative system.\n\nThe board members who cooperated during the coup are appointed to planning positions. Those who resisted are in custody.\n\nThe age of corporate petroleum sovereignty in Russia is over. Oil belongs to the Empire."
+ usr_soviet_empire.5.a:0 "Oil belongs to the Empire."
+ usr_soviet_empire.6.t:0 "The Soviet Ultimatum"
+ usr_soviet_empire.6.d:0 "The Soviet Empire has delivered a formal ultimatum. Their ambassador presents demands for military basing rights, political coordination agreements, and integration into the Empire's continental security architecture.\n\nThe alternative, the ambassador explains with practiced calm, is unspecified but clearly military. Soviet Imperial divisions are already massing on the border."
+ usr_soviet_empire.6.a:0 "We have no choice but to accept."
+ usr_soviet_empire.6.b:0 "We will never submit to Moscow."
+ usr_soviet_empire.7.t:0 "A Borderland Submits"
+ usr_soviet_empire.7.d:0 "The government has accepted the Soviet Empire's demands. Its territory will be integrated into the Empire's continental security zone. Its independence exists now only on paper."
+ usr_soviet_empire.7.a:0 "The Empire expands."
+
+ # ---- Soviet Empire Decisions ----
+ USR_soviet_imperial_influence_decisions:0 "Soviet Imperial Influence"
+ USR_appoint_loyal_secretary:0 "Appoint a Loyal Regional Secretary"
+ USR_appoint_loyal_secretary_desc:0 "Place a Committee loyalist in a key regional party position."
+ USR_promote_imperial_officer_dec:0 "Promote an Imperial Officer"
+ USR_promote_imperial_officer_dec_desc:0 "Advance a loyalist officer to a position of command authority."
+ USR_compromise_delegate:0 "Compromise a Supreme Soviet Delegate"
+ USR_compromise_delegate_desc:0 "Use the Directorate's files to secure a delegate's cooperation."
+ USR_expose_federalist_corruption:0 "Expose Federalist Corruption"
+ USR_expose_federalist_corruption_desc:0 "Leak evidence of corruption among federalist politicians."
+ USR_fund_veterans_organizations:0 "Fund the Veterans' Organizations"
+ USR_fund_veterans_organizations_desc:0 "Channel resources to veterans' groups that support the Committee's agenda."
+ USR_place_commissars_general_staff:0 "Place Commissars in the General Staff"
+ USR_place_commissars_general_staff_desc:0 "Insert political officers into the military command structure."
+ USR_secure_broadcast_network:0 "Secure the Moscow Broadcast Network"
+ USR_secure_broadcast_network_desc:0 "Place loyalists in control of the capital's communications infrastructure."
+ USR_replace_republican_minister:0 "Replace a Republican Interior Minister"
+ USR_replace_republican_minister_desc:0 "Remove an unreliable republican official and install a Committee appointee."
+ USR_strategic_readiness_exercise:0 "Order a Strategic Readiness Exercise"
+ USR_strategic_readiness_exercise_desc:0 "Conduct military exercises that position loyal units near key government facilities."
+ USR_demand_corporate_records:0 "Demand Corporate Financial Records"
+ USR_demand_corporate_records_desc:0 "Force energy corporations to submit their financial records for state review."
+ USR_influence_gain_1_tt:0 "§G+1 Soviet Imperial Influence§!"
+ USR_influence_gain_2_tt:0 "§G+2 Soviet Imperial Influence§!"
+ USR_influence_gain_3_tt:0 "§G+3 Soviet Imperial Influence§!"
+ USR_western_security_zone:0 "Soviet Security Zone Demands"

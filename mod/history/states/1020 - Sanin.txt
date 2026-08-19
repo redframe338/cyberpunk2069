@@ -1,0 +1,22 @@
+state = {
+	id = 1020
+	name = "STATE_1020"
+	manpower = 30000
+	state_category = rural
+	history = {
+		add_dynamic_modifier = {
+			modifier = ARK_secured_zone_modifier
+		}
+		owner = ARK
+		add_core_of = ARK
+		add_core_of = JAP
+		victory_points = { 10055 2 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			air_base = 1
+		}
+	}
+	provinces = { 1167 1191 7050 7145 10055 }
+	local_supplies = 0.0
+}

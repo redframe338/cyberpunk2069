@@ -1,0 +1,38 @@
+# Holy Russian Empire — dormant until civil war triggered by monarchist conspiracy.
+# Does not start with territory; receives states when the Imperial Standard is raised.
+
+capital = 195
+
+set_research_slots = 4
+set_stability = 0.60
+set_war_support = 0.70
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	interwar_artillery = 1
+	motorized_rocket_unit = 1
+}
+
+set_politics = {
+	ruling_party = fascism
+	last_election = "2069.01.01"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 5
+	neutrality = 10
+	democratic = 15
+	fascism = 70
+}
+
+create_country_leader = {
+	name = "Mikhail IV Romanov"
+	picture = GFX_portrait_USR_supreme_soviet
+	expire = "2100.1.1"
+	ideology = fascism_ideology
+	traits = { }
+}

@@ -1,0 +1,35 @@
+petrochem_clamp_variables = {
+	if = { limit = { check_variable = { petrochem_industrial_capacity > 100 } } set_variable = { petrochem_industrial_capacity = 100 } }
+	if = { limit = { check_variable = { petrochem_industrial_capacity < 0 } } set_variable = { petrochem_industrial_capacity = 0 } }
+	if = { limit = { check_variable = { petrochem_corporate_investment_points > 20 } } set_variable = { petrochem_corporate_investment_points = 20 } }
+	if = { limit = { check_variable = { petrochem_corporate_investment_points < 0 } } set_variable = { petrochem_corporate_investment_points = 0 } }
+}
+
+petrochem_update_development_spirit = {
+	petrochem_clamp_variables = yes
+	if = { limit = { has_idea = petrochem_regional_refinery_network } remove_ideas = petrochem_regional_refinery_network }
+	if = { limit = { has_idea = petrochem_national_energy_producer } remove_ideas = petrochem_national_energy_producer }
+	if = { limit = { has_idea = petrochem_continental_supplier } remove_ideas = petrochem_continental_supplier }
+	if = { limit = { has_idea = petrochem_nusa_industrial_backbone } remove_ideas = petrochem_nusa_industrial_backbone }
+	if = { limit = { has_idea = petrochem_strategic_energy_giant } remove_ideas = petrochem_strategic_energy_giant }
+	if = { limit = { has_idea = petrochem_global_petrochemical_leader } remove_ideas = petrochem_global_petrochemical_leader }
+	if = { limit = { petrochem_is_regional_network = yes } add_ideas = petrochem_regional_refinery_network }
+	if = { limit = { petrochem_is_national_producer = yes } add_ideas = petrochem_national_energy_producer }
+	if = { limit = { petrochem_is_continental_supplier = yes } add_ideas = petrochem_continental_supplier }
+	if = { limit = { petrochem_is_nusa_backbone = yes } add_ideas = petrochem_nusa_industrial_backbone }
+	if = { limit = { petrochem_is_strategic_giant = yes } add_ideas = petrochem_strategic_energy_giant }
+	if = { limit = { petrochem_is_global_leader = yes } add_ideas = petrochem_global_petrochemical_leader }
+
+	if = { limit = { petrochem_energy_specialist = yes NOT = { has_idea = petrochem_energy_production_branch } } add_ideas = petrochem_energy_production_branch }
+	if = { limit = { petrochem_chemicals_specialist = yes NOT = { has_idea = petrochem_chemical_manufacturing_branch } } add_ideas = petrochem_chemical_manufacturing_branch }
+	if = { limit = { petrochem_synthetics_specialist = yes NOT = { has_idea = petrochem_synthetic_fuels_branch } } add_ideas = petrochem_synthetic_fuels_branch }
+	if = { limit = { petrochem_fertilizer_specialist = yes NOT = { has_idea = petrochem_fertilizer_production_branch } } add_ideas = petrochem_fertilizer_production_branch }
+	if = { limit = { petrochem_hydrogen_specialist = yes NOT = { has_idea = petrochem_hydrogen_technologies_branch } } add_ideas = petrochem_hydrogen_technologies_branch }
+}
+
+petrochem_standard_investment = {
+	add_to_variable = { petrochem_industrial_capacity = 6 }
+	add_to_variable = { petrochem_corporate_investment_points = -1 }
+	add_timed_idea = { idea = petrochem_capital_program days = 120 }
+	petrochem_update_development_spirit = yes
+}

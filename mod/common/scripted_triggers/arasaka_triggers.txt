@@ -1,0 +1,27 @@
+ARK_is_influence_restricted = {
+	check_variable = { arasaka_influence_japan < 20 }
+}
+
+ARK_is_influence_contractor = {
+	check_variable = { arasaka_influence_japan > 19 }
+	check_variable = { arasaka_influence_japan < 40 }
+}
+
+ARK_is_influence_partner = {
+	check_variable = { arasaka_influence_japan > 39 }
+	check_variable = { arasaka_influence_japan < 60 }
+}
+
+ARK_is_influence_state_within_state = {
+	check_variable = { arasaka_influence_japan > 59 }
+	check_variable = { arasaka_influence_japan < 80 }
+}
+
+ARK_is_influence_government_control = {
+	check_variable = { arasaka_influence_japan > 79 }
+	check_variable = { arasaka_influence_japan < 100 }
+}
+
+ARK_is_influence_dominance = {
+	check_variable = { arasaka_influence_japan > 99 }
+}

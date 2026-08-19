@@ -1,0 +1,38 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MTC = {
+				set_variable = { metacorp_federal_influence = 45 }
+				set_variable = { metacorp_militech_competition = 0 }
+				MTC_update_influence_spirit = yes
+				add_opinion_modifier = {
+					target = MLT
+					modifier = MTC_MLT_federal_technology_competition
+				}
+				country_event = { id = metacorp.1 days = 20 }
+				country_event = { id = metacorp.2 days = 75 }
+			}
+			NUS = { set_variable = { metacorp_federal_influence = 45 } }
+			MLT = {
+				add_opinion_modifier = {
+					target = MTC
+					modifier = MTC_MLT_federal_technology_competition
+				}
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			MTC = {
+				MTC_update_influence_spirit = yes
+				if = {
+					limit = {
+						NUS = { has_war = yes }
+						NOT = { has_idea = MTC_emergency_technology_mobilization }
+					}
+					add_ideas = MTC_emergency_technology_mobilization
+				}
+			}
+		}
+	}
+}

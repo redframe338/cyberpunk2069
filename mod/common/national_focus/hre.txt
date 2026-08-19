@@ -1,0 +1,1020 @@
+focus_tree = {
+	id = HRE_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HRE
+		}
+	}
+	default = no
+
+	# ================================================================
+	# RALLY THE EMPIRE
+	# Consolidate the Holy Russian Empire after the uprising begins
+	# ================================================================
+
+	focus = {
+		id = HRE_imperial_government_petersburg
+		icon = GFX_goal_generic_forceful_treaty
+		x = 4
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_proclaim_mikhail_iv
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 1
+		cost = 7
+		prerequisite = { focus = HRE_imperial_government_petersburg }
+		completion_reward = {
+			add_stability = 0.08
+			add_war_support = 0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = HRE_white_guard_reborn
+		icon = GFX_goal_generic_army_doctrines
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = { focus = HRE_proclaim_mikhail_iv }
+		completion_reward = {
+			add_manpower = 75000
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = HRE_call_cossacks_to_arms
+		icon = GFX_goal_generic_cavalry
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = HRE_proclaim_mikhail_iv }
+		completion_reward = {
+			add_manpower = 100000
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = HRE_emperors_railway_battalions
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 3
+		cost = 10
+		prerequisite = { focus = HRE_white_guard_reborn }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+			}
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = HRE_every_parish_recruitment
+		icon = GFX_goal_generic_national_unity
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = HRE_call_cossacks_to_arms }
+		completion_reward = {
+			add_manpower = 150000
+			add_stability = 0.03
+		}
+	}
+
+	# ================================================================
+	# WIN THE RESOURCE WAR
+	# ================================================================
+
+	focus = {
+		id = HRE_secure_northern_ports
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 14
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_political_power = 25
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = HRE_capture_volga_arteries
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 14
+		y = 1
+		cost = 10
+		prerequisite = { focus = HRE_secure_northern_ports }
+		completion_reward = {
+			add_fuel = 3000
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = HRE_seize_fuel_depots
+		icon = GFX_goal_generic_oil_refinery
+		x = 14
+		y = 2
+		cost = 10
+		prerequisite = { focus = HRE_capture_volga_arteries }
+		completion_reward = {
+			add_fuel = 5000
+		}
+	}
+	focus = {
+		id = HRE_court_gazprom
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 12
+		y = 3
+		cost = 10
+		prerequisite = { focus = HRE_seize_fuel_depots }
+		completion_reward = {
+			add_fuel = 5000
+			add_stability = 0.03
+			add_ideas = HRE_gazprom_imperial_support
+		}
+	}
+	focus = {
+		id = HRE_break_sovoil_monopoly
+		icon = GFX_goal_generic_forceful_treaty
+		x = 16
+		y = 3
+		cost = 10
+		prerequisite = { focus = HRE_seize_fuel_depots }
+		completion_reward = {
+			add_fuel = 3000
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = HRE_fuel_imperial_offensive
+		icon = GFX_goal_generic_oil_refinery
+		x = 14
+		y = 4
+		cost = 10
+		prerequisite = {
+			focus = HRE_court_gazprom
+			focus = HRE_break_sovoil_monopoly
+		}
+		completion_reward = {
+			add_fuel = 10000
+			add_ideas = HRE_imperial_fuel_reserves
+		}
+	}
+
+	# ================================================================
+	# INTERNATIONAL SUPPORT
+	# ================================================================
+
+	focus = {
+		id = HRE_appeal_orthodox_world
+		icon = GFX_goal_generic_national_unity
+		x = 22
+		y = 0
+		cost = 10
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HRE_seek_european_recognition
+		icon = GFX_goal_generic_improve_relations
+		x = 22
+		y = 1
+		cost = 10
+		prerequisite = { focus = HRE_appeal_orthodox_world }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_loans_for_restoration
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 22
+		y = 2
+		cost = 10
+		prerequisite = { focus = HRE_seek_european_recognition }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HRE_promise_stable_eurasia
+		icon = GFX_goal_generic_alliance
+		x = 22
+		y = 3
+		cost = 10
+		prerequisite = { focus = HRE_loans_for_restoration }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_expose_soviet_repressions
+		icon = GFX_goal_generic_propaganda
+		x = 22
+		y = 4
+		cost = 10
+		prerequisite = { focus = HRE_promise_stable_eurasia }
+		completion_reward = {
+			add_war_support = 0.08
+			add_stability = 0.03
+		}
+	}
+
+	# ================================================================
+	# DEFEAT THE UNION
+	# ================================================================
+
+	focus = {
+		id = HRE_road_to_moscow
+		icon = GFX_goal_generic_position_armies
+		x = 10
+		y = 5
+		cost = 10
+		prerequisite = { focus = HRE_emperors_railway_battalions }
+		prerequisite = { focus = HRE_every_parish_recruitment }
+		prerequisite = { focus = HRE_fuel_imperial_offensive }
+		completion_reward = {
+			add_war_support = 0.10
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = HRE_encircle_soviet_capital
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 10
+		y = 6
+		cost = 10
+		prerequisite = { focus = HRE_road_to_moscow }
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = HRE_raise_eagle_kremlin
+		icon = GFX_goal_generic_territory_or_war
+		x = 10
+		y = 7
+		cost = 10
+		prerequisite = { focus = HRE_encircle_soviet_capital }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = HRE_destroy_supreme_soviet
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 8
+		cost = 10
+		prerequisite = { focus = HRE_raise_eagle_kremlin }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_victory_civil_war
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 9
+		cost = 14
+		prerequisite = { focus = HRE_destroy_supreme_soviet }
+		completion_reward = {
+			add_stability = 0.10
+			add_war_support = 0.10
+			add_political_power = 100
+			country_event = { id = usr_imperial.3 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# POST-VICTORY: CORONATION
+	# ================================================================
+
+	focus = {
+		id = HRE_imperial_entry_moscow
+		icon = GFX_goal_generic_territory_or_war
+		x = 10
+		y = 10
+		cost = 7
+		prerequisite = { focus = HRE_victory_civil_war }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 50
+			country_event = { id = usr_imperial.4 days = 1 }
+		}
+	}
+	focus = {
+		id = HRE_fate_supreme_soviet
+		icon = GFX_goal_generic_dangerous_deal
+		x = 10
+		y = 11
+		cost = 10
+		prerequisite = { focus = HRE_imperial_entry_moscow }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			country_event = { id = usr_imperial.5 days = 1 }
+		}
+	}
+	focus = {
+		id = HRE_crown_new_tsar
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 12
+		cost = 14
+		prerequisite = { focus = HRE_fate_supreme_soviet }
+		completion_reward = {
+			remove_ideas = HRE_uncrowned_pretender
+			add_ideas = HRE_crowned_tsar
+			add_stability = 0.10
+			add_political_power = 100
+			country_event = { id = usr_imperial.6 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# THREE FORMS OF MONARCHY (mutually exclusive)
+	# ================================================================
+
+	# --- Path A: The Crown and the Duma (Constitutional Monarchy) ---
+
+	focus = {
+		id = HRE_crown_and_duma
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 13
+		cost = 10
+		prerequisite = { focus = HRE_crown_new_tsar }
+		mutually_exclusive = {
+			focus = HRE_autocracy_restored
+			focus = HRE_sacred_empire
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_summon_imperial_duma
+		icon = GFX_goal_generic_political_pressure
+		x = 4
+		y = 14
+		cost = 10
+		prerequisite = { focus = HRE_crown_and_duma }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = HRE_constitution_beneath_crown
+		icon = GFX_goal_generic_forceful_treaty
+		x = 4
+		y = 15
+		cost = 10
+		prerequisite = { focus = HRE_summon_imperial_duma }
+		completion_reward = {
+			add_stability = 0.08
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+		}
+	}
+	focus = {
+		id = HRE_guarantee_civil_liberties
+		icon = GFX_goal_generic_improve_relations
+		x = 4
+		y = 16
+		cost = 10
+		prerequisite = { focus = HRE_constitution_beneath_crown }
+		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = HRE_elected_provincial_governments
+		icon = GFX_goal_generic_demand_territory
+		x = 4
+		y = 17
+		cost = 10
+		prerequisite = { focus = HRE_guarantee_civil_liberties }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = HRE_tsar_reigns_not_rules
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 18
+		cost = 10
+		prerequisite = { focus = HRE_elected_provincial_governments }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = HRE_democratic_russian_empire
+		icon = GFX_goal_generic_major_war
+		x = 4
+		y = 19
+		cost = 14
+		prerequisite = { focus = HRE_tsar_reigns_not_rules }
+		completion_reward = {
+			add_ideas = HRE_democratic_empire_spirit
+			add_stability = 0.10
+			add_political_power = 150
+		}
+	}
+
+	# --- Path B: Autocracy Restored ---
+
+	focus = {
+		id = HRE_autocracy_restored
+		icon = GFX_goal_generic_territory_or_war
+		x = 10
+		y = 13
+		cost = 10
+		prerequisite = { focus = HRE_crown_new_tsar }
+		mutually_exclusive = {
+			focus = HRE_crown_and_duma
+			focus = HRE_sacred_empire
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_all_power_sovereign
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 14
+		cost = 10
+		prerequisite = { focus = HRE_autocracy_restored }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = -0.03
+		}
+	}
+	focus = {
+		id = HRE_dissolve_provisional_council
+		icon = GFX_goal_generic_dangerous_deal
+		x = 10
+		y = 15
+		cost = 10
+		prerequisite = { focus = HRE_all_power_sovereign }
+		completion_reward = {
+			add_political_power = 75
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = HRE_imperial_chancellery
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 10
+		y = 16
+		cost = 10
+		prerequisite = { focus = HRE_dissolve_provisional_council }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HRE_governors_appointed_crown
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 17
+		cost = 10
+		prerequisite = { focus = HRE_imperial_chancellery }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = HRE_new_okhrana
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 10
+		y = 18
+		cost = 10
+		prerequisite = { focus = HRE_governors_appointed_crown }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_ideas = HRE_okhrana_spirit
+		}
+	}
+	focus = {
+		id = HRE_autocrat_all_eurasia
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 19
+		cost = 14
+		prerequisite = { focus = HRE_new_okhrana }
+		completion_reward = {
+			add_ideas = HRE_autocracy_spirit
+			add_stability = 0.05
+			add_political_power = 150
+			add_war_support = 0.10
+		}
+	}
+
+	# --- Path C: The Sacred Empire ---
+
+	focus = {
+		id = HRE_sacred_empire
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 13
+		cost = 10
+		prerequisite = { focus = HRE_crown_new_tsar }
+		mutually_exclusive = {
+			focus = HRE_crown_and_duma
+			focus = HRE_autocracy_restored
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_symphonia_crown_church
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 14
+		cost = 10
+		prerequisite = { focus = HRE_sacred_empire }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_holy_governing_synod
+		icon = GFX_goal_generic_political_pressure
+		x = 16
+		y = 15
+		cost = 10
+		prerequisite = { focus = HRE_symphonia_crown_church }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = HRE_defenders_orthodox_world
+		icon = GFX_goal_generic_alliance
+		x = 16
+		y = 16
+		cost = 10
+		prerequisite = { focus = HRE_holy_governing_synod }
+		completion_reward = {
+			add_war_support = 0.08
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HRE_emperor_sacred_protector
+		icon = GFX_goal_generic_territory_or_war
+		x = 16
+		y = 17
+		cost = 10
+		prerequisite = { focus = HRE_defenders_orthodox_world }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = HRE_concordat_eurasian_faiths
+		icon = GFX_goal_generic_improve_relations
+		x = 16
+		y = 18
+		cost = 10
+		prerequisite = { focus = HRE_emperor_sacred_protector }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_third_rome_reborn
+		icon = GFX_goal_generic_national_unity
+		x = 16
+		y = 19
+		cost = 14
+		prerequisite = { focus = HRE_concordat_eurasian_faiths }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = HRE_holy_russian_empire_proclaimed
+		icon = GFX_goal_generic_major_war
+		x = 16
+		y = 20
+		cost = 14
+		prerequisite = { focus = HRE_third_rome_reborn }
+		completion_reward = {
+			add_ideas = HRE_sacred_empire_spirit
+			add_stability = 0.10
+			add_political_power = 150
+			add_war_support = 0.08
+		}
+	}
+
+	# ================================================================
+	# THE CORPORATE QUESTION
+	# Corporations are subjects of the Crown, not sovereign powers
+	# ================================================================
+
+	focus = {
+		id = HRE_corporate_question
+		icon = GFX_goal_generic_dangerous_deal
+		x = 10
+		y = 21
+		cost = 10
+		prerequisite = {
+			focus = HRE_democratic_russian_empire
+			focus = HRE_autocrat_all_eurasia
+			focus = HRE_holy_russian_empire_proclaimed
+		}
+		completion_reward = {
+			add_ideas = HRE_corporate_question_spirit
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = HRE_sovereignty_belongs_crown
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 22
+		cost = 10
+		prerequisite = { focus = HRE_corporate_question }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+
+	# --- SovOil Branch ---
+
+	focus = {
+		id = HRE_seize_sovoil
+		icon = GFX_goal_generic_oil_refinery
+		x = 4
+		y = 23
+		cost = 10
+		prerequisite = { focus = HRE_sovereignty_belongs_crown }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HRE_arrest_oil_directors
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 4
+		y = 24
+		cost = 10
+		prerequisite = { focus = HRE_seize_sovoil }
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HRE_dissolve_energy_guard_imp
+		icon = GFX_goal_generic_army_doctrines
+		x = 4
+		y = 25
+		cost = 10
+		prerequisite = { focus = HRE_arrest_oil_directors }
+		completion_reward = {
+			add_manpower = 50000
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = HRE_confiscate_corporate_archives
+		icon = GFX_goal_generic_scientific_exchange
+		x = 4
+		y = 26
+		cost = 10
+		prerequisite = { focus = HRE_dissolve_energy_guard_imp }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_restore_oil_fields_crown
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 27
+		cost = 10
+		prerequisite = { focus = HRE_confiscate_corporate_archives }
+		completion_reward = {
+			add_resource = { type = oil amount = 15 state = 195 }
+			add_fuel = 5000
+		}
+	}
+	focus = {
+		id = HRE_imperial_petroleum_ministry
+		icon = GFX_goal_generic_oil_refinery
+		x = 4
+		y = 28
+		cost = 10
+		prerequisite = { focus = HRE_restore_oil_fields_crown }
+		completion_reward = {
+			add_ideas = HRE_imperial_petroleum
+			add_fuel = 5000
+		}
+	}
+
+	# --- Gazprom Branch ---
+
+	focus = {
+		id = HRE_revoke_gazprom_charter
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 23
+		cost = 10
+		prerequisite = { focus = HRE_sovereignty_belongs_crown }
+		completion_reward = {
+			add_stability = -0.03
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HRE_pipelines_belong_russia
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 24
+		cost = 10
+		prerequisite = { focus = HRE_revoke_gazprom_charter }
+		completion_reward = {
+			add_fuel = 3000
+		}
+	}
+	focus = {
+		id = HRE_remove_republican_directors
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 10
+		y = 25
+		cost = 10
+		prerequisite = { focus = HRE_pipelines_belong_russia }
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = HRE_protect_gas_engineers
+		icon = GFX_goal_generic_improve_relations
+		x = 10
+		y = 26
+		cost = 10
+		prerequisite = { focus = HRE_remove_republican_directors }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HRE_heat_emperors_subjects
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 27
+		cost = 10
+		prerequisite = { focus = HRE_protect_gas_engineers }
+		completion_reward = {
+			add_stability = 0.05
+			add_fuel = 5000
+		}
+	}
+	focus = {
+		id = HRE_imperial_gas_ministry
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 10
+		y = 28
+		cost = 10
+		prerequisite = { focus = HRE_heat_emperors_subjects }
+		completion_reward = {
+			add_ideas = HRE_imperial_gas
+			add_fuel = 5000
+		}
+	}
+
+	# --- Ban Corporate Armed Forces ---
+
+	focus = {
+		id = HRE_ban_corporate_forces
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 16
+		y = 23
+		cost = 10
+		prerequisite = { focus = HRE_sovereignty_belongs_crown }
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = HRE_only_crown_raise_armies
+		icon = GFX_goal_generic_army_doctrines
+		x = 16
+		y = 24
+		cost = 10
+		prerequisite = { focus = HRE_ban_corporate_forces }
+		completion_reward = {
+			add_manpower = 75000
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = HRE_disarm_corporate_guards
+		icon = GFX_goal_generic_forceful_treaty
+		x = 16
+		y = 25
+		cost = 10
+		prerequisite = { focus = HRE_only_crown_raise_armies }
+		completion_reward = {
+			add_manpower = 50000
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = HRE_imperial_monopoly_violence
+		icon = GFX_goal_generic_territory_or_war
+		x = 16
+		y = 26
+		cost = 10
+		prerequisite = { focus = HRE_disarm_corporate_guards }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = HRE_expel_foreign_contractors
+		icon = GFX_goal_generic_dangerous_deal
+		x = 16
+		y = 27
+		cost = 10
+		prerequisite = { focus = HRE_imperial_monopoly_violence }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_officers_before_executives
+		icon = GFX_goal_generic_position_armies
+		x = 16
+		y = 28
+		cost = 10
+		prerequisite = { focus = HRE_expel_foreign_contractors }
+		completion_reward = {
+			add_manpower = 50000
+			army_experience = 25
+		}
+	}
+
+	# ================================================================
+	# THE IMPERIAL ENERGY DIRECTORATE
+	# ================================================================
+
+	focus = {
+		id = HRE_imperial_energy_directorate
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 10
+		y = 29
+		cost = 14
+		prerequisite = { focus = HRE_imperial_petroleum_ministry }
+		prerequisite = { focus = HRE_imperial_gas_ministry }
+		prerequisite = { focus = HRE_officers_before_executives }
+		completion_reward = {
+			add_ideas = HRE_energy_directorate_spirit
+			add_stability = 0.08
+			add_fuel = 10000
+		}
+	}
+
+	# ================================================================
+	# FOREIGN CORPORATIONS
+	# ================================================================
+
+	focus = {
+		id = HRE_review_foreign_charters
+		icon = GFX_goal_generic_dangerous_deal
+		x = 10
+		y = 30
+		cost = 10
+		prerequisite = { focus = HRE_imperial_energy_directorate }
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_break_arasaka_networks
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 7
+		y = 31
+		cost = 10
+		prerequisite = { focus = HRE_review_foreign_charters }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = HRE_expel_militech_contractors
+		icon = GFX_goal_generic_forceful_treaty
+		x = 10
+		y = 31
+		cost = 10
+		prerequisite = { focus = HRE_review_foreign_charters }
+		completion_reward = {
+			add_manpower = 25000
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = HRE_purchase_biotechnica_facilities
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 13
+		y = 31
+		cost = 10
+		prerequisite = { focus = HRE_review_foreign_charters }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = HRE_technology_without_foreign_masters
+		icon = GFX_goal_generic_scientific_exchange
+		x = 10
+		y = 32
+		cost = 10
+		prerequisite = { focus = HRE_break_arasaka_networks }
+		prerequisite = { focus = HRE_expel_militech_contractors }
+		prerequisite = { focus = HRE_purchase_biotechnica_facilities }
+		completion_reward = {
+			add_research_slot = 1
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = HRE_economy_loyal_crown
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 10
+		y = 33
+		cost = 10
+		prerequisite = { focus = HRE_technology_without_foreign_masters }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+
+	# ================================================================
+	# FINAL CAPSTONE
+	# ================================================================
+
+	focus = {
+		id = HRE_corporations_serve_empire
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 34
+		cost = 14
+		prerequisite = { focus = HRE_economy_loyal_crown }
+		completion_reward = {
+			add_ideas = HRE_crown_economic_sovereignty
+			add_stability = 0.10
+			add_political_power = 200
+			add_war_support = 0.05
+			country_event = { id = usr_imperial.7 days = 1 }
+		}
+	}
+}

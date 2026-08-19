@@ -1,0 +1,23 @@
+# Cyberpunk override: Yamal Energy Complex
+state = {
+	id = 824
+	name = "STATE_824"
+	manpower = 30000
+	state_category = pastoral
+	resources = { oil = 110 }
+	history = {
+		add_dynamic_modifier = { modifier = SVO_arctic_energy_platform_modifier }
+		owner = SVO
+		add_core_of = SVO
+		add_core_of = USR
+		victory_points = { 10536 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			fuel_silo = 2
+			air_base = 1
+		}
+	}
+	provinces = { 96 1729 1757 3415 4761 7809 10536 10564 12517 12545 }
+	local_supplies = 7.0
+}

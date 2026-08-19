@@ -1,0 +1,328 @@
+militech_corporate_operations = {
+	MLT_expand_weapons_production = {
+		icon = generic_construction
+		allowed = { tag = MLT }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 120
+		days_re_enable = 300
+		complete_effect = {
+			368 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			add_to_variable = { militech_federal_influence = 4 }
+		}
+		ai_will_do = { factor = 18 }
+	}
+	MLT_acquire_defense_contractors = {
+		icon = generic_construction
+		allowed = { tag = MLT }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 150
+		days_re_enable = 365
+		complete_effect = {
+			add_political_power = 50
+			add_to_variable = { militech_federal_influence = 6 }
+			NUS = { add_stability = -0.01 }
+		}
+		ai_will_do = { factor = 12 }
+	}
+	MLT_develop_next_generation_armor = {
+		icon = generic_research
+		allowed = { tag = MLT }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			add_tech_bonus = { bonus = 0.50 uses = 2 category = armor }
+			add_to_variable = { militech_federal_influence = 5 }
+		}
+		ai_will_do = { factor = 20 }
+	}
+	MLT_expand_drone_manufacturing = {
+		icon = generic_construction
+		allowed = { tag = MLT }
+		available = { has_political_power > 80 }
+		cost = 80
+		days_remove = 120
+		days_re_enable = 300
+		complete_effect = {
+			384 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+			}
+			add_to_variable = { militech_federal_influence = 4 }
+		}
+		ai_will_do = { factor = 17 }
+	}
+	MLT_increase_pmc_recruitment = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = MLT }
+		available = { has_political_power > 60 }
+		cost = 60
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			add_manpower = 25000
+			add_war_support = 0.03
+			add_to_variable = { militech_federal_influence = 3 }
+		}
+		ai_will_do = {
+			factor = 12
+			modifier = { factor = 2 NUS = { has_war = yes } }
+		}
+	}
+	MLT_build_research_centers = {
+		icon = generic_research
+		allowed = { tag = MLT }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			add_research_slot = 1
+			369 = { add_extra_state_shared_building_slots = 1 }
+			add_to_variable = { militech_federal_influence = 5 }
+		}
+		ai_will_do = { factor = 18 }
+	}
+	MLT_modernize_aerospace_division = {
+		icon = generic_research
+		allowed = { tag = MLT }
+		available = { has_political_power > 90 }
+		cost = 90
+		days_remove = 150
+		fire_only_once = yes
+		complete_effect = {
+			261 = { add_building_construction = { type = air_base level = 2 instant_build = yes } }
+			add_tech_bonus = { bonus = 0.40 uses = 2 category = air_equipment }
+			add_to_variable = { militech_federal_influence = 4 }
+		}
+		ai_will_do = { factor = 16 }
+	}
+	MLT_expand_logistics_infrastructure = {
+		icon = generic_construction
+		allowed = { tag = MLT }
+		available = { has_political_power > 65 }
+		cost = 65
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			383 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			638 = { add_building_construction = { type = dockyard level = 1 instant_build = yes } }
+			add_to_variable = { militech_federal_influence = 3 }
+		}
+		ai_will_do = { factor = 15 }
+	}
+	MLT_fund_special_operations = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = MLT }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 90
+		days_re_enable = 300
+		complete_effect = {
+			army_experience = 15
+			add_command_power = 20
+			add_to_variable = { militech_federal_influence = 4 }
+		}
+		ai_will_do = { factor = 14 }
+	}
+	MLT_increase_weapons_exports = {
+		icon = generic_construction
+		allowed = { tag = MLT }
+		available = { has_political_power > 60 }
+		cost = 60
+		days_remove = 75
+		days_re_enable = 180
+		complete_effect = {
+			add_political_power = 90
+			add_to_variable = { militech_federal_influence = 5 }
+			NUS = { add_political_power = 25 }
+		}
+		ai_will_do = { factor = 13 }
+	}
+	MLT_declare_corporate_independence = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = MLT }
+		visible = {
+			NUS = { has_stability < 0.30 }
+			check_variable = { militech_federal_influence > 79 }
+		}
+		available = {
+			has_political_power > 200
+			NUS = { has_stability < 0.30 }
+		}
+		cost = 200
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = { country_event = { id = militech.11 } }
+		ai_will_do = { factor = 2 }
+	}
+	MLT_prepare_military_government = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = MLT }
+		visible = { check_variable = { militech_federal_influence > 99 } }
+		available = {
+			has_political_power > 200
+			NUS = { has_stability < 0.40 }
+		}
+		cost = 200
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = { NUS = { country_event = { id = militech.12 days = 3 } } }
+		ai_will_do = { factor = 2 }
+	}
+}
+
+federal_defense_policy = {
+	NUS_award_additional_contracts = {
+		icon = generic_construction
+		allowed = { tag = NUS }
+		available = { has_political_power > 60 }
+		cost = 60
+		days_remove = 75
+		days_re_enable = 180
+		complete_effect = {
+			MLT = {
+				add_to_variable = { militech_federal_influence = 7 }
+				add_autonomy_ratio = { value = 0.04 }
+				add_political_power = 50
+			}
+		}
+		ai_will_do = { factor = 12 modifier = { factor = 2 has_war = yes } }
+	}
+	NUS_increase_militech_oversight = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = NUS }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			MLT = {
+				add_to_variable = { militech_federal_influence = -8 }
+				add_autonomy_ratio = { value = -0.05 }
+			}
+			add_stability = -0.01
+		}
+		ai_will_do = { factor = 8 modifier = { factor = 3 MLT = { check_variable = { militech_federal_influence > 70 } } } }
+	}
+	NUS_expand_federal_procurement = {
+		icon = generic_construction
+		allowed = { tag = NUS }
+		available = { has_political_power > 80 }
+		cost = 80
+		days_remove = 120
+		days_re_enable = 300
+		complete_effect = {
+			MLT = { add_to_variable = { militech_federal_influence = 5 } }
+			add_war_support = 0.03
+		}
+		ai_will_do = { factor = 14 }
+	}
+	NUS_launch_military_modernization = {
+		icon = generic_research
+		allowed = { tag = NUS }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			add_research_slot = 1
+			MLT = { add_to_variable = { militech_federal_influence = 6 } }
+		}
+		ai_will_do = { factor = 16 }
+	}
+	NUS_reduce_corporate_influence = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = NUS }
+		available = { has_political_power > 100 }
+		cost = 100
+		days_remove = 120
+		days_re_enable = 365
+		complete_effect = {
+			MLT = {
+				add_to_variable = { militech_federal_influence = -12 }
+				add_ideas = MLT_defense_reform_restrictions
+			}
+			add_stability = 0.02
+		}
+		ai_will_do = { factor = 8 modifier = { factor = 3 MLT = { check_variable = { militech_federal_influence > 80 } } } }
+	}
+	NUS_strengthen_federal_command = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = NUS }
+		available = { has_political_power > 75 }
+		cost = 75
+		days_remove = 90
+		days_re_enable = 240
+		complete_effect = {
+			add_command_power = 30
+			MLT = { add_to_variable = { militech_federal_influence = -5 } }
+			add_war_support = 0.03
+		}
+		ai_will_do = { factor = 10 }
+	}
+	NUS_investigate_procurement_corruption = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = NUS }
+		available = { has_political_power > 80 }
+		cost = 80
+		days_remove = 120
+		days_re_enable = 365
+		complete_effect = {
+			MLT = {
+				add_to_variable = { militech_federal_influence = -8 }
+				country_event = { id = militech.6 days = 2 }
+			}
+			add_stability = 0.02
+		}
+		ai_will_do = { factor = 10 }
+	}
+	NUS_national_defense_initiative = {
+		icon = generic_construction
+		allowed = { tag = NUS }
+		available = { has_political_power > 120 }
+		cost = 120
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = {
+			MLT = { add_to_variable = { militech_federal_influence = 5 } add_political_power = 75 }
+			add_stability = 0.03
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 17 }
+	}
+	NUS_emergency_defense_mobilization = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = NUS }
+		available = { has_political_power > 75 has_war = yes }
+		cost = 75
+		days_remove = 60
+		days_re_enable = 180
+		complete_effect = {
+			MLT = { MLT_begin_emergency_mobilization = yes add_to_variable = { militech_federal_influence = 8 } }
+			add_war_support = 0.05
+		}
+		ai_will_do = { factor = 25 }
+	}
+	NUS_nationalize_militech = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = NUS }
+		visible = { MLT = { check_variable = { militech_federal_influence < 20 } } }
+		available = {
+			has_political_power > 175
+			has_stability > 0.60
+			MLT = { check_variable = { militech_federal_influence < 20 } }
+		}
+		cost = 175
+		days_remove = 180
+		fire_only_once = yes
+		complete_effect = { MLT = { country_event = { id = militech.13 days = 2 } } }
+		ai_will_do = { factor = 5 }
+	}
+}

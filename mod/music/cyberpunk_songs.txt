@@ -1,0 +1,58 @@
+# Dedicated Cyberpunk soundtrack station. Add future tracks below this entry.
+music_station = "night_city_radio"
+
+music = {
+	song = "cyberpunk_the_rebel_path"
+
+	chance = {
+		base = 100
+	}
+}
+
+music = {
+	song = "cyberpunk_never_fade_away"
+
+	chance = {
+		base = 100
+	}
+}
+
+music = {
+	song = "cyberpunk_chippin_in"
+
+	chance = {
+		base = 100
+	}
+}
+
+music = {
+	song = "cyberpunk_night_city"
+
+	chance = {
+		base = 100
+	}
+}
+
+music = {
+	song = "cyberpunk_whos_ready_for_tomorrow"
+
+	chance = {
+		base = 100
+	}
+}
+
+music = {
+	song = "cyberpunk_i_really_want_to_stay_at_your_house"
+
+	chance = {
+		base = 100
+	}
+}
+
+music = {
+	song = "cyberpunk_addiction"
+
+	chance = {
+		base = 100
+	}
+}

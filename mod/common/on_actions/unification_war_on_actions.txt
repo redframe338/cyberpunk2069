@@ -1,0 +1,9 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			NUS = {
+				country_event = { id = unification_war.1 days = 1 }
+			}
+		}
+	}
+}

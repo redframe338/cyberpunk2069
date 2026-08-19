@@ -1,0 +1,164 @@
+ideas = {
+	country = {
+		ARK_arasaka_dynasty = {
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.10
+				democratic_drift = -0.03
+				fascism_drift = -0.02
+				operative_slot = 1
+				decryption_power = 0.10
+			}
+		}
+
+		ARK_corporate_security_state = {
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				operative_slot = 1
+				intel_network_gain_factor = 0.15
+				enemy_operative_detection_chance_factor = 0.20
+				conscription_factor = -0.30
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		ARK_zaibatsu_war_machine = {
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_speed_arms_factory_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				line_change_production_efficiency_factor = 0.15
+				research_speed_factor = 0.05
+			}
+		}
+
+		ARK_global_corporate_network = {
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				trade_opinion_factor = 0.25
+				justify_war_goal_time = -0.20
+				political_power_gain = 0.10
+				operative_slot = 1
+			}
+		}
+
+		ARK_oceanic_security_hegemony = {
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_dockyard = 0.50
+				screening_efficiency = 0.25
+				naval_speed_factor = 0.15
+				navy_submarine_detection_factor = 0.25
+				navy_fuel_consumption_factor = -0.75
+				fuel_gain_factor = 1.00
+				navy_org_factor = 0.15
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_range = 1.00
+					naval_speed = 0.15
+				}
+				carrier = {
+					naval_range = 1.00
+					naval_speed = 0.10
+				}
+				capital_ship = {
+					naval_range = 1.00
+					naval_speed = 0.10
+				}
+				submarine = {
+					naval_range = 1.00
+					naval_speed = 0.15
+				}
+			}
+		}
+
+		JAP_arasaka_dependency = {
+			allowed = { always = no }
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.03
+				political_power_gain = -0.10
+				stability_factor = -0.05
+			}
+		}
+
+		ARK_influence_restricted = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.10
+				stability_factor = -0.05
+			}
+		}
+
+		ARK_influence_contractor = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.05
+				production_speed_arms_factory_factor = 0.05
+			}
+		}
+
+		ARK_influence_partner = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.10
+				production_factory_max_efficiency_factor = 0.05
+				research_speed_factor = 0.03
+			}
+		}
+
+		ARK_influence_state_within_state = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.20
+				production_speed_arms_factory_factor = 0.10
+				justify_war_goal_time = -0.15
+				stability_factor = 0.05
+			}
+		}
+
+		ARK_influence_government_control = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.30
+				production_speed_arms_factory_factor = 0.15
+				research_speed_factor = 0.10
+				stability_factor = 0.10
+				justify_war_goal_time = -0.25
+			}
+		}
+
+		ARK_influence_dominance = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.40
+				production_speed_arms_factory_factor = 0.20
+				research_speed_factor = 0.15
+				stability_factor = 0.15
+				justify_war_goal_time = -0.30
+				conscription = 0.02
+			}
+		}
+	}
+}

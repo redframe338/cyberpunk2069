@@ -1,0 +1,169 @@
+add_namespace = usr_eurasian
+
+# ================================================================
+# EVENT 1: The Fourth Political Theory Adopted
+# Fires when completing "The Fourth Political Theory" focus.
+# Informs player of backlash and civil war risk.
+# ================================================================
+country_event = {
+	id = usr_eurasian.1
+	title = usr_eurasian.1.t
+	desc = usr_eurasian.1.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_eurasian.1.a
+		add_stability = -0.02
+		custom_effect_tooltip = USR_4pt_civil_war_risk_tt
+	}
+}
+
+# ================================================================
+# EVENT 2: Civil War Risk - The Opposition Organizes
+# Fires randomly while 4PT is adopted but stability is low.
+# Can trigger if stability below 35% during Eurasian path.
+# ================================================================
+country_event = {
+	id = usr_eurasian.2
+	title = usr_eurasian.2.t
+	desc = usr_eurasian.2.d
+	picture = GFX_report_event_generic_rally
+
+	trigger = {
+		tag = USR
+		has_country_flag = USR_4pt_adopted
+		NOT = { has_country_flag = USR_civil_war_resolved }
+		NOT = { has_cosmetic_tag = USR_eurasian_empire }
+		NOT = { has_cosmetic_tag = USR_corporate_eurasia }
+		has_stability < 0.35
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.5
+			has_stability < 0.25
+		}
+		modifier = {
+			factor = 0.5
+			has_stability < 0.15
+		}
+		modifier = {
+			factor = 2.0
+			has_stability > 0.30
+		}
+	}
+
+	# Option A: Spend political power to suppress the opposition
+	option = {
+		name = usr_eurasian.2.a
+		add_political_power = -100
+		add_stability = 0.05
+		set_country_flag = USR_civil_war_resolved
+	}
+
+	# Option B: Let it escalate - risk civil war
+	option = {
+		name = usr_eurasian.2.b
+		add_stability = -0.10
+		add_war_support = -0.05
+		if = {
+			limit = { has_stability < 0.20 }
+			start_civil_war = {
+				ideology = communism
+				size = 0.3
+			}
+			custom_effect_tooltip = USR_civil_war_erupts_tt
+		}
+	}
+
+	# Option C: Make concessions to the republics
+	option = {
+		name = usr_eurasian.2.c
+		add_political_power = -50
+		add_stability = 0.08
+		add_war_support = -0.03
+		remove_ideas = USR_4pt_backlash
+		set_country_flag = USR_civil_war_resolved
+	}
+}
+
+# ================================================================
+# EVENT 3: Proclamation of the Eurasian Empire
+# Fires when completing the final focus.
+# ================================================================
+country_event = {
+	id = usr_eurasian.3
+	title = usr_eurasian.3.t
+	desc = usr_eurasian.3.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	# Authentic Eurasian Empire
+	option = {
+		name = usr_eurasian.3.a
+		trigger = {
+			NOT = { has_country_flag = USR_sovoil_compromised }
+		}
+		add_war_support = 0.05
+		every_other_country = {
+			limit = {
+				NOT = { tag = ROOT }
+				exists = yes
+			}
+			add_opinion_modifier = { target = ROOT modifier = USR_eurasian_hostility }
+		}
+	}
+
+	# Corporate Eurasia
+	option = {
+		name = usr_eurasian.3.b
+		trigger = {
+			has_country_flag = USR_sovoil_compromised
+		}
+		add_stability = -0.03
+	}
+}
+
+# ================================================================
+# EVENT 4: Foreign Reactions - Atlantic Powers Respond
+# Fires shortly after the Empire is proclaimed.
+# ================================================================
+country_event = {
+	id = usr_eurasian.4
+	title = usr_eurasian.4.t
+	desc = usr_eurasian.4.d
+	picture = GFX_report_event_generic_rally
+
+	trigger = {
+		tag = USR
+		OR = {
+			has_cosmetic_tag = USR_eurasian_empire
+			has_cosmetic_tag = USR_corporate_eurasia
+		}
+		NOT = { has_country_flag = USR_foreign_reaction_fired }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		set_country_flag = USR_foreign_reaction_fired
+	}
+
+	option = {
+		name = usr_eurasian.4.a
+		add_war_support = 0.05
+		add_political_power = 25
+		NUS = {
+			add_opinion_modifier = { target = ROOT modifier = USR_eurasian_hostility }
+		}
+		EEC = {
+			add_opinion_modifier = { target = ROOT modifier = USR_eurasian_hostility }
+		}
+	}
+}

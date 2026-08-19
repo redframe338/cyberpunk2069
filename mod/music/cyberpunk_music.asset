@@ -1,0 +1,49 @@
+# Kept under a unique asset name so it cannot collide with HOI4's built-in
+# hard-coded maintheme object during frontend initialization.
+music = {
+	name = "cyberpunk_good_morning_night_city"
+	file = "good_morning_night_city.ogg"
+	volume = 0.70
+}
+
+music = {
+	name = "cyberpunk_the_rebel_path"
+	file = "the_rebel_path_cello_extended.ogg"
+	volume = 0.70
+}
+
+music = {
+	name = "cyberpunk_never_fade_away"
+	file = "never_fade_away.ogg"
+	volume = 0.70
+}
+
+music = {
+	name = "cyberpunk_chippin_in"
+	file = "chippin_in.ogg"
+	volume = 0.70
+}
+
+music = {
+	name = "cyberpunk_night_city"
+	file = "night_city.ogg"
+	volume = 0.70
+}
+
+music = {
+	name = "cyberpunk_whos_ready_for_tomorrow"
+	file = "whos_ready_for_tomorrow.ogg"
+	volume = 0.70
+}
+
+music = {
+	name = "cyberpunk_i_really_want_to_stay_at_your_house"
+	file = "i_really_want_to_stay_at_your_house.ogg"
+	volume = 0.70
+}
+
+music = {
+	name = "cyberpunk_addiction"
+	file = "addiction.ogg"
+	volume = 0.70
+}

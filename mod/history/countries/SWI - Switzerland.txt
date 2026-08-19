@@ -1,0 +1,27 @@
+capital = 3
+
+set_research_slots = 3
+set_stability = 0.75
+set_war_support = 0.30
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2067.01.01"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 35
+	neutrality = 55
+	fascism = 5
+	communism = 5
+}
+
+create_country_leader = {
+	name = "Hans Keller"
+	picture = GFX_Portrait_Europe_Generic_1
+	expire = "2100.1.1"
+	ideology = centrism
+	traits = { }
+}

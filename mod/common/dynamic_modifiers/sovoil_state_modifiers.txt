@@ -1,0 +1,32 @@
+# State-level identities for SovOil's fixed energy administration zones.
+SVO_national_energy_basin_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_fuel
+	local_resources_factor = 0.35
+	local_building_slots_factor = 0.20
+	state_production_speed_infrastructure_factor = 0.25
+}
+
+SVO_petrochemical_megacomplex_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_resources_factor = 0.15
+	local_building_slots_factor = 0.25
+	state_production_speed_arms_factory_factor = 0.15
+}
+
+SVO_arctic_energy_platform_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_navy_bonus
+	local_resources_factor = 0.30
+	local_building_slots_factor = 0.15
+	local_org_regain = 0.10
+}
+
+SVO_pipeline_administration_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_building_slots_factor = 0.20
+	state_production_speed_infrastructure_factor = 0.35
+	local_org_regain = 0.10
+}

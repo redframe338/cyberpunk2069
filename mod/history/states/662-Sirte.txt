@@ -1,0 +1,23 @@
+# AUTO-GENERATED map override: ITA -> PAC (Cyberpunk conversion). See docs/03.
+state={
+	id=662
+	name="STATE_662"
+	manpower = 13213
+	
+	state_category = wasteland
+	
+	
+	history={
+		owner = PAC
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = PAC
+	}
+	
+	provinces={
+		4200 7076 7136 8069 13073 
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,31 @@
+state = {
+	id = 743
+	name = "STATE_743"
+	manpower = 385000
+	state_category = enclave
+
+	history = {
+		owner = KGT
+		add_core_of = KGT
+		add_core_of = CHI
+		add_core_of = PRC
+		add_dynamic_modifier = { modifier = KGT_international_export_port_modifier }
+
+		victory_points = { 10000 8 }
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			arms_factory = 4
+			dockyard = 4
+			air_base = 2
+			10000 = {
+				naval_base = 7
+				coastal_bunker = 6
+				bunker = 3
+			}
+		}
+	}
+
+	provinces = { 10000 }
+	local_supplies = 10.0
+}

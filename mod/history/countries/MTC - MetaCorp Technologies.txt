@@ -1,0 +1,66 @@
+# MetaCorp Technologies — 1 January 2069
+capital = 378
+set_oob = "MTC_2069"
+
+set_research_slots = 6
+set_stability = 0.82
+set_war_support = 0.20
+set_convoys = 80
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2064.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	neutrality = 80
+	democratic = 18
+	fascism = 1
+	communism = 1
+}
+
+create_country_leader = {
+	name = "Elena Voss"
+	picture = GFX_Portrait_Europe_Generic_3
+	expire = "2100.1.1"
+	ideology = despotism
+	traits = { }
+}
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+	advanced_computing_machine = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	construction1 = 1
+	construction2 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+}
+
+add_ideas = {
+	MTC_american_technology_leader
+	MTC_semiconductor_superpower
+	MTC_artificial_intelligence_initiative
+	MTC_national_digital_infrastructure
+	MTC_influence_national_leader
+}
+
+set_variable = { metacorp_federal_influence = 45 }
+set_variable = { metacorp_militech_competition = 0 }
+set_country_flag = MTC_strategic_technology_corporation

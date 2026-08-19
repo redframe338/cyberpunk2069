@@ -1,0 +1,18 @@
+MLT_is_influence_contractor = { check_variable = { militech_federal_influence < 20 } }
+MLT_is_influence_supplier = {
+	check_variable = { militech_federal_influence > 19 }
+	check_variable = { militech_federal_influence < 40 }
+}
+MLT_is_influence_partner = {
+	check_variable = { militech_federal_influence > 39 }
+	check_variable = { militech_federal_influence < 60 }
+}
+MLT_is_influence_institution = {
+	check_variable = { militech_federal_influence > 59 }
+	check_variable = { militech_federal_influence < 80 }
+}
+MLT_is_influence_power_broker = {
+	check_variable = { militech_federal_influence > 79 }
+	check_variable = { militech_federal_influence < 100 }
+}
+MLT_is_influence_military_government = { check_variable = { militech_federal_influence > 99 } }

@@ -1,0 +1,47 @@
+corporate_global_operations = {
+	icon = generic_industry
+
+	allowed = {
+		OR = {
+			tag = ARK
+			tag = SVO
+			tag = MLT
+			tag = BIO
+			tag = MTC
+			tag = KGT
+		}
+	}
+
+	visible = {
+		OR = {
+			tag = ARK
+			tag = SVO
+			tag = MLT
+			tag = BIO
+			tag = MTC
+			tag = KGT
+		}
+	}
+}
+
+corporate_warfare = {
+	icon = generic_prepare_civil_war
+
+	allowed = {
+		OR = {
+			tag = ARK
+			tag = MLT
+			tag = BIO
+			tag = MTC
+		}
+	}
+
+	visible = {
+		OR = {
+			tag = ARK
+			tag = MLT
+			tag = BIO
+			tag = MTC
+		}
+	}
+}

@@ -1,0 +1,196 @@
+add_namespace = metacorp
+
+country_event = {
+	id = metacorp.1
+	title = metacorp.1.t
+	desc = metacorp.1.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = metacorp.1.a
+		add_stability = 0.03
+		add_political_power = 50
+		NUS = { add_stability = 0.01 }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = metacorp.1.b
+		add_to_variable = { metacorp_federal_influence = 5 }
+		MTC_update_influence_spirit = yes
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = metacorp.2
+	title = metacorp.2.t
+	desc = metacorp.2.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = metacorp.2.a
+		add_tech_bonus = { bonus = 0.50 uses = 1 category = electronics }
+		add_to_variable = { metacorp_federal_influence = 4 }
+		MTC_update_influence_spirit = yes
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = metacorp.2.b
+		add_political_power = 80
+		add_stability = 0.02
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = metacorp.3
+	title = metacorp.3.t
+	desc = metacorp.3.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = MTC NOT = { has_country_flag = MTC_chip_crisis_fired } }
+	mean_time_to_happen = { months = 12 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MTC_chip_crisis_fired }
+	option = {
+		name = metacorp.3.a
+		add_political_power = -75
+		add_stability = 0.02
+		add_to_variable = { metacorp_federal_influence = 3 }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = metacorp.3.b
+		add_stability = -0.04
+		add_to_variable = { metacorp_federal_influence = -5 }
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = metacorp.4
+	title = metacorp.4.t
+	desc = metacorp.4.d
+	picture = GFX_report_event_generic_read_write
+	trigger = { tag = MTC NOT = { has_country_flag = MTC_cyberattack_fired } }
+	mean_time_to_happen = { months = 18 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MTC_cyberattack_fired }
+	option = {
+		name = metacorp.4.a
+		add_political_power = -60
+		add_tech_bonus = { bonus = 0.40 uses = 1 category = electronics }
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = metacorp.4.b
+		add_stability = -0.05
+		add_to_variable = { metacorp_federal_influence = -6 }
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = metacorp.5
+	title = metacorp.5.t
+	desc = metacorp.5.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = MTC NOT = { has_country_flag = MTC_robotics_breakthrough_fired } }
+	mean_time_to_happen = { months = 22 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MTC_robotics_breakthrough_fired }
+	option = {
+		name = metacorp.5.a
+		1095 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		MTC_compete_with_militech = yes
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = metacorp.5.b
+		add_political_power = 100
+		NUS = { add_political_power = 30 }
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = metacorp.6
+	title = metacorp.6.t
+	desc = metacorp.6.d
+	picture = GFX_report_event_generic_sign_treaty1
+	trigger = { tag = MTC NOT = { has_country_flag = MTC_antitrust_fired } }
+	mean_time_to_happen = { months = 26 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MTC_antitrust_fired }
+	option = {
+		name = metacorp.6.a
+		add_to_variable = { metacorp_federal_influence = -5 }
+		add_stability = 0.03
+		NUS = { add_stability = 0.02 }
+		ai_chance = { factor = 55 }
+	}
+	option = {
+		name = metacorp.6.b
+		add_political_power = -100
+		add_to_variable = { metacorp_federal_influence = 4 }
+		ai_chance = { factor = 45 }
+	}
+}
+
+country_event = {
+	id = metacorp.7
+	title = metacorp.7.t
+	desc = metacorp.7.d
+	picture = GFX_report_event_generic_read_write
+	trigger = { tag = MTC NOT = { has_country_flag = MTC_ai_ethics_fired } }
+	mean_time_to_happen = { months = 30 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MTC_ai_ethics_fired }
+	option = {
+		name = metacorp.7.a
+		add_stability = 0.04
+		add_to_variable = { metacorp_federal_influence = -2 }
+		ai_chance = { factor = 55 }
+	}
+	option = {
+		name = metacorp.7.b
+		add_tech_bonus = { bonus = 0.60 uses = 1 category = electronics }
+		add_to_variable = { metacorp_federal_influence = 4 }
+		ai_chance = { factor = 45 }
+	}
+}
+
+country_event = {
+	id = metacorp.8
+	title = metacorp.8.t
+	desc = metacorp.8.d
+	picture = GFX_report_event_generic_sign_treaty1
+	trigger = { tag = NUS country_exists = MTC country_exists = MLT NOT = { has_country_flag = NUS_corporate_grants_fired } }
+	mean_time_to_happen = { months = 16 }
+	fire_only_once = yes
+	immediate = { set_country_flag = NUS_corporate_grants_fired }
+	option = {
+		name = metacorp.8.a
+		MTC = { add_to_variable = { metacorp_federal_influence = 7 } }
+		MLT = { add_to_variable = { militech_federal_influence = -4 } }
+		ai_chance = { factor = 45 }
+	}
+	option = {
+		name = metacorp.8.b
+		MLT = { add_to_variable = { militech_federal_influence = 7 } }
+		MTC = { add_to_variable = { metacorp_federal_influence = -4 } }
+		ai_chance = { factor = 45 modifier = { factor = 2 has_war = yes } }
+	}
+	option = {
+		name = metacorp.8.c
+		MTC = { add_to_variable = { metacorp_federal_influence = 2 } }
+		MLT = { add_to_variable = { militech_federal_influence = 2 } }
+		add_political_power = -50
+		add_stability = 0.02
+		ai_chance = { factor = 10 }
+	}
+}

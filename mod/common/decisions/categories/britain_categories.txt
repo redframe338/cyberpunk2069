@@ -1,0 +1,6 @@
+ENG_royal_survival = {
+	icon = generic_prepare_civil_war
+	allowed = { tag = ENG }
+	visible = { tag = ENG }
+	priority = 100
+}

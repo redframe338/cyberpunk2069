@@ -1,0 +1,428 @@
+add_namespace = usr_gazprom
+
+# ================================================================
+# EVENT 1: The Blue Flame Ignites
+# Fires when completing the Gazprom capstone "The Blue Flame of Eurasia"
+# ================================================================
+country_event = {
+	id = usr_gazprom.1
+	title = usr_gazprom.1.t
+	desc = usr_gazprom.1.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_gazprom.1.a
+		add_political_power = 25
+		add_stability = 0.02
+	}
+}
+
+# ================================================================
+# EVENT 2: Competing Claims — A New Gas Field
+# Random event: SovOil and Gazprom dispute a newly discovered field
+# ================================================================
+country_event = {
+	id = usr_gazprom.2
+	title = usr_gazprom.2.t
+	desc = usr_gazprom.2.d
+	picture = GFX_report_event_generic_factory
+
+	trigger = {
+		tag = USR
+		has_idea = USR_gas_arteries_of_union
+		NOT = { has_country_flag = USR_field_dispute_recent }
+	}
+
+	mean_time_to_happen = { months = 24 }
+
+	immediate = {
+		set_country_flag = { flag = USR_field_dispute_recent days = 360 value = 1 }
+	}
+
+	# Award the field to Gazprom
+	option = {
+		name = usr_gazprom.2.a
+		ai_chance = { factor = 40 }
+		add_resource = { type = oil amount = 4 state = 571 }
+		add_stability = 0.02
+		add_to_variable = { sovoil_state_influence = -5 }
+		custom_effect_tooltip = USR_gazprom_field_favor_tt
+	}
+
+	# Award the field to SovOil
+	option = {
+		name = usr_gazprom.2.b
+		ai_chance = { factor = 40 }
+		add_resource = { type = oil amount = 6 state = 571 }
+		add_to_variable = { sovoil_state_influence = 5 }
+		add_stability = -0.02
+		custom_effect_tooltip = USR_sovoil_field_favor_tt
+	}
+
+	# Split the field between them
+	option = {
+		name = usr_gazprom.2.c
+		ai_chance = { factor = 20 }
+		add_resource = { type = oil amount = 3 state = 571 }
+		add_political_power = 25
+	}
+}
+
+# ================================================================
+# EVENT 3: Pipeline Control Dispute
+# SovOil attempts to use Gazprom pipelines for its own logistics
+# ================================================================
+country_event = {
+	id = usr_gazprom.3
+	title = usr_gazprom.3.t
+	desc = usr_gazprom.3.d
+	picture = GFX_report_event_generic_factory
+
+	trigger = {
+		tag = USR
+		OR = {
+			has_idea = USR_gas_arteries_of_union
+			has_idea = USR_gazprom_federal_utility
+			has_idea = USR_gazprom_privileged_corporation
+			has_idea = USR_gazprom_entrenched_bureaucracy
+		}
+		NOT = { has_country_flag = USR_pipeline_dispute_recent }
+	}
+
+	mean_time_to_happen = { months = 18 }
+
+	immediate = {
+		set_country_flag = { flag = USR_pipeline_dispute_recent days = 540 value = 1 }
+	}
+
+	# Support Gazprom's monopoly on pipelines
+	option = {
+		name = usr_gazprom.3.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.03
+		add_to_variable = { sovoil_state_influence = -8 }
+		add_fuel = 2000
+		custom_effect_tooltip = USR_gazprom_pipeline_control_tt
+	}
+
+	# Let SovOil share the infrastructure
+	option = {
+		name = usr_gazprom.3.b
+		ai_chance = { factor = 30 }
+		add_to_variable = { sovoil_state_influence = 8 }
+		add_political_power = -25
+		add_fuel = 4000
+		custom_effect_tooltip = USR_sovoil_pipeline_access_tt
+	}
+
+	# Nationalize all energy infrastructure
+	option = {
+		name = usr_gazprom.3.c
+		ai_chance = { factor = 20 }
+		add_stability = -0.05
+		add_political_power = -50
+		add_to_variable = { sovoil_state_influence = -15 }
+		custom_effect_tooltip = USR_nationalize_pipelines_tt
+	}
+}
+
+# ================================================================
+# EVENT 4: The Winter Shortage
+# A harsh winter strains the gas supply — Gazprom gains political leverage
+# ================================================================
+country_event = {
+	id = usr_gazprom.4
+	title = usr_gazprom.4.t
+	desc = usr_gazprom.4.d
+	picture = GFX_report_event_generic_factory
+
+	trigger = {
+		tag = USR
+		OR = {
+			has_idea = USR_gas_arteries_of_union
+			has_idea = USR_gazprom_federal_utility
+			has_idea = USR_gazprom_privileged_corporation
+			has_idea = USR_gazprom_entrenched_bureaucracy
+		}
+		NOT = { has_country_flag = USR_winter_shortage_recent }
+		NOT = { has_idea = USR_winter_gas_reserves }
+	}
+
+	mean_time_to_happen = { months = 36 }
+
+	immediate = {
+		set_country_flag = { flag = USR_winter_shortage_recent days = 720 value = 1 }
+	}
+
+	# Accept Gazprom's terms — they gain influence
+	option = {
+		name = usr_gazprom.4.a
+		ai_chance = { factor = 50 }
+		add_stability = -0.03
+		add_political_power = -30
+		add_fuel = 3000
+		custom_effect_tooltip = USR_gazprom_leverage_tt
+	}
+
+	# Ration heating and endure the crisis
+	option = {
+		name = usr_gazprom.4.b
+		ai_chance = { factor = 30 }
+		add_stability = -0.08
+		add_war_support = -0.03
+		custom_effect_tooltip = USR_ration_heating_tt
+	}
+
+	# Emergency military intervention in gas distribution
+	option = {
+		name = usr_gazprom.4.c
+		ai_chance = { factor = 20 }
+		add_stability = -0.02
+		add_war_support = 0.03
+		add_political_power = -50
+		custom_effect_tooltip = USR_military_gas_intervention_tt
+	}
+}
+
+# ================================================================
+# EVENT 5: Pipeline Sabotage
+# An explosion on a major pipeline — SovOil contractors suspected
+# ================================================================
+country_event = {
+	id = usr_gazprom.5
+	title = usr_gazprom.5.t
+	desc = usr_gazprom.5.d
+	picture = GFX_report_event_generic_factory
+
+	trigger = {
+		tag = USR
+		OR = {
+			has_idea = USR_gazprom_privileged_corporation
+			has_idea = USR_gazprom_entrenched_bureaucracy
+		}
+		NOT = { has_country_flag = USR_pipeline_sabotage_recent }
+		check_variable = { sovoil_state_influence > 50 }
+	}
+
+	mean_time_to_happen = { months = 30 }
+
+	immediate = {
+		set_country_flag = { flag = USR_pipeline_sabotage_recent days = 900 value = 1 }
+	}
+
+	# Investigate SovOil — strain relations
+	option = {
+		name = usr_gazprom.5.a
+		ai_chance = { factor = 40 }
+		add_stability = -0.03
+		add_to_variable = { sovoil_state_influence = -10 }
+		add_political_power = -25
+		custom_effect_tooltip = USR_investigate_sovoil_tt
+	}
+
+	# Blame foreign agents — rally support
+	option = {
+		name = usr_gazprom.5.b
+		ai_chance = { factor = 35 }
+		add_war_support = 0.05
+		add_stability = -0.02
+		custom_effect_tooltip = USR_blame_foreign_sabotage_tt
+	}
+
+	# Quietly bury the investigation
+	option = {
+		name = usr_gazprom.5.c
+		ai_chance = { factor = 25 }
+		add_political_power = 25
+		add_stability = -0.01
+		custom_effect_tooltip = USR_bury_investigation_tt
+	}
+}
+
+# ================================================================
+# EVENT 6: The Imperial Gas Authority Proclaimed
+# Fires when completing the Eurasian imperial Gazprom capstone
+# ================================================================
+country_event = {
+	id = usr_gazprom.6
+	title = usr_gazprom.6.t
+	desc = usr_gazprom.6.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_gazprom.6.a
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+}
+
+# ================================================================
+# EVENT 7: The Proposed Great Energy Merger
+# SovOil and Gazprom — should the government merge them?
+# Fires on the SovOil Ascendancy path
+# ================================================================
+country_event = {
+	id = usr_gazprom.7
+	title = usr_gazprom.7.t
+	desc = usr_gazprom.7.d
+	picture = GFX_report_event_generic_factory
+
+	trigger = {
+		tag = USR
+		has_completed_focus = USR_sovoil_ascendancy
+		OR = {
+			has_idea = USR_gazprom_privileged_corporation
+			has_idea = USR_gazprom_entrenched_bureaucracy
+		}
+		NOT = { has_country_flag = USR_merger_proposed }
+	}
+
+	mean_time_to_happen = { months = 12 }
+
+	immediate = {
+		set_country_flag = USR_merger_proposed
+	}
+
+	# Accept the merger — SovOil absorbs Gazprom
+	option = {
+		name = usr_gazprom.7.a
+		ai_chance = { factor = 40 }
+		if = {
+			limit = { has_idea = USR_gazprom_privileged_corporation }
+			remove_ideas = USR_gazprom_privileged_corporation
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_entrenched_bureaucracy }
+			remove_ideas = USR_gazprom_entrenched_bureaucracy
+		}
+		add_ideas = USR_gazprom_great_energy_merger
+		add_to_variable = { sovoil_state_influence = 20 }
+		add_stability = -0.05
+		custom_effect_tooltip = USR_merger_accept_tt
+	}
+
+	# Reject — preserve Gazprom as a counterweight
+	option = {
+		name = usr_gazprom.7.b
+		ai_chance = { factor = 40 }
+		add_to_variable = { sovoil_state_influence = -10 }
+		add_political_power = -50
+		add_stability = 0.03
+		custom_effect_tooltip = USR_merger_reject_tt
+	}
+
+	# Delay the decision — political maneuvering
+	option = {
+		name = usr_gazprom.7.c
+		ai_chance = { factor = 20 }
+		add_political_power = -25
+		clr_country_flag = USR_merger_proposed
+		custom_effect_tooltip = USR_merger_delay_tt
+	}
+}
+
+# ================================================================
+# EVENT 8: Gazprom Transformation — Political Path
+# Fires via focus completion on each main path to transform Gazprom
+# This is triggered by the Row 2 path focuses to swap Gazprom's identity
+# ================================================================
+country_event = {
+	id = usr_gazprom.8
+	title = usr_gazprom.8.t
+	desc = usr_gazprom.8.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	# Renewed Federation → Public Energy Trust
+	option = {
+		name = usr_gazprom.8.a
+		trigger = { has_completed_focus = USR_renew_the_union_treaty }
+		if = {
+			limit = { has_idea = USR_gas_arteries_of_union }
+			swap_ideas = { remove_idea = USR_gas_arteries_of_union add_idea = USR_gazprom_public_energy_trust }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_federal_utility }
+			swap_ideas = { remove_idea = USR_gazprom_federal_utility add_idea = USR_gazprom_public_energy_trust }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_privileged_corporation }
+			swap_ideas = { remove_idea = USR_gazprom_privileged_corporation add_idea = USR_gazprom_public_energy_trust }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_entrenched_bureaucracy }
+			swap_ideas = { remove_idea = USR_gazprom_entrenched_bureaucracy add_idea = USR_gazprom_public_energy_trust }
+		}
+	}
+
+	# Iron Union → Strategic Gas Directorate
+	option = {
+		name = usr_gazprom.8.b
+		trigger = { has_completed_focus = USR_restore_security_state }
+		if = {
+			limit = { has_idea = USR_gas_arteries_of_union }
+			swap_ideas = { remove_idea = USR_gas_arteries_of_union add_idea = USR_gazprom_strategic_gas_directorate }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_federal_utility }
+			swap_ideas = { remove_idea = USR_gazprom_federal_utility add_idea = USR_gazprom_strategic_gas_directorate }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_privileged_corporation }
+			swap_ideas = { remove_idea = USR_gazprom_privileged_corporation add_idea = USR_gazprom_strategic_gas_directorate }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_entrenched_bureaucracy }
+			swap_ideas = { remove_idea = USR_gazprom_entrenched_bureaucracy add_idea = USR_gazprom_strategic_gas_directorate }
+		}
+	}
+
+	# Sovereign Republics → Eurasian Gas Consortium
+	option = {
+		name = usr_gazprom.8.c
+		trigger = { has_completed_focus = USR_republican_confederation }
+		if = {
+			limit = { has_idea = USR_gas_arteries_of_union }
+			swap_ideas = { remove_idea = USR_gas_arteries_of_union add_idea = USR_gazprom_eurasian_gas_consortium }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_federal_utility }
+			swap_ideas = { remove_idea = USR_gazprom_federal_utility add_idea = USR_gazprom_eurasian_gas_consortium }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_privileged_corporation }
+			swap_ideas = { remove_idea = USR_gazprom_privileged_corporation add_idea = USR_gazprom_eurasian_gas_consortium }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_entrenched_bureaucracy }
+			swap_ideas = { remove_idea = USR_gazprom_entrenched_bureaucracy add_idea = USR_gazprom_eurasian_gas_consortium }
+		}
+	}
+
+	# Cybernetic Socialism → Automated Energy Grid
+	option = {
+		name = usr_gazprom.8.e
+		trigger = { has_completed_focus = USR_cybernetic_socialism }
+		if = {
+			limit = { has_idea = USR_gas_arteries_of_union }
+			swap_ideas = { remove_idea = USR_gas_arteries_of_union add_idea = USR_gazprom_automated_energy_grid }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_federal_utility }
+			swap_ideas = { remove_idea = USR_gazprom_federal_utility add_idea = USR_gazprom_automated_energy_grid }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_privileged_corporation }
+			swap_ideas = { remove_idea = USR_gazprom_privileged_corporation add_idea = USR_gazprom_automated_energy_grid }
+		}
+		if = {
+			limit = { has_idea = USR_gazprom_entrenched_bureaucracy }
+			swap_ideas = { remove_idea = USR_gazprom_entrenched_bureaucracy add_idea = USR_gazprom_automated_energy_grid }
+		}
+	}
+}

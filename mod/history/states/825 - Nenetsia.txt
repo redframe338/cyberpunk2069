@@ -1,0 +1,24 @@
+# Cyberpunk override: Arctic Offshore Energy Base
+state = {
+	id = 825
+	name = "STATE_825"
+	manpower = 25000
+	state_category = rural
+	resources = { oil = 80 }
+	history = {
+		add_dynamic_modifier = { modifier = SVO_arctic_energy_platform_modifier }
+		owner = SVO
+		add_core_of = SVO
+		add_core_of = USR
+		victory_points = { 105 3 }
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+			fuel_silo = 1
+			air_base = 1
+			12530 = { naval_base = 3 }
+		}
+	}
+	provinces = { 105 198 3147 6040 6192 9205 10207 11047 11119 12530 }
+	local_supplies = 7.0
+}

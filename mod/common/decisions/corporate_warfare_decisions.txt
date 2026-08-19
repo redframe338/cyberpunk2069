@@ -1,0 +1,85 @@
+# Sovereign corporations may wage limited corporate wars against one another.
+# SovOil is excluded because its permanent Union charter forbids independent war.
+# PetroChem is represented through the NUSA corporate economy rather than a tag.
+
+corporate_warfare = {
+
+	corporate_hostile_takeover = {
+		icon = generic_prepare_civil_war
+		cost = 75
+		days_re_enable = 180
+
+		target_root_trigger = {
+			OR = {
+				tag = ARK
+				tag = MLT
+				tag = BIO
+				tag = MTC
+			}
+		}
+
+		target_trigger = {
+			FROM = {
+				exists = yes
+				OR = {
+					tag = ARK
+					tag = MLT
+					tag = BIO
+					tag = MTC
+				}
+			}
+
+			NOT = { tag = FROM }
+			NOT = { has_war_with = FROM }
+			NOT = { is_in_faction_with = FROM }
+			NOT = { has_wargoal_against = FROM }
+		}
+
+		available = {
+			FROM = {
+				exists = yes
+				has_capitulated = no
+			}
+			NOT = { has_war_with = FROM }
+			NOT = { is_in_faction_with = FROM }
+			NOT = { has_wargoal_against = FROM }
+		}
+
+		complete_effect = {
+			create_wargoal = {
+				type = annex_everything
+				target = FROM
+				expire = 180
+			}
+			add_war_support = 0.03
+		}
+
+		ai_will_do = {
+			factor = 0.20
+
+			modifier = {
+				factor = 0.25
+				has_war = yes
+			}
+
+			modifier = {
+				factor = 2.0
+				FROM = { has_war = yes }
+			}
+
+			modifier = {
+				factor = 12.0
+				OR = {
+					AND = {
+						tag = ARK
+						FROM = { tag = MLT }
+					}
+					AND = {
+						tag = MLT
+						FROM = { tag = ARK }
+					}
+				}
+			}
+		}
+	}
+}

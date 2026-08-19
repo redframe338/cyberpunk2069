@@ -1,0 +1,21 @@
+ideas = {
+	country = {
+		corporate_global_recruitment_pipeline = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				recruitable_population_factor = 0.02
+				mobilization_speed = 0.10
+				training_time_factor = -0.05
+			}
+		}
+		petrochem_global_recruitment_pipeline = {
+			allowed = { always = no }
+			removal_cost = -1
+			modifier = {
+				recruitable_population_factor = 0.005
+				mobilization_speed = 0.05
+			}
+		}
+	}
+}

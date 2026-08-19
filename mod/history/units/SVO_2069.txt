@@ -1,0 +1,93 @@
+# AUTO-GENERATED: 40 elite SovOil starting divisions.
+division_template = {
+	name = "SovOil Mechanized Energy Guard"
+	regiments = {
+		mechanized = { x = 0 y = 0 }
+		mechanized = { x = 0 y = 1 }
+		mechanized = { x = 0 y = 2 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "SovOil Arctic Assault Guard"
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+		mountaineers = { x = 3 y = 0 }
+		mountaineers = { x = 3 y = 1 }
+		mountaineers = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		maintenance_company = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	division = { name = "01th Mechanized Energy Guard" location = 4824 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "02th Mechanized Energy Guard" location = 10696 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "03th Mechanized Energy Guard" location = 10536 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "04th Mechanized Energy Guard" location = 3578 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "05th Mechanized Energy Guard" location = 1459 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "06th Mechanized Energy Guard" location = 11523 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "07th Mechanized Energy Guard" location = 4824 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "08th Mechanized Energy Guard" location = 10696 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "09th Mechanized Energy Guard" location = 10536 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "10th Mechanized Energy Guard" location = 3578 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "11th Mechanized Energy Guard" location = 1459 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "12th Mechanized Energy Guard" location = 11523 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "13th Mechanized Energy Guard" location = 4824 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "14th Mechanized Energy Guard" location = 10696 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "15th Mechanized Energy Guard" location = 10536 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "16th Mechanized Energy Guard" location = 3578 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "17th Mechanized Energy Guard" location = 1459 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "18th Mechanized Energy Guard" location = 11523 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "19th Mechanized Energy Guard" location = 4824 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "20th Mechanized Energy Guard" location = 10696 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "21th Mechanized Energy Guard" location = 10536 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "22th Mechanized Energy Guard" location = 3578 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "23th Mechanized Energy Guard" location = 1459 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "24th Mechanized Energy Guard" location = 11523 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "25th Mechanized Energy Guard" location = 4824 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "26th Mechanized Energy Guard" location = 10696 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "27th Mechanized Energy Guard" location = 10536 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "28th Mechanized Energy Guard" location = 3578 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "29th Mechanized Energy Guard" location = 1459 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "30th Mechanized Energy Guard" location = 11523 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "31th Mechanized Energy Guard" location = 4824 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "32th Mechanized Energy Guard" location = 10696 division_template = "SovOil Mechanized Energy Guard" start_experience_factor = 0.90 }
+	division = { name = "01th Arctic Assault Guard" location = 10536 division_template = "SovOil Arctic Assault Guard" start_experience_factor = 0.85 }
+	division = { name = "02th Arctic Assault Guard" location = 3578 division_template = "SovOil Arctic Assault Guard" start_experience_factor = 0.85 }
+	division = { name = "03th Arctic Assault Guard" location = 1459 division_template = "SovOil Arctic Assault Guard" start_experience_factor = 0.85 }
+	division = { name = "04th Arctic Assault Guard" location = 11523 division_template = "SovOil Arctic Assault Guard" start_experience_factor = 0.85 }
+	division = { name = "05th Arctic Assault Guard" location = 4824 division_template = "SovOil Arctic Assault Guard" start_experience_factor = 0.85 }
+	division = { name = "06th Arctic Assault Guard" location = 10696 division_template = "SovOil Arctic Assault Guard" start_experience_factor = 0.85 }
+	division = { name = "07th Arctic Assault Guard" location = 10536 division_template = "SovOil Arctic Assault Guard" start_experience_factor = 0.85 }
+	division = { name = "08th Arctic Assault Guard" location = 3578 division_template = "SovOil Arctic Assault Guard" start_experience_factor = 0.85 }
+}

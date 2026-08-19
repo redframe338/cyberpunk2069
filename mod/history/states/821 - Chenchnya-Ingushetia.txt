@@ -1,0 +1,23 @@
+# Cyberpunk override: Caucasus Energy Security Zone
+state = {
+	id = 821
+	name = "STATE_821"
+	manpower = 120000
+	state_category = rural
+	resources = { oil = 24 }
+	history = {
+		add_dynamic_modifier = { modifier = SVO_pipeline_administration_modifier }
+		owner = SVO
+		add_core_of = SVO
+		add_core_of = USR
+		victory_points = { 3672 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			fuel_silo = 1
+			air_base = 1
+		}
+	}
+	provinces = { 666 670 1455 3667 3672 6689 }
+	local_supplies = 7.0
+}

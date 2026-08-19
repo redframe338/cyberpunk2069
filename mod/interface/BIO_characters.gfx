@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_BIO_nicolo_loggagia"
+		texturefile = "gfx/leaders/BIO/portrait_BIO_nicolo_loggagia.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_BIO_corporate_commander"
+		texturefile = "gfx/leaders/BIO/portrait_BIO_corporate_commander.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_BIO_corporate_commander_small"
+		texturefile = "gfx/interface/ideas/portrait_BIO_corporate_commander_small.dds"
+	}
+}

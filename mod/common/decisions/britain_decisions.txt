@@ -1,0 +1,123 @@
+ENG_royal_survival = {
+	ENG_national_collapse_countdown = {
+		icon = generic_prepare_civil_war
+		allowed = { tag = ENG }
+		visible = {
+			NOT = { has_country_flag = ENG_realm_saved }
+			NOT = { has_country_flag = ENG_realm_collapsed }
+		}
+		activation = {
+			NOT = { has_country_flag = ENG_realm_saved }
+			NOT = { has_country_flag = ENG_realm_collapsed }
+		}
+		days_mission_timeout = 730
+		is_good = no
+		fire_only_once = yes
+		cancel_trigger = { has_country_flag = ENG_realm_saved }
+		timeout_effect = {
+			country_event = { id = british_collapse.1 hours = 1 }
+		}
+	}
+
+	ENG_open_the_royal_granaries = {
+		icon = generic_economy
+		cost = 40
+		days_remove = 45
+		fire_only_once = yes
+		visible = { NOT = { has_country_flag = ENG_granaries_opened } }
+		available = {
+			has_political_power > 39
+			NOT = { has_country_flag = ENG_realm_collapsed }
+		}
+		complete_effect = {
+			set_country_flag = ENG_granaries_opened
+			add_stability = 0.04
+			add_war_support = -0.01
+		}
+		ai_will_do = { factor = 30 }
+	}
+
+	ENG_liquidate_overseas_crown_assets = {
+		icon = generic_economy
+		cost = 50
+		days_remove = 60
+		fire_only_once = yes
+		visible = { NOT = { has_country_flag = ENG_crown_assets_sold } }
+		available = {
+			has_political_power > 49
+			NOT = { has_country_flag = ENG_realm_collapsed }
+		}
+		complete_effect = {
+			set_country_flag = ENG_crown_assets_sold
+			add_stability = 0.03
+			add_political_power = 25
+		}
+		ai_will_do = { factor = 28 }
+	}
+
+	ENG_bargain_with_the_industrial_guilds = {
+		icon = generic_construction
+		cost = 60
+		days_remove = 75
+		fire_only_once = yes
+		visible = { NOT = { has_country_flag = ENG_guild_compact } }
+		available = {
+			has_political_power > 59
+			NOT = { has_country_flag = ENG_realm_collapsed }
+		}
+		complete_effect = {
+			set_country_flag = ENG_guild_compact
+			add_stability = 0.04
+			add_tech_bonus = {
+				bonus = 0.35
+				uses = 1
+				category = industry
+			}
+		}
+		ai_will_do = { factor = 26 }
+	}
+
+	ENG_restore_the_county_administrations = {
+		icon = generic_political_actions
+		cost = 65
+		days_remove = 90
+		fire_only_once = yes
+		visible = { NOT = { has_country_flag = ENG_counties_restored } }
+		available = {
+			has_political_power > 64
+			NOT = { has_country_flag = ENG_realm_collapsed }
+		}
+		complete_effect = {
+			set_country_flag = ENG_counties_restored
+			add_stability = 0.05
+			add_political_power = 20
+		}
+		ai_will_do = { factor = 25 }
+	}
+
+	ENG_proclaim_the_royal_recovery = {
+		icon = generic_political_actions
+		cost = 100
+		days_remove = 120
+		fire_only_once = yes
+		visible = {
+			NOT = { has_country_flag = ENG_realm_saved }
+			NOT = { has_country_flag = ENG_realm_collapsed }
+		}
+		available = {
+			has_political_power > 99
+			has_country_flag = ENG_granaries_opened
+			has_country_flag = ENG_crown_assets_sold
+			has_country_flag = ENG_guild_compact
+			has_country_flag = ENG_counties_restored
+		}
+		complete_effect = {
+			set_country_flag = ENG_realm_saved
+			remove_ideas = ENG_the_failing_realm
+			add_ideas = ENG_realm_preserved
+			add_stability = 0.15
+			country_event = { id = british_collapse.2 hours = 1 }
+		}
+		ai_will_do = { factor = 100 }
+	}
+}

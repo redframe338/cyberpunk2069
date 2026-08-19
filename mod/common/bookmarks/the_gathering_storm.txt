@@ -1,0 +1,29 @@
+# OVERRIDE of vanilla the_gathering_storm bookmark -> "The Fractured World, 2069".
+# Featured-country screen: corporations first, then the six major powers.
+# Every other playable country remains available through map selection.
+bookmarks = {
+	bookmark = {
+		name = "FRACTURED_WORLD_NAME"
+		desc = "FRACTURED_WORLD_DESC"
+	date = 2069.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "NUS"
+		filters = { new_content continent }
+
+		# Row 1: sovereign and state-chartered corporations.
+		ARK = { ideology = neutrality version = "1.0" }
+		MLT = { ideology = neutrality version = "1.0" }
+		BIO = { ideology = neutrality version = "1.0" }
+		SVO = { ideology = neutrality version = "1.0" }
+		MTC = { ideology = neutrality version = "1.0" }
+		KGT = { ideology = neutrality version = "1.0" }
+
+		# Row 2: major geopolitical powers.
+		NUS = { ideology = neutrality version = "1.0" }
+		USR = { ideology = communism version = "1.0" }
+		CHI = { ideology = communism version = "1.0" }
+		JAP = { ideology = neutrality version = "1.0" }
+		EEC = { ideology = neutrality version = "1.0" }
+		ENG = { ideology = neutrality version = "1.0" }
+	}
+}

@@ -1,0 +1,72 @@
+# AUTO-GENERATED: 50 Neo-Soviet starting divisions.
+division_template = {
+	name = "Neo-Soviet Line Rifle Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = { name = "01th Union Rifle Division" location = 6380 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "02th Union Rifle Division" location = 3151 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "03th Union Rifle Division" location = 3529 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "04th Union Rifle Division" location = 3338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "05th Union Rifle Division" location = 3134 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "06th Union Rifle Division" location = 121 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "07th Union Rifle Division" location = 6338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "08th Union Rifle Division" location = 418 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "09th Union Rifle Division" location = 6380 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "10th Union Rifle Division" location = 3151 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "11th Union Rifle Division" location = 3529 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "12th Union Rifle Division" location = 3338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "13th Union Rifle Division" location = 3134 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "14th Union Rifle Division" location = 121 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "15th Union Rifle Division" location = 6338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "16th Union Rifle Division" location = 418 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "17th Union Rifle Division" location = 6380 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "18th Union Rifle Division" location = 3151 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "19th Union Rifle Division" location = 3529 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "20th Union Rifle Division" location = 3338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "21th Union Rifle Division" location = 3134 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "22th Union Rifle Division" location = 121 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "23th Union Rifle Division" location = 6338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "24th Union Rifle Division" location = 418 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "25th Union Rifle Division" location = 6380 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "26th Union Rifle Division" location = 3151 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "27th Union Rifle Division" location = 3529 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "28th Union Rifle Division" location = 3338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "29th Union Rifle Division" location = 3134 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "30th Union Rifle Division" location = 121 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "31th Union Rifle Division" location = 6338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "32th Union Rifle Division" location = 418 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "33th Union Rifle Division" location = 6380 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "34th Union Rifle Division" location = 3151 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "35th Union Rifle Division" location = 3529 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "36th Union Rifle Division" location = 3338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "37th Union Rifle Division" location = 3134 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "38th Union Rifle Division" location = 121 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "39th Union Rifle Division" location = 6338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "40th Union Rifle Division" location = 418 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "41th Union Rifle Division" location = 6380 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "42th Union Rifle Division" location = 3151 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "43th Union Rifle Division" location = 3529 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "44th Union Rifle Division" location = 3338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "45th Union Rifle Division" location = 3134 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "46th Union Rifle Division" location = 121 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "47th Union Rifle Division" location = 6338 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "48th Union Rifle Division" location = 418 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "49th Union Rifle Division" location = 6380 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+	division = { name = "50th Union Rifle Division" location = 3151 division_template = "Neo-Soviet Line Rifle Division" start_experience_factor = 0.25 }
+}

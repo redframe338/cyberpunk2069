@@ -1,0 +1,3802 @@
+focus_tree = {
+	id = USR_focus
+	country = {
+		factor = 0
+		modifier = { add = 100 tag = USR }
+	}
+	default = no
+
+	# ================================================================
+	# ROW 0-1: UNION OPENING
+	# ================================================================
+	focus = {
+		id = USR_state_of_the_union
+		icon = GFX_goal_generic_major_war
+		x = 12
+		y = 0
+		cost = 5
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = USR_congress_of_republics
+		icon = GFX_goal_generic_political_pressure
+		x = 12
+		y = 1
+		cost = 7
+		prerequisite = { focus = USR_state_of_the_union }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.02
+			set_variable = { USR_union_cohesion = 50 }
+		}
+	}
+
+	# ================================================================
+	# ROW 2: SEVEN COMPETING ANSWERS TO THE CONSTITUTIONAL CRISIS
+	# Six reform paths + the radical Eurasian alternative
+	# ================================================================
+	focus = {
+		id = USR_renew_the_union_treaty
+		icon = GFX_goal_generic_improve_relations
+		x = 2
+		y = 2
+		cost = 10
+		prerequisite = { focus = USR_congress_of_republics }
+		mutually_exclusive = {
+			focus = USR_cybernetic_socialism
+			focus = USR_restore_security_state
+			focus = USR_sovoil_ascendancy
+			focus = USR_republican_confederation
+			focus = USR_revolutionary_internationalism
+			focus = USR_the_congress_deadlocks
+			focus = USR_union_approaches_collapse
+		}
+		completion_reward = {
+			remove_ideas = USR_fragile_union
+			add_ideas = USR_renewed_federal_compact
+			add_stability = 0.08
+			add_political_power = 75
+			country_event = { id = usr_gazprom.8 days = 3 }
+		}
+	}
+	focus = {
+		id = USR_cybernetic_socialism
+		icon = GFX_goal_generic_scientific_exchange
+		x = 6
+		y = 2
+		cost = 10
+		prerequisite = { focus = USR_congress_of_republics }
+		mutually_exclusive = {
+			focus = USR_renew_the_union_treaty
+			focus = USR_restore_security_state
+			focus = USR_sovoil_ascendancy
+			focus = USR_republican_confederation
+			focus = USR_revolutionary_internationalism
+			focus = USR_the_congress_deadlocks
+			focus = USR_union_approaches_collapse
+		}
+		completion_reward = {
+			remove_ideas = USR_fragile_union
+			add_ideas = USR_cybernetic_planning
+			add_research_slot = 1
+			country_event = { id = usr_gazprom.8 days = 3 }
+		}
+	}
+	# ================================================================
+	# PROJECT OGAS — THE CONTINENTAL CYBERNETIC BRAIN
+	# Glushkov's revived dream: total economic computation replaces
+	# human planning with an All-Union Automated System.
+	# ================================================================
+
+	# --- Spine ---
+
+	focus = {
+		id = USR_glushkov_institute
+		icon = GFX_goal_generic_scientific_exchange
+		x = 6
+		y = 3
+		cost = 10
+		prerequisite = { focus = USR_cybernetic_socialism }
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = {
+				name = USR_glushkov_computing
+				bonus = 0.5
+				uses = 2
+				category = computing_tech
+			}
+		}
+	}
+
+	# --- Network Infrastructure Branch (x=4) ---
+
+	focus = {
+		id = USR_ogas_backbone_network
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 4
+		y = 4
+		cost = 10
+		prerequisite = { focus = USR_glushkov_institute }
+		completion_reward = {
+			219 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			571 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = USR_connect_every_enterprise
+		icon = GFX_goal_generic_radar
+		x = 4
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_ogas_backbone_network }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USR_transparent_supply_chains
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 4
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_connect_every_enterprise }
+		completion_reward = {
+			add_ideas = USR_ogas_supply_network
+		}
+	}
+
+	# --- Algorithmic Planning Branch (x=6) ---
+
+	focus = {
+		id = USR_algorithmic_gosplan
+		icon = GFX_goal_generic_production2
+		x = 6
+		y = 4
+		cost = 10
+		prerequisite = { focus = USR_glushkov_institute }
+		prerequisite = { focus = USR_audit_strategic_economy }
+		completion_reward = {
+			add_political_power = 50
+			add_tech_bonus = {
+				name = USR_planning_algorithms
+				bonus = 0.5
+				uses = 2
+				category = computing_tech
+			}
+		}
+	}
+	focus = {
+		id = USR_realtime_resource_allocation
+		icon = GFX_goal_generic_production
+		x = 6
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_algorithmic_gosplan }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USR_eliminate_bureaucratic_waste
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 6
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_realtime_resource_allocation }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USR_cybernetic_planning
+				add_idea = USR_ogas_algorithmic_planning
+			}
+		}
+	}
+
+	# --- Cybersecurity Branch (x=8) ---
+
+	focus = {
+		id = USR_ogas_cybersecurity_directorate
+		icon = GFX_goal_generic_intelligence_agency
+		x = 8
+		y = 4
+		cost = 10
+		prerequisite = { focus = USR_glushkov_institute }
+		completion_reward = {
+			add_stability = 0.03
+			add_tech_bonus = {
+				name = USR_cyber_defense
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = USR_firewall_corporate_intrusion
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 8
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_ogas_cybersecurity_directorate }
+		completion_reward = {
+			add_stability = 0.03
+			add_to_variable = { sovoil_state_influence = -10 }
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = USR_ogas_data_sovereignty
+		icon = GFX_goal_generic_secret_weapon
+		x = 8
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_firewall_corporate_intrusion }
+		completion_reward = {
+			add_ideas = USR_ogas_sovereign_firewall
+			add_stability = 0.05
+		}
+	}
+
+	# --- Convergence ---
+
+	focus = {
+		id = USR_total_cybernetic_economy
+		icon = GFX_goal_generic_secret_weapon
+		x = 6
+		y = 7
+		cost = 14
+		prerequisite = { focus = USR_transparent_supply_chains }
+		prerequisite = { focus = USR_eliminate_bureaucratic_waste }
+		prerequisite = { focus = USR_ogas_data_sovereignty }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USR_ogas_algorithmic_planning
+				add_idea = USR_total_cybernetic_economy_spirit
+			}
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+
+	# --- Capstone ---
+
+	focus = {
+		id = USR_ogas_continental_brain
+		icon = GFX_goal_generic_major_war
+		x = 6
+		y = 8
+		cost = 14
+		prerequisite = { focus = USR_total_cybernetic_economy }
+		completion_reward = {
+			add_ideas = USR_ogas_continental_brain_spirit
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = USR_restore_security_state
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 10
+		y = 2
+		cost = 10
+		prerequisite = { focus = USR_congress_of_republics }
+		mutually_exclusive = {
+			focus = USR_renew_the_union_treaty
+			focus = USR_cybernetic_socialism
+			focus = USR_sovoil_ascendancy
+			focus = USR_republican_confederation
+			focus = USR_revolutionary_internationalism
+			focus = USR_the_congress_deadlocks
+			focus = USR_union_approaches_collapse
+		}
+		completion_reward = {
+			remove_ideas = USR_fragile_union
+			add_ideas = USR_security_directorate
+			add_war_support = 0.08
+			country_event = { id = usr_gazprom.8 days = 3 }
+		}
+	}
+	focus = {
+		id = USR_sovoil_ascendancy
+		icon = GFX_goal_generic_oil_refinery
+		x = 14
+		y = 2
+		cost = 10
+		prerequisite = { focus = USR_congress_of_republics }
+		mutually_exclusive = {
+			focus = USR_renew_the_union_treaty
+			focus = USR_cybernetic_socialism
+			focus = USR_restore_security_state
+			focus = USR_republican_confederation
+			focus = USR_revolutionary_internationalism
+			focus = USR_the_congress_deadlocks
+			focus = USR_union_approaches_collapse
+		}
+		completion_reward = {
+			remove_ideas = USR_fragile_union
+			add_ideas = USR_corporate_energy_state
+			add_stability = 0.05
+			add_to_variable = { sovoil_state_influence = 20 }
+		}
+	}
+	focus = {
+		id = USR_republican_confederation
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 2
+		cost = 10
+		prerequisite = { focus = USR_congress_of_republics }
+		mutually_exclusive = {
+			focus = USR_renew_the_union_treaty
+			focus = USR_cybernetic_socialism
+			focus = USR_restore_security_state
+			focus = USR_sovoil_ascendancy
+			focus = USR_revolutionary_internationalism
+			focus = USR_the_congress_deadlocks
+			focus = USR_union_approaches_collapse
+		}
+		completion_reward = {
+			remove_ideas = USR_fragile_union
+			add_ideas = USR_confederal_compromise
+			add_stability = 0.10
+			add_political_power = 100
+			country_event = { id = usr_gazprom.8 days = 3 }
+		}
+	}
+	focus = {
+		id = USR_revolutionary_internationalism
+		icon = GFX_goal_support_communism
+		x = 22
+		y = 2
+		cost = 10
+		prerequisite = { focus = USR_congress_of_republics }
+		mutually_exclusive = {
+			focus = USR_renew_the_union_treaty
+			focus = USR_cybernetic_socialism
+			focus = USR_restore_security_state
+			focus = USR_sovoil_ascendancy
+			focus = USR_republican_confederation
+			focus = USR_the_congress_deadlocks
+			focus = USR_union_approaches_collapse
+		}
+		completion_reward = {
+			remove_ideas = USR_fragile_union
+			add_ideas = USR_internationalist_mission
+			add_war_support = 0.10
+			add_political_power = 75
+		}
+	}
+
+	# ================================================================
+	# SHARED BRANCHES (Economy, Military, Diplomacy)
+	# Available regardless of which Row 2 path is taken
+	# ================================================================
+
+	# Shared economic program.
+	focus = {
+		id = USR_audit_strategic_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 7
+		y = 4
+		cost = 7
+		prerequisite = { focus = USR_congress_of_republics }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+	focus = {
+		id = USR_union_infrastructure_plan
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 5
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_audit_strategic_economy }
+		completion_reward = {
+			219 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			403 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+			571 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = USR_automated_planning_bureaus
+		icon = GFX_goal_generic_scientific_exchange
+		x = 7
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_audit_strategic_economy }
+		completion_reward = {
+			add_tech_bonus = {
+				name = USR_industrial_automation
+				bonus = 0.5
+				uses = 2
+				category = computing_tech
+			}
+		}
+	}
+	focus = {
+		id = USR_integrate_sovoil_planning
+		icon = GFX_goal_generic_oil_refinery
+		x = 9
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_audit_strategic_economy }
+		completion_reward = {
+			add_ideas = USR_integrated_energy_planning
+			add_to_variable = { sovoil_state_influence = 5 }
+		}
+	}
+	focus = {
+		id = USR_eurasian_industrial_engine
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 7
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USR_union_infrastructure_plan
+			focus = USR_automated_planning_bureaus
+			focus = USR_integrate_sovoil_planning
+		}
+		completion_reward = {
+			add_ideas = USR_eurasian_industrial_engine
+			219 = { add_extra_state_shared_building_slots = 2 }
+		}
+	}
+
+	# Armed forces modernization.
+	focus = {
+		id = USR_review_general_staff
+		icon = GFX_goal_generic_army_doctrines
+		x = 13
+		y = 4
+		cost = 7
+		prerequisite = { focus = USR_congress_of_republics }
+		completion_reward = {
+			army_experience = 20
+			navy_experience = 10
+			air_experience = 10
+		}
+	}
+	focus = {
+		id = USR_modern_deep_battle
+		icon = GFX_goal_generic_army_doctrines
+		x = 11
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_review_general_staff }
+		completion_reward = {
+			add_ideas = USR_modern_deep_battle
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USR_cyber_electronic_commands
+		icon = GFX_goal_generic_radar
+		x = 13
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_review_general_staff }
+		completion_reward = {
+			add_tech_bonus = {
+				name = USR_electronic_warfare
+				bonus = 0.75
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+	focus = {
+		id = USR_strategic_missile_forces
+		icon = GFX_goal_generic_rocket
+		x = 15
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_review_general_staff }
+		completion_reward = {
+			add_ideas = USR_strategic_missile_command
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USR_eurasian_defense_network
+		icon = GFX_goal_generic_position_armies
+		x = 13
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USR_modern_deep_battle
+			focus = USR_cyber_electronic_commands
+			focus = USR_strategic_missile_forces
+		}
+		completion_reward = {
+			add_ideas = USR_eurasian_defense_network
+			add_war_support = 0.05
+		}
+	}
+
+	# First diplomatic hooks into the other principal power centers.
+	focus = {
+		id = USR_reassert_eurasian_interests
+		icon = GFX_goal_generic_demand_territory
+		x = 19
+		y = 4
+		cost = 7
+		prerequisite = { focus = USR_congress_of_republics }
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = USR_energy_dialogue_with_europe
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 17
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_reassert_eurasian_interests }
+		completion_reward = {
+			EEC = { add_opinion_modifier = { target = ROOT modifier = USR_energy_dialogue } }
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = USR_pacific_security_channel
+		icon = GFX_goal_generic_improve_relations
+		x = 19
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_reassert_eurasian_interests }
+		completion_reward = {
+			JAP = { add_opinion_modifier = { target = ROOT modifier = USR_security_dialogue } }
+			ARK = { add_opinion_modifier = { target = ROOT modifier = USR_security_dialogue } }
+		}
+	}
+	focus = {
+		id = USR_manage_the_american_rivalry
+		icon = GFX_goal_generic_improve_relations
+		x = 21
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_reassert_eurasian_interests }
+		completion_reward = {
+			NUS = { add_opinion_modifier = { target = ROOT modifier = USR_strategic_dialogue } }
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = USR_a_first_tier_superpower
+		icon = GFX_goal_generic_major_war
+		x = 19
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USR_energy_dialogue_with_europe
+			focus = USR_pacific_security_channel
+			focus = USR_manage_the_american_rivalry
+		}
+		completion_reward = {
+			add_ideas = USR_first_tier_superpower
+			add_political_power = 100
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	# ================================================================
+	# GAZPROM: THE GAS ARTERIES OF THE UNION
+	# Shared energy-infrastructure branch — available on all paths
+	# ================================================================
+
+	# --- Entry: Audit the Gas Directorate ---
+	focus = {
+		id = USR_audit_gas_directorate
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 4
+		cost = 7
+		prerequisite = { focus = USR_congress_of_republics }
+		completion_reward = {
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = USR_gas_arteries_of_union
+				add_idea = USR_gazprom_federal_utility
+			}
+		}
+	}
+
+	# --- Layer 2: Two expansion directions ---
+	focus = {
+		id = USR_the_winter_must_not_fail
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 0
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_audit_gas_directorate }
+		completion_reward = {
+			add_ideas = USR_winter_gas_reserves
+			add_stability = 0.03
+			219 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = USR_siberian_gas_frontier
+		icon = GFX_goal_generic_construct_civilian
+		x = 2
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_audit_gas_directorate }
+		completion_reward = {
+			add_ideas = USR_siberian_gas_expansion
+			571 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+
+	# --- Layer 3: Core modernization ---
+	focus = {
+		id = USR_modernize_compressor_network
+		icon = GFX_goal_generic_production
+		x = 1
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = USR_the_winter_must_not_fail
+			focus = USR_siberian_gas_frontier
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USR_gazprom_federal_utility
+				add_idea = USR_gazprom_privileged_corporation
+			}
+			add_tech_bonus = {
+				name = USR_pipeline_modernization
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = USR_protect_energy_arteries
+		icon = GFX_goal_generic_fortify_city
+		x = 3
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_siberian_gas_frontier }
+		completion_reward = {
+			add_ideas = USR_pipeline_defense_network
+			add_war_support = 0.03
+		}
+	}
+
+	# --- Layer 4: Regional pipeline programs ---
+	focus = {
+		id = USR_repair_western_pipelines
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 0
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_modernize_compressor_network }
+		completion_reward = {
+			add_political_power = 50
+			EEC = { add_opinion_modifier = { target = ROOT modifier = USR_energy_dialogue } }
+		}
+	}
+	focus = {
+		id = USR_gasify_southern_republics
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 1
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_modernize_compressor_network }
+		completion_reward = {
+			add_stability = 0.05
+			403 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = USR_automated_pipeline_management
+		icon = GFX_goal_generic_radar
+		x = 2
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_modernize_compressor_network }
+		completion_reward = {
+			add_tech_bonus = {
+				name = USR_automated_pipelines
+				bonus = 0.5
+				uses = 1
+				category = computing_tech
+			}
+		}
+	}
+	focus = {
+		id = USR_expand_petrochemical_feedstocks
+		icon = GFX_goal_generic_oil_refinery
+		x = 3
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_protect_energy_arteries }
+		completion_reward = {
+			add_resource = { type = oil amount = 8 state = 571 }
+			add_resource = { type = oil amount = 5 state = 219 }
+		}
+	}
+
+	# --- Layer 5: Strategic export choice (mutually exclusive) ---
+	focus = {
+		id = USR_keep_europe_dependent
+		icon = GFX_goal_generic_forceful_treaty
+		x = 0
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_repair_western_pipelines }
+		mutually_exclusive = {
+			focus = USR_energy_for_republics
+			focus = USR_turn_pipelines_east
+		}
+		completion_reward = {
+			add_ideas = USR_european_gas_leverage
+			swap_ideas = {
+				remove_idea = USR_gazprom_privileged_corporation
+				add_idea = USR_gazprom_entrenched_bureaucracy
+			}
+		}
+	}
+	focus = {
+		id = USR_energy_for_republics
+		icon = GFX_goal_generic_national_unity
+		x = 1
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_gasify_southern_republics }
+		mutually_exclusive = {
+			focus = USR_keep_europe_dependent
+			focus = USR_turn_pipelines_east
+		}
+		completion_reward = {
+			add_ideas = USR_republican_gas_network
+			swap_ideas = {
+				remove_idea = USR_gazprom_privileged_corporation
+				add_idea = USR_gazprom_entrenched_bureaucracy
+			}
+		}
+	}
+	focus = {
+		id = USR_turn_pipelines_east
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 2
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_automated_pipeline_management }
+		mutually_exclusive = {
+			focus = USR_keep_europe_dependent
+			focus = USR_energy_for_republics
+		}
+		completion_reward = {
+			add_ideas = USR_eastern_gas_corridor
+			swap_ideas = {
+				remove_idea = USR_gazprom_privileged_corporation
+				add_idea = USR_gazprom_entrenched_bureaucracy
+			}
+		}
+	}
+
+	# --- Capstone ---
+	focus = {
+		id = USR_blue_flame_of_eurasia
+		icon = GFX_goal_generic_major_war
+		x = 1
+		y = 9
+		cost = 14
+		prerequisite = {
+			focus = USR_keep_europe_dependent
+			focus = USR_energy_for_republics
+			focus = USR_turn_pipelines_east
+		}
+		prerequisite = { focus = USR_expand_petrochemical_feedstocks }
+		completion_reward = {
+			add_ideas = USR_blue_flame_of_eurasia
+			country_event = { id = usr_gazprom.1 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# EURASIAN PATH — GAZPROM IMPERIAL SUB-BRANCH
+	# Available only on the Eurasian Empire route, requires Gazprom capstone
+	# ================================================================
+
+	focus = {
+		id = USR_blue_veins_of_heartland
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 33
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_from_union_to_civilization }
+		prerequisite = { focus = USR_blue_flame_of_eurasia }
+		completion_reward = {
+			219 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			571 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = USR_heat_for_every_household
+		icon = GFX_goal_generic_consumer_goods
+		x = 33
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_blue_veins_of_heartland }
+		completion_reward = {
+			add_stability = 0.08
+			add_war_support = 0.05
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = USR_pipelines_define_continent
+		icon = GFX_goal_generic_production
+		x = 33
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_heat_for_every_household }
+		completion_reward = {
+			add_resource = { type = oil amount = 12 state = 571 }
+			add_resource = { type = oil amount = 8 state = 219 }
+			add_resource = { type = oil amount = 5 state = 403 }
+		}
+	}
+	focus = {
+		id = USR_subordinate_commerce_to_destiny
+		icon = GFX_goal_generic_forceful_treaty
+		x = 33
+		y = 13
+		cost = 10
+		prerequisite = { focus = USR_pipelines_define_continent }
+		completion_reward = {
+			add_political_power = 100
+			swap_ideas = {
+				remove_idea = USR_gazprom_entrenched_bureaucracy
+				add_idea = USR_gazprom_imperial_gas_authority
+			}
+		}
+	}
+	focus = {
+		id = USR_imperial_gas_authority_focus
+		icon = GFX_goal_generic_major_war
+		x = 33
+		y = 14
+		cost = 14
+		prerequisite = { focus = USR_subordinate_commerce_to_destiny }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 75
+			add_manpower = 150000
+			country_event = { id = usr_gazprom.6 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# THE FORBIDDEN ALTERNATIVE
+	# Fourth Political Theory → Eurasian Empire
+	# A radical route through neo-Eurasianism to continental empire.
+	# ================================================================
+
+	# --- Path Opening: The Congress Deadlocks ---
+
+	focus = {
+		id = USR_the_congress_deadlocks
+		icon = GFX_goal_generic_dangerous_deal
+		x = 28
+		y = 2
+		cost = 10
+		prerequisite = { focus = USR_congress_of_republics }
+		mutually_exclusive = {
+			focus = USR_renew_the_union_treaty
+			focus = USR_cybernetic_socialism
+			focus = USR_restore_security_state
+			focus = USR_sovoil_ascendancy
+			focus = USR_republican_confederation
+			focus = USR_revolutionary_internationalism
+			focus = USR_union_approaches_collapse
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -50
+			add_war_support = 0.03
+			custom_effect_tooltip = USR_congress_deadlocks_tt
+		}
+	}
+
+	focus = {
+		id = USR_failure_of_soviet_modernity
+		icon = GFX_goal_generic_propaganda
+		x = 28
+		y = 3
+		cost = 10
+		prerequisite = { focus = USR_the_congress_deadlocks }
+		mutually_exclusive = { focus = USR_whispers_old_empire focus = USR_imperial_current }
+		completion_reward = {
+			add_stability = -0.03
+			add_political_power = 25
+			add_war_support = 0.05
+			custom_effect_tooltip = USR_failure_modernity_tt
+		}
+	}
+
+	focus = {
+		id = USR_the_fourth_political_theory
+		icon = GFX_goal_generic_forceful_treaty
+		x = 28
+		y = 4
+		cost = 10
+		prerequisite = { focus = USR_failure_of_soviet_modernity }
+		completion_reward = {
+			remove_ideas = USR_fragile_union
+			add_ideas = USR_eurasian_revival
+			add_ideas = USR_4pt_backlash
+			add_stability = -0.05
+			add_political_power = 50
+			set_country_flag = USR_4pt_adopted
+			custom_effect_tooltip = USR_4pt_adopted_tt
+			country_event = { id = usr_eurasian.1 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# THREE INTERPRETATIONS OF THE FOURTH POLITICAL THEORY
+	# Mutually exclusive: Duginist / National Bolshevik / Cyber-Eurasian
+	# ================================================================
+
+	# --- DUGINIST ORTHODOXY (x=25 center) ---
+	# Traditionalist, civilizational, anti-modern.
+	# Strongest stability and political power; weakest research.
+
+	focus = {
+		id = USR_prophet_of_eurasia
+		icon = GFX_goal_generic_propaganda
+		x = 25
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_the_fourth_political_theory }
+		mutually_exclusive = {
+			focus = USR_reconcile_red_and_imperial
+			focus = USR_tradition_masters_technology
+		}
+		completion_reward = {
+			add_political_power = 75
+			add_stability = 0.05
+			set_country_flag = USR_duginist_path
+		}
+	}
+
+	focus = {
+		id = USR_primacy_of_civilization
+		icon = GFX_goal_generic_national_unity
+		x = 24
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_prophet_of_eurasia }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+			add_war_support = 0.03
+		}
+	}
+
+	focus = {
+		id = USR_tradition_against_modernity
+		icon = GFX_goal_generic_forceful_treaty
+		x = 26
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_prophet_of_eurasia }
+		completion_reward = {
+			add_war_support = 0.08
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+
+	focus = {
+		id = USR_the_sacred_continent
+		icon = GFX_goal_generic_defence
+		x = 24
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_primacy_of_civilization }
+		completion_reward = {
+			add_ideas = USR_sacred_continent_defense
+			add_stability = 0.03
+		}
+	}
+
+	focus = {
+		id = USR_restore_imperial_idea
+		icon = GFX_goal_generic_territory_or_war
+		x = 26
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_tradition_against_modernity }
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.05
+			add_manpower = 50000
+		}
+	}
+
+	focus = {
+		id = USR_eternal_eurasian_state
+		icon = GFX_goal_generic_major_war
+		x = 25
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_the_sacred_continent }
+		prerequisite = { focus = USR_restore_imperial_idea }
+		completion_reward = {
+			remove_ideas = USR_eurasian_revival
+			remove_ideas = USR_4pt_backlash
+			add_ideas = USR_duginist_orthodoxy_spirit
+			add_political_power = 100
+			add_stability = 0.05
+		}
+	}
+
+	# --- NATIONAL BOLSHEVIK REVIVAL (x=28 center) ---
+	# Revolutionary fusion of Soviet imagery and nationalism.
+	# Strongest army and mobilization; highest repression and resistance.
+
+	focus = {
+		id = USR_reconcile_red_and_imperial
+		icon = GFX_goal_support_communism
+		x = 28
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_the_fourth_political_theory }
+		mutually_exclusive = {
+			focus = USR_prophet_of_eurasia
+			focus = USR_tradition_masters_technology
+		}
+		completion_reward = {
+			add_war_support = 0.08
+			add_political_power = 50
+			set_country_flag = USR_natbol_path
+		}
+	}
+
+	focus = {
+		id = USR_restore_revolutionary_state
+		icon = GFX_goal_generic_army_doctrines
+		x = 27
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_reconcile_red_and_imperial }
+		completion_reward = {
+			army_experience = 25
+			add_war_support = 0.05
+			add_manpower = 100000
+		}
+	}
+
+	focus = {
+		id = USR_nation_above_class
+		icon = GFX_goal_generic_political_pressure
+		x = 29
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_reconcile_red_and_imperial }
+		completion_reward = {
+			add_ideas = USR_revolutionary_discipline
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = USR_discipline_the_oligarchs
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 27
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_restore_revolutionary_state }
+		completion_reward = {
+			add_political_power = 75
+			add_to_variable = { sovoil_state_influence = -10 }
+			219 = { add_extra_state_shared_building_slots = 2 }
+			403 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+
+	focus = {
+		id = USR_continental_vanguard
+		icon = GFX_goal_generic_special_forces
+		x = 29
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_nation_above_class }
+		completion_reward = {
+			add_ideas = USR_continental_vanguard_spirit
+			army_experience = 25
+		}
+	}
+
+	focus = {
+		id = USR_red_brown_order
+		icon = GFX_goal_generic_military_sphere
+		x = 28
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_discipline_the_oligarchs }
+		prerequisite = { focus = USR_continental_vanguard }
+		completion_reward = {
+			remove_ideas = USR_eurasian_revival
+			remove_ideas = USR_4pt_backlash
+			add_ideas = USR_national_bolshevik_spirit
+			add_war_support = 0.10
+			add_manpower = 75000
+		}
+	}
+
+	# --- CYBER-EURASIANISM (x=31 center) ---
+	# Technology subordinated to civilizational destiny.
+	# Strongest research and production; paranoia and system fragility.
+
+	focus = {
+		id = USR_tradition_masters_technology
+		icon = GFX_goal_generic_scientific_exchange
+		x = 31
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_the_fourth_political_theory }
+		mutually_exclusive = {
+			focus = USR_prophet_of_eurasia
+			focus = USR_reconcile_red_and_imperial
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_political_power = 25
+			set_country_flag = USR_cyber_eurasian_path
+		}
+	}
+
+	focus = {
+		id = USR_sovereign_eurasian_net
+		icon = GFX_goal_generic_radar
+		x = 30
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_tradition_masters_technology }
+		completion_reward = {
+			add_ideas = USR_sovereign_net
+			add_tech_bonus = {
+				name = USR_sovereign_network
+				bonus = 0.5
+				uses = 2
+				category = computing_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USR_purge_atlantic_algorithms
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 32
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_tradition_masters_technology }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.05
+			add_tech_bonus = {
+				name = USR_info_warfare
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}
+		}
+	}
+
+	focus = {
+		id = USR_encode_civilizational_state
+		icon = GFX_goal_generic_secret_weapon
+		x = 30
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_sovereign_eurasian_net }
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.03
+			add_tech_bonus = {
+				name = USR_digital_governance
+				bonus = 0.5
+				uses = 2
+				category = computing_tech
+			}
+		}
+	}
+
+	focus = {
+		id = USR_cybernetic_imperial_planning
+		icon = GFX_goal_generic_production2
+		x = 32
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_purge_atlantic_algorithms }
+		completion_reward = {
+			add_ideas = USR_cybernetic_planning_imperial
+			add_stability = -0.03
+		}
+	}
+
+	focus = {
+		id = USR_empire_beyond_modernity
+		icon = GFX_goal_generic_major_war
+		x = 31
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_encode_civilizational_state }
+		prerequisite = { focus = USR_cybernetic_imperial_planning }
+		completion_reward = {
+			remove_ideas = USR_eurasian_revival
+			remove_ideas = USR_4pt_backlash
+			add_ideas = USR_cyber_eurasian_spirit
+			add_political_power = 75
+		}
+	}
+
+	# ================================================================
+	# BUILDING THE EURASIAN EMPIRE
+	# All three interpretations converge into the shared imperial branch.
+	# ================================================================
+
+	focus = {
+		id = USR_from_union_to_civilization
+		icon = GFX_goal_generic_territory_or_war
+		x = 28
+		y = 9
+		cost = 10
+		prerequisite = {
+			focus = USR_eternal_eurasian_state
+			focus = USR_red_brown_order
+			focus = USR_empire_beyond_modernity
+		}
+		prerequisite = { focus = USR_review_general_staff }
+		completion_reward = {
+			add_political_power = 75
+			add_war_support = 0.08
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = USR_heartland_doctrine
+		icon = GFX_goal_generic_position_armies
+		x = 26
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_from_union_to_civilization }
+		completion_reward = {
+			add_ideas = USR_heartland_defense
+			army_experience = 20
+		}
+	}
+
+	focus = {
+		id = USR_moscow_axis_of_continent
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 28
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_from_union_to_civilization }
+		completion_reward = {
+			219 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USR_new_treaty_of_peoples
+		icon = GFX_goal_generic_major_alliance
+		x = 30
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_from_union_to_civilization }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 75
+			add_to_variable = { USR_union_cohesion = 15 }
+		}
+	}
+
+	focus = {
+		id = USR_secure_the_heartland
+		icon = GFX_goal_generic_fortify_city
+		x = 28
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_heartland_doctrine }
+		prerequisite = { focus = USR_moscow_axis_of_continent }
+		prerequisite = { focus = USR_new_treaty_of_peoples }
+		completion_reward = {
+			add_war_support = 0.05
+			add_stability = 0.03
+			army_experience = 15
+			add_manpower = 50000
+		}
+	}
+
+	focus = {
+		id = USR_break_atlantic_encirclement
+		icon = GFX_goal_generic_navy_battleship
+		x = 26
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_secure_the_heartland }
+		completion_reward = {
+			add_war_support = 0.08
+			add_political_power = 50
+			navy_experience = 25
+			EEC = { add_opinion_modifier = { target = ROOT modifier = USR_eurasian_hostility } }
+			NUS = { add_opinion_modifier = { target = ROOT modifier = USR_eurasian_hostility } }
+		}
+	}
+
+	focus = {
+		id = USR_challenge_chinese_influence
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 30
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_secure_the_heartland }
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+			army_experience = 15
+		}
+	}
+
+	focus = {
+		id = USR_define_eurasias_borders
+		icon = GFX_goal_generic_demand_territory
+		x = 28
+		y = 13
+		cost = 10
+		prerequisite = { focus = USR_break_atlantic_encirclement }
+		prerequisite = { focus = USR_challenge_chinese_influence }
+		completion_reward = {
+			add_war_support = 0.10
+			add_political_power = 75
+			create_wargoal = {
+				type = take_state_focus
+				target = EEC
+			}
+		}
+	}
+
+	# ================================================================
+	# EMPIRE TYPE: How the continent is governed
+	# Unitary Empire vs Empire of Civilizations
+	# ================================================================
+
+	focus = {
+		id = USR_the_unitary_empire
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 26
+		y = 14
+		cost = 10
+		prerequisite = { focus = USR_define_eurasias_borders }
+		mutually_exclusive = { focus = USR_empire_of_civilizations }
+		completion_reward = {
+			add_ideas = USR_unitary_empire_spirit
+			add_manpower = 200000
+			add_war_support = 0.05
+			add_stability = -0.08
+		}
+	}
+
+	focus = {
+		id = USR_empire_of_civilizations
+		icon = GFX_goal_generic_alliance
+		x = 30
+		y = 14
+		cost = 10
+		prerequisite = { focus = USR_define_eurasias_borders }
+		mutually_exclusive = { focus = USR_the_unitary_empire }
+		completion_reward = {
+			add_ideas = USR_empire_of_civilizations_spirit
+			add_stability = 0.10
+			add_political_power = 100
+		}
+	}
+
+	# ================================================================
+	# SOVOIL RELATIONSHIP: What happens to the energy oligarchy
+	# ================================================================
+
+	focus = {
+		id = USR_break_energy_oligarchy
+		icon = GFX_goal_generic_consumer_goods
+		x = 25
+		y = 15
+		cost = 7
+		prerequisite = {
+			focus = USR_the_unitary_empire
+			focus = USR_empire_of_civilizations
+		}
+		mutually_exclusive = {
+			focus = USR_imperial_energy_ministry
+			focus = USR_alliance_of_necessity
+		}
+		completion_reward = {
+			add_ideas = USR_energy_nationalized
+			add_to_variable = { sovoil_state_influence = -30 }
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = USR_imperial_energy_ministry
+		icon = GFX_goal_generic_oil_refinery
+		x = 28
+		y = 15
+		cost = 7
+		prerequisite = {
+			focus = USR_the_unitary_empire
+			focus = USR_empire_of_civilizations
+		}
+		mutually_exclusive = {
+			focus = USR_break_energy_oligarchy
+			focus = USR_alliance_of_necessity
+		}
+		completion_reward = {
+			add_ideas = USR_imperial_energy_ministry_spirit
+			add_to_variable = { sovoil_state_influence = -15 }
+		}
+	}
+
+	focus = {
+		id = USR_alliance_of_necessity
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 31
+		y = 15
+		cost = 7
+		prerequisite = {
+			focus = USR_the_unitary_empire
+			focus = USR_empire_of_civilizations
+		}
+		mutually_exclusive = {
+			focus = USR_break_energy_oligarchy
+			focus = USR_imperial_energy_ministry
+		}
+		completion_reward = {
+			add_ideas = USR_energy_alliance_spirit
+			add_to_variable = { sovoil_state_influence = 10 }
+			add_stability = 0.03
+			set_country_flag = USR_sovoil_compromised
+		}
+	}
+
+	# ================================================================
+	# PROCLAMATION OF THE EURASIAN EMPIRE
+	# Final focus. Outcome depends on SovOil relationship.
+	# ================================================================
+
+	focus = {
+		id = USR_proclaim_eurasian_empire
+		icon = GFX_goal_USR_eurasian_empire
+		x = 28
+		y = 16
+		cost = 14
+		prerequisite = {
+			focus = USR_break_energy_oligarchy
+			focus = USR_imperial_energy_ministry
+			focus = USR_alliance_of_necessity
+		}
+		prerequisite = { focus = USR_eurasian_defense_network }
+		available = {
+			has_war_support > 0.5
+		}
+		completion_reward = {
+			if = {
+				limit = { has_country_flag = USR_sovoil_compromised }
+				set_cosmetic_tag = USR_corporate_eurasia
+				add_ideas = USR_corporate_eurasia
+				custom_effect_tooltip = USR_corporate_eurasia_tt
+			}
+			else = {
+				set_cosmetic_tag = USR_eurasian_empire
+				add_ideas = USR_eurasian_empire_proclaimed
+				custom_effect_tooltip = USR_true_empire_tt
+			}
+			add_political_power = 150
+			add_stability = 0.05
+			add_war_support = 0.10
+			country_event = { id = usr_eurasian.3 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# OPERATION BLACK GOLD — THE SOVOIL COUP
+	# Corporate hostile takeover of the Union government
+	# ================================================================
+
+	# --- Phase I: The Conspiracy Opens ---
+
+	focus = {
+		id = USR_unacceptable_audit
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 38
+		y = 3
+		cost = 10
+		prerequisite = { focus = USR_sovoil_ascendancy }
+		completion_reward = {
+			add_political_power = -50
+			add_stability = -0.05
+			add_to_variable = { sovoil_state_influence = 10 }
+			set_variable = { USR_coup_readiness = 10 }
+			set_variable = { USR_government_suspicion = 5 }
+			country_event = { id = usr_sovoil_coup.1 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_board_resolution_69
+		icon = GFX_goal_generic_dangerous_deal
+		x = 38
+		y = 4
+		cost = 10
+		prerequisite = { focus = USR_unacceptable_audit }
+		prerequisite = { focus = USR_audit_strategic_economy }
+		completion_reward = {
+			add_ideas = USR_board_resolution_authorized
+			add_to_variable = { USR_coup_readiness = 10 }
+			add_to_variable = { USR_government_suspicion = 5 }
+			add_to_variable = { sovoil_state_influence = 5 }
+		}
+	}
+
+	# --- Political Infiltration Branch ---
+
+	focus = {
+		id = USR_friends_supreme_soviet
+		icon = GFX_goal_generic_political_pressure
+		x = 36
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_board_resolution_69 }
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = { USR_coup_readiness = 8 }
+			add_to_variable = { USR_government_suspicion = 5 }
+		}
+	}
+	focus = {
+		id = USR_purchase_republican_loyalty
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 36
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_friends_supreme_soviet }
+		completion_reward = {
+			add_stability = 0.03
+			add_to_variable = { USR_coup_readiness = 10 }
+			add_to_variable = { USR_government_suspicion = 8 }
+			add_to_variable = { sovoil_state_influence = 5 }
+		}
+	}
+	focus = {
+		id = USR_cabinet_of_technocrats
+		icon = GFX_goal_generic_forceful_treaty
+		x = 36
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_purchase_republican_loyalty }
+		completion_reward = {
+			add_ideas = USR_sovoil_political_network
+			add_to_variable = { USR_coup_readiness = 12 }
+			add_to_variable = { USR_government_suspicion = 10 }
+		}
+	}
+
+	# --- Infrastructure Control Branch ---
+
+	focus = {
+		id = USR_control_strategic_reserves
+		icon = GFX_goal_generic_oil_refinery
+		x = 38
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_board_resolution_69 }
+		completion_reward = {
+			add_resource = { type = oil amount = 8 state = 571 }
+			add_to_variable = { USR_coup_readiness = 8 }
+			add_to_variable = { USR_government_suspicion = 3 }
+			add_to_variable = { sovoil_state_influence = 5 }
+		}
+	}
+	focus = {
+		id = USR_lock_pipeline_network
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 38
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_control_strategic_reserves }
+		completion_reward = {
+			add_ideas = USR_sovoil_pipeline_lockdown
+			add_to_variable = { USR_coup_readiness = 10 }
+			add_to_variable = { USR_government_suspicion = 8 }
+			add_fuel = 5000
+		}
+	}
+	focus = {
+		id = USR_bring_gazprom_to_heel
+		icon = GFX_goal_generic_consumer_goods
+		x = 38
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_lock_pipeline_network }
+		completion_reward = {
+			add_ideas = USR_gazprom_subdued
+			add_to_variable = { USR_coup_readiness = 12 }
+			add_to_variable = { USR_government_suspicion = 10 }
+			country_event = { id = usr_sovoil_coup.2 days = 3 }
+		}
+	}
+
+	# --- Security Branch ---
+
+	focus = {
+		id = USR_expand_energy_guard
+		icon = GFX_goal_generic_army_doctrines
+		x = 40
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_board_resolution_69 }
+		completion_reward = {
+			add_ideas = USR_energy_guard_expanded
+			add_manpower = 50000
+			add_to_variable = { USR_coup_readiness = 8 }
+			add_to_variable = { USR_government_suspicion = 5 }
+		}
+	}
+	focus = {
+		id = USR_compromise_moscow_command
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 40
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_expand_energy_guard }
+		completion_reward = {
+			add_ideas = USR_moscow_command_compromised
+			add_to_variable = { USR_coup_readiness = 10 }
+			add_to_variable = { USR_government_suspicion = 12 }
+		}
+	}
+	focus = {
+		id = USR_operation_black_gold
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 40
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_compromise_moscow_command }
+		completion_reward = {
+			add_war_support = 0.08
+			add_to_variable = { USR_coup_readiness = 15 }
+			add_to_variable = { USR_government_suspicion = 15 }
+			country_event = { id = usr_sovoil_coup.3 days = 1 }
+		}
+	}
+
+	# --- The Coup ---
+
+	focus = {
+		id = USR_the_executive_ultimatum
+		icon = GFX_goal_generic_major_war
+		x = 38
+		y = 8
+		cost = 7
+		prerequisite = { focus = USR_cabinet_of_technocrats }
+		prerequisite = { focus = USR_bring_gazprom_to_heel }
+		prerequisite = { focus = USR_operation_black_gold }
+		completion_reward = {
+			country_event = { id = usr_sovoil_coup.4 days = 1 }
+		}
+	}
+
+	# --- Three Outcomes (mutually exclusive) ---
+
+	focus = {
+		id = USR_government_capitulates
+		icon = GFX_goal_generic_forceful_treaty
+		x = 35
+		y = 9
+		cost = 5
+		prerequisite = { focus = USR_the_executive_ultimatum }
+		mutually_exclusive = {
+			focus = USR_uneasy_compromise
+			focus = USR_the_energy_war
+		}
+		available = {
+			check_variable = { sovoil_state_influence > 70 }
+			check_variable = { USR_coup_readiness > 80 }
+		}
+		completion_reward = {
+			add_ideas = USR_sovoil_executive_government
+			add_stability = -0.10
+			add_political_power = 100
+			country_event = { id = usr_sovoil_coup.5 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_uneasy_compromise
+		icon = GFX_goal_generic_dangerous_deal
+		x = 38
+		y = 9
+		cost = 5
+		prerequisite = { focus = USR_the_executive_ultimatum }
+		mutually_exclusive = {
+			focus = USR_government_capitulates
+			focus = USR_the_energy_war
+		}
+		completion_reward = {
+			add_ideas = USR_corporate_state_dual_power
+			add_stability = -0.05
+			add_political_power = 50
+			country_event = { id = usr_sovoil_coup.6 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_the_energy_war
+		icon = GFX_goal_generic_major_war
+		x = 41
+		y = 9
+		cost = 5
+		prerequisite = { focus = USR_the_executive_ultimatum }
+		mutually_exclusive = {
+			focus = USR_government_capitulates
+			focus = USR_uneasy_compromise
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_war_support = 0.10
+			country_event = { id = usr_sovoil_coup.7 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# POST-COUP PATH 1: THE UNION IS OUR GREATEST ASSET
+	# SovOil captures the state but preserves Soviet institutions
+	# ================================================================
+
+	focus = {
+		id = USR_union_greatest_asset
+		icon = GFX_goal_generic_production
+		x = 34
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_government_capitulates }
+		mutually_exclusive = { focus = USR_corporation_is_state }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 75
+			add_to_variable = { sovoil_state_influence = 10 }
+		}
+	}
+	focus = {
+		id = USR_preserve_red_banner
+		icon = GFX_goal_support_communism
+		x = 33
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_union_greatest_asset }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = USR_supreme_soviet_specialists
+		icon = GFX_goal_generic_scientific_exchange
+		x = 35
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_union_greatest_asset }
+		completion_reward = {
+			add_research_slot = 1
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = USR_replace_ministers_directors
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 33
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_preserve_red_banner }
+		completion_reward = {
+			add_ideas = USR_corporate_governance
+			add_to_variable = { sovoil_state_influence = 10 }
+		}
+	}
+	focus = {
+		id = USR_the_managed_republics
+		icon = GFX_goal_generic_demand_territory
+		x = 35
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_supreme_soviet_specialists }
+		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = USR_socialism_by_contract
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 34
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = USR_replace_ministers_directors
+			focus = USR_the_managed_republics
+		}
+		completion_reward = {
+			add_ideas = USR_socialism_by_contract_spirit
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = USR_continental_development_plan
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 34
+		y = 14
+		cost = 10
+		prerequisite = { focus = USR_socialism_by_contract }
+		completion_reward = {
+			219 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+			571 = { add_building_construction = { type = infrastructure level = 2 instant_build = yes } }
+			403 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+		}
+	}
+	focus = {
+		id = USR_corporate_union_treaty
+		icon = GFX_goal_generic_improve_relations
+		x = 34
+		y = 15
+		cost = 10
+		prerequisite = { focus = USR_continental_development_plan }
+		completion_reward = {
+			add_ideas = USR_managed_corporate_union
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = USR_union_incorporated
+		icon = GFX_goal_generic_major_war
+		x = 34
+		y = 16
+		cost = 14
+		prerequisite = { focus = USR_corporate_union_treaty }
+		completion_reward = {
+			add_ideas = USR_union_incorporated_spirit
+			add_stability = 0.05
+			add_war_support = 0.05
+			country_event = { id = usr_sovoil_coup.8 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# POST-COUP PATH 2: THE CORPORATION IS THE STATE
+	# SovOil abandons the Soviet fiction — full corporate sovereignty
+	# ================================================================
+
+	focus = {
+		id = USR_corporation_is_state
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 40
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_government_capitulates }
+		mutually_exclusive = { focus = USR_union_greatest_asset }
+		completion_reward = {
+			add_stability = -0.08
+			add_war_support = 0.05
+			add_to_variable = { sovoil_state_influence = 15 }
+		}
+	}
+	focus = {
+		id = USR_dissolve_supreme_soviet
+		icon = GFX_goal_generic_dangerous_deal
+		x = 39
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_corporation_is_state }
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = 75
+			add_to_variable = { sovoil_state_influence = 10 }
+		}
+	}
+	focus = {
+		id = USR_corporate_security_state
+		icon = GFX_goal_generic_army_doctrines
+		x = 41
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_corporation_is_state }
+		completion_reward = {
+			add_ideas = USR_corporate_security_apparatus
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = USR_liquidate_federal_ministries
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 39
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_dissolve_supreme_soviet }
+		completion_reward = {
+			add_political_power = 100
+			add_to_variable = { sovoil_state_influence = 10 }
+		}
+	}
+	focus = {
+		id = USR_citizens_employees_clients
+		icon = GFX_goal_generic_consumer_goods
+		x = 41
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_corporate_security_state }
+		completion_reward = {
+			add_stability = -0.05
+			add_manpower = -50000
+			add_ideas = USR_corporate_citizenship
+		}
+	}
+	focus = {
+		id = USR_acquire_the_republics
+		icon = GFX_goal_generic_territory_or_war
+		x = 39
+		y = 13
+		cost = 10
+		prerequisite = { focus = USR_liquidate_federal_ministries }
+		completion_reward = {
+			add_stability = -0.08
+			add_war_support = 0.05
+			add_to_variable = { sovoil_state_influence = 15 }
+		}
+	}
+	focus = {
+		id = USR_merge_gazprom
+		icon = GFX_goal_generic_oil_refinery
+		x = 41
+		y = 13
+		cost = 10
+		prerequisite = { focus = USR_citizens_employees_clients }
+		completion_reward = {
+			add_ideas = USR_total_energy_monopoly
+			add_fuel = 10000
+			add_resource = { type = oil amount = 10 state = 571 }
+		}
+	}
+	focus = {
+		id = USR_sovereignty_through_energy
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 40
+		y = 14
+		cost = 10
+		prerequisite = {
+			focus = USR_acquire_the_republics
+			focus = USR_merge_gazprom
+		}
+		completion_reward = {
+			add_ideas = USR_energy_sovereignty_spirit
+			add_to_variable = { sovoil_state_influence = 10 }
+		}
+	}
+	focus = {
+		id = USR_proclaim_sovoil_eurasia
+		icon = GFX_goal_generic_major_war
+		x = 40
+		y = 15
+		cost = 10
+		prerequisite = { focus = USR_sovereignty_through_energy }
+		completion_reward = {
+			set_cosmetic_tag = USR_sovoil_eurasia
+			add_stability = -0.10
+			add_war_support = 0.10
+			country_event = { id = usr_sovoil_coup.9 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_world_runs_on_sovoil
+		icon = GFX_goal_generic_major_war
+		x = 40
+		y = 16
+		cost = 14
+		prerequisite = { focus = USR_proclaim_sovoil_eurasia }
+		completion_reward = {
+			add_ideas = USR_world_runs_on_sovoil_spirit
+			add_stability = 0.05
+			add_war_support = 0.10
+			add_political_power = 150
+			country_event = { id = usr_sovoil_coup.10 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# COMPROMISE PATH — Corporate-State Dual Power
+	# ================================================================
+
+	focus = {
+		id = USR_dual_power_regime
+		icon = GFX_goal_generic_dangerous_deal
+		x = 38
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_uneasy_compromise }
+		completion_reward = {
+			add_stability = 0.03
+			add_to_variable = { sovoil_state_influence = 5 }
+		}
+	}
+	focus = {
+		id = USR_consolidate_corporate_authority
+		icon = GFX_goal_generic_forceful_treaty
+		x = 38
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_dual_power_regime }
+		completion_reward = {
+			add_political_power = 75
+			add_to_variable = { sovoil_state_influence = 10 }
+		}
+	}
+	focus = {
+		id = USR_remove_the_old_guard
+		icon = GFX_goal_generic_political_pressure
+		x = 38
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_consolidate_corporate_authority }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = USR_corporate_state_dual_power
+				add_idea = USR_sovoil_executive_government
+			}
+			add_stability = 0.05
+			add_to_variable = { sovoil_state_influence = 15 }
+		}
+	}
+
+	# ================================================================
+	# ENERGY WAR PATH — The Coup Fails, Civil War Erupts
+	# ================================================================
+
+	focus = {
+		id = USR_mobilize_energy_guard
+		icon = GFX_goal_generic_army_doctrines
+		x = 44
+		y = 10
+		cost = 5
+		prerequisite = { focus = USR_the_energy_war }
+		completion_reward = {
+			add_manpower = 100000
+			add_war_support = 0.10
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USR_secure_the_oil_fields
+		icon = GFX_goal_generic_oil_refinery
+		x = 44
+		y = 11
+		cost = 7
+		prerequisite = { focus = USR_mobilize_energy_guard }
+		completion_reward = {
+			add_fuel = 10000
+			add_resource = { type = oil amount = 10 state = 571 }
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = USR_corporate_victory
+		icon = GFX_goal_generic_major_war
+		x = 44
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_secure_the_oil_fields }
+		available = {
+			NOT = { has_civil_war = yes }
+		}
+		completion_reward = {
+			add_ideas = USR_sovoil_executive_government
+			add_stability = 0.10
+			add_war_support = 0.05
+			add_political_power = 100
+		}
+	}
+
+	# ================================================================
+	# OPERATION BLUE DAWN — DEMOCRATIC RESTORATION
+	# Military-Gazprom conspiracy to overthrow the Supreme Soviet
+	# and restore constitutional government
+	# ================================================================
+
+	# --- Act I: The Democratic Conspiracy ---
+
+	focus = {
+		id = USR_union_approaches_collapse
+		icon = GFX_goal_generic_dangerous_deal
+		x = 50
+		y = 2
+		cost = 10
+		prerequisite = { focus = USR_congress_of_republics }
+		mutually_exclusive = {
+			focus = USR_renew_the_union_treaty
+			focus = USR_cybernetic_socialism
+			focus = USR_restore_security_state
+			focus = USR_sovoil_ascendancy
+			focus = USR_republican_confederation
+			focus = USR_revolutionary_internationalism
+			focus = USR_the_congress_deadlocks
+		}
+		completion_reward = {
+			remove_ideas = USR_fragile_union
+			add_stability = -0.10
+			add_war_support = 0.05
+			country_event = { id = usr_blue_dawn.1 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_officers_petition
+		icon = GFX_goal_generic_army_doctrines
+		x = 50
+		y = 3
+		cost = 10
+		prerequisite = { focus = USR_union_approaches_collapse }
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 50
+			army_experience = 15
+		}
+	}
+	focus = {
+		id = USR_democratic_military_committee
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 50
+		y = 4
+		cost = 10
+		prerequisite = { focus = USR_officers_petition }
+		prerequisite = { focus = USR_review_general_staff }
+		completion_reward = {
+			add_ideas = USR_democratic_conspiracy_spirit
+			set_variable = { USR_blue_dawn_readiness = 10 }
+		}
+	}
+	focus = {
+		id = USR_gazprom_joins_conspiracy
+		icon = GFX_goal_generic_oil_refinery
+		x = 50
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_democratic_military_committee }
+		prerequisite = { focus = USR_audit_gas_directorate }
+		completion_reward = {
+			add_ideas = USR_gazprom_support_spirit
+			add_to_variable = { USR_blue_dawn_readiness = 10 }
+			add_fuel = 5000
+			country_event = { id = usr_blue_dawn.2 days = 1 }
+		}
+	}
+
+	# --- Political Preparation Branch ---
+
+	focus = {
+		id = USR_contact_democratic_opposition
+		icon = GFX_goal_generic_political_pressure
+		x = 48
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_gazprom_joins_conspiracy }
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = { USR_blue_dawn_readiness = 8 }
+		}
+	}
+	focus = {
+		id = USR_promise_free_elections
+		icon = GFX_goal_generic_national_unity
+		x = 48
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_contact_democratic_opposition }
+		completion_reward = {
+			add_stability = 0.05
+			add_to_variable = { USR_blue_dawn_readiness = 10 }
+		}
+	}
+	focus = {
+		id = USR_guarantees_to_republics
+		icon = GFX_goal_generic_improve_relations
+		x = 48
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_promise_free_elections }
+		completion_reward = {
+			add_ideas = USR_democratic_legitimacy_spirit
+			add_stability = 0.05
+			add_to_variable = { USR_blue_dawn_readiness = 12 }
+		}
+	}
+
+	# --- Military Preparation Branch ---
+
+	focus = {
+		id = USR_secure_general_staff
+		icon = GFX_goal_generic_army_doctrines
+		x = 50
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_gazprom_joins_conspiracy }
+		completion_reward = {
+			army_experience = 25
+			add_to_variable = { USR_blue_dawn_readiness = 8 }
+		}
+	}
+	focus = {
+		id = USR_loyal_officers_moscow
+		icon = GFX_goal_generic_position_armies
+		x = 50
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_secure_general_staff }
+		completion_reward = {
+			add_manpower = 50000
+			add_to_variable = { USR_blue_dawn_readiness = 10 }
+		}
+	}
+	focus = {
+		id = USR_prepare_capital_garrison
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 50
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_loyal_officers_moscow }
+		completion_reward = {
+			add_war_support = 0.05
+			add_to_variable = { USR_blue_dawn_readiness = 12 }
+		}
+	}
+
+	# --- Energy Preparation Branch ---
+
+	focus = {
+		id = USR_blue_flame_protocol
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 52
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_gazprom_joins_conspiracy }
+		completion_reward = {
+			add_fuel = 3000
+			add_to_variable = { USR_blue_dawn_readiness = 8 }
+		}
+	}
+	focus = {
+		id = USR_cut_sovoil_from_grid
+		icon = GFX_goal_generic_forceful_treaty
+		x = 52
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_blue_flame_protocol }
+		completion_reward = {
+			add_to_variable = { sovoil_state_influence = -20 }
+			add_to_variable = { USR_blue_dawn_readiness = 10 }
+		}
+	}
+	focus = {
+		id = USR_fuel_loyal_divisions
+		icon = GFX_goal_generic_oil_refinery
+		x = 52
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_cut_sovoil_from_grid }
+		completion_reward = {
+			add_fuel = 8000
+			add_to_variable = { USR_blue_dawn_readiness = 12 }
+			add_ideas = USR_blue_flame_active_spirit
+		}
+	}
+
+	# --- Act II: Operation Blue Dawn ---
+
+	focus = {
+		id = USR_operation_blue_dawn
+		icon = GFX_goal_generic_major_war
+		x = 50
+		y = 9
+		cost = 7
+		prerequisite = { focus = USR_guarantees_to_republics }
+		prerequisite = { focus = USR_prepare_capital_garrison }
+		prerequisite = { focus = USR_fuel_loyal_divisions }
+		completion_reward = {
+			country_event = { id = usr_blue_dawn.3 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_moscow_ultimatum_democratic
+		icon = GFX_goal_generic_forceful_treaty
+		x = 50
+		y = 10
+		cost = 5
+		prerequisite = { focus = USR_operation_blue_dawn }
+		completion_reward = {
+			country_event = { id = usr_blue_dawn.4 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_democratic_restoration
+		icon = GFX_goal_generic_national_unity
+		x = 50
+		y = 11
+		cost = 7
+		prerequisite = { focus = USR_moscow_ultimatum_democratic }
+		completion_reward = {
+			add_ideas = USR_restoration_council
+			add_stability = -0.05
+			add_political_power = -50
+			country_event = { id = usr_blue_dawn.5 days = 1 }
+		}
+	}
+
+	# --- Act III: Defeating SovOil and Establishing Order ---
+
+	focus = {
+		id = USR_nationalize_sovoil
+		icon = GFX_goal_generic_oil_refinery
+		x = 48
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_democratic_restoration }
+		completion_reward = {
+			add_to_variable = { sovoil_state_influence = -50 }
+			add_stability = 0.05
+			add_resource = { type = oil amount = 10 state = 571 }
+			country_event = { id = usr_blue_dawn.6 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_gazprom_charter
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 50
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_democratic_restoration }
+		completion_reward = {
+			add_ideas = USR_gazprom_democratic_charter_spirit
+			add_stability = 0.03
+			country_event = { id = usr_blue_dawn.7 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_return_army_barracks
+		icon = GFX_goal_generic_army_doctrines
+		x = 52
+		y = 12
+		cost = 10
+		prerequisite = { focus = USR_democratic_restoration }
+		completion_reward = {
+			remove_ideas = USR_democratic_conspiracy_spirit
+			add_stability = 0.08
+			add_war_support = -0.05
+		}
+	}
+
+	# --- Act V: The Constitutional Convention ---
+
+	focus = {
+		id = USR_constitutional_convention
+		icon = GFX_goal_generic_demand_territory
+		x = 50
+		y = 13
+		cost = 14
+		prerequisite = { focus = USR_nationalize_sovoil }
+		prerequisite = { focus = USR_gazprom_charter }
+		prerequisite = { focus = USR_return_army_barracks }
+		completion_reward = {
+			remove_ideas = USR_restoration_council
+			add_stability = 0.10
+			add_political_power = 100
+			country_event = { id = usr_blue_dawn.8 days = 1 }
+		}
+	}
+
+	# --- Constitutional Choice: Two Paths (mutually exclusive) ---
+
+	focus = {
+		id = USR_one_federation_indivisible
+		icon = GFX_goal_generic_territory_or_war
+		x = 48
+		y = 14
+		cost = 10
+		prerequisite = { focus = USR_constitutional_convention }
+		mutually_exclusive = { focus = USR_right_of_republics }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.03
+		}
+	}
+	focus = {
+		id = USR_right_of_republics
+		icon = GFX_goal_generic_alliance
+		x = 52
+		y = 14
+		cost = 10
+		prerequisite = { focus = USR_constitutional_convention }
+		mutually_exclusive = { focus = USR_one_federation_indivisible }
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 50
+		}
+	}
+
+	# ================================================================
+	# PATH A: THE RUSSIAN FEDERATION
+	# No republic is released — one indivisible democratic federation
+	# ================================================================
+
+	focus = {
+		id = USR_constitution_every_republic
+		icon = GFX_goal_generic_national_unity
+		x = 47
+		y = 15
+		cost = 10
+		prerequisite = { focus = USR_one_federation_indivisible }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = USR_federal_citizenship
+		icon = GFX_goal_generic_improve_relations
+		x = 49
+		y = 15
+		cost = 10
+		prerequisite = { focus = USR_one_federation_indivisible }
+		completion_reward = {
+			add_manpower = 200000
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = USR_regional_parliaments
+		icon = GFX_goal_generic_political_pressure
+		x = 47
+		y = 16
+		cost = 10
+		prerequisite = { focus = USR_constitution_every_republic }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 75
+		}
+	}
+	focus = {
+		id = USR_integrate_republican_armies
+		icon = GFX_goal_generic_position_armies
+		x = 49
+		y = 16
+		cost = 10
+		prerequisite = { focus = USR_federal_citizenship }
+		completion_reward = {
+			add_manpower = 150000
+			army_experience = 25
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = USR_first_federal_elections
+		icon = GFX_goal_generic_national_unity
+		x = 48
+		y = 17
+		cost = 14
+		prerequisite = {
+			focus = USR_regional_parliaments
+			focus = USR_integrate_republican_armies
+		}
+		completion_reward = {
+			add_stability = 0.10
+			add_political_power = 100
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				communism = 15
+				neutrality = 10
+				democratic = 70
+				fascism = 5
+			}
+		}
+	}
+	focus = {
+		id = USR_the_russian_federation
+		icon = GFX_goal_generic_major_war
+		x = 48
+		y = 18
+		cost = 10
+		prerequisite = { focus = USR_first_federal_elections }
+		completion_reward = {
+			set_cosmetic_tag = USR_russian_federation
+			add_ideas = USR_russian_federation_spirit
+			add_stability = 0.05
+			country_event = { id = usr_blue_dawn.9 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_democracy_across_eurasia
+		icon = GFX_goal_generic_major_war
+		x = 48
+		y = 19
+		cost = 14
+		prerequisite = { focus = USR_the_russian_federation }
+		completion_reward = {
+			add_ideas = USR_democracy_eurasia_spirit
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 150
+		}
+	}
+
+	# ================================================================
+	# PATH B: THE COMMONWEALTH OF INDEPENDENT STATES
+	# Constituent republics released as democratic subjects
+	# ================================================================
+
+	focus = {
+		id = USR_recognize_ukrainian_sovereignty
+		icon = GFX_goal_generic_improve_relations
+		x = 51
+		y = 15
+		cost = 10
+		prerequisite = { focus = USR_right_of_republics }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = USR_minsk_commonwealth_conference
+		icon = GFX_goal_generic_alliance
+		x = 53
+		y = 15
+		cost = 10
+		prerequisite = { focus = USR_right_of_republics }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = USR_independence_baltic_republics
+		icon = GFX_goal_generic_demand_territory
+		x = 51
+		y = 16
+		cost = 10
+		prerequisite = { focus = USR_recognize_ukrainian_sovereignty }
+		completion_reward = {
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = USR_central_asian_settlement
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 53
+		y = 16
+		cost = 10
+		prerequisite = { focus = USR_minsk_commonwealth_conference }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = USR_commonwealth_defense_council
+		icon = GFX_goal_generic_army_doctrines
+		x = 51
+		y = 17
+		cost = 10
+		prerequisite = { focus = USR_independence_baltic_republics }
+		completion_reward = {
+			add_war_support = 0.08
+			army_experience = 20
+		}
+	}
+	focus = {
+		id = USR_common_economic_area
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 53
+		y = 17
+		cost = 10
+		prerequisite = { focus = USR_central_asian_settlement }
+		completion_reward = {
+			add_stability = 0.03
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = USR_commonwealth_charter
+		icon = GFX_goal_generic_national_unity
+		x = 52
+		y = 18
+		cost = 14
+		prerequisite = {
+			focus = USR_commonwealth_defense_council
+			focus = USR_common_economic_area
+		}
+		completion_reward = {
+			add_stability = 0.08
+			add_political_power = 100
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				communism = 10
+				neutrality = 10
+				democratic = 75
+				fascism = 5
+			}
+		}
+	}
+	focus = {
+		id = USR_commonwealth_independent_states
+		icon = GFX_goal_generic_major_war
+		x = 52
+		y = 19
+		cost = 10
+		prerequisite = { focus = USR_commonwealth_charter }
+		completion_reward = {
+			set_cosmetic_tag = USR_commonwealth_states
+			add_ideas = USR_commonwealth_spirit
+			add_stability = 0.05
+			country_event = { id = usr_blue_dawn.10 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_independent_not_divided
+		icon = GFX_goal_generic_major_war
+		x = 52
+		y = 20
+		cost = 14
+		prerequisite = { focus = USR_commonwealth_independent_states }
+		completion_reward = {
+			add_ideas = USR_free_commonwealth_spirit
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_political_power = 150
+		}
+	}
+
+	# ================================================================
+	# THE MONARCHIST CONSPIRACY
+	# Holy Russian Empire — Imperial restoration through civil war
+	# Branches from The Congress Deadlocks, mutually exclusive with
+	# the Eurasian Fourth Political Theory path.
+	# ================================================================
+
+	# --- Conspiracy Spine ---
+
+	focus = {
+		id = USR_whispers_old_empire
+		icon = GFX_goal_generic_propaganda
+		x = 60
+		y = 3
+		cost = 10
+		prerequisite = { focus = USR_the_congress_deadlocks }
+		mutually_exclusive = { focus = USR_failure_of_soviet_modernity focus = USR_imperial_current }
+		completion_reward = {
+			add_stability = -0.03
+			add_political_power = 25
+			set_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_cross_beneath_red_star
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 60
+		y = 4
+		cost = 10
+		prerequisite = { focus = USR_whispers_old_empire }
+		completion_reward = {
+			add_stability = -0.03
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_imperial_restoration_society
+		icon = GFX_goal_generic_dangerous_deal
+		x = 60
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_cross_beneath_red_star }
+		prerequisite = { focus = USR_review_general_staff }
+		completion_reward = {
+			add_ideas = USR_imperial_conspiracy_spirit
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+
+	# --- Dynastic Branch ---
+
+	focus = {
+		id = USR_search_genealogical_archives
+		icon = GFX_goal_generic_scientific_exchange
+		x = 58
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_imperial_restoration_society }
+		completion_reward = {
+			add_political_power = 25
+			add_to_variable = { USR_imperial_conspiracy = 3 }
+		}
+	}
+	focus = {
+		id = USR_contact_romanov_claimant
+		icon = GFX_goal_generic_improve_relations
+		x = 58
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_search_genealogical_archives }
+		completion_reward = {
+			add_political_power = 25
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_silence_rival_pretenders
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 58
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_contact_romanov_claimant }
+		completion_reward = {
+			add_stability = -0.02
+			add_to_variable = { USR_imperial_conspiracy = 3 }
+		}
+	}
+	focus = {
+		id = USR_emperor_in_waiting
+		icon = GFX_goal_generic_national_unity
+		x = 58
+		y = 9
+		cost = 10
+		prerequisite = { focus = USR_silence_rival_pretenders }
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_manifesto_russian_people
+		icon = GFX_goal_generic_propaganda
+		x = 58
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_emperor_in_waiting }
+		completion_reward = {
+			add_stability = 0.03
+			add_war_support = 0.03
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_blessing_of_patriarch
+		icon = GFX_goal_generic_national_unity
+		x = 58
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_manifesto_russian_people }
+		completion_reward = {
+			add_stability = 0.05
+			add_to_variable = { USR_imperial_conspiracy = 8 }
+		}
+	}
+
+	# --- Military Branch ---
+
+	focus = {
+		id = USR_officers_white_cause
+		icon = GFX_goal_generic_army_doctrines
+		x = 60
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_imperial_restoration_society }
+		completion_reward = {
+			army_experience = 15
+			add_to_variable = { USR_imperial_conspiracy = 3 }
+		}
+	}
+	focus = {
+		id = USR_veterans_border_wars
+		icon = GFX_goal_generic_position_armies
+		x = 60
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_officers_white_cause }
+		completion_reward = {
+			army_experience = 15
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_restore_imperial_guard
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 60
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_veterans_border_wars }
+		completion_reward = {
+			add_manpower = 50000
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_infiltrate_general_staff
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 60
+		y = 9
+		cost = 10
+		prerequisite = { focus = USR_restore_imperial_guard }
+		completion_reward = {
+			army_experience = 25
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_secure_western_garrisons
+		icon = GFX_goal_generic_position_armies
+		x = 60
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_infiltrate_general_staff }
+		completion_reward = {
+			add_war_support = 0.05
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_prepare_march_moscow
+		icon = GFX_goal_generic_major_war
+		x = 60
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_secure_western_garrisons }
+		completion_reward = {
+			add_war_support = 0.08
+			add_to_variable = { USR_imperial_conspiracy = 8 }
+		}
+	}
+
+	# --- Popular and Religious Branch ---
+
+	focus = {
+		id = USR_awaken_cossack_hosts
+		icon = GFX_goal_generic_cavalry
+		x = 62
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_imperial_restoration_society }
+		completion_reward = {
+			add_manpower = 25000
+			add_to_variable = { USR_imperial_conspiracy = 3 }
+		}
+	}
+	focus = {
+		id = USR_rural_brotherhoods
+		icon = GFX_goal_generic_national_unity
+		x = 62
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_awaken_cossack_hosts }
+		completion_reward = {
+			add_stability = 0.03
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_restore_old_processions
+		icon = GFX_goal_generic_propaganda
+		x = 62
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_rural_brotherhoods }
+		completion_reward = {
+			add_stability = 0.03
+			add_to_variable = { USR_imperial_conspiracy = 3 }
+		}
+	}
+	focus = {
+		id = USR_protect_monasteries
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 62
+		y = 9
+		cost = 10
+		prerequisite = { focus = USR_restore_old_processions }
+		completion_reward = {
+			add_stability = 0.03
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_prepare_imperial_provinces
+		icon = GFX_goal_generic_demand_territory
+		x = 62
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_protect_monasteries }
+		completion_reward = {
+			add_stability = 0.03
+			add_to_variable = { USR_imperial_conspiracy = 5 }
+		}
+	}
+	focus = {
+		id = USR_faith_tsar_fatherland
+		icon = GFX_goal_generic_national_unity
+		x = 62
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_prepare_imperial_provinces }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_to_variable = { USR_imperial_conspiracy = 8 }
+		}
+	}
+
+	# --- Conspiracy Convergence ---
+
+	focus = {
+		id = USR_government_discovers_conspiracy
+		icon = GFX_goal_generic_dangerous_deal
+		x = 60
+		y = 12
+		cost = 7
+		prerequisite = { focus = USR_blessing_of_patriarch }
+		prerequisite = { focus = USR_prepare_march_moscow }
+		prerequisite = { focus = USR_faith_tsar_fatherland }
+		prerequisite = { focus = USR_eurasian_defense_network }
+		completion_reward = {
+			add_stability = -0.10
+			add_war_support = 0.10
+			country_event = { id = usr_imperial.1 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_raise_imperial_standard
+		icon = GFX_goal_generic_major_war
+		x = 60
+		y = 13
+		cost = 5
+		prerequisite = { focus = USR_government_discovers_conspiracy }
+		completion_reward = {
+			country_event = { id = usr_imperial.2 days = 1 }
+		}
+	}
+
+	# ================================================================
+	# SOVIET EMPIRE PATH — Silent Authoritarian Takeover
+	# Marshal Voronin's Committee for Soviet Restoration
+	# No civil war: institutional capture → constitutional coup
+	# x=72 center, branches at x=66,69,75,78
+	# ================================================================
+
+	# --- Conspiracy Spine ---
+
+	focus = {
+		id = USR_imperial_current
+		icon = GFX_goal_generic_propaganda
+		x = 72
+		y = 3
+		cost = 10
+		prerequisite = { focus = USR_the_congress_deadlocks }
+		mutually_exclusive = { focus = USR_failure_of_soviet_modernity focus = USR_whispers_old_empire }
+		completion_reward = {
+			add_stability = -0.03
+			add_war_support = 0.05
+			set_variable = { soviet_imperial_influence = 5 }
+			set_variable = { federalist_suspicion = 0 }
+			custom_effect_tooltip = USR_imperial_current_tt
+		}
+	}
+	focus = {
+		id = USR_veterans_lost_superpower
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 72
+		y = 4
+		cost = 10
+		prerequisite = { focus = USR_imperial_current }
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 10000
+			add_to_variable = { soviet_imperial_influence = 5 }
+		}
+	}
+	focus = {
+		id = USR_committee_soviet_restoration
+		icon = GFX_goal_generic_dangerous_deal
+		x = 72
+		y = 5
+		cost = 10
+		prerequisite = { focus = USR_veterans_lost_superpower }
+		prerequisite = { focus = USR_review_general_staff }
+		completion_reward = {
+			add_ideas = USR_committee_restoration_spirit
+			add_to_variable = { soviet_imperial_influence = 5 }
+			create_country_leader = {
+				name = "Marshal Alexei Voronin"
+				desc = "POLITICS_VORONIN_DESC"
+				picture = "gfx/leaders/USR/Portrait_USR_Voronin.dds"
+				expire = "2099.1.1"
+				ideology = communism_subtype
+				traits = { }
+			}
+		}
+	}
+
+	# --- Party Takeover Branch (x=66) ---
+
+	focus = {
+		id = USR_place_loyalists_party
+		icon = GFX_goal_generic_demand_territory
+		x = 66
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_committee_soviet_restoration }
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = { soviet_imperial_influence = 3 }
+			add_to_variable = { federalist_suspicion = 2 }
+		}
+	}
+	focus = {
+		id = USR_control_appointment_committees
+		icon = GFX_goal_generic_intelligence_agency
+		x = 66
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_place_loyalists_party }
+		completion_reward = {
+			add_political_power = 40
+			add_to_variable = { soviet_imperial_influence = 4 }
+			add_to_variable = { federalist_suspicion = 2 }
+		}
+	}
+	focus = {
+		id = USR_discredit_reformist_bloc
+		icon = GFX_goal_generic_propaganda
+		x = 66
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_control_appointment_committees }
+		completion_reward = {
+			add_stability = -0.03
+			add_to_variable = { soviet_imperial_influence = 5 }
+			add_to_variable = { federalist_suspicion = 3 }
+		}
+	}
+	focus = {
+		id = USR_remove_republican_delegates
+		icon = GFX_goal_generic_neutrality_focus
+		x = 66
+		y = 9
+		cost = 10
+		prerequisite = { focus = USR_discredit_reformist_bloc }
+		completion_reward = {
+			add_stability = -0.05
+			add_to_variable = { soviet_imperial_influence = 5 }
+			add_to_variable = { federalist_suspicion = 5 }
+		}
+	}
+	focus = {
+		id = USR_control_the_presidium
+		icon = GFX_goal_generic_forceful_treaty
+		x = 66
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_remove_republican_delegates }
+		completion_reward = {
+			add_political_power = 75
+			add_to_variable = { soviet_imperial_influence = 6 }
+			add_to_variable = { federalist_suspicion = 3 }
+		}
+	}
+	focus = {
+		id = USR_majority_behind_closed_doors
+		icon = GFX_goal_generic_major_war
+		x = 66
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_control_the_presidium }
+		completion_reward = {
+			add_political_power = 100
+			add_to_variable = { soviet_imperial_influence = 8 }
+			custom_effect_tooltip = USR_party_captured_tt
+		}
+	}
+
+	# --- Military Takeover Branch (x=69) ---
+
+	focus = {
+		id = USR_marshals_circle
+		icon = GFX_goal_generic_build_tank
+		x = 69
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_committee_soviet_restoration }
+		completion_reward = {
+			add_war_support = 0.05
+			add_to_variable = { soviet_imperial_influence = 3 }
+			add_to_variable = { federalist_suspicion = 1 }
+		}
+	}
+	focus = {
+		id = USR_veterans_before_politicians
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 69
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_marshals_circle }
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 15000
+			add_to_variable = { soviet_imperial_influence = 4 }
+			add_to_variable = { federalist_suspicion = 2 }
+		}
+	}
+	focus = {
+		id = USR_promote_imperial_officers_se
+		icon = GFX_goal_generic_army_doctrines
+		x = 69
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_veterans_before_politicians }
+		completion_reward = {
+			army_experience = 25
+			add_to_variable = { soviet_imperial_influence = 5 }
+			add_to_variable = { federalist_suspicion = 3 }
+		}
+	}
+	focus = {
+		id = USR_restore_political_commissars
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 69
+		y = 9
+		cost = 10
+		prerequisite = { focus = USR_promote_imperial_officers_se }
+		completion_reward = {
+			add_war_support = 0.05
+			add_to_variable = { soviet_imperial_influence = 5 }
+			add_to_variable = { federalist_suspicion = 4 }
+		}
+	}
+	focus = {
+		id = USR_secure_moscow_military_district
+		icon = GFX_goal_generic_fortify_city
+		x = 69
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_restore_political_commissars }
+		completion_reward = {
+			add_war_support = 0.08
+			add_to_variable = { soviet_imperial_influence = 6 }
+			add_to_variable = { federalist_suspicion = 4 }
+		}
+	}
+	focus = {
+		id = USR_army_awaits_orders
+		icon = GFX_goal_generic_major_war
+		x = 69
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_secure_moscow_military_district }
+		completion_reward = {
+			add_war_support = 0.10
+			add_to_variable = { soviet_imperial_influence = 8 }
+			custom_effect_tooltip = USR_military_captured_tt
+		}
+	}
+
+	# --- Security Takeover Branch (x=75) ---
+
+	focus = {
+		id = USR_reorganize_state_security_se
+		icon = GFX_goal_generic_intelligence_agency
+		x = 75
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_committee_soviet_restoration }
+		completion_reward = {
+			add_stability = -0.03
+			add_to_variable = { soviet_imperial_influence = 3 }
+			add_to_variable = { federalist_suspicion = 2 }
+		}
+	}
+	focus = {
+		id = USR_directorate_imperial_unity
+		icon = GFX_goal_generic_intelligence_agency
+		x = 75
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_reorganize_state_security_se }
+		completion_reward = {
+			add_stability = -0.02
+			add_to_variable = { soviet_imperial_influence = 4 }
+			add_to_variable = { federalist_suspicion = 3 }
+		}
+	}
+	focus = {
+		id = USR_files_every_delegate
+		icon = GFX_goal_generic_dangerous_deal
+		x = 75
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_directorate_imperial_unity }
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = { soviet_imperial_influence = 5 }
+			add_to_variable = { federalist_suspicion = 5 }
+		}
+	}
+	focus = {
+		id = USR_intercept_republican_comms
+		icon = GFX_goal_generic_radar
+		x = 75
+		y = 9
+		cost = 10
+		prerequisite = { focus = USR_files_every_delegate }
+		completion_reward = {
+			add_stability = -0.03
+			add_to_variable = { soviet_imperial_influence = 5 }
+			add_to_variable = { federalist_suspicion = 4 }
+		}
+	}
+	focus = {
+		id = USR_arrest_democratic_organizers
+		icon = GFX_goal_generic_neutrality_focus
+		x = 75
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_intercept_republican_comms }
+		completion_reward = {
+			add_stability = -0.05
+			add_to_variable = { soviet_imperial_influence = 6 }
+			add_to_variable = { federalist_suspicion = 6 }
+		}
+	}
+	focus = {
+		id = USR_silence_the_federalists
+		icon = GFX_goal_generic_major_war
+		x = 75
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_arrest_democratic_organizers }
+		completion_reward = {
+			add_stability = -0.05
+			add_to_variable = { soviet_imperial_influence = 8 }
+			custom_effect_tooltip = USR_security_captured_tt
+		}
+	}
+
+	# --- Economic Takeover Branch (x=78) ---
+
+	focus = {
+		id = USR_control_strategic_ministries
+		icon = GFX_goal_generic_consumer_goods
+		x = 78
+		y = 6
+		cost = 10
+		prerequisite = { focus = USR_committee_soviet_restoration }
+		completion_reward = {
+			add_political_power = 40
+			add_to_variable = { soviet_imperial_influence = 3 }
+			add_to_variable = { federalist_suspicion = 1 }
+		}
+	}
+	focus = {
+		id = USR_directive_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 78
+		y = 7
+		cost = 10
+		prerequisite = { focus = USR_control_strategic_ministries }
+		completion_reward = {
+			add_political_power = 30
+			add_to_variable = { soviet_imperial_influence = 4 }
+			add_to_variable = { federalist_suspicion = 2 }
+		}
+	}
+	focus = {
+		id = USR_subordinate_gazprom_se
+		icon = GFX_goal_generic_oil_refinery
+		x = 78
+		y = 8
+		cost = 10
+		prerequisite = { focus = USR_directive_economy }
+		completion_reward = {
+			add_stability = -0.03
+			add_to_variable = { soviet_imperial_influence = 5 }
+			add_to_variable = { federalist_suspicion = 3 }
+		}
+	}
+	focus = {
+		id = USR_freeze_corporate_donations
+		icon = GFX_goal_generic_forceful_treaty
+		x = 78
+		y = 9
+		cost = 10
+		prerequisite = { focus = USR_subordinate_gazprom_se }
+		completion_reward = {
+			add_political_power = 50
+			add_to_variable = { soviet_imperial_influence = 5 }
+			add_to_variable = { federalist_suspicion = 4 }
+		}
+	}
+	focus = {
+		id = USR_break_sovoil_autonomy_se
+		icon = GFX_goal_generic_oil_refinery
+		x = 78
+		y = 10
+		cost = 10
+		prerequisite = { focus = USR_freeze_corporate_donations }
+		completion_reward = {
+			add_stability = -0.03
+			add_to_variable = { soviet_imperial_influence = 6 }
+			add_to_variable = { federalist_suspicion = 5 }
+		}
+	}
+	focus = {
+		id = USR_fuel_belongs_to_state
+		icon = GFX_goal_generic_major_war
+		x = 78
+		y = 11
+		cost = 10
+		prerequisite = { focus = USR_break_sovoil_autonomy_se }
+		completion_reward = {
+			add_to_variable = { soviet_imperial_influence = 8 }
+			custom_effect_tooltip = USR_economy_captured_tt
+		}
+	}
+
+	# --- The Coup ---
+
+	focus = {
+		id = USR_emergency_session
+		icon = GFX_goal_generic_dangerous_deal
+		x = 72
+		y = 12
+		cost = 5
+		prerequisite = { focus = USR_majority_behind_closed_doors }
+		prerequisite = { focus = USR_army_awaits_orders }
+		prerequisite = { focus = USR_silence_the_federalists }
+		prerequisite = { focus = USR_fuel_belongs_to_state }
+		prerequisite = { focus = USR_audit_strategic_economy }
+		completion_reward = {
+			add_political_power = -100
+			add_stability = -0.10
+			add_war_support = 0.10
+			country_event = { id = usr_soviet_empire.1 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_coup_without_gunfire
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 72
+		y = 13
+		cost = 5
+		prerequisite = { focus = USR_emergency_session }
+		completion_reward = {
+			country_event = { id = usr_soviet_empire.2 days = 1 }
+		}
+	}
+
+	# --- Post-Coup Transition ---
+
+	focus = {
+		id = USR_se_imperial_presidium
+		icon = GFX_goal_generic_forceful_treaty
+		x = 72
+		y = 14
+		cost = 10
+		prerequisite = { focus = USR_coup_without_gunfire }
+		completion_reward = {
+			add_ideas = USR_imperial_presidium_spirit
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = USR_end_federal_experiment
+		icon = GFX_goal_generic_demand_territory
+		x = 72
+		y = 15
+		cost = 10
+		prerequisite = { focus = USR_se_imperial_presidium }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = 0.05
+			add_to_variable = { soviet_imperial_influence = 5 }
+		}
+	}
+	focus = {
+		id = USR_republics_administrative_units
+		icon = GFX_goal_generic_neutrality_focus
+		x = 72
+		y = 16
+		cost = 10
+		prerequisite = { focus = USR_end_federal_experiment }
+		completion_reward = {
+			add_ideas = USR_centralized_republics_spirit
+			add_stability = -0.08
+			add_manpower = 50000
+		}
+	}
+	focus = {
+		id = USR_empire_workers_soldiers
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 72
+		y = 17
+		cost = 10
+		prerequisite = { focus = USR_republics_administrative_units }
+		completion_reward = {
+			add_war_support = 0.10
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = USR_red_imperial_constitution
+		icon = GFX_goal_generic_propaganda
+		x = 72
+		y = 18
+		cost = 10
+		prerequisite = { focus = USR_empire_workers_soldiers }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = USR_proclaim_soviet_empire
+		icon = GFX_goal_generic_major_war
+		x = 72
+		y = 19
+		cost = 10
+		prerequisite = { focus = USR_red_imperial_constitution }
+		completion_reward = {
+			country_event = { id = usr_soviet_empire.3 days = 1 }
+		}
+	}
+
+	# --- Red Fortress Branch (x=66) ---
+
+	focus = {
+		id = USR_se_imperial_general_staff
+		icon = GFX_goal_generic_army_doctrines
+		x = 66
+		y = 20
+		cost = 10
+		prerequisite = { focus = USR_proclaim_soviet_empire }
+		completion_reward = {
+			add_ideas = USR_se_general_staff_spirit
+			army_experience = 25
+		}
+	}
+	focus = {
+		id = USR_guards_army_every_region
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 66
+		y = 21
+		cost = 10
+		prerequisite = { focus = USR_se_imperial_general_staff }
+		completion_reward = {
+			add_manpower = 100000
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = USR_cybernetic_political_commissars
+		icon = GFX_goal_generic_radar
+		x = 66
+		y = 22
+		cost = 10
+		prerequisite = { focus = USR_guards_army_every_region }
+		completion_reward = {
+			add_ideas = USR_cybernetic_commissars_spirit
+		}
+	}
+	focus = {
+		id = USR_deep_battle_new_century
+		icon = GFX_goal_generic_army_doctrines
+		x = 66
+		y = 23
+		cost = 10
+		prerequisite = { focus = USR_cybernetic_political_commissars }
+		completion_reward = {
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = USR_deep_battle_discount
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = USR_continental_missile_shield
+		icon = GFX_goal_generic_air_fighter
+		x = 66
+		y = 24
+		cost = 10
+		prerequisite = { focus = USR_deep_battle_new_century }
+		completion_reward = {
+			add_ideas = USR_missile_shield_spirit
+			air_experience = 25
+		}
+	}
+	focus = {
+		id = USR_militarize_western_frontier
+		icon = GFX_goal_generic_fortify_city
+		x = 66
+		y = 25
+		cost = 10
+		prerequisite = { focus = USR_continental_missile_shield }
+		completion_reward = {
+			add_war_support = 0.08
+			195 = { add_building_construction = { type = bunker level = 3 instant_build = yes province = 3529 } }
+		}
+	}
+	focus = {
+		id = USR_no_republic_defy_moscow
+		icon = GFX_goal_generic_major_war
+		x = 66
+		y = 26
+		cost = 10
+		prerequisite = { focus = USR_militarize_western_frontier }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.10
+			add_manpower = 50000
+		}
+	}
+
+	# --- Imperial Planned Economy Branch (x=72) ---
+
+	focus = {
+		id = USR_allunion_planning_directorate
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 72
+		y = 20
+		cost = 10
+		prerequisite = { focus = USR_proclaim_soviet_empire }
+		completion_reward = {
+			add_ideas = USR_allunion_planning_spirit
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USR_integrate_gazprom_networks
+		icon = GFX_goal_generic_oil_refinery
+		x = 72
+		y = 21
+		cost = 10
+		prerequisite = { focus = USR_allunion_planning_directorate }
+		completion_reward = {
+			country_event = { id = usr_soviet_empire.4 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_se_nationalize_sovoil
+		icon = GFX_goal_generic_oil_refinery
+		x = 72
+		y = 22
+		cost = 10
+		prerequisite = { focus = USR_integrate_gazprom_networks }
+		completion_reward = {
+			country_event = { id = usr_soviet_empire.5 days = 1 }
+		}
+	}
+	focus = {
+		id = USR_siberian_industrial_corridor
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 72
+		y = 23
+		cost = 10
+		prerequisite = { focus = USR_se_nationalize_sovoil }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 2 instant_build = yes }
+			}
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USR_automated_military_production
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 72
+		y = 24
+		cost = 10
+		prerequisite = { focus = USR_siberian_industrial_corridor }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_core_of = ROOT }
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = { type = arms_factory level = 3 instant_build = yes }
+			}
+		}
+	}
+	focus = {
+		id = USR_consumer_sacrifice_imperial
+		icon = GFX_goal_generic_consumer_goods
+		x = 72
+		y = 25
+		cost = 10
+		prerequisite = { focus = USR_automated_military_production }
+		completion_reward = {
+			add_ideas = USR_consumer_sacrifice_spirit
+			add_stability = -0.10
+		}
+	}
+	focus = {
+		id = USR_arsenal_of_eurasia
+		icon = GFX_goal_generic_major_war
+		x = 72
+		y = 26
+		cost = 10
+		prerequisite = { focus = USR_consumer_sacrifice_imperial }
+		completion_reward = {
+			swap_ideas = { remove_idea = USR_consumer_sacrifice_spirit add_idea = USR_arsenal_eurasia_spirit }
+		}
+	}
+
+	# --- Eurasian Offensive Branch (x=78) ---
+
+	focus = {
+		id = USR_empire_no_natural_borders
+		icon = GFX_goal_generic_territory_or_war
+		x = 78
+		y = 20
+		cost = 10
+		prerequisite = { focus = USR_proclaim_soviet_empire }
+		completion_reward = {
+			add_war_support = 0.10
+			add_ideas = USR_eurasian_offensive_spirit
+		}
+	}
+	focus = {
+		id = USR_restore_western_security_zone
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 78
+		y = 21
+		cost = 10
+		prerequisite = { focus = USR_empire_no_natural_borders }
+		completion_reward = {
+			every_neighbor_country = {
+				limit = { is_in_europe = yes NOT = { tag = USR } }
+				add_opinion_modifier = { target = ROOT modifier = USR_western_security_zone }
+			}
+			create_wargoal = { type = annex_everything target = EEC }
+		}
+	}
+	focus = {
+		id = USR_ultimatum_european_borderlands
+		icon = GFX_goal_generic_demand_territory
+		x = 78
+		y = 22
+		cost = 10
+		prerequisite = { focus = USR_restore_western_security_zone }
+		completion_reward = {
+			POL = { country_event = { id = usr_soviet_empire.6 days = 5 } }
+			ROM = { country_event = { id = usr_soviet_empire.6 days = 5 } }
+			FIN = { country_event = { id = usr_soviet_empire.6 days = 5 } }
+		}
+	}
+	focus = {
+		id = USR_dominate_the_caucasus
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 78
+		y = 23
+		cost = 10
+		prerequisite = { focus = USR_ultimatum_european_borderlands }
+		completion_reward = {
+			add_war_support = 0.05
+			add_manpower = 25000
+		}
+	}
+	focus = {
+		id = USR_secure_persian_corridor
+		icon = GFX_goal_generic_territory_or_war
+		x = 78
+		y = 24
+		cost = 10
+		prerequisite = { focus = USR_dominate_the_caucasus }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = NIR }
+		}
+	}
+	focus = {
+		id = USR_contest_china_central_asia
+		icon = GFX_goal_generic_major_war
+		x = 78
+		y = 25
+		cost = 10
+		prerequisite = { focus = USR_secure_persian_corridor }
+		completion_reward = {
+			add_war_support = 0.08
+			create_wargoal = { type = annex_everything target = CHI }
+		}
+	}
+	focus = {
+		id = USR_red_pacific_strategy
+		icon = GFX_goal_generic_navy_battleship
+		x = 78
+		y = 26
+		cost = 10
+		prerequisite = { focus = USR_contest_china_central_asia }
+		completion_reward = {
+			navy_experience = 25
+			add_war_support = 0.05
+		}
+	}
+	focus = {
+		id = USR_se_break_atlantic_encirclement
+		icon = GFX_goal_generic_navy_cruiser
+		x = 78
+		y = 27
+		cost = 10
+		prerequisite = { focus = USR_red_pacific_strategy }
+		completion_reward = {
+			create_wargoal = { type = annex_everything target = NUS }
+			add_war_support = 0.10
+		}
+	}
+	focus = {
+		id = USR_world_continental_empires
+		icon = GFX_goal_generic_major_war
+		x = 78
+		y = 28
+		cost = 10
+		prerequisite = { focus = USR_se_break_atlantic_encirclement }
+		completion_reward = {
+			add_ideas = USR_red_colossus_spirit
+			add_war_support = 0.15
+			add_stability = 0.10
+		}
+	}
+}

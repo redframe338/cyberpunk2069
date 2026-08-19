@@ -1,0 +1,28 @@
+# AUTO-GENERATED map override: YUG -> EEC (Cyberpunk conversion). See docs/03.
+
+state={
+	id=803
+	name="STATE_803"
+
+	history={
+		victory_points = {
+			11857 1 
+		}
+		owner = EEC
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = EEC
+		add_core_of = EEC
+		}
+
+	provinces={
+		11832 11857 11868 
+	}
+	manpower=210000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=0.0 
+}

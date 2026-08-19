@@ -1,0 +1,42 @@
+SVO_permanent_union_loyalty_plan = {
+	name = "SovOil permanent Union loyalty"
+	desc = "SovOil is an instrument of Neo-Soviet strategy and will never pursue independence from the Union."
+
+	allowed = { original_tag = SVO }
+	enable = { always = yes }
+	abort = { always = no }
+
+	ai_national_focuses = { }
+	research = {
+		industry = 25
+		electronics = 10
+		infantry_weapons = 10
+	}
+	ideas = { }
+	traits = { }
+
+	ai_strategy = { type = support id = "USR" value = 1000 }
+	ai_strategy = { type = protect id = "USR" value = 500 }
+	ai_strategy = { type = declare_war id = "USR" value = -1000 }
+
+	weight = { factor = 1.0 }
+}
+
+USR_protect_sovoil_state_asset_plan = {
+	name = "Protect the SovOil state asset"
+	desc = "The Union regards SovOil as a loyal strategic arm whose territory and industry must be defended."
+
+	allowed = { original_tag = USR }
+	enable = { SVO = { is_subject_of = USR } }
+	abort = { NOT = { SVO = { is_subject_of = USR } } }
+
+	ai_national_focuses = { }
+	research = { industry = 10 }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = { type = support id = "SVO" value = 350 }
+	ai_strategy = { type = protect id = "SVO" value = 500 }
+
+	weight = { factor = 1.0 }
+}

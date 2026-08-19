@@ -1,0 +1,40 @@
+# AUTO-GENERATED map override: USA -> NUS (Cyberpunk conversion). See docs/03.
+state=
+{
+	id=638
+	name="STATE_638"
+	state_category = small_island
+	manpower=20000
+	history=
+	{
+		add_dynamic_modifier = { modifier = MLT_strategic_logistics_command_modifier }
+		owner = MLT
+		add_core_of = MLT
+		add_core_of = NUS
+		buildings = {
+			infrastructure = 5
+			dockyard = 2
+			arms_factory = 1
+			anti_air_building = 3
+			12140 = {
+				naval_base = 5
+			}
+		}
+		victory_points = {
+			12140 1
+		}
+
+		strategic_province_location = {
+			natural_harbor = 12140
+		}
+		strategic_state_location = {
+			favorable_approach = 12140
+		}
+
+	}
+	provinces={
+		12140
+	}
+
+	local_supplies=0.0 
+}

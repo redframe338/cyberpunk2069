@@ -1,0 +1,3 @@
+# OVERRIDE: disable the vanilla 1939 Blitzkrieg bookmark for the conversion.
+bookmarks = {
+}

@@ -1,0 +1,70 @@
+# European Economic Community starting army: exactly 40 divisions.
+# The template is intentionally conventional and moderate in size to keep the
+# starting scenario stable while giving the EEC a credible continental army.
+
+division_template = {
+	name = "EEC Continental Security Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = { name = "1st EEC Security Division"  location = 11506 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "2nd EEC Security Division"  location = 6521  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "3rd EEC Security Division"  location = 391   division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "4th EEC Security Division"  location = 9904  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "5th EEC Security Division"  location = 516   division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "6th EEC Security Division"  location = 3938  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "7th EEC Security Division"  location = 11542 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "8th EEC Security Division"  location = 6598  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "9th EEC Security Division"  location = 11666 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "10th EEC Security Division" location = 9764  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+
+	division = { name = "11th EEC Security Division" location = 11506 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "12th EEC Security Division" location = 6521  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "13th EEC Security Division" location = 391   division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "14th EEC Security Division" location = 9904  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "15th EEC Security Division" location = 516   division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "16th EEC Security Division" location = 3938  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "17th EEC Security Division" location = 11542 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "18th EEC Security Division" location = 6598  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "19th EEC Security Division" location = 11666 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "20th EEC Security Division" location = 9764  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+
+	division = { name = "21st EEC Security Division" location = 11506 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "22nd EEC Security Division" location = 6521  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "23rd EEC Security Division" location = 391   division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "24th EEC Security Division" location = 9904  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "25th EEC Security Division" location = 516   division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "26th EEC Security Division" location = 3938  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "27th EEC Security Division" location = 11542 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "28th EEC Security Division" location = 6598  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "29th EEC Security Division" location = 11666 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "30th EEC Security Division" location = 9764  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+
+	division = { name = "31st EEC Security Division" location = 11506 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "32nd EEC Security Division" location = 6521  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "33rd EEC Security Division" location = 391   division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "34th EEC Security Division" location = 9904  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "35th EEC Security Division" location = 516   division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "36th EEC Security Division" location = 3938  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "37th EEC Security Division" location = 11542 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "38th EEC Security Division" location = 6598  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "39th EEC Security Division" location = 11666 division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+	division = { name = "40th EEC Security Division" location = 9764  division_template = "EEC Continental Security Division" start_experience_factor = 0.35 }
+}

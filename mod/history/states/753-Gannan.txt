@@ -1,0 +1,54 @@
+# AUTO-GENERATED map override: XSM -> CHI (Cyberpunk conversion). See docs/03.
+state = {
+	id = 753
+	name = "STATE_753"
+	
+	manpower = 3000000
+	buildings_max_level_factor = 1.000
+	state_category = rural
+
+	history = {
+
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = CHI
+		add_core_of = CHI
+
+		victory_points = {
+			5193 1 # Minsien
+		}
+
+		buildings = {
+			infrastructure = 2
+		}
+
+		2101.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender"
+				}
+				transfer_state_to = SIC
+				add_core_of = CHI
+				remove_core_of = XSM
+			}
+		}
+
+		2101.10.25 = {
+		IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender" 
+				}
+				remove_core_of = SIC
+			}		
+			owner = CHI
+			controller = CHI
+		}
+
+	}
+
+	provinces = {
+		1257 2045 4375 4403 5193 9966 10787 10903 
+	}
+	local_supplies = 1.0 
+
+}

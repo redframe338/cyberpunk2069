@@ -1,0 +1,100 @@
+characters = {
+	ARK_adam_smasher = {
+		name = ARK_adam_smasher
+		portraits = {
+			army = {
+				large = GFX_portrait_ARK_adam_smasher
+				small = GFX_portrait_ARK_adam_smasher_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				trait_reckless
+				armor_officer
+				aggressive_assaulter
+			}
+			skill = 8
+			attack_skill = 9
+			defense_skill = 7
+			planning_skill = 5
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+
+	ARK_goro_takemura = {
+		name = ARK_goro_takemura
+		portraits = {
+			army = {
+				large = GFX_portrait_ARK_goro_takemura
+				small = GFX_portrait_ARK_goro_takemura_small
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				infantry_officer
+				defensive_doctrine
+				career_officer
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 7
+			planning_skill = 7
+			logistics_skill = 6
+			legacy_id = -1
+		}
+	}
+
+	ARK_masato_kuroda = {
+		name = ARK_masato_kuroda
+		portraits = { army = { large = GFX_portrait_ARK_masato_kuroda small = GFX_portrait_ARK_masato_kuroda_small } }
+		corps_commander = { traits = { brilliant_strategist armor_officer } skill = 6 attack_skill = 7 defense_skill = 5 planning_skill = 6 logistics_skill = 5 legacy_id = -1 }
+	}
+	ARK_akira_shibata = {
+		name = ARK_akira_shibata
+		portraits = { army = { large = GFX_portrait_ARK_akira_shibata small = GFX_portrait_ARK_akira_shibata_small } }
+		corps_commander = { traits = { trait_reckless aggressive_assaulter } skill = 6 attack_skill = 8 defense_skill = 4 planning_skill = 5 logistics_skill = 4 legacy_id = -1 }
+	}
+	ARK_naoki_hasegawa = {
+		name = ARK_naoki_hasegawa
+		portraits = { army = { large = GFX_portrait_ARK_naoki_hasegawa small = GFX_portrait_ARK_naoki_hasegawa_small } }
+		corps_commander = { traits = { infantry_officer defensive_doctrine } skill = 5 attack_skill = 4 defense_skill = 7 planning_skill = 6 logistics_skill = 5 legacy_id = -1 }
+	}
+	ARK_ryo_hayashi = {
+		name = ARK_ryo_hayashi
+		portraits = { army = { large = GFX_portrait_ARK_ryo_hayashi small = GFX_portrait_ARK_ryo_hayashi_small } }
+		corps_commander = { traits = { armor_officer career_officer } skill = 5 attack_skill = 6 defense_skill = 5 planning_skill = 5 logistics_skill = 6 legacy_id = -1 }
+	}
+	ARK_kazuki_arai = {
+		name = ARK_kazuki_arai
+		portraits = { army = { large = GFX_portrait_ARK_kazuki_arai small = GFX_portrait_ARK_kazuki_arai_small } }
+		corps_commander = { traits = { infantry_officer trait_cautious } skill = 5 attack_skill = 4 defense_skill = 7 planning_skill = 6 logistics_skill = 5 legacy_id = -1 }
+	}
+	ARK_takeshi_ono = {
+		name = ARK_takeshi_ono
+		portraits = { army = { large = GFX_portrait_ARK_takeshi_ono small = GFX_portrait_ARK_takeshi_ono_small } }
+		corps_commander = { traits = { brilliant_strategist infantry_officer } skill = 6 attack_skill = 6 defense_skill = 6 planning_skill = 7 logistics_skill = 5 legacy_id = -1 }
+	}
+	ARK_shun_okamoto = {
+		name = ARK_shun_okamoto
+		portraits = { army = { large = GFX_portrait_ARK_shun_okamoto small = GFX_portrait_ARK_shun_okamoto_small } }
+		corps_commander = { traits = { trait_engineer career_officer } skill = 5 attack_skill = 4 defense_skill = 6 planning_skill = 5 logistics_skill = 7 legacy_id = -1 }
+	}
+	ARK_tatsuya_fujii = {
+		name = ARK_tatsuya_fujii
+		portraits = { army = { large = GFX_portrait_ARK_tatsuya_fujii small = GFX_portrait_ARK_tatsuya_fujii_small } }
+		corps_commander = { traits = { trait_reckless armor_officer aggressive_assaulter } skill = 7 attack_skill = 8 defense_skill = 5 planning_skill = 6 logistics_skill = 5 legacy_id = -1 }
+	}
+	ARK_kohei_matsuda = {
+		name = ARK_kohei_matsuda
+		portraits = { army = { large = GFX_portrait_ARK_kohei_matsuda small = GFX_portrait_ARK_kohei_matsuda_small } }
+		corps_commander = { traits = { infantry_officer career_officer } skill = 5 attack_skill = 5 defense_skill = 6 planning_skill = 6 logistics_skill = 6 legacy_id = -1 }
+	}
+	ARK_isamu_nishimura = {
+		name = ARK_isamu_nishimura
+		portraits = { army = { large = GFX_portrait_ARK_isamu_nishimura small = GFX_portrait_ARK_isamu_nishimura_small } }
+		corps_commander = { traits = { brilliant_strategist defensive_doctrine } skill = 6 attack_skill = 5 defense_skill = 7 planning_skill = 7 logistics_skill = 5 legacy_id = -1 }
+	}
+}

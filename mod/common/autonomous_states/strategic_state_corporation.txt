@@ -1,0 +1,31 @@
+# A loyal state-owned strategic combine with internal operational autonomy.
+autonomy_state = {
+	id = autonomy_strategic_state_corporation
+
+	min_freedom_level = 0.20
+	manpower_influence = 0.05
+
+	rule = {
+		desc = "RULE_DESC_STRATEGIC_STATE_CORPORATION"
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+		can_create_factions = no
+	}
+
+	modifier = {
+		autonomy_manpower_share = 0.03
+		extra_trade_to_overlord_factor = 0.35
+		overlord_trade_cost_factor = -0.20
+		autonomy_gain_global_factor = -0.75
+	}
+
+	ai_subject_wants_higher = { factor = 0 }
+	ai_overlord_wants_lower = { factor = 1.50 }
+	ai_overlord_wants_garrison = { always = no }
+	allowed = { always = yes }
+	can_take_level = { always = no }
+	can_lose_level = { always = yes }
+}

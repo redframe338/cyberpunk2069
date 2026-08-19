@@ -1,0 +1,147 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_cyberpunk_2069_logo"
+		textureFile = "gfx/interface/frontend/cyberpunk_2069_logo.dds"
+	}
+
+	textSpriteType = {
+		name = "GFX_cyberpunk_menu_button"
+		textureFile = "gfx/interface/frontend/cyberpunk_menu_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_menu_panel"
+		textureFile = "gfx/interface/frontend/cyberpunk_menu_panel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_country_setup"
+		textureFile = "gfx/interface/frontend/cyberpunk_country_setup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_roster_panel"
+		textureFile = "gfx/interface/frontend/cyberpunk_roster_panel.dds"
+	}
+
+	textSpriteType = {
+		name = "GFX_cyberpunk_compact_button"
+		textureFile = "gfx/interface/frontend/cyberpunk_compact_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_cyberpunk_small_button"
+		textureFile = "gfx/interface/frontend/cyberpunk_small_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_cyberpunk_tiny_button"
+		textureFile = "gfx/interface/frontend/cyberpunk_tiny_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_checkbox"
+		textureFile = "gfx/interface/frontend/cyberpunk_checkbox.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_rules_panel"
+		textureFile = "gfx/interface/frontend/cyberpunk_rules_panel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_random_panel"
+		textureFile = "gfx/interface/frontend/cyberpunk_random_panel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_rule_row"
+		textureFile = "gfx/interface/frontend/cyberpunk_rule_row.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_rule_header"
+		textureFile = "gfx/interface/frontend/cyberpunk_rule_header.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_dropdown_bg"
+		textureFile = "gfx/interface/frontend/cyberpunk_dropdown_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_dropdown_panel"
+		textureFile = "gfx/interface/frontend/cyberpunk_dropdown_panel.dds"
+	}
+
+	textSpriteType = {
+		name = "GFX_play_button"
+		textureFile = "gfx/interface/frontend/cyberpunk_play_button.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_play_button_ready"
+		textureFile = "gfx/interface/frontend/cyberpunk_play_button_ready.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+
+	textSpriteType = {
+		name = "GFX_cyberpunk_difficulty_button"
+		textureFile = "gfx/interface/frontend/cyberpunk_difficulty_button.dds"
+		noOfFrames = 2
+	}
+
+	textSpriteType = {
+		name = "GFX_cyberpunk_custom_settings_button"
+		textureFile = "gfx/interface/frontend/cyberpunk_custom_settings_button.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_country_details_panel"
+		textureFile = "gfx/interface/frontend/cyberpunk_country_details_panel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_gameplay_panel"
+		textureFile = "gfx/interface/frontend/cyberpunk_gameplay_panel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_game_settings_panel"
+		textureFile = "gfx/interface/frontend/cyberpunk_game_settings_panel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_cyberpunk_country_entry"
+		textureFile = "gfx/interface/frontend/cyberpunk_country_entry.dds"
+	}
+}
+
+bitmapfonts = {
+	bitmapfont = {
+		name = "cyberpunk_country_20b"
+		fontfiles = { "gfx/fonts/hoi_20b" }
+		color = 0xFF3030ff
+		textcolors = {
+			G = { 255 48 48 }
+			R = { 255 48 48 }
+			Y = { 255 255 255 }
+			H = { 255 48 48 }
+			T = { 200 200 200 }
+			W = { 255 255 255 }
+		}
+	}
+}

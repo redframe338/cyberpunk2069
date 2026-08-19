@@ -1,0 +1,39 @@
+# AUTO-GENERATED map override: USA -> NUS (Cyberpunk conversion). See docs/03.
+state={
+	id=463
+	name="STATE_463"
+
+	history={
+		add_dynamic_modifier = { modifier = MLT_military_testing_grounds_modifier }
+		owner = MLT
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			anti_air_building = 2
+			air_base = 1
+			13091 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = MLT
+		add_core_of = NUS
+		victory_points = {
+			13090 1 
+		}
+		victory_points = {
+			13091 3 
+		}
+
+	}
+
+	provinces={
+		1135 1830 4833 4848 7855 7884 10679 10694 10707 12661 13069 13090 13091 13202 13203 
+	}
+	manpower=30000
+	buildings_max_level_factor=1
+	state_category="rural"
+
+	local_supplies=0.0 
+}

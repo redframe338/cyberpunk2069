@@ -1,0 +1,8 @@
+# Cyberpunk 2069 frontend theme.
+# This file intentionally uses the same relative path as vanilla music.asset,
+# so the vanilla maintheme is replaced instead of creating a duplicate asset.
+music = {
+	name = "maintheme"
+	file = "good_morning_night_city.ogg"
+	volume = 0.75
+}

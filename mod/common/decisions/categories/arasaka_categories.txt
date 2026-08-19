@@ -1,0 +1,27 @@
+arasaka_operations = {
+	icon = generic_political_actions
+
+	allowed = {
+		tag = ARK
+	}
+
+	visible = {
+		always = yes
+	}
+
+	priority = 50
+}
+
+arasaka_question = {
+	icon = generic_political_actions
+
+	allowed = {
+		tag = JAP
+	}
+
+	visible = {
+		always = yes
+	}
+
+	priority = 50
+}

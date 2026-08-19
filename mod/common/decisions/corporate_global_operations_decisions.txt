@@ -1,0 +1,106 @@
+corporate_global_operations = {
+
+	corporate_finance_host_civilian_industry = {
+		icon = generic_construction
+		cost = 60
+		days_remove = 90
+		days_re_enable = 270
+		fire_only_once = no
+
+		available = {
+			corporate_host_country_exists = yes
+			has_war = no
+		}
+
+		complete_effect = {
+			corporate_build_host_civilian_factory = yes
+			add_stability = 0.01
+		}
+
+		ai_will_do = {
+			factor = 1.1
+			modifier = {
+				factor = 0.25
+				has_war = yes
+			}
+		}
+	}
+
+	corporate_finance_host_military_industry = {
+		icon = generic_construction
+		cost = 75
+		days_remove = 110
+		days_re_enable = 300
+		fire_only_once = no
+
+		available = {
+			corporate_host_country_exists = yes
+		}
+
+		complete_effect = {
+			corporate_build_host_military_factory = yes
+			add_war_support = 0.01
+		}
+
+		ai_will_do = {
+			factor = 0.9
+			modifier = {
+				factor = 1.5
+				has_war = yes
+			}
+		}
+	}
+
+	corporate_finance_host_shipbuilding = {
+		icon = generic_naval
+		cost = 70
+		days_remove = 110
+		days_re_enable = 365
+		fire_only_once = no
+
+		available = {
+			corporate_host_country_exists = yes
+		}
+
+		complete_effect = {
+			corporate_build_host_dockyard = yes
+			navy_experience = 3
+		}
+
+		ai_will_do = {
+			factor = 0.45
+		}
+	}
+
+	corporate_launch_global_recruitment_drive = {
+		icon = generic_army_support
+		cost = 75
+		days_remove = 60
+		days_re_enable = 180
+		fire_only_once = no
+
+		available = {
+			has_capitulated = no
+		}
+
+		complete_effect = {
+			add_manpower = 125000
+			add_timed_idea = {
+				idea = corporate_global_recruitment_pipeline
+				days = 365
+			}
+		}
+
+		ai_will_do = {
+			factor = 1.25
+			modifier = {
+				factor = 2.0
+				has_war = yes
+			}
+			modifier = {
+				factor = 1.75
+				has_war = yes
+			}
+		}
+	}
+}

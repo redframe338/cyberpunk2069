@@ -1,0 +1,47 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_ARK_saburo_arasaka"
+		texturefile = "gfx/leaders/ARK/portrait_ARK_saburo_arasaka.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ARK_adam_smasher"
+		texturefile = "gfx/leaders/ARK/portrait_ARK_adam_smasher.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ARK_adam_smasher_small"
+		texturefile = "gfx/interface/ideas/portrait_ARK_adam_smasher_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ARK_goro_takemura"
+		texturefile = "gfx/leaders/ARK/portrait_ARK_goro_takemura.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ARK_goro_takemura_small"
+		texturefile = "gfx/interface/ideas/portrait_ARK_goro_takemura_small.dds"
+	}
+
+	spriteType = { name = "GFX_portrait_ARK_masato_kuroda" texturefile = "gfx/leaders/ARK/portrait_ARK_masato_kuroda.dds" }
+	spriteType = { name = "GFX_portrait_ARK_masato_kuroda_small" texturefile = "gfx/interface/ideas/portrait_ARK_masato_kuroda_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_akira_shibata" texturefile = "gfx/leaders/ARK/portrait_ARK_akira_shibata.dds" }
+	spriteType = { name = "GFX_portrait_ARK_akira_shibata_small" texturefile = "gfx/interface/ideas/portrait_ARK_akira_shibata_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_naoki_hasegawa" texturefile = "gfx/leaders/ARK/portrait_ARK_naoki_hasegawa.dds" }
+	spriteType = { name = "GFX_portrait_ARK_naoki_hasegawa_small" texturefile = "gfx/interface/ideas/portrait_ARK_naoki_hasegawa_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_ryo_hayashi" texturefile = "gfx/leaders/ARK/portrait_ARK_ryo_hayashi.dds" }
+	spriteType = { name = "GFX_portrait_ARK_ryo_hayashi_small" texturefile = "gfx/interface/ideas/portrait_ARK_ryo_hayashi_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_kazuki_arai" texturefile = "gfx/leaders/ARK/portrait_ARK_kazuki_arai.dds" }
+	spriteType = { name = "GFX_portrait_ARK_kazuki_arai_small" texturefile = "gfx/interface/ideas/portrait_ARK_kazuki_arai_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_takeshi_ono" texturefile = "gfx/leaders/ARK/portrait_ARK_takeshi_ono.dds" }
+	spriteType = { name = "GFX_portrait_ARK_takeshi_ono_small" texturefile = "gfx/interface/ideas/portrait_ARK_takeshi_ono_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_shun_okamoto" texturefile = "gfx/leaders/ARK/portrait_ARK_shun_okamoto.dds" }
+	spriteType = { name = "GFX_portrait_ARK_shun_okamoto_small" texturefile = "gfx/interface/ideas/portrait_ARK_shun_okamoto_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_tatsuya_fujii" texturefile = "gfx/leaders/ARK/portrait_ARK_tatsuya_fujii.dds" }
+	spriteType = { name = "GFX_portrait_ARK_tatsuya_fujii_small" texturefile = "gfx/interface/ideas/portrait_ARK_tatsuya_fujii_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_kohei_matsuda" texturefile = "gfx/leaders/ARK/portrait_ARK_kohei_matsuda.dds" }
+	spriteType = { name = "GFX_portrait_ARK_kohei_matsuda_small" texturefile = "gfx/interface/ideas/portrait_ARK_kohei_matsuda_small.dds" }
+	spriteType = { name = "GFX_portrait_ARK_isamu_nishimura" texturefile = "gfx/leaders/ARK/portrait_ARK_isamu_nishimura.dds" }
+	spriteType = { name = "GFX_portrait_ARK_isamu_nishimura_small" texturefile = "gfx/interface/ideas/portrait_ARK_isamu_nishimura_small.dds" }
+}

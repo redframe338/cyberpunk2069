@@ -1,0 +1,38 @@
+# AUTO-GENERATED map override: BRA -> OAS (Cyberpunk conversion). See docs/03.
+
+state = {
+	id = 943
+	name = "STATE_943"
+	manpower = 4603600
+	
+	state_category = town
+	
+	resources = {
+		steel = 1
+	}
+
+	history = {
+
+		owner = OAS
+		add_core_of = OAS
+
+		victory_points = {
+			10999 5
+		}
+
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			10999 = {
+				naval_base = 1
+			}
+		}
+		
+	}
+
+	provinces = {
+		2153 8196 10999
+	}
+
+	local_supplies = 0.0 
+}

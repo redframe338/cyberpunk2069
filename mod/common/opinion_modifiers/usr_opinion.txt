@@ -1,0 +1,6 @@
+opinion_modifiers = {
+	USR_energy_dialogue = { value = 25 }
+	USR_security_dialogue = { value = 15 }
+	USR_strategic_dialogue = { value = 10 }
+	USR_eurasian_hostility = { value = -75 }
+}

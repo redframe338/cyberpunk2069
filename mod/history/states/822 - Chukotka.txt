@@ -1,0 +1,23 @@
+# Cyberpunk override: Far Eastern Arctic Resource Zone
+state = {
+	id = 822
+	name = "STATE_822"
+	manpower = 25000
+	state_category = pastoral
+	resources = { oil = 45 }
+	history = {
+		add_dynamic_modifier = { modifier = SVO_arctic_energy_platform_modifier }
+		owner = SVO
+		add_core_of = SVO
+		add_core_of = USR
+		victory_points = { 13063 3 }
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			fuel_silo = 1
+			air_base = 1
+		}
+	}
+	provinces = { 4744 5264 13062 13063 }
+	local_supplies = 5.0
+}

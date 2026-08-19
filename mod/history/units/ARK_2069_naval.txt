@@ -1,0 +1,468 @@
+# AUTO-GENERATED: Arasaka Corporate Oceanic Security Command
+# 400 flotilla counters represent a 2,000-vessel navy without exhausting startup RAM.
+units = {
+	fleet = {
+		name = "Arasaka Expeditionary Fleet 01"
+		naval_base = 11932
+		task_force = {
+			name = "Corporate Strike Group 01"
+			location = 11932
+			ship = { name = "ARK-CV-0001" definition = carrier pride_of_the_fleet = yes start_experience_factor = 1.0 equipment = { ship_hull_carrier_3 = { amount = 1 owner = ARK version_name = "Mikoshi Class" } } }
+			ship = { name = "ARK-BB-0001" definition = battleship start_experience_factor = 1.0 equipment = { ship_hull_heavy_4 = { amount = 1 owner = ARK version_name = "Kusanagi Class" } } }
+			ship = { name = "ARK-BB-0002" definition = battleship start_experience_factor = 1.0 equipment = { ship_hull_heavy_4 = { amount = 1 owner = ARK version_name = "Kusanagi Class" } } }
+			ship = { name = "ARK-CA-0001" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0002" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0003" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0004" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CL-0001" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0002" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0003" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0004" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0005" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0006" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0007" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0008" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-DD-0001" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0002" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0003" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0004" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0005" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0006" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0007" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0008" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0009" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0010" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0011" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0012" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0013" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0014" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0015" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0016" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0017" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0018" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0019" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0020" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0021" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0022" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0023" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0024" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0025" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0026" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0027" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0028" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0029" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0030" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0031" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0032" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0033" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0034" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0035" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+		}
+	}
+	fleet = {
+		name = "Arasaka Expeditionary Fleet 02"
+		naval_base = 11932
+		task_force = {
+			name = "Corporate Strike Group 02"
+			location = 11932
+			ship = { name = "ARK-CV-0002" definition = carrier start_experience_factor = 1.0 equipment = { ship_hull_carrier_3 = { amount = 1 owner = ARK version_name = "Mikoshi Class" } } }
+			ship = { name = "ARK-BB-0003" definition = battleship start_experience_factor = 1.0 equipment = { ship_hull_heavy_4 = { amount = 1 owner = ARK version_name = "Kusanagi Class" } } }
+			ship = { name = "ARK-BB-0004" definition = battleship start_experience_factor = 1.0 equipment = { ship_hull_heavy_4 = { amount = 1 owner = ARK version_name = "Kusanagi Class" } } }
+			ship = { name = "ARK-CA-0005" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0006" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0007" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0008" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CL-0009" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0010" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0011" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0012" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0013" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0014" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0015" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0016" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-DD-0036" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0037" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0038" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0039" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0040" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0041" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0042" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0043" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0044" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0045" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0046" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0047" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0048" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0049" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0050" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0051" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0052" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0053" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0054" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0055" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0056" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0057" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0058" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0059" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0060" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0061" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0062" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0063" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0064" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0065" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0066" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0067" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0068" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0069" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0070" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+		}
+	}
+	fleet = {
+		name = "Arasaka Expeditionary Fleet 03"
+		naval_base = 11932
+		task_force = {
+			name = "Corporate Strike Group 03"
+			location = 11932
+			ship = { name = "ARK-CV-0003" definition = carrier start_experience_factor = 1.0 equipment = { ship_hull_carrier_3 = { amount = 1 owner = ARK version_name = "Mikoshi Class" } } }
+			ship = { name = "ARK-BB-0005" definition = battleship start_experience_factor = 1.0 equipment = { ship_hull_heavy_4 = { amount = 1 owner = ARK version_name = "Kusanagi Class" } } }
+			ship = { name = "ARK-BB-0006" definition = battleship start_experience_factor = 1.0 equipment = { ship_hull_heavy_4 = { amount = 1 owner = ARK version_name = "Kusanagi Class" } } }
+			ship = { name = "ARK-CA-0009" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0010" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0011" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0012" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CL-0017" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0018" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0019" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0020" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0021" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0022" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0023" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0024" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-DD-0071" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0072" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0073" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0074" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0075" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0076" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0077" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0078" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0079" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0080" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0081" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0082" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0083" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0084" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0085" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0086" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0087" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0088" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0089" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0090" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0091" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0092" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0093" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0094" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0095" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0096" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0097" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0098" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0099" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0100" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0101" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0102" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0103" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0104" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0105" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+		}
+	}
+	fleet = {
+		name = "Arasaka Expeditionary Fleet 04"
+		naval_base = 11932
+		task_force = {
+			name = "Corporate Strike Group 04"
+			location = 11932
+			ship = { name = "ARK-CV-0004" definition = carrier start_experience_factor = 1.0 equipment = { ship_hull_carrier_3 = { amount = 1 owner = ARK version_name = "Mikoshi Class" } } }
+			ship = { name = "ARK-BB-0007" definition = battleship start_experience_factor = 1.0 equipment = { ship_hull_heavy_4 = { amount = 1 owner = ARK version_name = "Kusanagi Class" } } }
+			ship = { name = "ARK-BB-0008" definition = battleship start_experience_factor = 1.0 equipment = { ship_hull_heavy_4 = { amount = 1 owner = ARK version_name = "Kusanagi Class" } } }
+			ship = { name = "ARK-CA-0013" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0014" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0015" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CA-0016" definition = heavy_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Oni Class" } } }
+			ship = { name = "ARK-CL-0025" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0026" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0027" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0028" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0029" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0030" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0031" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-CL-0032" definition = light_cruiser start_experience_factor = 1.0 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = ARK version_name = "Kitsune Class" } } }
+			ship = { name = "ARK-DD-0106" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0107" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0108" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0109" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0110" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0111" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0112" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0113" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0114" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0115" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0116" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0117" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0118" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0119" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0120" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0121" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0122" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0123" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0124" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0125" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0126" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0127" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0128" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0129" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0130" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0131" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0132" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0133" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0134" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0135" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0136" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0137" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0138" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0139" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+			ship = { name = "ARK-DD-0140" definition = destroyer start_experience_factor = 1.0 equipment = { ship_hull_light_4 = { amount = 1 owner = ARK version_name = "Shinobi Class" } } }
+		}
+	}
+	fleet = {
+		name = "Arasaka Ghost Fleet 01"
+		naval_base = 11932
+		task_force = {
+			name = "Ghost Submarine Group 01"
+			location = 11932
+			ship = { name = "ARK-SS-0001" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0002" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0003" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0004" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0005" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0006" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0007" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0008" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0009" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0010" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0011" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0012" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0013" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0014" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0015" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0016" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0017" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0018" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0019" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0020" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0021" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0022" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0023" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0024" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0025" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0026" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0027" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0028" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0029" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0030" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0031" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0032" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0033" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0034" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0035" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0036" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0037" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0038" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0039" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0040" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0041" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0042" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0043" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0044" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0045" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0046" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0047" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0048" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0049" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0050" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+		}
+	}
+	fleet = {
+		name = "Arasaka Ghost Fleet 02"
+		naval_base = 11932
+		task_force = {
+			name = "Ghost Submarine Group 02"
+			location = 11932
+			ship = { name = "ARK-SS-0051" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0052" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0053" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0054" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0055" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0056" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0057" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0058" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0059" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0060" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0061" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0062" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0063" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0064" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0065" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0066" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0067" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0068" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0069" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0070" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0071" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0072" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0073" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0074" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0075" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0076" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0077" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0078" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0079" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0080" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0081" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0082" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0083" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0084" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0085" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0086" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0087" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0088" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0089" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0090" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0091" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0092" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0093" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0094" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0095" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0096" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0097" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0098" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0099" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0100" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+		}
+	}
+	fleet = {
+		name = "Arasaka Ghost Fleet 03"
+		naval_base = 11932
+		task_force = {
+			name = "Ghost Submarine Group 03"
+			location = 11932
+			ship = { name = "ARK-SS-0101" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0102" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0103" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0104" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0105" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0106" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0107" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0108" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0109" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0110" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0111" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0112" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0113" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0114" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0115" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0116" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0117" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0118" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0119" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0120" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0121" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0122" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0123" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0124" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0125" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0126" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0127" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0128" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0129" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0130" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0131" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0132" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0133" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0134" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0135" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0136" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0137" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0138" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0139" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0140" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0141" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0142" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0143" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0144" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0145" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0146" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0147" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0148" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0149" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0150" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+		}
+	}
+	fleet = {
+		name = "Arasaka Ghost Fleet 04"
+		naval_base = 11932
+		task_force = {
+			name = "Ghost Submarine Group 04"
+			location = 11932
+			ship = { name = "ARK-SS-0151" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0152" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0153" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0154" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0155" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0156" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0157" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0158" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0159" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0160" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0161" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0162" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0163" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0164" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0165" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0166" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0167" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0168" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0169" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0170" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0171" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0172" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0173" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0174" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0175" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0176" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0177" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0178" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0179" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0180" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0181" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0182" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0183" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0184" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0185" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0186" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0187" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0188" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0189" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0190" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0191" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0192" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0193" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0194" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0195" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0196" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0197" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0198" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0199" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+			ship = { name = "ARK-SS-0200" definition = submarine start_experience_factor = 1.0 equipment = { ship_hull_submarine_4 = { amount = 1 owner = ARK version_name = "Ghost Class" } } }
+		}
+	}
+}

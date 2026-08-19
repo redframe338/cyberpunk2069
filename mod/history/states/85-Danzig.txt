@@ -1,0 +1,40 @@
+# AUTO-GENERATED map override: POL -> EEC (Cyberpunk conversion). See docs/03.
+state = {
+	id = 85
+	name = "STATE_85"
+	manpower = 366730
+	
+	state_category = city
+
+	history = {
+
+		owner = EEC
+		add_core_of = EEC
+		add_core_of = EEC
+		add_core_of = EEC
+		victory_points = {
+			362 10 # Danzig
+		}
+		
+		set_demilitarized_zone = yes
+		
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 3
+			362 = {
+				naval_base = 5
+			}
+		}
+		
+		2101.3.12 = {
+			}
+	}
+
+	provinces = {
+		362
+	}
+
+	local_supplies = 0.0 
+}

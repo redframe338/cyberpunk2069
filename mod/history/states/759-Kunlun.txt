@@ -1,0 +1,50 @@
+# AUTO-GENERATED map override: SIK -> CHI (Cyberpunk conversion). See docs/03.
+state={
+	id=759
+	name="STATE_759"
+	provinces={
+		1698 2074 4947 5736  
+	}
+	manpower=70000
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+	history={
+
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = CHI
+		add_core_of = CHI
+
+		victory_points = {
+			2074 1 # Ruoqiang 
+		}
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		2101.1.1 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender" 
+				}
+				KHM = { transfer_state = PREV }
+				add_core_of = CHI
+			}
+		}
+
+		2101.10.25 = {
+			IF = {
+				limit = {
+					has_dlc = "No Compromise, No Surrender" 
+				}
+				remove_core_of = KHM
+			}	
+			owner = CHI
+			controller = CHI		
+		}
+
+	}
+
+	local_supplies=0.0 
+}

@@ -1,0 +1,48 @@
+KGT_chinese_defense_export_plan = {
+	name = "Kang Tao strategic defense export plan"
+	desc = "Prioritize smart weapons, drones, electronics, robotics, and the Chinese defense partnership."
+
+	allowed = { original_tag = KGT }
+	enable = { always = yes }
+	abort = { always = no }
+
+	ai_national_focuses = { }
+	research = {
+		electronics = 40
+		infantry_weapons = 30
+		industry = 25
+		artillery = 15
+		air_equipment = 10
+		armor = 2
+	}
+	ideas = { }
+	traits = { }
+
+	ai_strategy = { type = support id = "CHI" value = 500 }
+	ai_strategy = { type = protect id = "CHI" value = 250 }
+	ai_strategy = { type = support id = "ARK" value = 150 }
+	ai_strategy = { type = antagonize id = "MLT" value = 100 }
+	ai_strategy = { type = avoid_starting_wars value = -1000 }
+	ai_strategy = { type = conquer id = "CHI" value = -1000 }
+
+	weight = { factor = 1.0 }
+}
+
+CHI_kangtao_strategic_asset_plan = {
+	name = "Chinese Kang Tao strategic asset plan"
+	desc = "Protect and invest in Kang Tao while restraining excessive corporate influence."
+
+	allowed = { original_tag = CHI }
+	enable = { KGT = { is_subject_of = CHI } }
+	abort = { NOT = { KGT = { exists = yes } } }
+
+	ai_national_focuses = { }
+	research = { electronics = 20 infantry_weapons = 15 industry = 10 }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = { type = support id = "KGT" value = 350 }
+	ai_strategy = { type = protect id = "KGT" value = 500 }
+	ai_strategy = { type = declare_war id = "KGT" value = -1000 }
+	weight = { factor = 1.0 }
+}

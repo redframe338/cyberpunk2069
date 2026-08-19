@@ -1,0 +1,22 @@
+state = {
+	id = 530
+	name = "STATE_530"
+	manpower = 70000
+	state_category = town
+	history = {
+		add_dynamic_modifier = {
+			modifier = ARK_research_campus_modifier
+		}
+		owner = ARK
+		add_core_of = ARK
+		add_core_of = JAP
+		victory_points = { 4179 5 }
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 1
+		}
+	}
+	provinces = { 4094 4179 7046 7197 9965 11997 12028 }
+	local_supplies = 0.0
+}

@@ -1,0 +1,18 @@
+MTC_is_influence_supplier = { check_variable = { metacorp_federal_influence < 20 } }
+MTC_is_influence_contractor = {
+	check_variable = { metacorp_federal_influence > 19 }
+	check_variable = { metacorp_federal_influence < 40 }
+}
+MTC_is_influence_national_leader = {
+	check_variable = { metacorp_federal_influence > 39 }
+	check_variable = { metacorp_federal_influence < 60 }
+}
+MTC_is_influence_digital_backbone = {
+	check_variable = { metacorp_federal_influence > 59 }
+	check_variable = { metacorp_federal_influence < 80 }
+}
+MTC_is_influence_technology_giant = {
+	check_variable = { metacorp_federal_influence > 79 }
+	check_variable = { metacorp_federal_influence < 100 }
+}
+MTC_is_influence_digital_state = { check_variable = { metacorp_federal_influence > 99 } }

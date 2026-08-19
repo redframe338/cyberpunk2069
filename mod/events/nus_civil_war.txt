@@ -1,0 +1,410 @@
+add_namespace = nus_civil_war
+
+# ================================================================
+# NUS CIVIL WAR EVENTS
+# One flavor / trigger / victory event trio per ideological path.
+#
+# Militech (MLT) and Petrochem (PET) allegiance is decided by
+# comparing the four path-specific influence variables set and
+# grown by each path's focuses. Whichever path has courted a
+# corporation hardest wins its backing; if no path has bothered
+# (all variables tied at 0, as is typical for the Communist path)
+# the corporation defaults to opposing the government.
+# ================================================================
+
+# ----------------------------------------------------------------
+# PATH 1 — FASCIST UPRISING (America First Movement)
+# ----------------------------------------------------------------
+
+# 1. Flavor: The Nation Divides
+country_event = {
+	id = nus_civil_war.1
+	title = nus_civil_war.1.t
+	desc = nus_civil_war.1.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.1.a
+		add_stability = -0.02
+	}
+	option = {
+		name = nus_civil_war.1.b
+		add_political_power = 25
+	}
+}
+
+# 2. Trigger: March on Washington
+country_event = {
+	id = nus_civil_war.2
+	title = nus_civil_war.2.t
+	desc = nus_civil_war.2.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.2.a
+		custom_effect_tooltip = NUS_fascist_civil_war_erupts_tt
+
+		start_civil_war = {
+			ideology = neutrality
+			size = 0.5
+		}
+		set_country_flag = NUS_fascist_civil_war_started
+		add_stability = -0.10
+		add_war_support = 0.10
+
+		# --- Militech allegiance ---
+		if = {
+			limit = {
+				check_variable = { NUS_militech_fascist_influence > NUS_militech_corporate_influence }
+				check_variable = { NUS_militech_fascist_influence > NUS_militech_federalist_influence }
+				check_variable = { NUS_militech_fascist_influence > NUS_militech_communist_influence }
+			}
+			custom_effect_tooltip = NUS_militech_backs_movement_tt
+			add_ideas = NUS_militech_wartime_support
+			add_political_power = 75
+		}
+		else = {
+			custom_effect_tooltip = NUS_militech_backs_loyalists_tt
+			add_ideas = NUS_militech_wartime_defection
+			add_stability = -0.05
+		}
+
+		# --- Petrochem allegiance ---
+		if = {
+			limit = {
+				check_variable = { NUS_petrochem_fascist_influence > NUS_petrochem_corporate_influence }
+				check_variable = { NUS_petrochem_fascist_influence > NUS_petrochem_federalist_influence }
+				check_variable = { NUS_petrochem_fascist_influence > NUS_petrochem_communist_influence }
+			}
+			custom_effect_tooltip = NUS_petrochem_backs_movement_tt
+			add_ideas = NUS_petrochem_wartime_support
+			add_political_power = 75
+		}
+		else = {
+			custom_effect_tooltip = NUS_petrochem_backs_loyalists_tt
+			add_ideas = NUS_petrochem_wartime_defection
+			add_stability = -0.05
+		}
+	}
+}
+
+# 3. Victory: The Old Republic Falls
+country_event = {
+	id = nus_civil_war.3
+	title = nus_civil_war.3.t
+	desc = nus_civil_war.3.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.3.a
+		set_country_flag = NUS_fascist_war_won
+		add_stability = 0.08
+		add_war_support = 0.08
+		add_political_power = 100
+	}
+}
+
+# ----------------------------------------------------------------
+# PATH 2 — CORPORATE HOSTILE TAKEOVER (Accelerationist Manifesto)
+# ----------------------------------------------------------------
+
+# 4. Flavor: The Boardroom Coup
+country_event = {
+	id = nus_civil_war.4
+	title = nus_civil_war.4.t
+	desc = nus_civil_war.4.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.4.a
+		add_stability = -0.02
+	}
+	option = {
+		name = nus_civil_war.4.b
+		add_political_power = 25
+	}
+}
+
+# 5. Trigger: Hostile Takeover of the Republic
+country_event = {
+	id = nus_civil_war.5
+	title = nus_civil_war.5.t
+	desc = nus_civil_war.5.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.5.a
+		custom_effect_tooltip = NUS_corporate_civil_war_erupts_tt
+
+		start_civil_war = {
+			ideology = neutrality
+			size = 0.5
+		}
+		set_country_flag = NUS_corporate_civil_war_started
+		add_stability = -0.10
+		365 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+
+		# --- Militech allegiance ---
+		if = {
+			limit = {
+				check_variable = { NUS_militech_corporate_influence > NUS_militech_fascist_influence }
+				check_variable = { NUS_militech_corporate_influence > NUS_militech_federalist_influence }
+				check_variable = { NUS_militech_corporate_influence > NUS_militech_communist_influence }
+			}
+			custom_effect_tooltip = NUS_militech_backs_movement_tt
+			add_ideas = NUS_militech_wartime_support
+			add_political_power = 75
+		}
+		else = {
+			custom_effect_tooltip = NUS_militech_backs_loyalists_tt
+			add_ideas = NUS_militech_wartime_defection
+			add_stability = -0.05
+		}
+
+		# --- Petrochem allegiance ---
+		if = {
+			limit = {
+				check_variable = { NUS_petrochem_corporate_influence > NUS_petrochem_fascist_influence }
+				check_variable = { NUS_petrochem_corporate_influence > NUS_petrochem_federalist_influence }
+				check_variable = { NUS_petrochem_corporate_influence > NUS_petrochem_communist_influence }
+			}
+			custom_effect_tooltip = NUS_petrochem_backs_movement_tt
+			add_ideas = NUS_petrochem_wartime_support
+			add_political_power = 75
+		}
+		else = {
+			custom_effect_tooltip = NUS_petrochem_backs_loyalists_tt
+			add_ideas = NUS_petrochem_wartime_defection
+			add_stability = -0.05
+		}
+	}
+}
+
+# 6. Victory: The Shareholders Prevail
+country_event = {
+	id = nus_civil_war.6
+	title = nus_civil_war.6.t
+	desc = nus_civil_war.6.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.6.a
+		set_country_flag = NUS_corporate_war_won
+		add_stability = 0.08
+		366 = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } }
+		add_political_power = 100
+	}
+}
+
+# ----------------------------------------------------------------
+# PATH 3 — DEMOCRATIC REVOLUTION (Federalist Restoration)
+# ----------------------------------------------------------------
+
+# 7. Flavor: Voices in the Capitol
+country_event = {
+	id = nus_civil_war.7
+	title = nus_civil_war.7.t
+	desc = nus_civil_war.7.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.7.a
+		add_stability = 0.02
+	}
+	option = {
+		name = nus_civil_war.7.b
+		add_political_power = 25
+	}
+}
+
+# 8. Trigger: The Democratic Revolution
+country_event = {
+	id = nus_civil_war.8
+	title = nus_civil_war.8.t
+	desc = nus_civil_war.8.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.8.a
+		custom_effect_tooltip = NUS_federalist_civil_war_erupts_tt
+
+		start_civil_war = {
+			ideology = fascism
+			size = 0.5
+		}
+		set_country_flag = NUS_federalist_civil_war_started
+		add_stability = -0.08
+		add_war_support = 0.05
+
+		# --- Militech allegiance ---
+		if = {
+			limit = {
+				check_variable = { NUS_militech_federalist_influence > NUS_militech_fascist_influence }
+				check_variable = { NUS_militech_federalist_influence > NUS_militech_corporate_influence }
+				check_variable = { NUS_militech_federalist_influence > NUS_militech_communist_influence }
+			}
+			custom_effect_tooltip = NUS_militech_backs_movement_tt
+			add_ideas = NUS_militech_wartime_support
+			add_political_power = 75
+		}
+		else = {
+			custom_effect_tooltip = NUS_militech_backs_loyalists_tt
+			add_ideas = NUS_militech_wartime_defection
+			add_stability = -0.05
+		}
+
+		# --- Petrochem allegiance ---
+		if = {
+			limit = {
+				check_variable = { NUS_petrochem_federalist_influence > NUS_petrochem_fascist_influence }
+				check_variable = { NUS_petrochem_federalist_influence > NUS_petrochem_corporate_influence }
+				check_variable = { NUS_petrochem_federalist_influence > NUS_petrochem_communist_influence }
+			}
+			custom_effect_tooltip = NUS_petrochem_backs_movement_tt
+			add_ideas = NUS_petrochem_wartime_support
+			add_political_power = 75
+		}
+		else = {
+			custom_effect_tooltip = NUS_petrochem_backs_loyalists_tt
+			add_ideas = NUS_petrochem_wartime_defection
+			add_stability = -0.05
+		}
+	}
+}
+
+# 9. Victory: The Republic Endures
+country_event = {
+	id = nus_civil_war.9
+	title = nus_civil_war.9.t
+	desc = nus_civil_war.9.d
+	picture = GFX_report_event_generic_parliament
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.9.a
+		set_country_flag = NUS_federalist_war_won
+		add_stability = 0.10
+		add_war_support = 0.05
+		add_political_power = 100
+	}
+}
+
+# ----------------------------------------------------------------
+# PATH 4 — RED DAWN RISING (Workers' Revolution)
+# ----------------------------------------------------------------
+
+# 10. Flavor: The Workers Organize
+country_event = {
+	id = nus_civil_war.10
+	title = nus_civil_war.10.t
+	desc = nus_civil_war.10.d
+	picture = GFX_report_event_generic_strike
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.10.a
+		add_stability = -0.02
+	}
+	option = {
+		name = nus_civil_war.10.b
+		add_political_power = 25
+	}
+}
+
+# 11. Trigger: Red Dawn Rising
+country_event = {
+	id = nus_civil_war.11
+	title = nus_civil_war.11.t
+	desc = nus_civil_war.11.d
+	picture = GFX_report_event_generic_strike
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.11.a
+		custom_effect_tooltip = NUS_communist_civil_war_erupts_tt
+
+		start_civil_war = {
+			ideology = neutrality
+			size = 0.5
+		}
+		set_country_flag = NUS_communist_civil_war_started
+		add_stability = -0.12
+		add_war_support = 0.10
+
+		# --- Militech allegiance ---
+		if = {
+			limit = {
+				check_variable = { NUS_militech_communist_influence > NUS_militech_fascist_influence }
+				check_variable = { NUS_militech_communist_influence > NUS_militech_corporate_influence }
+				check_variable = { NUS_militech_communist_influence > NUS_militech_federalist_influence }
+			}
+			custom_effect_tooltip = NUS_militech_backs_movement_tt
+			add_ideas = NUS_militech_wartime_support
+			add_political_power = 75
+		}
+		else = {
+			custom_effect_tooltip = NUS_militech_backs_loyalists_tt
+			add_ideas = NUS_militech_wartime_defection
+			add_stability = -0.08
+		}
+
+		# --- Petrochem allegiance ---
+		if = {
+			limit = {
+				check_variable = { NUS_petrochem_communist_influence > NUS_petrochem_fascist_influence }
+				check_variable = { NUS_petrochem_communist_influence > NUS_petrochem_corporate_influence }
+				check_variable = { NUS_petrochem_communist_influence > NUS_petrochem_federalist_influence }
+			}
+			custom_effect_tooltip = NUS_petrochem_backs_movement_tt
+			add_ideas = NUS_petrochem_wartime_support
+			add_political_power = 75
+		}
+		else = {
+			custom_effect_tooltip = NUS_petrochem_backs_loyalists_tt
+			add_ideas = NUS_petrochem_wartime_defection
+			add_stability = -0.08
+		}
+	}
+}
+
+# 12. Victory: All Power to the Soviets
+country_event = {
+	id = nus_civil_war.12
+	title = nus_civil_war.12.t
+	desc = nus_civil_war.12.d
+	picture = GFX_report_event_generic_strike
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.12.a
+		set_country_flag = NUS_communist_war_won
+		add_stability = 0.08
+		add_war_support = 0.08
+		add_political_power = 100
+	}
+}
+
+# ----------------------------------------------------------------
+# 13. SHARED: Proclamation of the New Order
+# Fired by whichever path's final "proclaim" focus is completed.
+# ----------------------------------------------------------------
+country_event = {
+	id = nus_civil_war.13
+	title = nus_civil_war.13.t
+	desc = nus_civil_war.13.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+
+	option = {
+		name = nus_civil_war.13.a
+		custom_effect_tooltip = NUS_new_order_proclaimed_tt
+	}
+}

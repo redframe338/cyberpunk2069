@@ -1,0 +1,34 @@
+# AUTO-GENERATED map override: RAJ -> URB (Cyberpunk conversion). See docs/03.
+
+state={
+	id=434
+	name="STATE_434"
+	manpower = 200000
+	
+	state_category = wasteland
+	resources = {
+		tungsten = 49 # was: 54
+	}
+
+	history = {
+
+		owner = URB
+		add_core_of = URB
+		add_core_of = URB
+
+		buildings = {
+			infrastructure = 1
+		}
+
+		victory_points = {
+			1116 1 # Itanagar 
+		}
+
+	}
+
+	provinces = {
+		1116 1996 10810 12730
+	}
+
+	local_supplies = 0.0 
+}

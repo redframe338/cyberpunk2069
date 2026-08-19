@@ -1,0 +1,21 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ARK = {
+				set_variable = { arasaka_influence_japan = 40 }
+				ARK_update_influence_spirit = yes
+				country_event = { id = arasaka_japan.1 days = 30 }
+				country_event = { id = arasaka_japan.2 days = 90 }
+			}
+			JAP = {
+				set_variable = { arasaka_influence_japan = 40 }
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			ARK = { ARK_update_influence_spirit = yes }
+		}
+	}
+}

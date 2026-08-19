@@ -1,0 +1,183 @@
+ideas = {
+	country = {
+
+		# ================================================================
+		# USR CONSPIRACY PHASE (played while still Neo-Soviet)
+		# ================================================================
+
+		USR_imperial_conspiracy_spirit = {
+			allowed = { original_tag = USR }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				war_support_factor = 0.05
+				army_org_factor = 0.03
+			}
+		}
+
+		# ================================================================
+		# HOLY RUSSIAN EMPIRE SPIRITS
+		# ================================================================
+
+		# Uncrowned pretender — penalty until coronation
+		HRE_uncrowned_pretender = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				political_power_gain = -0.10
+				war_support_factor = 0.10
+				army_org_factor = 0.05
+			}
+		}
+
+		# Crowned Tsar — replaces uncrowned pretender
+		HRE_crowned_tsar = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.10
+				war_support_factor = 0.05
+			}
+		}
+
+		# Gazprom supports the Empire during civil war
+		HRE_gazprom_imperial_support = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.15
+				production_speed_infrastructure_factor = 0.08
+				stability_factor = 0.03
+			}
+		}
+
+		# Imperial fuel reserves secured
+		HRE_imperial_fuel_reserves = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.20
+				supply_consumption_factor = -0.05
+			}
+		}
+
+		# New Okhrana (secret police)
+		HRE_okhrana_spirit = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.08
+				war_support_factor = 0.05
+				resistance_target = -0.15
+				political_power_gain = 0.05
+			}
+		}
+
+		# ---- Monarchy Path Capstones ----
+
+		# Constitutional monarchy
+		HRE_democratic_empire_spirit = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.15
+				conscription_factor = 0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		# Autocracy
+		HRE_autocracy_spirit = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.20
+				war_support_factor = 0.10
+				conscription_factor = 0.10
+				army_org_factor = 0.05
+				resistance_target = -0.10
+			}
+		}
+
+		# Sacred Empire
+		HRE_sacred_empire_spirit = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.15
+				war_support_factor = 0.08
+				conscription_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
+
+		# ---- Corporate Question ----
+
+		# The Corporate Question — temporary penalty
+		HRE_corporate_question_spirit = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				local_resources_factor = -0.10
+				fuel_gain_factor = -0.10
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		# Imperial Petroleum Ministry
+		HRE_imperial_petroleum = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.15
+				local_resources_factor = 0.10
+			}
+		}
+
+		# Imperial Gas Ministry
+		HRE_imperial_gas = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.10
+				production_speed_infrastructure_factor = 0.10
+				stability_factor = 0.03
+			}
+		}
+
+		# Imperial Energy Directorate — replaces corporate question
+		HRE_energy_directorate_spirit = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				fuel_gain_factor = 0.25
+				local_resources_factor = 0.15
+				production_speed_infrastructure_factor = 0.10
+				stability_factor = 0.05
+			}
+		}
+
+		# Crown Economic Sovereignty — final capstone
+		HRE_crown_economic_sovereignty = {
+			allowed = { original_tag = HRE }
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+				political_power_gain = 0.15
+				fuel_gain_factor = 0.25
+				local_resources_factor = 0.20
+				industrial_capacity_factory = 0.10
+				production_speed_infrastructure_factor = 0.10
+				war_support_factor = 0.05
+			}
+		}
+	}
+}

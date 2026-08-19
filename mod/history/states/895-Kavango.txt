@@ -1,0 +1,26 @@
+# AUTO-GENERATED map override: SAF -> PAC (Cyberpunk conversion). See docs/03.
+
+state={
+	id=895
+	name="STATE_895"
+	manpower = 92400
+	state_category = pastoral
+
+	history={
+		owner = PAC
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+		add_core_of = PAC
+		add_core_of = PAC
+
+	}
+
+	provinces={
+		8136 12519 13217 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

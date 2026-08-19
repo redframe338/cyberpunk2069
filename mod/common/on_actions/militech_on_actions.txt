@@ -1,0 +1,27 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			MLT = {
+				set_variable = { militech_federal_influence = 45 }
+				MLT_update_influence_spirit = yes
+				country_event = { id = militech.1 days = 25 }
+				country_event = { id = militech.2 days = 80 }
+			}
+			NUS = { set_variable = { militech_federal_influence = 45 } }
+		}
+	}
+	on_monthly = {
+		effect = {
+			MLT = {
+				MLT_update_influence_spirit = yes
+				if = {
+					limit = {
+						NUS = { has_war = yes }
+						NOT = { has_country_flag = MLT_emergency_mobilized }
+					}
+					country_event = { id = militech.10 days = 3 }
+				}
+			}
+		}
+	}
+}

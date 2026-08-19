@@ -1,0 +1,536 @@
+division_template = {
+	name = "People's Defense Division"
+	priority = 1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Strategic Mobile Response Division"
+	priority = 2
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Frontier Security Division"
+	priority = 1
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "01 People's Defense Division"
+		location = 1319
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "02 People's Defense Division"
+		location = 1047
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "03 People's Defense Division"
+		location = 7137
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "04 People's Defense Division"
+		location = 12732
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "05 People's Defense Division"
+		location = 7186
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "06 People's Defense Division"
+		location = 10404
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "07 People's Defense Division"
+		location = 4174
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "08 People's Defense Division"
+		location = 4709
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "09 People's Defense Division"
+		location = 5033
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "10 People's Defense Division"
+		location = 2022
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "11 People's Defense Division"
+		location = 10404
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "12 People's Defense Division"
+		location = 8127
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "13 People's Defense Division"
+		location = 11771
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "14 People's Defense Division"
+		location = 7965
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "15 People's Defense Division"
+		location = 8049
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "16 People's Defense Division"
+		location = 4973
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "17 People's Defense Division"
+		location = 1070
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "18 People's Defense Division"
+		location = 9970
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "19 People's Defense Division"
+		location = 11822
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "20 People's Defense Division"
+		location = 11801
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "21 People's Defense Division"
+		location = 1319
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "22 People's Defense Division"
+		location = 1047
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "23 People's Defense Division"
+		location = 7137
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "24 People's Defense Division"
+		location = 12732
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "25 People's Defense Division"
+		location = 7186
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "26 People's Defense Division"
+		location = 10404
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "27 People's Defense Division"
+		location = 4174
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "28 People's Defense Division"
+		location = 4709
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "29 People's Defense Division"
+		location = 5033
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "30 People's Defense Division"
+		location = 2022
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "31 People's Defense Division"
+		location = 11801
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "32 People's Defense Division"
+		location = 8127
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "33 People's Defense Division"
+		location = 11771
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "34 People's Defense Division"
+		location = 7965
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "35 People's Defense Division"
+		location = 8049
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "36 People's Defense Division"
+		location = 4973
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "37 People's Defense Division"
+		location = 1070
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "38 People's Defense Division"
+		location = 9970
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "39 People's Defense Division"
+		location = 11822
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "40 People's Defense Division"
+		location = 11801
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "41 People's Defense Division"
+		location = 1319
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "42 People's Defense Division"
+		location = 1047
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "43 People's Defense Division"
+		location = 7137
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "44 People's Defense Division"
+		location = 12732
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "45 People's Defense Division"
+		location = 7186
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "46 People's Defense Division"
+		location = 10404
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "47 People's Defense Division"
+		location = 4174
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "48 People's Defense Division"
+		location = 4709
+		division_template = "People's Defense Division"
+		start_experience_factor = 0.30
+	}
+	division = {
+		name = "01 Strategic Mobile Response Division"
+		location = 1319
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "02 Strategic Mobile Response Division"
+		location = 12732
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "03 Strategic Mobile Response Division"
+		location = 4174
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "04 Strategic Mobile Response Division"
+		location = 2022
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "05 Strategic Mobile Response Division"
+		location = 11771
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "06 Strategic Mobile Response Division"
+		location = 4973
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "07 Strategic Mobile Response Division"
+		location = 11822
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "08 Strategic Mobile Response Division"
+		location = 1047
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "09 Strategic Mobile Response Division"
+		location = 7186
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "10 Strategic Mobile Response Division"
+		location = 4709
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "11 Strategic Mobile Response Division"
+		location = 12732
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "12 Strategic Mobile Response Division"
+		location = 7965
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "13 Strategic Mobile Response Division"
+		location = 1070
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "14 Strategic Mobile Response Division"
+		location = 11801
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "15 Strategic Mobile Response Division"
+		location = 7137
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "16 Strategic Mobile Response Division"
+		location = 10404
+		division_template = "Strategic Mobile Response Division"
+		start_experience_factor = 0.40
+	}
+	division = {
+		name = "01 Frontier Security Division"
+		location = 7137
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "02 Frontier Security Division"
+		location = 4709
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "03 Frontier Security Division"
+		location = 11771
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "04 Frontier Security Division"
+		location = 9970
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "05 Frontier Security Division"
+		location = 7137
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "06 Frontier Security Division"
+		location = 4709
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "07 Frontier Security Division"
+		location = 11771
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "08 Frontier Security Division"
+		location = 9970
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "09 Frontier Security Division"
+		location = 7137
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "10 Frontier Security Division"
+		location = 4709
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "11 Frontier Security Division"
+		location = 11771
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "12 Frontier Security Division"
+		location = 9970
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "13 Frontier Security Division"
+		location = 7137
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "14 Frontier Security Division"
+		location = 4709
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "15 Frontier Security Division"
+		location = 11771
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+	division = {
+		name = "16 Frontier Security Division"
+		location = 9970
+		division_template = "Frontier Security Division"
+		start_experience_factor = 0.35
+	}
+}

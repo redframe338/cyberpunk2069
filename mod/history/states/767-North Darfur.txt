@@ -1,0 +1,26 @@
+# AUTO-GENERATED map override: ENG -> PAC (Cyberpunk conversion). See docs/03.
+state = {
+	id = 767
+	name = "STATE_767" # North Darfur
+	manpower = 8143
+	
+	state_category = wasteland
+	impassable = yes
+	force_link_ownership_to = 551 # Kharthoum
+	
+	history = {
+
+		owner = PAC
+		add_core_of = PAC
+		
+		buildings = {
+			infrastructure = 0
+		}
+	}
+
+	provinces = {
+		7987 8103 10900
+	}
+
+	local_supplies = 0.0 
+}

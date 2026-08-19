@@ -1,0 +1,60 @@
+capital = 282
+
+set_research_slots = 4
+set_stability = 0.55
+set_war_support = 0.50
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_trucks = 1
+	gw_artillery = 1
+	interwar_artillery = 1
+	support_weapons = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	synth_oil_experiments = 1
+	construction1 = 1
+	construction2 = 1
+	dispersed_industry = 1
+	dispersed_industry2 = 1
+	basic_train = 1
+}
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "2064.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 15
+	fascism = 10
+	communism = 5
+	neutrality = 70
+}
+
+set_autonomy = {
+	target = ARK
+	autonomous_state = autonomy_corporate_sovereignty
+	freedom_level = 0.75
+}
+
+add_ideas = { JAP_arasaka_dependency }
+set_variable = { arasaka_influence_japan = 40 }
+set_convoys = 200
+
+create_country_leader = {
+	name = "Katsuro Takemura"
+	picture = GFX_Portrait_Asia_Generic_1
+	expire = "2100.1.1"
+	ideology = despotism
+	traits = { }
+}

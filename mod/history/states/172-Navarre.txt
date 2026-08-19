@@ -1,0 +1,29 @@
+# AUTO-GENERATED map override: SPR -> EEC (Cyberpunk conversion). See docs/03.
+state={
+	id=172
+	name="STATE_172"
+
+	history={
+		add_dynamic_modifier = { modifier = BIO_synthetic_agriculture_zone_modifier }
+		owner = BIO
+		add_core_of = BIO
+		add_core_of = EEC
+		victory_points = {
+			3933 1
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+		}
+
+	}
+
+	provinces={
+		932 3737 3931 3933 9857 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+
+	local_supplies=4.0 
+}

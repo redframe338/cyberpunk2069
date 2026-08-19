@@ -1,0 +1,57 @@
+division_template = {
+	name = "Imperial Guard Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Cossack Cavalry Division"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	# Imperial Guard — St Petersburg
+	division = { name = "1st Imperial Guard Division" division_template = "Imperial Guard Division" start_experience_factor = 0.5 location = 3151 }
+	division = { name = "2nd Imperial Guard Division" division_template = "Imperial Guard Division" start_experience_factor = 0.5 location = 3151 }
+	division = { name = "3rd Imperial Guard Division" division_template = "Imperial Guard Division" start_experience_factor = 0.3 location = 3151 }
+	division = { name = "4th Imperial Guard Division" division_template = "Imperial Guard Division" start_experience_factor = 0.3 location = 3151 }
+
+	# Northwestern garrisons
+	division = { name = "5th Novgorod Division" division_template = "Imperial Guard Division" start_experience_factor = 0.2 location = 9233 }
+	division = { name = "6th Pskov Division" division_template = "Imperial Guard Division" start_experience_factor = 0.2 location = 3280 }
+	division = { name = "7th Murmansk Division" division_template = "Imperial Guard Division" start_experience_factor = 0.2 location = 12418 }
+	division = { name = "8th Arkhangelsk Division" division_template = "Imperial Guard Division" start_experience_factor = 0.2 location = 7375 }
+
+	# Central defectors
+	division = { name = "9th Yaroslavl Division" division_template = "Imperial Guard Division" start_experience_factor = 0.3 location = 206 }
+	division = { name = "10th Ivanovo Division" division_template = "Imperial Guard Division" start_experience_factor = 0.2 location = 1365 }
+
+	# Cossack cavalry — South
+	division = { name = "1st Don Cossack Host" division_template = "Cossack Cavalry Division" start_experience_factor = 0.5 location = 9527 }
+	division = { name = "2nd Don Cossack Host" division_template = "Cossack Cavalry Division" start_experience_factor = 0.4 location = 9527 }
+	division = { name = "3rd Kuban Cossack Host" division_template = "Cossack Cavalry Division" start_experience_factor = 0.4 location = 6371 }
+	division = { name = "4th Terek Cossack Host" division_template = "Cossack Cavalry Division" start_experience_factor = 0.3 location = 6371 }
+
+	# Southern garrison
+	division = { name = "11th Rostov Division" division_template = "Imperial Guard Division" start_experience_factor = 0.3 location = 9527 }
+	division = { name = "12th Stalingrad Division" division_template = "Imperial Guard Division" start_experience_factor = 0.3 location = 6371 }
+}

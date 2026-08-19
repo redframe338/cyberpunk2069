@@ -1,0 +1,250 @@
+add_namespace = biotechnica
+
+country_event = {
+	id = biotechnica.1
+	title = biotechnica.1.t
+	desc = biotechnica.1.d
+	picture = GFX_report_event_generic_research_lab
+	is_triggered_only = yes
+	option = {
+		name = biotechnica.1.a
+		add_political_power = 50
+		add_to_variable = { biotechnica_research_progress = 3 }
+	}
+	option = {
+		name = biotechnica.1.b
+		add_stability = 0.03
+		EEC = { add_political_power = 25 }
+	}
+}
+
+country_event = {
+	id = biotechnica.2
+	title = biotechnica.2.t
+	desc = biotechnica.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	option = {
+		name = biotechnica.2.a
+		BIO = { add_to_variable = { biotechnica_research_progress = 5 } }
+		add_political_power = -25
+	}
+	option = {
+		name = biotechnica.2.b
+		add_political_power = 35
+		BIO = { add_to_variable = { biotechnica_research_progress = -2 } }
+	}
+}
+
+country_event = {
+	id = biotechnica.3
+	title = biotechnica.3.t
+	desc = biotechnica.3.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 18 }
+	option = {
+		name = biotechnica.3.a
+		add_to_variable = { biotechnica_research_progress = 8 }
+		add_tech_bonus = { bonus = 0.50 uses = 1 category = electronics }
+	}
+	option = {
+		name = biotechnica.3.b
+		add_political_power = 75
+		EEC = { add_stability = 0.02 }
+	}
+}
+
+country_event = {
+	id = biotechnica.4
+	title = biotechnica.4.t
+	desc = biotechnica.4.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 20 }
+	option = {
+		name = biotechnica.4.a
+		add_to_variable = { biotechnica_research_progress = 7 }
+		172 = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } }
+	}
+	option = {
+		name = biotechnica.4.b
+		add_stability = 0.04
+		EEC = { add_stability = 0.02 }
+	}
+}
+
+country_event = {
+	id = biotechnica.5
+	title = biotechnica.5.t
+	desc = biotechnica.5.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 30 }
+	option = {
+		name = biotechnica.5.a
+		add_political_power = -50
+		add_stability = -0.02
+		add_to_variable = { biotechnica_research_progress = -3 }
+	}
+	option = {
+		name = biotechnica.5.b
+		add_stability = -0.05
+		add_to_variable = { biotechnica_research_progress = -6 }
+	}
+}
+
+country_event = {
+	id = biotechnica.6
+	title = biotechnica.6.t
+	desc = biotechnica.6.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 34 }
+	option = {
+		name = biotechnica.6.a
+		add_political_power = -75
+		add_stability = 0.02
+		EEC = { add_stability = 0.02 }
+	}
+	option = {
+		name = biotechnica.6.b
+		add_ideas = BIO_biotechnology_crisis
+		add_to_variable = { biotechnica_research_progress = -8 }
+	}
+}
+
+country_event = {
+	id = biotechnica.7
+	title = biotechnica.7.t
+	desc = biotechnica.7.d
+	picture = GFX_report_event_generic_sign_treaty1
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 24 }
+	option = {
+		name = biotechnica.7.a
+		add_political_power = 75
+		add_to_variable = { biotechnica_research_progress = 4 }
+		EEC = { add_political_power = 40 }
+	}
+	option = {
+		name = biotechnica.7.b
+		add_stability = 0.03
+		EEC = { add_stability = 0.02 }
+	}
+}
+
+country_event = {
+	id = biotechnica.8
+	title = biotechnica.8.t
+	desc = biotechnica.8.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 28 }
+	option = {
+		name = biotechnica.8.a
+		148 = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } }
+		add_to_variable = { biotechnica_research_progress = 6 }
+	}
+	option = {
+		name = biotechnica.8.b
+		add_political_power = 50
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = biotechnica.9
+	title = biotechnica.9.t
+	desc = biotechnica.9.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 22 }
+	option = {
+		name = biotechnica.9.a
+		add_to_variable = { biotechnica_research_progress = 6 }
+		add_political_power = 25
+	}
+	option = {
+		name = biotechnica.9.b
+		add_tech_bonus = { bonus = 0.50 uses = 1 category = industry }
+	}
+}
+
+country_event = {
+	id = biotechnica.10
+	title = biotechnica.10.t
+	desc = biotechnica.10.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 32 }
+	option = {
+		name = biotechnica.10.a
+		add_political_power = -60
+		add_stability = -0.01
+		add_to_variable = { biotechnica_research_progress = -3 }
+	}
+	option = {
+		name = biotechnica.10.b
+		add_ideas = BIO_biotechnology_crisis
+		add_stability = -0.06
+		add_to_variable = { biotechnica_research_progress = -8 }
+	}
+}
+
+country_event = {
+	id = biotechnica.11
+	title = biotechnica.11.t
+	desc = biotechnica.11.d
+	picture = GFX_report_event_generic_factory
+	is_triggered_only = yes
+	option = {
+		name = biotechnica.11.a
+		add_ideas = BIO_emergency_scientific_mobilization
+		set_country_flag = BIO_emergency_mobilized
+		EEC = { add_war_support = 0.03 }
+	}
+	option = {
+		name = biotechnica.11.b
+		set_country_flag = BIO_emergency_mobilized
+		add_stability = 0.02
+	}
+}
+
+country_event = {
+	id = biotechnica.12
+	title = biotechnica.12.t
+	desc = biotechnica.12.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 26 }
+	option = {
+		name = biotechnica.12.a
+		add_political_power = -40
+		add_to_variable = { biotechnica_research_progress = -2 }
+	}
+	option = {
+		name = biotechnica.12.b
+		add_stability = -0.03
+		add_to_variable = { biotechnica_research_progress = -5 }
+	}
+}
+
+country_event = {
+	id = biotechnica.13
+	title = biotechnica.13.t
+	desc = biotechnica.13.d
+	picture = GFX_report_event_generic_research_lab
+	trigger = { tag = BIO }
+	mean_time_to_happen = { months = 25 }
+	option = {
+		name = biotechnica.13.a
+		add_stability = 0.03
+		add_to_variable = { biotechnica_research_progress = -2 }
+	}
+	option = {
+		name = biotechnica.13.b
+		add_to_variable = { biotechnica_research_progress = 6 }
+		add_stability = -0.03
+	}
+}

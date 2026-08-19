@@ -1,0 +1,12 @@
+# Frontend/base station override. HOI4 requests the hard-coded maintheme asset
+# while the main menu loads; Night City Radio remains defined separately in
+# cyberpunk_songs.txt for the in-game music player.
+music_station = "base_music"
+
+music = {
+	song = "maintheme"
+
+	chance = {
+		base = 100
+	}
+}

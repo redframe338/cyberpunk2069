@@ -1,0 +1,241 @@
+add_namespace = usr_blue_dawn
+
+# ================================================================
+# OPERATION BLUE DAWN — DEMOCRATIC RESTORATION EVENTS
+# ================================================================
+
+# 1. The Union Cannot Continue
+# Fired when "The Union Approaches Collapse" is completed
+country_event = {
+	id = usr_blue_dawn.1
+	title = usr_blue_dawn.1.t
+	desc = usr_blue_dawn.1.d
+
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.1.a
+		add_stability = -0.03
+	}
+}
+
+# 2. Gazprom's Answer
+# Fired when "Gazprom Joins the Conspiracy" is completed
+country_event = {
+	id = usr_blue_dawn.2
+	title = usr_blue_dawn.2.t
+	desc = usr_blue_dawn.2.d
+
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.2.a
+		add_political_power = 25
+		custom_effect_tooltip = USR_gazprom_energy_support_tt
+	}
+}
+
+# 3. Operation Blue Dawn — The Coup
+# Fired when "Operation Blue Dawn" focus is completed
+country_event = {
+	id = usr_blue_dawn.3
+	title = usr_blue_dawn.3.t
+	desc = usr_blue_dawn.3.d
+
+	picture = GFX_report_event_generic_military_parade
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.3.a
+		custom_effect_tooltip = USR_blue_dawn_launched_tt
+
+		# Player becomes the Russian Federation
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = yes
+		}
+		set_popularities = {
+			communism = 15
+			neutrality = 10
+			democratic = 70
+			fascism = 5
+		}
+		set_cosmetic_tag = USR_russian_federation
+
+		# Release Gazprom as allied puppet with Western Siberian gas fields
+		580 = { add_core_of = GAZ }
+		GAZ = {
+			transfer_state = 580
+			set_politics = {
+				ruling_party = democratic
+				elections_allowed = yes
+			}
+			set_popularities = {
+				communism = 5
+				neutrality = 15
+				democratic = 75
+				fascism = 5
+			}
+		}
+		set_autonomy = {
+			target = GAZ
+			autonomous_state = autonomy_puppet
+		}
+
+		# Neo-Soviet loyalists rebel — the old guard fights back
+		start_civil_war = {
+			ideology = communism
+			size = 0.3
+		}
+
+		# Russian Federation declares war on SovOil
+		declare_war_on = {
+			target = SVO
+			type = annex_everything
+		}
+
+		# Gazprom also declares war on SovOil
+		GAZ = {
+			declare_war_on = {
+				target = SVO
+				type = annex_everything
+			}
+		}
+
+		add_stability = -0.10
+		add_war_support = 0.15
+	}
+}
+
+# 4. The Moscow Ultimatum
+# Fired when the Moscow Ultimatum focus is completed
+country_event = {
+	id = usr_blue_dawn.4
+	title = usr_blue_dawn.4.t
+	desc = usr_blue_dawn.4.d
+
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.4.a
+		add_stability = -0.05
+		add_political_power = -25
+		custom_effect_tooltip = USR_supreme_soviet_dissolved_tt
+	}
+}
+
+# 5. The Restoration Begins
+# Fired when "Democratic Restoration" focus is completed
+country_event = {
+	id = usr_blue_dawn.5
+	title = usr_blue_dawn.5.t
+	desc = usr_blue_dawn.5.d
+
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.5.a
+		add_stability = 0.03
+		custom_effect_tooltip = USR_restoration_council_formed_tt
+	}
+}
+
+# 6. SovOil Nationalized
+# Fired when "Nationalize SovOil" focus is completed
+country_event = {
+	id = usr_blue_dawn.6
+	title = usr_blue_dawn.6.t
+	desc = usr_blue_dawn.6.d
+
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.6.a
+		add_stability = 0.03
+		add_political_power = 25
+		custom_effect_tooltip = USR_sovoil_nationalized_tt
+	}
+}
+
+# 7. The Gazprom Charter
+# Fired when "Gazprom Charter" focus is completed
+country_event = {
+	id = usr_blue_dawn.7
+	title = usr_blue_dawn.7.t
+	desc = usr_blue_dawn.7.d
+
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.7.a
+		add_political_power = 25
+		custom_effect_tooltip = USR_gazprom_chartered_tt
+	}
+}
+
+# 8. The Constitutional Convention
+# Fired when "Constitutional Convention" focus is completed
+country_event = {
+	id = usr_blue_dawn.8
+	title = usr_blue_dawn.8.t
+	desc = usr_blue_dawn.8.d
+
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.8.a
+		add_stability = 0.05
+		custom_effect_tooltip = USR_constitution_written_tt
+	}
+}
+
+# 9. The Russian Federation Proclaimed
+# Fired when "The Russian Federation" focus is completed
+country_event = {
+	id = usr_blue_dawn.9
+	title = usr_blue_dawn.9.t
+	desc = usr_blue_dawn.9.d
+
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.9.a
+		add_stability = 0.05
+		add_war_support = 0.03
+	}
+}
+
+# 10. The Commonwealth of Independent States Proclaimed
+# Fired when "The Commonwealth of Independent States" focus is completed
+country_event = {
+	id = usr_blue_dawn.10
+	title = usr_blue_dawn.10.t
+	desc = usr_blue_dawn.10.d
+
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+
+	option = {
+		name = usr_blue_dawn.10.a
+		add_stability = 0.05
+		add_political_power = 25
+	}
+}

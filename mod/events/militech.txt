@@ -1,0 +1,319 @@
+add_namespace = militech
+
+country_event = {
+	id = militech.1
+	title = militech.1.t
+	desc = militech.1.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = militech.1.a
+		add_stability = 0.03
+		NUS = { add_war_support = 0.02 }
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = militech.1.b
+		add_to_variable = { militech_federal_influence = 5 }
+		add_political_power = 60
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = militech.2
+	title = militech.2.t
+	desc = militech.2.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = militech.2.a
+		add_to_variable = { militech_federal_influence = 4 }
+		add_political_power = 50
+		NUS = { add_political_power = 25 }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = militech.2.b
+		add_to_variable = { militech_federal_influence = -3 }
+		add_stability = 0.03
+		NUS = { add_stability = 0.02 }
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = militech.3
+	title = militech.3.t
+	desc = militech.3.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = MLT NOT = { has_country_flag = MLT_weapons_demo_fired } }
+	mean_time_to_happen = { months = 14 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MLT_weapons_demo_fired }
+	option = {
+		name = militech.3.a
+		army_experience = 20
+		add_to_variable = { militech_federal_influence = 5 }
+		NUS = { add_war_support = 0.03 }
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = militech.3.b
+		add_political_power = 75
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = militech.4
+	title = militech.4.t
+	desc = militech.4.d
+	picture = GFX_report_event_generic_sign_treaty1
+	trigger = { tag = MLT NOT = { has_country_flag = MLT_foreign_sales_fired } }
+	mean_time_to_happen = { months = 18 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MLT_foreign_sales_fired }
+	option = {
+		name = militech.4.a
+		add_political_power = 100
+		add_to_variable = { militech_federal_influence = 5 }
+		NUS = { add_political_power = 40 }
+		ai_chance = { factor = 65 }
+	}
+	option = {
+		name = militech.4.b
+		add_stability = 0.04
+		NUS = { add_stability = 0.02 }
+		ai_chance = { factor = 35 }
+	}
+}
+
+country_event = {
+	id = militech.5
+	title = militech.5.t
+	desc = militech.5.d
+	picture = GFX_report_event_generic_read_write
+	trigger = { tag = MLT NOT = { has_country_flag = MLT_black_budget_fired } }
+	mean_time_to_happen = { months = 20 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MLT_black_budget_fired }
+	option = {
+		name = militech.5.a
+		add_research_slot = 1
+		add_political_power = -100
+		add_to_variable = { militech_federal_influence = 5 }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = militech.5.b
+		384 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = militech.6
+	title = militech.6.t
+	desc = militech.6.d
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = militech.6.a
+		add_political_power = -75
+		add_stability = -0.03
+		add_to_variable = { militech_federal_influence = -5 }
+		NUS = { add_stability = 0.02 }
+		ai_chance = { factor = 65 }
+	}
+	option = {
+		name = militech.6.b
+		add_political_power = 75
+		add_to_variable = { militech_federal_influence = 4 }
+		NUS = { add_stability = -0.03 }
+		ai_chance = { factor = 35 }
+	}
+}
+
+country_event = {
+	id = militech.7
+	title = militech.7.t
+	desc = militech.7.d
+	picture = GFX_report_event_generic_read_write
+	trigger = { tag = MLT NOT = { has_country_flag = MLT_espionage_fired } }
+	mean_time_to_happen = { months = 22 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MLT_espionage_fired }
+	option = {
+		name = militech.7.a
+		add_political_power = -50
+		add_stability = 0.02
+		ARK = { add_stability = -0.02 }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = militech.7.b
+		add_to_variable = { militech_federal_influence = -3 }
+		add_stability = -0.03
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = militech.8
+	title = militech.8.t
+	desc = militech.8.d
+	picture = GFX_report_event_generic_factory
+	trigger = { tag = MLT NOT = { has_country_flag = MLT_drone_breakthrough_fired } }
+	mean_time_to_happen = { months = 24 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MLT_drone_breakthrough_fired }
+	option = {
+		name = militech.8.a
+		add_tech_bonus = { bonus = 0.50 uses = 2 category = electronics }
+		add_to_variable = { militech_federal_influence = 5 }
+		add_political_power = -75
+		ai_chance = { factor = 75 }
+	}
+	option = {
+		name = militech.8.b
+		384 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+		}
+		ai_chance = { factor = 25 }
+	}
+}
+
+country_event = {
+	id = militech.9
+	title = militech.9.t
+	desc = militech.9.d
+	picture = GFX_report_event_generic_military_parade
+	trigger = { tag = MLT NOT = { has_country_flag = MLT_special_operation_fired } }
+	mean_time_to_happen = { months = 26 }
+	fire_only_once = yes
+	immediate = { set_country_flag = MLT_special_operation_fired }
+	option = {
+		name = militech.9.a
+		army_experience = 25
+		add_command_power = 20
+		add_to_variable = { militech_federal_influence = 5 }
+		NUS = { add_war_support = 0.03 }
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = militech.9.b
+		add_stability = 0.03
+		add_political_power = 50
+		ai_chance = { factor = 30 }
+	}
+}
+
+country_event = {
+	id = militech.10
+	title = militech.10.t
+	desc = militech.10.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = militech.10.a
+		MLT_begin_emergency_mobilization = yes
+		add_to_variable = { militech_federal_influence = 8 }
+		NUS = { add_war_support = 0.05 }
+		ai_chance = { factor = 85 }
+	}
+	option = {
+		name = militech.10.b
+		add_to_variable = { militech_federal_influence = -5 }
+		add_stability = 0.03
+		NUS = { add_war_support = -0.03 }
+		ai_chance = { factor = 15 }
+	}
+}
+
+country_event = {
+	id = militech.11
+	title = militech.11.t
+	desc = militech.11.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = militech.11.a
+		NUS = {
+			set_autonomy = {
+				target = MLT
+				autonomous_state = autonomy_free
+			}
+			add_stability = -0.10
+		}
+		add_stability = -0.05
+		ai_chance = { factor = 60 }
+	}
+	option = {
+		name = militech.11.b
+		add_to_variable = { militech_federal_influence = -20 }
+		add_stability = 0.05
+		ai_chance = { factor = 40 }
+	}
+}
+
+country_event = {
+	id = militech.12
+	title = militech.12.t
+	desc = militech.12.d
+	picture = GFX_report_event_generic_military_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = militech.12.a
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		add_stability = -0.10
+		set_country_flag = NUS_militech_backed_government
+		ai_chance = { factor = 45 }
+	}
+	option = {
+		name = militech.12.b
+		add_stability = -0.15
+		add_war_support = 0.10
+		MLT = { add_to_variable = { militech_federal_influence = -20 } }
+		ai_chance = { factor = 55 }
+	}
+}
+
+country_event = {
+	id = militech.13
+	title = militech.13.t
+	desc = militech.13.d
+	picture = GFX_report_event_generic_sign_treaty1
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = militech.13.a
+		NUS = {
+			annex_country = {
+				target = MLT
+				transfer_troops = yes
+			}
+			add_stability = 0.03
+		}
+		ai_chance = { factor = 70 }
+	}
+	option = {
+		name = militech.13.b
+		set_variable = { militech_federal_influence = 30 }
+		add_autonomy_ratio = { value = 0.10 }
+		NUS = { add_stability = -0.05 }
+		ai_chance = { factor = 30 }
+	}
+}

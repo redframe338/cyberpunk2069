@@ -1,0 +1,26 @@
+# AUTO-GENERATED map override: DEN -> EEC (Cyberpunk conversion). See docs/03.
+state = {
+	id=337
+	name="STATE_337"
+	manpower = 25900
+	
+	state_category = small_island
+	
+	history = {
+		owner = EEC
+		buildings = {
+			infrastructure = 2
+			13003 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = EEC
+
+		victory_points = { #Tórshavn
+			13003 1
+		}
+	}
+
+	provinces = { 13003 }
+	local_supplies = 0.0 
+}

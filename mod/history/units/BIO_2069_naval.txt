@@ -1,0 +1,227 @@
+# AUTO-GENERATED: 160 flotilla counters represent 800 advanced ships.
+units = {
+	fleet = {
+		name = "Biotechnica Oceanic Fleet 01"
+		naval_base = 1751
+		task_force = {
+			name = "Bioengineered Strike Group 01"
+			location = 1751
+			ship = { name = "BIO-CARRIER-0001" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_3 = { amount = 1 owner = BIO version_name = "Helix Class" } } }
+			ship = { name = "BIO-BATTLESHIP-0001" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_4 = { amount = 1 owner = BIO version_name = "Genome Class" } } }
+			ship = { name = "BIO-HEAVY_CRUISER-0001" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Chimera Class" } } }
+			ship = { name = "BIO-HEAVY_CRUISER-0002" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Chimera Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0001" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0002" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0003" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0004" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-DESTROYER-0001" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0002" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0003" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0004" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0005" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0006" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0007" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0008" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0009" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0010" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0011" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0012" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+		}
+	}
+	fleet = {
+		name = "Biotechnica Oceanic Fleet 02"
+		naval_base = 1751
+		task_force = {
+			name = "Bioengineered Strike Group 02"
+			location = 1751
+			ship = { name = "BIO-CARRIER-0002" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_3 = { amount = 1 owner = BIO version_name = "Helix Class" } } }
+			ship = { name = "BIO-BATTLESHIP-0002" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_4 = { amount = 1 owner = BIO version_name = "Genome Class" } } }
+			ship = { name = "BIO-HEAVY_CRUISER-0003" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Chimera Class" } } }
+			ship = { name = "BIO-HEAVY_CRUISER-0004" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Chimera Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0005" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0006" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0007" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0008" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-DESTROYER-0013" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0014" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0015" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0016" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0017" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0018" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0019" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0020" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0021" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0022" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0023" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0024" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+		}
+	}
+	fleet = {
+		name = "Biotechnica Oceanic Fleet 03"
+		naval_base = 1751
+		task_force = {
+			name = "Bioengineered Strike Group 03"
+			location = 1751
+			ship = { name = "BIO-CARRIER-0003" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_3 = { amount = 1 owner = BIO version_name = "Helix Class" } } }
+			ship = { name = "BIO-BATTLESHIP-0003" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_4 = { amount = 1 owner = BIO version_name = "Genome Class" } } }
+			ship = { name = "BIO-HEAVY_CRUISER-0005" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Chimera Class" } } }
+			ship = { name = "BIO-HEAVY_CRUISER-0006" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Chimera Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0009" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0010" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0011" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0012" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-DESTROYER-0025" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0026" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0027" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0028" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0029" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0030" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0031" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0032" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0033" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0034" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0035" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0036" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+		}
+	}
+	fleet = {
+		name = "Biotechnica Oceanic Fleet 04"
+		naval_base = 1751
+		task_force = {
+			name = "Bioengineered Strike Group 04"
+			location = 1751
+			ship = { name = "BIO-CARRIER-0004" definition = carrier start_experience_factor = 0.85 equipment = { ship_hull_carrier_3 = { amount = 1 owner = BIO version_name = "Helix Class" } } }
+			ship = { name = "BIO-BATTLESHIP-0004" definition = battleship start_experience_factor = 0.85 equipment = { ship_hull_heavy_4 = { amount = 1 owner = BIO version_name = "Genome Class" } } }
+			ship = { name = "BIO-HEAVY_CRUISER-0007" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Chimera Class" } } }
+			ship = { name = "BIO-HEAVY_CRUISER-0008" definition = heavy_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Chimera Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0013" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0014" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0015" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-LIGHT_CRUISER-0016" definition = light_cruiser start_experience_factor = 0.85 equipment = { ship_hull_cruiser_4 = { amount = 1 owner = BIO version_name = "Europa Class" } } }
+			ship = { name = "BIO-DESTROYER-0037" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0038" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0039" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0040" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0041" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0042" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0043" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0044" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0045" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0046" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0047" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+			ship = { name = "BIO-DESTROYER-0048" definition = destroyer start_experience_factor = 0.85 equipment = { ship_hull_light_4 = { amount = 1 owner = BIO version_name = "Vector Class" } } }
+		}
+	}
+	fleet = {
+		name = "Biotechnica Deep Ocean Fleet 01"
+		naval_base = 1751
+		task_force = {
+			name = "Leviathan Group 01"
+			location = 1751
+			ship = { name = "BIO-SS-0001" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0002" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0003" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0004" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0005" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0006" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0007" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0008" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0009" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0010" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0011" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0012" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0013" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0014" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0015" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0016" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0017" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0018" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0019" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0020" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+		}
+	}
+	fleet = {
+		name = "Biotechnica Deep Ocean Fleet 02"
+		naval_base = 1751
+		task_force = {
+			name = "Leviathan Group 02"
+			location = 1751
+			ship = { name = "BIO-SS-0021" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0022" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0023" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0024" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0025" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0026" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0027" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0028" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0029" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0030" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0031" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0032" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0033" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0034" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0035" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0036" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0037" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0038" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0039" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0040" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+		}
+	}
+	fleet = {
+		name = "Biotechnica Deep Ocean Fleet 03"
+		naval_base = 1751
+		task_force = {
+			name = "Leviathan Group 03"
+			location = 1751
+			ship = { name = "BIO-SS-0041" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0042" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0043" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0044" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0045" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0046" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0047" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0048" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0049" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0050" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0051" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0052" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0053" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0054" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0055" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0056" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0057" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0058" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0059" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0060" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+		}
+	}
+	fleet = {
+		name = "Biotechnica Deep Ocean Fleet 04"
+		naval_base = 1751
+		task_force = {
+			name = "Leviathan Group 04"
+			location = 1751
+			ship = { name = "BIO-SS-0061" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0062" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0063" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0064" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0065" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0066" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0067" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0068" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0069" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0070" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0071" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0072" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0073" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0074" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0075" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0076" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0077" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0078" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0079" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+			ship = { name = "BIO-SS-0080" definition = submarine start_experience_factor = 0.85 equipment = { ship_hull_submarine_4 = { amount = 1 owner = BIO version_name = "Leviathan Class" } } }
+		}
+	}
+}

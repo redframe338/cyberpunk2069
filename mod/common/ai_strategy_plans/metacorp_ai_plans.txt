@@ -1,0 +1,41 @@
+MTC_civilian_technology_plan = {
+	name = "MetaCorp civilian technology plan"
+	desc = "Prioritize computing, electronics, civilian industry, and the NUSA partnership."
+
+	allowed = { original_tag = MTC }
+	enable = { always = yes }
+	abort = { always = no }
+
+	ai_national_focuses = { }
+	research = {
+		electronics = 40
+		industry = 30
+		infantry_weapons = 5
+		armor = 0
+		air_equipment = 0
+	}
+	ideas = { }
+	traits = { }
+
+	ai_strategy = { type = support id = "NUS" value = 250 }
+	ai_strategy = { type = protect id = "NUS" value = 100 }
+	weight = { factor = 1.0 }
+}
+
+NUS_metacorp_partnership_plan = {
+	name = "NUSA-MetaCorp technology partnership"
+	desc = "Preserve MetaCorp while preventing either federal corporate pillar from dominating."
+
+	allowed = { original_tag = NUS }
+	enable = { MTC = { is_subject_of = NUS } }
+	abort = { NOT = { MTC = { is_subject_of = NUS } } }
+
+	ai_national_focuses = { }
+	research = { electronics = 20 industry = 15 }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = { type = support id = "MTC" value = 160 }
+	ai_strategy = { type = protect id = "MTC" value = 120 }
+	weight = { factor = 1.0 }
+}

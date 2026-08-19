@@ -1,0 +1,36 @@
+MLT_national_defense_headquarters_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_army_war_college
+	local_building_slots_factor = 0.20
+	local_org_regain = 0.10
+	state_production_speed_bunker_factor = 0.25
+}
+
+MLT_advanced_weapons_laboratory_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	local_building_slots_factor = 0.20
+	state_production_speed_arms_factory_factor = 0.20
+}
+
+MLT_military_industrial_complex_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_building_slots_factor = 0.30
+	state_production_speed_arms_factory_factor = 0.30
+}
+
+MLT_strategic_logistics_command_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_navy_bonus
+	local_building_slots_factor = 0.20
+	state_production_speed_infrastructure_factor = 0.30
+	local_org_regain = 0.10
+}
+
+MLT_military_testing_grounds_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_army_war_college
+	local_building_slots_factor = 0.15
+	local_org_regain = 0.15
+}

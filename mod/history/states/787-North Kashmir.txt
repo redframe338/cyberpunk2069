@@ -1,0 +1,27 @@
+# AUTO-GENERATED map override: RAJ -> URB (Cyberpunk conversion). See docs/03.
+state={
+	id=787
+	name="STATE_787" # Northern Kashmir
+	manpower = 1672000
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			1910 1
+		}
+		owner = URB
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = URB
+		add_core_of = URB
+		add_core_of = URB 
+	}
+
+	provinces={
+		1910 2041 2084 10821 
+	}
+
+	local_supplies=0.0 
+}

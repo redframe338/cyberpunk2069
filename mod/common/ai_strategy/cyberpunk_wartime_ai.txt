@@ -1,0 +1,75 @@
+# Shared wartime behavior for every AI-controlled country.
+#
+# This is deliberately low priority. Country-specific strategies can still
+# override it for scripted offensives, defensive stands, and special theatres.
+# It only activates while the country is already at war and therefore does not
+# make peaceful countries fabricate claims or declare random wars.
+
+cyberpunk_active_wartime_command = {
+	allowed = {
+		always = yes
+	}
+
+	enable = {
+		has_war = yes
+	}
+
+	abort_when_not_enabled = yes
+
+	# Keep ordinary land fronts active. The target filter limits this to current
+	# enemies, while the low priority lets bespoke plans take precedence.
+	ai_strategy = {
+		type = front_control
+
+		country_trigger = {
+			has_war_with = FROM
+		}
+
+		ratio = 0.05
+		priority = 20
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		manual_attack = yes
+	}
+
+	# Put more of the available army on real war fronts instead of leaving large
+	# idle reserves or over-garrisoning quiet territory.
+	ai_strategy = {
+		type = front_unit_request
+
+		country_trigger = {
+			has_war_with = FROM
+		}
+
+		value = 30
+	}
+
+	# Give the main enemy front enough weight to receive reinforcements and allow
+	# the force-concentration system to form actual offensive pushes.
+	ai_strategy = {
+		type = force_concentration_front_factor
+
+		country_trigger = {
+			has_war_with = FROM
+		}
+
+		ratio = 0.05
+		value = 25
+	}
+
+	ai_strategy = {
+		type = force_concentration_target_weight
+
+		country_trigger = {
+			has_war_with = FROM
+		}
+
+		value = 30
+	}
+
+	ai_strategy = {
+		type = force_concentration_factor
+		value = 15
+	}
+}

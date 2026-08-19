@@ -1,0 +1,25 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			NUS = {
+				set_variable = { petrochem_industrial_capacity = 25 }
+				set_variable = { petrochem_corporate_investment_points = 4 }
+				set_variable = { petrochem_energy_investment = 10 }
+				set_variable = { petrochem_chemical_investment = 8 }
+				set_variable = { petrochem_synthetic_investment = 4 }
+				set_variable = { petrochem_fertilizer_investment = 6 }
+				set_variable = { petrochem_hydrogen_investment = 0 }
+				petrochem_update_development_spirit = yes
+				country_event = { id = petrochem.1 days = 20 }
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			NUS = {
+				add_to_variable = { petrochem_corporate_investment_points = 1 }
+				petrochem_update_development_spirit = yes
+			}
+		}
+	}
+}

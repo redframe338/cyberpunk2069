@@ -1,0 +1,29 @@
+# Cyberpunk override: Volga Petrochemical Complex
+state = {
+	id = 829
+	name = "STATE_829"
+	manpower = 120000
+	state_category = town
+	resources = {
+		oil = 25
+		steel = 14
+		tungsten = 6
+	}
+	history = {
+		add_dynamic_modifier = { modifier = SVO_petrochemical_megacomplex_modifier }
+		owner = SVO
+		add_core_of = SVO
+		add_core_of = USR
+		victory_points = { 11523 5 }
+		victory_points = { 9432 3 }
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+			arms_factory = 3
+			synthetic_refinery = 2
+			fuel_silo = 2
+		}
+	}
+	provinces = { 3517 3518 6479 6506 6539 6575 6601 9432 9475 11395 11460 11523 }
+	local_supplies = 11.0
+}

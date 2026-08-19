@@ -1,0 +1,52 @@
+division_template = {
+	name = "Arasaka Corporate Infantry"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Arasaka Mechanized Security"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "1st Arasaka Security Division"
+		location = 10125
+		division_template = "Arasaka Corporate Infantry"
+		start_experience_factor = 0.50
+	}
+	division = {
+		name = "2nd Arasaka Security Division"
+		location = 1117
+		division_template = "Arasaka Corporate Infantry"
+		start_experience_factor = 0.50
+	}
+	division = {
+		name = "Arasaka Mobile Response Group"
+		location = 4179
+		division_template = "Arasaka Mechanized Security"
+		start_experience_factor = 0.75
+	}
+}

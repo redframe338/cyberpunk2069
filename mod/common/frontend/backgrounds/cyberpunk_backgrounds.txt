@@ -1,0 +1,3 @@
+# The Cyberpunk 2069 menu is fixed through frontendmainviewbg.gfx.
+# Keeping this registry empty prevents it from entering the vanilla
+# loadingscreen/background-manager asset pool.

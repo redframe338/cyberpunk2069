@@ -1,0 +1,61 @@
+# Neo-Soviet Union — 1 January 2069
+# Ideologies use vanilla slots as placeholders; they map to mod ideologies later:
+#   communism   -> Sovereign Socialist Federation (ruling)
+#   neutrality  -> Security-State / SovOil-managed
+#   democratic  -> Republican Confederation reformists
+# See docs/08_NEO_SOVIET_UNION_DESIGN.md.
+
+capital = 219 # Moscow
+set_oob = "USR_2069"
+
+set_research_slots = 4
+set_stability = 0.60
+set_war_support = 0.60
+
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	tech_support = 1
+	tech_engineers = 1
+	interwar_artillery = 1
+	support_weapons = 1
+}
+
+set_politics = {
+	ruling_party = communism
+	last_election = "2064.03.01"
+	election_frequency = 60
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 70
+	neutrality = 20
+	democratic = 5
+	fascism = 5
+}
+
+create_country_leader = {
+	name = "The Supreme Soviet"
+	picture = GFX_portrait_USR_supreme_soviet
+	expire = "2100.1.1"
+	ideology = stalinism
+	traits = { }
+}
+
+# SovOil remains legally subordinate to the Union while administering the
+# strategic energy sector through its own budget, research, and security forces.
+set_autonomy = {
+	target = SVO
+	autonomous_state = autonomy_strategic_state_corporation
+	freedom_level = 0.25
+}
+
+add_ideas = {
+	USR_sovoil_energy_dividend
+	USR_fragile_union
+	USR_gas_arteries_of_union
+}
+set_variable = { USR_union_cohesion = 45 }
+set_variable = { sovoil_state_influence = 45 }

@@ -1,0 +1,31 @@
+# AUTO-GENERATED map override: CHL -> OAS (Cyberpunk conversion). See docs/03.
+state = {
+	id = 948
+	name = "STATE_948"
+	manpower = 6600
+	state_category = small_island
+	
+	history = {
+
+		owner = OAS
+		add_core_of = OAS
+		add_core_of = OAS
+
+		buildings = {
+			infrastructure = 1
+			13294 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			13294 1
+		}
+	}
+
+	provinces = {
+		13294
+	}
+
+	local_supplies = 0.0 
+}

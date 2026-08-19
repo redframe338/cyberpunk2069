@@ -1,0 +1,29 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			BIO = {
+				set_variable = { biotechnica_research_progress = 35 }
+				BIO_update_research_progress_spirit = yes
+				country_event = { id = biotechnica.1 days = 30 }
+			}
+			EEC = {
+				set_variable = { biotechnica_research_progress = 35 }
+				country_event = { id = biotechnica.2 days = 75 }
+			}
+		}
+	}
+	on_monthly = {
+		effect = {
+			BIO = {
+				BIO_update_research_progress_spirit = yes
+				if = {
+					limit = {
+						EEC = { has_war = yes }
+						NOT = { has_country_flag = BIO_emergency_mobilized }
+					}
+					country_event = { id = biotechnica.11 days = 3 }
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,75 @@
+# China is an armed commercial power. It maintains a very large defensive army,
+# exports equipment to states at war, and contains the Neo-Soviet Union without
+# seeking an automatic Sino-Soviet war.
+CHI_commercial_non_intervention_plan = {
+	name = "China commercial non-intervention plan"
+	desc = "Prioritize trade, industry, military exports, and strategic containment."
+
+	allowed = { original_tag = CHI }
+	enable = { always = yes }
+	abort = { always = no }
+
+	ai_national_focuses = { }
+	research = {
+		industry = 30
+		electronics = 25
+		infantry_weapons = 15
+		artillery = 10
+		armor = 2
+		air_equipment = 5
+	}
+	ideas = { }
+	traits = { }
+
+	ai_strategy = {
+		type = avoid_starting_wars
+		value = -1000
+	}
+
+	# Rivalry means strategic competition and containment, not an automatic war.
+	ai_strategy = { type = antagonize id = "USR" value = 500 }
+	ai_strategy = { type = contain id = "USR" value = 350 }
+	ai_strategy = { type = declare_war id = "USR" value = -1000 }
+	ai_strategy = { type = conquer id = "USR" value = -1000 }
+	ai_strategy = { type = send_lend_lease_desire id = "USR" value = -1000 }
+
+	# China prefers matériel support over direct intervention.
+	ai_strategy = { type = send_volunteers_desire id = "NUS" value = -250 }
+	ai_strategy = { type = send_volunteers_desire id = "EEC" value = -250 }
+	ai_strategy = { type = send_volunteers_desire id = "JAP" value = -250 }
+	ai_strategy = { type = send_volunteers_desire id = "PAC" value = -250 }
+	ai_strategy = { type = send_volunteers_desire id = "URB" value = -250 }
+	ai_strategy = { type = send_volunteers_desire id = "ASN" value = -250 }
+
+	ai_strategy = { type = send_lend_lease_desire id = "NUS" value = 450 }
+	ai_strategy = { type = send_lend_lease_desire id = "EEC" value = 350 }
+	ai_strategy = { type = send_lend_lease_desire id = "JAP" value = 250 }
+	ai_strategy = { type = send_lend_lease_desire id = "PAC" value = 300 }
+	ai_strategy = { type = send_lend_lease_desire id = "URB" value = 300 }
+	ai_strategy = { type = send_lend_lease_desire id = "ASN" value = 350 }
+	ai_strategy = { type = send_lend_lease_desire id = "UAR" value = 250 }
+	ai_strategy = { type = send_lend_lease_desire id = "OAS" value = 250 }
+	ai_strategy = { type = send_lend_lease_desire id = "WCS" value = 200 }
+	ai_strategy = { type = send_lend_lease_desire id = "FSA" value = 200 }
+	ai_strategy = { type = send_lend_lease_desire id = "TEX" value = 200 }
+
+	weight = { factor = 1.0 }
+}
+
+USR_china_strategic_rivalry_plan = {
+	name = "Neo-Soviet rivalry with China"
+	desc = "Compete with and contain China as the rival Eurasian industrial pole."
+
+	allowed = { original_tag = USR }
+	enable = { CHI = { exists = yes } }
+	abort = { NOT = { CHI = { exists = yes } } }
+
+	ai_national_focuses = { }
+	research = { }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = { type = antagonize id = "CHI" value = 500 }
+	ai_strategy = { type = contain id = "CHI" value = 350 }
+	weight = { factor = 1.0 }
+}

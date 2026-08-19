@@ -1,0 +1,75 @@
+# Arasaka and Militech regard one another as their principal corporate enemy.
+
+ARK_militech_archrival_plan = {
+	name = "Arasaka-Militech corporate rivalry"
+	desc = "Treat Militech as Arasaka's primary strategic competitor."
+
+	allowed = { original_tag = ARK }
+	enable = { MLT = { exists = yes } }
+	abort = { NOT = { MLT = { exists = yes } } }
+
+	ai_national_focuses = { }
+	research = { }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = {
+		type = antagonize
+		id = "MLT"
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "MLT"
+		value = 300
+	}
+	ai_strategy = {
+		type = support
+		id = "MLT"
+		value = -500
+	}
+	ai_strategy = {
+		type = protect
+		id = "MLT"
+		value = -500
+	}
+
+	weight = { factor = 1.0 }
+}
+
+MLT_arasaka_archrival_plan = {
+	name = "Militech-Arasaka corporate rivalry"
+	desc = "Treat Arasaka as Militech's primary strategic competitor."
+
+	allowed = { original_tag = MLT }
+	enable = { ARK = { exists = yes } }
+	abort = { NOT = { ARK = { exists = yes } } }
+
+	ai_national_focuses = { }
+	research = { }
+	ideas = { }
+	traits = { }
+
+	ai_strategy = {
+		type = antagonize
+		id = "ARK"
+		value = 1000
+	}
+	ai_strategy = {
+		type = conquer
+		id = "ARK"
+		value = 300
+	}
+	ai_strategy = {
+		type = support
+		id = "ARK"
+		value = -500
+	}
+	ai_strategy = {
+		type = protect
+		id = "ARK"
+		value = -500
+	}
+
+	weight = { factor = 1.0 }
+}

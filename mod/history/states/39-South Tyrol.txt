@@ -1,0 +1,33 @@
+# AUTO-GENERATED map override: ITA -> EEC (Cyberpunk conversion). See docs/03.
+
+state = {
+	id = 39
+	name = "STATE_39" # (South Tyrol) Alto Adige
+	manpower = 95000
+	
+	state_category = town
+	
+	resources = {
+		aluminium = 14 # was: 22
+	}
+
+	history = {
+		victory_points = { #Bolzano
+			11598 1
+		}
+		add_dynamic_modifier = { modifier = BIO_synthetic_agriculture_zone_modifier }
+		owner = BIO
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+		}
+		add_core_of = BIO
+		add_core_of = EEC
+		}
+
+	provinces = {
+		656 6675 9630 11598 11615
+	}
+
+	local_supplies = 0.0 
+}

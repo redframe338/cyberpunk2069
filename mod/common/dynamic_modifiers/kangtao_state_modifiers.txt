@@ -1,0 +1,33 @@
+KGT_corporate_headquarters_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	local_building_slots_factor = 0.35
+	research_speed_factor = 0.04
+	local_org_regain = 0.10
+}
+
+KGT_international_export_port_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_naval
+	local_building_slots_factor = 0.30
+	state_production_speed_dockyard_factor = 0.35
+	state_production_speed_infrastructure_factor = 0.30
+	local_supplies = 0.15
+}
+
+KGT_drone_missile_complex_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_production_bonus
+	local_building_slots_factor = 0.35
+	state_production_speed_arms_factory_factor = 0.35
+	research_speed_factor = 0.03
+}
+
+KGT_robotics_engineering_campus_modifier = {
+	enable = { always = yes }
+	icon = GFX_idea_generic_research
+	local_building_slots_factor = 0.30
+	state_production_speed_arms_factory_factor = 0.25
+	state_production_speed_industrial_complex_factor = 0.20
+	research_speed_factor = 0.03
+}

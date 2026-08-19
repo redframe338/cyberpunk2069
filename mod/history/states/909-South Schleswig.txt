@@ -1,0 +1,31 @@
+# AUTO-GENERATED map override: GER -> EEC (Cyberpunk conversion). See docs/03.
+state = {
+	id = 909
+	name = "STATE_909"
+	manpower = 152520
+	state_category = rural
+	
+	history = {
+
+		owner = EEC
+		add_core_of = EEC
+		add_core_of = EEC
+		add_core_of = EEC
+
+		victory_points = {
+			317 3  # Flensburg
+		}
+
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		
+	}
+
+	provinces = {
+		317 3231 11366
+ 	}
+
+	local_supplies = 0.0 
+}
